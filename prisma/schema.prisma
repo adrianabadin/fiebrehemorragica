@@ -1,0 +1,42 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model AppointmentRequest {
+  id             String   @id @default(cuid())
+  name           String
+  email          String
+  phone          String
+  reason         String
+  status         String   @default("pending")
+  batchId        String?
+  scheduledAt    DateTime?
+  slotNumber     Int?
+  sheetRowNumber Int?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  batch          Batch?   @relation(fields: [batchId], references: [id])
+}
+
+model Batch {
+  id          String               @id @default(cuid())
+  status      String               @default("processing")
+  createdAt   DateTime             @default(now())
+  processedAt DateTime?
+  requests    AppointmentRequest[]
+}
+
+model CalendarException {
+  id        String   @id @default(cuid())
+  date      DateTime @unique
+  type      String
+  label     String
+  sourceUrl String
+  year      Int
+  createdAt DateTime @default(now())
+}
