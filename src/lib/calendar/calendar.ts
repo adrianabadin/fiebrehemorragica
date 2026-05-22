@@ -19,6 +19,6 @@ export async function loadBlockedDates(year: number): Promise<string[]> {
   });
 
   return exceptions.map((exception) =>
-    exception.date.toISOString().slice(0, 10),
+    exception.date.toLocaleDateString("en-CA"),
   );
 }

@@ -13,15 +13,22 @@ export function assignSlotsForBatch(input: {
 }) {
   const fridayIndex = Math.floor(input.totalAssignedBeforeBatch / MAX_SLOTS_PER_FRIDAY);
   const firstSlot = (input.totalAssignedBeforeBatch % MAX_SLOTS_PER_FRIDAY) + 1;
-  const baseDate = input.startFrom ? new Date(`${input.startFrom}T00:00:00`) : new Date();
+  const baseDate = input.startFrom
+    ? (() => {
+        const [year, month, day] = input.startFrom.split("-").map(Number);
+        return new Date(year, month - 1, day);
+      })()
+    : new Date();
   let friday = nextFridayFrom(baseDate);
 
   for (let index = 0; index < fridayIndex; index += 1) {
     friday.setDate(friday.getDate() + 7);
   }
 
-  while (isBlockedDate(friday.toISOString().slice(0, 10), input.blockedDates)) {
+  let safetyCounter = 0;
+  while (isBlockedDate(toLocalDateString(friday), input.blockedDates) && safetyCounter < 52) {
     friday.setDate(friday.getDate() + 7);
+    safetyCounter += 1;
   }
 
   return Array.from({ length: BATCH_SIZE }, (_, index) => {
@@ -33,8 +40,15 @@ export function assignSlotsForBatch(input: {
 
     return {
       slotNumber,
-      date: friday.toISOString().slice(0, 10),
+      date: toLocalDateString(friday),
       time: `${hours}:${minutes}`,
     };
   });
+}
+
+function toLocalDateString(date: Date): string {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
 }

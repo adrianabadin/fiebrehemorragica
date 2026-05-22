@@ -33,6 +33,8 @@ describe("assignSlotsForBatch", () => {
       startFrom: "2026-10-01",
     });
 
-    expect(slots[0].date).not.toBe("2026-10-23");
+    expect(slots[0].date).toBe("2026-10-02");
+    expect(slots[0].slotNumber).toBe(1);
+    expect(slots[9].date).toBe("2026-10-02");
   });
 });
