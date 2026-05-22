@@ -11,7 +11,7 @@
     "test:watch": "vitest",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
-    "calendar:sync": "tsx src/lib/calendar-sync.ts"
+    "calendar:sync": "echo \"TODO: implement in Task 9\""
   },
   "dependencies": {
     "@prisma/client": "latest",
