@@ -11,7 +11,7 @@
     "test:watch": "vitest",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
-    "calendar:sync": "echo \"TODO: implement in Task 9\""
+    "calendar:sync": "npx tsx scripts/sync-calendar-exceptions.ts"
   },
   "dependencies": {
     "@prisma/client": "5.22.0",
