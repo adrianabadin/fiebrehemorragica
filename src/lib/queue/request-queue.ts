@@ -13,17 +13,21 @@ export async function reserveBatchIfReady() {
       return null;
     }
 
-    const batch = await prisma.batch.create({
-      data: {
-        status: "processing",
-      },
+    const result = await prisma.$transaction(async (tx) => {
+      const batch = await tx.batch.create({
+        data: {
+          status: "processing",
+        },
+      });
+
+      await tx.appointmentRequest.updateMany({
+        where: { id: { in: pendingRequests.map((request) => request.id) } },
+        data: { status: "processing", batchId: batch.id },
+      });
+
+      return { batch, requests: pendingRequests };
     });
 
-    await prisma.appointmentRequest.updateMany({
-      where: { id: { in: pendingRequests.map((request) => request.id) } },
-      data: { status: "processing", batchId: batch.id },
-    });
-
-    return { batch, requests: pendingRequests };
+    return result;
   });
 }
