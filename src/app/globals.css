@@ -1,0 +1,21 @@
+:root {
+  --primary: #00A4E4;
+  --secondary: #00558C;
+  --accent: #D92378;
+  --success: #28A745;
+  --background: #F8F9FA;
+  --surface: #FFFFFF;
+  --border: #E9ECEF;
+  --text-main: #333333;
+  --text-muted: #6C757D;
+  --radius-md: 4px;
+  --spacing-card: 24px;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text-main);
+  font-family: Roboto, sans-serif;
+}
