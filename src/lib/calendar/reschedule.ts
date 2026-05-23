@@ -7,7 +7,12 @@ export async function reassignAppointmentsForDate(date: string): Promise<{
   newDate: string | null;
 }> {
   const year = parseInt(date.split("-")[0], 10);
-  const blockedDates = await loadBlockedDates(year);
+  const nextYear = year + 1;
+  const blockedDates = [
+    ...(await loadBlockedDates(year)),
+    ...(await loadBlockedDates(nextYear)),
+    date,
+  ];
 
   const appointments = await prisma.appointmentRequest.findMany({
     where: {

@@ -37,16 +37,20 @@ export async function DELETE(request: Request) {
     const { date } = parsed.data;
     const dateObj = new Date(date + "T00:00:00");
 
-    const result = await reassignAppointmentsForDate(date);
+    const result = await prisma.$transaction(async () => {
+      const res = await reassignAppointmentsForDate(date);
 
-    await prisma.calendarException.create({
-      data: {
-        date: dateObj,
-        type: "cancelled",
-        label: "Día eliminado por administrador",
-        sourceUrl: "manual",
-        year: dateObj.getFullYear(),
-      },
+      await prisma.calendarException.create({
+        data: {
+          date: dateObj,
+          type: "cancelled",
+          label: "Día eliminado por administrador",
+          sourceUrl: "manual",
+          year: dateObj.getFullYear(),
+        },
+      });
+
+      return res;
     });
 
     return NextResponse.json(result, { status: 200 });

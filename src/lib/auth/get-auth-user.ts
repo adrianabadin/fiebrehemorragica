@@ -20,6 +20,10 @@ export async function getAuthUser(request: Request): Promise<{
     throw new AuthError("No autenticado");
   }
 
+  if (!process.env.JWT_SECRET) {
+    throw new AuthError("JWT_SECRET no configurado", 500);
+  }
+
   const secret = new TextEncoder().encode(process.env.JWT_SECRET);
 
   try {
