@@ -16,6 +16,12 @@ describe("appointmentSchema", () => {
     const parsed = appointmentSchema.safeParse(validPayload);
 
     expect(parsed.success).toBe(true);
+
+    if (!parsed.success) {
+      throw new Error("Expected payload to parse successfully");
+    }
+
+    expect(parsed.data).toEqual(validPayload);
   });
 
   it("rejects document numbers with letters", () => {
@@ -25,6 +31,18 @@ describe("appointmentSchema", () => {
     });
 
     expect(parsed.success).toBe(false);
+
+    if (parsed.success) {
+      throw new Error("Expected payload to fail document number validation");
+    }
+
+    expect(parsed.error.issues).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          path: ["documentNumber"],
+        }),
+      ]),
+    );
   });
 
   it("rejects document numbers shorter than seven digits", () => {
@@ -34,6 +52,18 @@ describe("appointmentSchema", () => {
     });
 
     expect(parsed.success).toBe(false);
+
+    if (parsed.success) {
+      throw new Error("Expected payload to fail document number validation");
+    }
+
+    expect(parsed.error.issues).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          path: ["documentNumber"],
+        }),
+      ]),
+    );
   });
 
   it("exports the exact document type options used by the form", () => {
