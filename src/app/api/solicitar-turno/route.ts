@@ -23,10 +23,12 @@ export async function POST(request: Request) {
       prisma.appointmentRequest.create({
         data: {
           id: requestId,
-          name: parsed.data.name,
+          firstName: parsed.data.firstName,
+          lastName: parsed.data.lastName,
+          documentType: parsed.data.documentType,
+          documentNumber: parsed.data.documentNumber,
           email: parsed.data.email,
           phone: parsed.data.phone,
-          reason: parsed.data.reason,
           status: "pending",
           createdAt: new Date(createdAtIso),
         },
@@ -34,10 +36,12 @@ export async function POST(request: Request) {
       appendPendingRequestRow({
         requestId,
         createdAtIso,
-        name: parsed.data.name,
+        firstName: parsed.data.firstName,
+        lastName: parsed.data.lastName,
+        documentType: parsed.data.documentType,
+        documentNumber: parsed.data.documentNumber,
         email: parsed.data.email,
         phone: parsed.data.phone,
-        reason: parsed.data.reason,
       }),
     ]);
 
