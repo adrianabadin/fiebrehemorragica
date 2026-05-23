@@ -14,8 +14,11 @@
     "calendar:sync": "npx tsx scripts/sync-calendar-exceptions.ts"
   },
   "dependencies": {
+    "@aabadin/project-memory-context": "^0.2.15",
     "@prisma/client": "5.22.0",
+    "argon2": "^0.44.0",
     "googleapis": "latest",
+    "jose": "^6.2.3",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
