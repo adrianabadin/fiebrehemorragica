@@ -1,14 +1,15 @@
+/* src/app/globals.css */
 :root {
-  --primary: #00A4E4;
-  --secondary: #00558C;
-  --accent: #D92378;
-  --success: #28A745;
-  --background: #F8F9FA;
+  --primary: #0891B2;
+  --secondary: #22D3EE;
+  --cta: #059669;
+  --background: #ECFEFF;
   --surface: #FFFFFF;
-  --border: #E9ECEF;
-  --text-main: #333333;
-  --text-muted: #6C757D;
-  --radius-md: 4px;
+  --border: #CBD5E1;
+  --text-main: #164E63;
+  --text-muted: #334155;
+  --focus-ring: #0891B2;
+  --radius-md: 6px;
   --spacing-card: 24px;
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
@@ -17,5 +18,11 @@ body {
   margin: 0;
   background: var(--background);
   color: var(--text-main);
-  font-family: Roboto, sans-serif;
+  font-family: 'Figtree', sans-serif;
+}
+
+/* Base focus styles for accessibility */
+*:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
 }
