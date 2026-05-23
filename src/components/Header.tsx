@@ -1,10 +1,10 @@
 // src/components/Header.tsx
 import Link from 'next/link';
 import styles from './Header.module.css';
+import { getSession } from '@/lib/auth/session';
 
-export default function Header() {
-  // TODO: Replace with real auth hook (e.g. useSession or JWT parsing)
-  const user = null; 
+export default async function Header() {
+  const user = await getSession();
 
   return (
     <header className={styles.header}>
@@ -21,7 +21,9 @@ export default function Header() {
         {user ? (
           <div className={styles.userContainer}>
             <span className={styles.userName}>{user.name}</span>
-            <button className={styles.logoutBtn}>Cerrar Sesión</button>
+            <form action="/api/auth/logout" method="POST">
+              <button type="submit" className={styles.logoutBtn}>Cerrar Sesión</button>
+            </form>
           </div>
         ) : (
           <div className={styles.authLinks}>
