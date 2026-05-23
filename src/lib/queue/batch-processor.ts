@@ -48,7 +48,7 @@ export async function processBatch(batch: { id: string }) {
 
     await sendTurnoEmail({
       to: request.email,
-      name: request.name,
+      fullName: `${request.firstName} ${request.lastName}`,
       scheduledDate: slot.date,
       scheduledTime: slot.time,
     });

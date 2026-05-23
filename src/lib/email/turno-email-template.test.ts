@@ -4,7 +4,7 @@ import { buildTurnoEmail } from "./turno-email-template";
 describe("buildTurnoEmail", () => {
   it("includes campaign, date, time, and fixed address", () => {
     const email = buildTurnoEmail({
-      name: "Ana",
+      fullName: "Ana Perez",
       scheduledDate: "2026-10-30",
       scheduledTime: "08:30",
     });
@@ -15,5 +15,15 @@ describe("buildTurnoEmail", () => {
     expect(email.html).toContain("08:30");
     expect(email.html).toContain("Hijas de San Jose 145");
     expect(email.html).toContain("Region Sanitaria X");
+  });
+
+  it("greets the patient with full name", () => {
+    const email = buildTurnoEmail({
+      fullName: "Ana Perez",
+      scheduledDate: "2026-10-30",
+      scheduledTime: "08:30",
+    });
+
+    expect(email.html).toContain("Hola Ana Perez");
   });
 });

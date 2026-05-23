@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { DOCUMENT_TYPES } from "@/lib/validation/appointment-schema";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { StatusMessage } from "@/components/ui/status-message";
 
 export function AppointmentForm() {
@@ -17,10 +17,12 @@ export function AppointmentForm() {
 
     const form = e.currentTarget;
     const data = {
-      name: (form.elements.namedItem("name") as HTMLInputElement).value,
+      firstName: (form.elements.namedItem("firstName") as HTMLInputElement).value,
+      lastName: (form.elements.namedItem("lastName") as HTMLInputElement).value,
+      documentType: (form.elements.namedItem("documentType") as HTMLSelectElement).value,
+      documentNumber: (form.elements.namedItem("documentNumber") as HTMLInputElement).value,
       email: (form.elements.namedItem("email") as HTMLInputElement).value,
       phone: (form.elements.namedItem("phone") as HTMLInputElement).value,
-      reason: (form.elements.namedItem("reason") as HTMLTextAreaElement).value,
     };
 
     try {
@@ -43,17 +45,29 @@ export function AppointmentForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="name">Nombre</label>
-      <Input id="name" name="name" required minLength={2} maxLength={100} />
+      <label htmlFor="firstName">Nombre</label>
+      <Input id="firstName" name="firstName" required minLength={2} maxLength={100} />
+
+      <label htmlFor="lastName">Apellido</label>
+      <Input id="lastName" name="lastName" required minLength={2} maxLength={100} />
+
+      <label htmlFor="documentType">Tipo de documento</label>
+      <select id="documentType" name="documentType" defaultValue="DNI" required>
+        {DOCUMENT_TYPES.map((documentType) => (
+          <option key={documentType} value={documentType}>
+            {documentType}
+          </option>
+        ))}
+      </select>
+
+      <label htmlFor="documentNumber">Número de documento</label>
+      <Input id="documentNumber" name="documentNumber" required inputMode="numeric" pattern="\d{7,10}" />
 
       <label htmlFor="email">Email</label>
       <Input id="email" name="email" type="email" required />
 
       <label htmlFor="phone">Teléfono</label>
       <Input id="phone" name="phone" type="tel" required minLength={8} maxLength={30} />
-
-      <label htmlFor="reason">Motivo</label>
-      <Textarea id="reason" name="reason" required minLength={5} maxLength={500} />
 
       <Button type="submit" disabled={status === "loading"}>
         {status === "loading" ? "Enviando..." : "Enviar solicitud"}

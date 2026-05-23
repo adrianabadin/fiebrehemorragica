@@ -1,4 +1,4 @@
-main {
+.main {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -6,7 +6,7 @@ main {
   padding: 16px;
 }
 
-main > [className] {
+.card {
   width: 100%;
   max-width: 480px;
   padding: var(--spacing-card);
@@ -16,25 +16,25 @@ main > [className] {
   border: 1px solid var(--border);
 }
 
-main h1 {
+.title {
   margin: 0 0 8px;
   font-size: 24px;
   font-weight: 700;
   color: var(--secondary);
 }
 
-main > div > p {
+.description {
   margin: 0 0 24px;
   color: var(--text-muted);
 }
 
-main form {
+.card form {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-main form label {
+.card form label {
   font-size: 14px;
   font-weight: 500;
   color: var(--text-main);
@@ -42,8 +42,9 @@ main form label {
   display: block;
 }
 
-main form input,
-main form textarea {
+.card form input,
+.card form textarea,
+.card form select {
   width: 100%;
   padding: 10px 12px;
   border: 1px solid var(--border);
@@ -52,14 +53,15 @@ main form textarea {
   box-sizing: border-box;
 }
 
-main form input:focus,
-main form textarea:focus {
+.card form input:focus,
+.card form textarea:focus,
+.card form select:focus {
   outline: none;
   border-color: var(--primary);
   box-shadow: 0 0 0 2px rgba(0, 164, 228, 0.2);
 }
 
-main form button[type="submit"] {
+.card form button[type="submit"] {
   width: 100%;
   padding: 12px;
   background: var(--primary);
@@ -72,11 +74,11 @@ main form button[type="submit"] {
   margin-top: 8px;
 }
 
-main form button[type="submit"]:hover {
+.card form button[type="submit"]:hover {
   background: var(--secondary);
 }
 
-main form button[type="submit"]:disabled {
+.card form button[type="submit"]:disabled {
   opacity: 0.6;
   cursor: not-allowed;
 }
