@@ -54,7 +54,35 @@
   background-color: var(--secondary);
 }
 
-.user {
+.userContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.userName {
   font-weight: 600;
   color: var(--cta);
+}
+
+.logoutBtn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.logoutBtn:hover {
+  color: var(--primary);
+}
+
+.authLinks {
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
