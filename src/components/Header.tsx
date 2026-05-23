@@ -3,9 +3,8 @@ import Link from 'next/link';
 import styles from './Header.module.css';
 
 export default function Header() {
-  // Mock user state. Cambiar a null para probar estado deslogueado.
-  // Cambiar role a 'user' para probar estado sin calendario.
-  const user = { name: "Juana", role: "admin" }; 
+  // TODO: Replace with real auth hook (e.g. useSession or JWT parsing)
+  const user = null; 
 
   return (
     <header className={styles.header}>
