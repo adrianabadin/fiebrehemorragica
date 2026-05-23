@@ -1,0 +1,4 @@
+{
+  "/api/solicitar-turno/route": "app/api/solicitar-turno/route.js",
+  "/page": "app/page.js"
+}

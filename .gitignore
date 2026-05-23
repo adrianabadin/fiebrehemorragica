@@ -3,12 +3,8 @@ node_modules/
 .pnpm-store/
 
 # Next.js
-.next/
-out/
 
 # Production
-build/
-dist/
 
 # Environment
 .env
