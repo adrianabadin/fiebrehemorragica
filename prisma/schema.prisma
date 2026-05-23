@@ -9,11 +9,13 @@ datasource db {
 
 model AppointmentRequest {
   id             String   @id @default(cuid())
-  name           String
+  firstName      String
+  lastName       String
   email          String
   phone          String
-  reason         String
-  status         String @default("pending")
+  documentType   String
+  documentNumber String
+  status         String   @default("pending")
   batchId        String?
   scheduledAt    DateTime?
   slotNumber     Int?
