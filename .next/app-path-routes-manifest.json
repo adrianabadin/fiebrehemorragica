@@ -4,6 +4,7 @@
   "/api/admin/calendar/block/route": "/api/admin/calendar/block",
   "/api/admin/calendar/day/route": "/api/admin/calendar/day",
   "/api/admin/schedule-rules/route": "/api/admin/schedule-rules",
+  "/api/admin/users/route": "/api/admin/users",
   "/api/auth/login/route": "/api/auth/login",
   "/api/auth/logout/route": "/api/auth/logout",
   "/api/auth/register/route": "/api/auth/register",

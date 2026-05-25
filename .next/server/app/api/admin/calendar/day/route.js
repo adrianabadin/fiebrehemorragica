@@ -1,5 +1,5 @@
 var R=require("../../../../../chunks/[turbopack]_runtime.js")("server/app/api/admin/calendar/day/route.js")
-R.c("server/chunks/[root-of-the-server]__0ixh.db._.js")
+R.c("server/chunks/[root-of-the-server]__0x5so72._.js")
 R.c("server/chunks/09_0_jose_dist_webapi_070-agj._.js")
 R.c("server/chunks/[root-of-the-server]__0g~~nld._.js")
 R.c("server/chunks/Documents_CODE_fiebrehemorragica_0xir728._.js")
