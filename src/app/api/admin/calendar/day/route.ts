@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { prisma } from "@/lib/db/prisma";
 import { getAuthUser, AuthError } from "@/lib/auth/get-auth-user";
 import { deleteDateSchema } from "@/lib/validation/auth-schema";
-import { reassignAppointmentsForDate } from "@/lib/calendar/reschedule";
+import { rescheduleAppointments } from "@/lib/calendar/reschedule";
 
 export async function DELETE(request: Request) {
   try {
@@ -37,8 +37,18 @@ export async function DELETE(request: Request) {
     const { date } = parsed.data;
     const dateObj = new Date(date + "T00:00:00");
 
+    const appointments = await prisma.appointmentRequest.findMany({
+      where: {
+        scheduledAt: {
+          gte: new Date(date + "T00:00:00"),
+          lt: new Date(new Date(date + "T00:00:00").getTime() + 86400000),
+        },
+        status: { not: "pending" },
+      },
+    });
+
     const result = await prisma.$transaction(async () => {
-      const res = await reassignAppointmentsForDate(date);
+      const res = await rescheduleAppointments(appointments);
 
       await prisma.calendarException.create({
         data: {
