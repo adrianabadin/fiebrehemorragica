@@ -8,6 +8,7 @@
   "/api/auth/logout/route": "/api/auth/logout",
   "/api/auth/register/route": "/api/auth/register",
   "/api/solicitar-turno/route": "/api/solicitar-turno",
+  "/calendar/page": "/calendar",
   "/login/page": "/login",
   "/page": "/",
   "/register/page": "/register"

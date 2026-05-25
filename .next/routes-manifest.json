@@ -84,6 +84,12 @@
       "namedRegex": "^/api/solicitar\\-turno(?:/)?$"
     },
     {
+      "page": "/calendar",
+      "regex": "^/calendar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/calendar(?:/)?$"
+    },
+    {
       "page": "/login",
       "regex": "^/login(?:/)?$",
       "routeKeys": {},

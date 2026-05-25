@@ -15,6 +15,21 @@
     ]
   },
   {
+    "route": "/calendar",
+    "firstLoadUncompressedJsBytes": 528054,
+    "firstLoadChunkPaths": [
+      ".next\\static\\chunks\\15x7f0~i1rzvr.js",
+      ".next\\static\\chunks\\0nfopc_-ns5.3.js",
+      ".next\\static\\chunks\\11vxoifogn~rt.js",
+      ".next\\static\\chunks\\0d-h5dgiggxot.js",
+      ".next\\static\\chunks\\05s99o.kow8eg.js",
+      ".next\\static\\chunks\\14x-o4di_3a7b.js",
+      ".next\\static\\chunks\\04qrmrknb5n7i.js",
+      ".next\\static\\chunks\\0nxum9gk1ror4.js",
+      ".next\\static\\chunks\\turbopack-11xj~yu1t2m5e.js"
+    ]
+  },
+  {
     "route": "/register",
     "firstLoadUncompressedJsBytes": 523541,
     "firstLoadChunkPaths": [
