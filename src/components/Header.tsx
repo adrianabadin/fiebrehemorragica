@@ -20,7 +20,7 @@ export default async function Header() {
         )}
         {user ? (
           <div className={styles.userContainer}>
-            <span className={styles.userName}>{user.name}</span>
+            <span className={styles.userName}>{user.username}</span>
             <form action="/api/auth/logout" method="POST">
               <button type="submit" className={styles.logoutBtn}>Cerrar Sesión</button>
             </form>

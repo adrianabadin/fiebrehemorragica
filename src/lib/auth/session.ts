@@ -1,5 +1,6 @@
 import { cookies } from "next/headers";
 import { jwtVerify } from "jose";
+import { prisma } from "@/lib/db/prisma";
 
 export async function getSession() {
   const cookieStore = await cookies();
@@ -10,14 +11,21 @@ export async function getSession() {
   try {
     const secret = new TextEncoder().encode(process.env.JWT_SECRET);
     const { payload } = await jwtVerify(token, secret);
-    
-    // Asumimos que podemos obtener el nombre del usuario desde DB o payload
-    // El payload del login ahora tiene { userId, role }
-    // Vamos a retornar esto
+
+    const userId = payload.userId as string;
+    if (!userId) return null;
+
+    const user = await prisma.user.findUnique({
+      where: { id: userId },
+      select: { username: true, role: true },
+    });
+
+    if (!user) return null;
+
     return {
-      userId: payload.userId as string,
-      role: payload.role as string,
-      name: (payload.name as string) || "Usuario"
+      userId,
+      role: user.role,
+      username: user.username,
     };
   } catch (error) {
     return null;
