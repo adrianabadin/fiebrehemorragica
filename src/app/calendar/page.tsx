@@ -3,6 +3,7 @@ import { getSession } from "@/lib/auth/session";
 import { prisma } from "@/lib/db/prisma";
 import styles from "./calendar.module.css";
 import { RuleForm, CancelDayForm } from "./forms";
+import { RuleList } from "./rule-list";
 
 export default async function CalendarPage() {
   const user = await getSession();
@@ -13,7 +14,7 @@ export default async function CalendarPage() {
 
   const rules = await prisma.scheduleRule.findMany({
     orderBy: { validFrom: "desc" },
-    take: 5,
+    take: 20,
   });
 
   const exceptions = await prisma.calendarException.findMany({
@@ -29,20 +30,7 @@ export default async function CalendarPage() {
 
       <section className={styles.section}>
         <h2>Reglas de Agenda Activas</h2>
-        {rules.length === 0 ? (
-          <p className={styles.empty}>No hay reglas configuradas. Se usa el default (Viernes 08:30 - 11:50, 20 turnos).</p>
-        ) : (
-          <ul className={styles.list}>
-            {rules.map((rule) => (
-              <li key={rule.id} className={styles.ruleCard}>
-                <strong>Vigente desde:</strong> {rule.validFrom.toLocaleDateString("es-AR")}<br />
-                <strong>Dia:</strong> {daysOfWeek[rule.dayOfWeek]}<br />
-                <strong>Horario:</strong> {rule.startTime} - {rule.endTime}<br />
-                <strong>Turnos:</strong> {rule.slotCount}
-              </li>
-            ))}
-          </ul>
-        )}
+        <RuleList rules={rules} daysOfWeek={daysOfWeek} />
       </section>
 
       <section className={styles.section}>
