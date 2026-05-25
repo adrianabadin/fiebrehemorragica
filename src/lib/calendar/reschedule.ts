@@ -1,6 +1,16 @@
 import { prisma } from "@/lib/db/prisma";
-import { loadBlockedDates, findNextAvailableFriday } from "./calendar";
+import {
+  loadBlockedDates,
+  findNextAvailableFriday,
+  findNextAvailableDay,
+  getActiveRule,
+} from "./calendar";
 import { sendRescheduleEmail } from "@/lib/email/send-reschedule-email";
+
+function timeToMinutes(time: string): number {
+  const [hours, minutes] = time.split(":").map(Number);
+  return hours * 60 + minutes;
+}
 
 export async function reassignAppointmentsForDate(date: string): Promise<{
   rescheduledCount: number;
@@ -85,4 +95,90 @@ export async function reassignAppointmentsForDate(date: string): Promise<{
   }
 
   return { rescheduledCount: appointments.length, newDate: nextDate };
+}
+
+export async function rescheduleAppointments(
+  appointments: {
+    id: string;
+    scheduledAt: Date;
+    email: string;
+    firstName: string;
+    lastName: string;
+  }[],
+) {
+  const currentYear = new Date().getFullYear();
+  const blockedDates = [
+    ...(await loadBlockedDates(currentYear)),
+    ...(await loadBlockedDates(currentYear + 1)),
+  ];
+
+  const results: {
+    id: string;
+    oldDate: string;
+    newDate: string;
+    newTime: string;
+    slotNumber: number;
+  }[] = [];
+
+  for (const appt of appointments) {
+    const oldDate = appt.scheduledAt.toLocaleDateString("en-CA");
+    const newDate = await findNextAvailableDay(oldDate, blockedDates);
+
+    if (!newDate) {
+      console.error(`No available day found for appointment ${appt.id}`);
+      continue;
+    }
+
+    const existingCount = await prisma.appointmentRequest.count({
+      where: {
+        scheduledAt: {
+          gte: new Date(newDate + "T00:00:00"),
+          lt: new Date(
+            new Date(newDate + "T00:00:00").getTime() + 86400000,
+          ),
+        },
+        status: { not: "pending" },
+      },
+    });
+
+    const rule = await getActiveRule(new Date(newDate + "T00:00:00"));
+    const startTimeMinutes = timeToMinutes(rule.startTime);
+    const endTimeMinutes = timeToMinutes(rule.endTime);
+    const slotDuration =
+      (endTimeMinutes - startTimeMinutes) / rule.slotCount;
+
+    const slotNumber = existingCount + 1;
+    const zeroBasedSlot = slotNumber - 1;
+    const totalMinutes = startTimeMinutes + zeroBasedSlot * slotDuration;
+    const hours = String(Math.floor(totalMinutes / 60)).padStart(2, "0");
+    const minutes = String(Math.round(totalMinutes % 60)).padStart(2, "0");
+    const newTime = `${hours}:${minutes}`;
+
+    await prisma.appointmentRequest.update({
+      where: { id: appt.id },
+      data: {
+        scheduledAt: new Date(newDate + "T00:00:00"),
+        slotNumber,
+      },
+    });
+
+    try {
+      await sendRescheduleEmail({
+        to: appt.email,
+        fullName: `${appt.firstName} ${appt.lastName}`,
+        oldDate,
+        newDate,
+        newTime,
+      });
+    } catch (err) {
+      console.error(
+        `Failed to send reschedule email to ${appt.email}:`,
+        err,
+      );
+    }
+
+    results.push({ id: appt.id, oldDate, newDate, newTime, slotNumber });
+  }
+
+  return results;
 }
