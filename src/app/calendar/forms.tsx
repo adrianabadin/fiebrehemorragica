@@ -8,7 +8,8 @@ export function RuleForm() {
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const formData = new FormData(e.currentTarget);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
     const body = Object.fromEntries(formData.entries());
     // Convert types
     const payload = {
@@ -27,7 +28,7 @@ export function RuleForm() {
       });
       if (res.ok) {
         setStatus("Regla creada correctamente.");
-        e.currentTarget.reset();
+        form.reset();
       } else {
         const data = await res.json();
         setStatus(`Error: ${data.error || res.statusText}`);
@@ -76,7 +77,8 @@ export function CancelDayForm() {
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const formData = new FormData(e.currentTarget);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
     const body = Object.fromEntries(formData.entries());
 
     try {
@@ -87,7 +89,7 @@ export function CancelDayForm() {
       });
       if (res.ok) {
         setStatus("Dia cancelado y turnos reprogramados.");
-        e.currentTarget.reset();
+        form.reset();
       } else {
         const data = await res.json();
         setStatus(`Error: ${data.error || res.statusText}`);
