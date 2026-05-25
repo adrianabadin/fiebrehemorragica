@@ -23,6 +23,22 @@ export async function loadBlockedDates(year: number): Promise<string[]> {
   );
 }
 
+export async function getActiveRule(date: Date) {
+  const rule = await prisma.scheduleRule.findFirst({
+    where: { validFrom: { lte: date } },
+    orderBy: { validFrom: "desc" }
+  });
+
+  if (rule) return rule;
+
+  return {
+    dayOfWeek: 5,
+    startTime: "08:30",
+    endTime: "11:50",
+    slotCount: 20
+  };
+}
+
 export async function findNextAvailableFriday(
   afterDate: string,
   blockedDates: string[],
@@ -52,5 +68,38 @@ export async function findNextAvailableFriday(
     friday.setDate(friday.getDate() + 7);
   }
 
+  return null;
+}
+
+export async function findNextAvailableDay(
+  afterDate: string,
+  blockedDates: string[],
+): Promise<string | null> {
+  const [year, month, day] = afterDate.split("-").map(Number);
+  let current = new Date(year, month - 1, day);
+
+  for (let i = 0; i < 52; i++) {
+    const rule = await getActiveRule(current);
+    while (current.getDay() !== rule.dayOfWeek) {
+      current.setDate(current.getDate() + 1);
+    }
+
+    const dateStr = current.toLocaleDateString("en-CA");
+    if (!isBlockedDate(dateStr, blockedDates)) {
+      const count = await prisma.appointmentRequest.count({
+        where: {
+          scheduledAt: {
+            gte: new Date(dateStr + "T00:00:00"),
+            lt: new Date(new Date(dateStr + "T00:00:00").getTime() + 86400000),
+          },
+          status: { not: "pending" },
+        },
+      });
+      if (count < rule.slotCount) {
+        return dateStr;
+      }
+    }
+    current.setDate(current.getDate() + 7);
+  }
   return null;
 }
