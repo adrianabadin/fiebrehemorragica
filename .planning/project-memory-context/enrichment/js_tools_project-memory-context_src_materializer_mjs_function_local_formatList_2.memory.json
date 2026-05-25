@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `formatList` is responsible for creating a formatted string that lists a label followed by its associated values. It checks if there are any values provided and formats them into a comma-separated list, or indicates that no values were detected.\n\n### Primary Inputs\n- **label**: A string representing the label to be displayed before the values.\n- **values**: An array of strings representing the values to be listed.\n\n### Output\nThe function returns a string formatted as `\"- label: value1, value2, ...\"` if there are any values; otherwise, it returns `\"- label: Not detected\"`.\n\n### Immediate Dependencies\n- None explicitly declared within the code snippet itself, but implicitly relies on JavaScript's type coercion and optional chaining features (`?.`) which are native to the language.\n\n### Role in Module\nThe function is part of a utility module that likely handles data formatting or presentation for some larger application related to project management or context tracking. It helps in presenting information about detected items in a clear, structured manner, making it easier to read and understand at a glance.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/materializer.mjs"
+  ]
+}

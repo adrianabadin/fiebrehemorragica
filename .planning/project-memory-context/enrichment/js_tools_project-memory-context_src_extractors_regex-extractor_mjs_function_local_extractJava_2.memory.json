@@ -1,0 +1,11 @@
+{
+  "content": " The `extractJava` function is responsible for extracting Java class and method symbols from a list of lines. It uses regular expressions to identify classes and methods, then constructs symbol objects with metadata including file path, type, name, scope (exported or local), and other details. The primary input is an array of strings representing the lines of code, and the output is an array of symbol objects. Immediate dependencies include `createHash` for hashing and `buildSymbolKey` for generating unique keys. This function plays a crucial role in parsing Java files to provide meaningful insights into their structure.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/extractors/regex-extractor.mjs"
+  ]
+}

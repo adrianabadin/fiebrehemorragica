@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `buildDetectedContext` function is responsible for constructing a comprehensive context object that encapsulates various aspects of the project, including its stack, structure, architecture, and rules. This context is essential for understanding and managing the project's state and artifacts.\n\n### Primary Inputs\n- **projectRoot**: A string representing the root directory of the project.\n\n### Output\n- An object containing four main properties:\n  - `stack`: Information about the technology stack used in the project.\n  - `structure`: Details about the file structure and entry points of the project.\n  - `architecture`: Description of how the project is organized and its components.\n  - `rules`: Any specific rules or guidelines that apply to the project as described in the README.md file.\n\n### Immediate Dependencies\n- Functions from modules:\n  - `detectStackContext` for detecting stack information.\n  - `detectStructureContext` for analyzing the project's structure.\n  - `detectArchitectureContext` for extracting architectural details.\n  - `detectRulesContext` for interpreting rules specified in the README.md file.\n- Utility functions:\n  - `readText`: Assumed to be a helper function that reads and returns the content of files as text.\n\n### Role in Module\nThis function serves as an orchestrator, integrating multiple extractors to provide a holistic view of the project context. It is pivotal for initializing or updating the project's contextual data needed for further operations such as artifact management, rendering documentation, or managing sync entries.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/project-context.mjs"
+  ]
+}

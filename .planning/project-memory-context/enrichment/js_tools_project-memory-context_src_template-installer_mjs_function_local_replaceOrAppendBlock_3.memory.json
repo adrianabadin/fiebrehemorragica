@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `replaceOrAppendBlock` function is responsible for inserting or replacing a block of content within a larger string, identified by a specific marker. This is useful for templating and injecting dynamic content into predefined sections of a file.\n\n### Primary Inputs\n1. **content**: A string where the block needs to be inserted or replaced.\n2. **marker**: A unique identifier used to mark the position in the content where the block should be inserted or replaced.\n3. **block**: The actual block of text that will replace the existing content marked by the marker, if it exists, or be appended if it does not exist.\n\n### Output\n- If the marker is found within the `content`, the function returns a new string where the identified block replaces the section between the markers.\n- If the marker is not found, it appends the block to the end of the content, ensuring proper formatting with newline characters.\n\n### Immediate Dependencies\n1. **`new RegExp(..., 'g')`**: Constructs a regular expression that matches all occurrences of the marker across the entire string.\n2. **`regex.test(content)`**: Checks if the marker exists in the content.\n3. **`content.replace(regex, ...)`**: Replaces the matched block with the new block if it exists.\n4. **String concatenation (`+`) and template literals (`` `...` ``)**: Used for string manipulation and formatting when appending a new block.\n\n### Role in Module\nThis function serves as a utility to manage dynamic content insertion within static templates, abstracting away the complexity of manual string manipulations or multiple file operations. It enhances maintainability by centralizing this functionality into a single module method, making it easier to update and reuse across different parts of the application that require similar templating operations.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/template-installer.mjs"
+  ]
+}

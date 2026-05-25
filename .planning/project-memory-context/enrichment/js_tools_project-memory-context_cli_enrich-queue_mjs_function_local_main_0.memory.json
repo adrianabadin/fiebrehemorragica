@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `main` function is responsible for orchestrating the enrichment process of a project's memory context. It manages file operations, configuration loading, and state management to ensure that the enrichment queue is processed correctly.\n\n### Primary Inputs\n1. **worklistFile**: Path to the worklist JSON file containing tasks to be enriched.\n2. **symbolIndexFile**: Path to the symbol index JSON file for reference during enrichment.\n3. **PROJECT_ROOT**: Root directory of the project, used for path resolution.\n4. **process.env**: Environment variables passed to the script for configuration settings.\n\n### Output\n- Updates the status of each entry in `worklist` based on whether they are already enriched or not.\n- Generates a summary of the queue state including counts and elapsed times for pending, errors, and total results.\n- Writes the final queue state to a JSON file (`queueStateFile`).\n\n### Immediate Dependencies\n1. **loadJson**: Function to read and parse JSON files.\n2. **loadRuntimeEnrichmentConfig**: Function to load runtime enrichment configuration from environment variables or default settings.\n3. **createQueueProviders**: Function to initialize various data providers for enrichment tasks.\n4. **finalizeQueueState**: Function to write the final state of the queue, including completion status and summary statistics, to a file.\n5. **maybeLaunchRetryErrors**: Function to handle automatic retry of errors based on previous outcomes.\n6. **buildQueueSummary**: Utility function to compile a summary of the current state of the enrichment queue.\n\n### Role in Module\nThe `main` function serves as the entry point for the script, handling all necessary steps from data loading and configuration setup through processing and reporting completion status. It is central to the functionality of managing and updating project memory context enrichments.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/enrich-queue.mjs"
+  ]
+}

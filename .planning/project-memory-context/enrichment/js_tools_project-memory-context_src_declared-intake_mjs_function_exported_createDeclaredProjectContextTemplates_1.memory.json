@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `createDeclaredProjectContextTemplates` is responsible for generating a set of JSON templates that represent different aspects of a project's context. These templates include the target architecture, technical rules, project requirements, and known issues and fixes. This function standardizes the structure and content of these templates to ensure consistency across different parts of the system or documentation.\n\n### Primary Inputs\n- `architectureTarget`: A string representing the target architecture of the project.\n- `technicalRules`: An array of objects that represent technical rules applicable to the project.\n- `projectRequirements`: An array of objects that outline the requirements for the project.\n- `knownIssuesAndFixes`: An array of objects that list known issues and their corresponding fixes.\n\n### Output\nThe function outputs an object where each key is a filename (as a string) and its value is another object containing metadata about the template:\n- `title`: A human-readable title for the section.\n- The specific content based on the input type, such as architecture, rules, requirements, or issues/fixes.\n\n### Immediate Dependencies\nThe function does not have any immediate dependencies listed in the provided code snippet; it uses default parameters to accept inputs directly. However, if these defaults are expected to be populated from other functions or modules, those would be considered dependencies.\n\n### Role in Module\nThis function serves as a utility within the module `tools/project-memory-context` and is specifically designed for generating structured templates that encapsulate various aspects of a project's context. It ensures that these contexts are consistently formatted and easily accessible when needed, supporting other functionalities or documentation outputs related to the project.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/declared-intake.mjs"
+  ]
+}

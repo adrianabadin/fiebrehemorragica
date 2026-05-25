@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `findFiles` function is responsible for recursively searching through a directory and its subdirectories to find files that match specified extensions, while optionally ignoring certain paths. It constructs the full path of each entry and checks if it should be included based on the provided file extensions and ignored paths.\n\n### Primary Inputs\n- **dir**: The starting directory for the search.\n- **exts**: An array of file extensions to match against (e.g., ['.js', '.json']).\n- **ignore**: An array of substrings that, if found in a file or directory path, will cause it to be ignored.\n- **projectRoot**: The root directory of the project from which relative paths are derived.\n\n### Output\nAn array of strings representing the full paths of files within `dir` and its subdirectories that match the specified extensions and do not match any entries in `ignore`. These paths are normalized to be relative to `projectRoot`.\n\n### Immediate Dependencies\n- **readdirSync**: To list directory contents.\n- **resolve**: To construct full paths for each entry.\n- **endsWith**: To check if a file name ends with one of the specified extensions.\n- **includes**: To check if a path includes any string in the `ignore` array.\n\n### Role in Module\nThis function serves as a utility to scan and filter files within a project directory, aiding in tasks such as dependency management or configuration file discovery, making it an essential part of the module's functionality for handling local project resources.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/bootstrap.mjs"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility:\nThe `log` function is responsible for logging messages prefixed with \"[bootstrap]\" to the console error stream. This aids in debugging and informative outputs during the execution of the script.\n\n### Primary Inputs:\n- `msg`: A string message that needs to be logged.\n\n### Output:\n- The function prints a formatted log message to the console, prefixed by \"[bootstrap]\".\n\n### Immediate Dependencies:\n- `console.error`: Built-in JavaScript function used to print error messages to the console.\n\n### Role in Module:\nIn this module, `log` serves as a utility function for logging debug information during the bootstrap process of the project setup, making it easier to trace and understand the flow and state of the script execution.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/bootstrap.mjs"
+  ]
+}

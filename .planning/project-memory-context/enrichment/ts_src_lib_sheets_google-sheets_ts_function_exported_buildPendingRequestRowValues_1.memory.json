@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `buildPendingRequestRowValues` function is responsible for constructing an array of values that represents a row to be appended to a Google Sheets document. This function takes an input object (`AppendRequestRowInput`) and maps its properties to the corresponding positions in the output array, filling in default values or placeholder strings as necessary.\n\n### Primary Inputs\nThe primary inputs are:\n- `input`: An object of type `AppendRequestRowInput` which contains various pieces of information such as requestId, createdAtIso, firstName, lastName, documentType, documentNumber, email, phone, etc.\n\n### Output\nThe output is an array containing the values that will be used to populate a row in Google Sheets. The order and content of these values are determined by the properties of the `AppendRequestRowInput` object.\n\n### Immediate Dependencies\nThe immediate dependencies include:\n- `input`: The input object which contains all necessary data for constructing the output array.\n\n### Role in Module\nThis function plays a crucial role in preparing data to be appended to a Google Sheets document, specifically tailored for rows that represent pending requests. It ensures that each row includes essential information about the request and marks it as \"pendiente\" indicating its current status. This function is part of a larger module responsible for interacting with Google Sheets, likely used in conjunction with other functions or classes for data manipulation and interaction within the application.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "ts",
+    "function",
+    "project:fiebrehemorragica",
+    "file:src/lib/sheets/google-sheets.ts"
+  ]
+}

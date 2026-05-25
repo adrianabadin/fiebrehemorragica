@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `spawnBackground` is responsible for spawning a background process using Node.js's `child_process` module, ensuring that the command and its arguments are passed correctly on all platforms by always using array form (instead of shelling out with `shell: true`). It also handles optional options such as custom spawn implementation (`spawnImpl`), working directory (`cwd`), and detached process mode.\n\n### Primary Inputs\n- **command**: A string representing the command to be executed.\n- **args** (optional): An array of strings, where each element is a separate argument for the command.\n- **options** (optional): An object containing additional options:\n  - `spawnImpl`: A custom spawn implementation to use instead of the default `spawn`.\n  - `cwd`: The working directory in which to execute the command.\n\n### Output\n- Returns the PID (Process Identifier) of the spawned background process.\n\n### Immediate Dependencies\n- **node:child_process**: For spawning a new child process.\n- **node:fs**: To check if paths exist, though not directly used in this function, it's imported for completeness.\n- **node:os**: To get the home directory, but again, not directly utilized here.\n- **node:path**: Provides path manipulation utilities which are indirectly used through `resolve` and `join`.\n\n### Role in Module\nThis function serves as a utility to easily spawn background processes with detailed configuration options for different environments and platforms, ensuring that paths containing spaces or special characters are handled correctly without invoking the shell. This is particularly useful in cross-platform scripts where command line tools might be invoked directly.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/platform.mjs"
+  ]
+}

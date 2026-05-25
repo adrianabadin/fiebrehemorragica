@@ -1,0 +1,11 @@
+{
+  "content": " The `collectTypeScriptContext` function is responsible for collecting all import statements from the lines preceding a given symbol start line. It takes an array of strings (`lines`) and the index of the symbol start line (`symbolStartLine`), then iterates through the lines up to but not including the symbol start line, pushing any line that matches the regular expression `/^\\s*import\\b/` into the `context` array. The function returns this array of import statements as its output. Its immediate dependency is the presence of import statements in the input lines. In the context of a module, it serves to gather metadata about dependencies for further processing or analysis.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/semantic-unit.mjs"
+  ]
+}

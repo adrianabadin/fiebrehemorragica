@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `main` function is responsible for handling command line arguments, executing the script specified by `SCRIPT_PATH`, and managing the lifecycle of the child process. It decides whether to print help information or run the script based on the provided arguments. It also ensures that errors during execution are properly handled and communicated back to the caller.\n\n### Primary Inputs\n- `args`: An array of command line arguments, which defaults to `process.argv.slice(2)` if not provided. This includes all arguments after the script name.\n\n### Output\n- The function returns a promise that resolves with the exit code of the child process or rejects with an error in case of failure (including errors during execution and unexpected exits).\n\n### Immediate Dependencies\n- `spawn` from 'node:child_process': Used to create a new child process.\n- `resolve`, `dirname` from 'node:path': Used for path manipulation, though not directly in the function body, they are imported as part of broader module usage.\n- `fileURLToPath` from 'node:url': Also used as part of broader module usage but does not have direct involvement in this specific function's logic.\n\n### Role in Module\nThe `main` function serves as an entry point for the CLI tool, encapsulating all command handling and execution logic within a single place. It abstracts away the details of how to spawn and manage child processes from other parts of the module, providing a clean interface for executing scripts or displaying help information based on user input.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/enrich.mjs"
+  ]
+}

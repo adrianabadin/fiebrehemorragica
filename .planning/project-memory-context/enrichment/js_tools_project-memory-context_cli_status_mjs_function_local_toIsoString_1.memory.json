@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `toIsoString` function is responsible for converting a given value to an ISO 8601 date string. It handles the conversion and checks if the input can be successfully parsed into a Date object. If the input cannot be converted, it returns `null`.\n\n### Primary Inputs\n- **value**: The input that needs to be converted to an ISO 8601 date string. This can be any value that represents a date and time.\n\n### Output\n- **ISO String or null**: If the input is a valid date, it returns its ISO 8601 representation as a string. If the input is not a valid date (e.g., `NaN`), it returns `null`.\n\n### Immediate Dependencies\n- **Date Object**: The function uses JavaScript's built-in `Date` object to handle and manipulate dates.\n- **Number.isNaN()**: This method is used to check if the result of converting the input to a timestamp (using `.getTime()` on the Date object) is NaN (Not-a-Number).\n\n### Role in Module\nThe `toIsoString` function serves as a utility within the module, providing a way to standardize date representations. It ensures that any date passed to it can be consistently converted and validated according to ISO 8601 format, which is widely used for representing dates across different systems and applications. This function enhances the robustness of the module by handling potential invalid inputs gracefully, returning `null` instead of throwing an error.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/status.mjs"
+  ]
+}

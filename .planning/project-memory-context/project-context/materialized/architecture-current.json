@@ -1,0 +1,21 @@
+{
+  "memory_key": "project-context:architecture-current",
+  "title": "Current architecture",
+  "kind": "architecture-current",
+  "source_mode": "detected",
+  "summary": "Pattern: detected-structure. Entry points: none.",
+  "body": "- Pattern: detected-structure\n- Entry points: Not detected",
+  "tags": [
+    "project-context",
+    "project:fiebrehemorragica",
+    "architecture",
+    "current-state"
+  ],
+  "source_files": [],
+  "graph_refs": [],
+  "detected_sources": [],
+  "declared_sources": [],
+  "confidence": "medium",
+  "content_hash": "d95c433d713a2933789f679c897ae86390dab477ca4979bdb7dafb2811bf086a",
+  "updated_at": "2026-05-23T15:44:53.500Z"
+}

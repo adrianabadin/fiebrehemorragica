@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `buildEnrichmentResult` function is responsible for constructing a standardized enrichment result object that encapsulates the key details of a job's state and its associated memory data. This includes extracting relevant information from the job object, such as symbolKey, graphNodeId, codeHash, and more, along with additional inputs like memoryId and semanticSummary.\n\n### Primary Inputs\n- `{ job, memoryId, semanticSummary, status, enrichedAt }`: These are the primary inputs that this function uses to construct the enrichment result object. The `job` input is expected to be an object containing properties such as `symbolKey`, `graphNodeId`, and `codeHash`.\n\n### Output\nThe output of this function is a structured JavaScript object with keys like `symbolKey`, `graphNodeId`, `memoryId`, `codeHash`, `semanticSummary`, `status`, and `enrichedAt`. This object represents the enriched state of a job, tailored for consistent data handling across different modules or systems.\n\n### Immediate Dependencies\n- The function directly depends on the properties of the `job` object (specifically `symbolKey`, `graphNodeId`, and `codeHash`) as well as the provided inputs (`memoryId` and `semanticSummary`).\n\n### Role in Module\nThis function serves as a utility within the module or system that handles job processing and memory enrichment. It ensures that every enriched result from such processes contains all necessary details, facilitating easier integration with other components and maintaining data integrity across different stages of the process.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/memory-payload.mjs"
+  ]
+}

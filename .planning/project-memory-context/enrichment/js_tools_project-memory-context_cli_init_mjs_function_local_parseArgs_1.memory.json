@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `parseArgs` function is responsible for parsing command line arguments to extract the agent type specified by the user. It looks for the `--agent` flag followed by an argument, and if found, it stores this argument as the value of the `agent` property in the result object.\n\n### Primary Inputs\n- **args**: An array of strings representing the command line arguments passed to the script.\n\n### Output\n- **result**: An object with a single property, `agent`, which is either set to the specified agent type or remains `null` if no valid `--agent` argument is found.\n\n### Immediate Dependencies\n- The function directly depends on Node.js built-in modules:\n  - `node:path`: For path manipulation (though not used in this specific implementation).\n  - `node:url`: To convert file URLs to local paths (also not used here).\n\n### Role in Module\nThe `parseArgs` function serves as a utility within the CLI tool for initializing a new project, specifically designed to handle command line arguments related to agent configuration. It is part of the setup process that involves detecting and configuring the type of agent (e.g., template engine) based on user input during initialization.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/init.mjs"
+  ]
+}

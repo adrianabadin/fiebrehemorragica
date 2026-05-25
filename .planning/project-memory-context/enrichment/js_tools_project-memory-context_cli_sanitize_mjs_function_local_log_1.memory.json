@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility:\nThe function `log` serves as a utility for logging messages to the console, specifically prefixed with \"[sanitize]\". This is useful for debugging and informational purposes within the sanitization process of a project.\n\n### Primary Inputs:\n- `msg`: A string or any other type of data that needs to be logged.\n\n### Output:\n- The function prints the log message prefixed by \"[sanitize]\" to the console's error stream (`console.error`).\n\n### Immediate Dependencies:\n- None, as it directly uses `console.error`.\n\n### Role in Module:\nIn the context of the module where this function is defined (presumably a utility or helper function within the project), `log` acts as a simple logging mechanism to report statuses, errors, or other relevant information during the execution of sanitization tasks. This aids developers in understanding and debugging the process by providing clear, timestamped messages prefixed with \"[sanitize]\".",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/sanitize.mjs"
+  ]
+}

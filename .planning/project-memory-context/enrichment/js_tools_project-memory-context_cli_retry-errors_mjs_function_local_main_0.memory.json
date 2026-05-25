@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `main` function is responsible for orchestrating the process of retrying failed enrichment attempts. It handles command line arguments, loads necessary data, configures providers, runs retry loops, and generates a report on the outcomes.\n\n### Primary Inputs\n- Command line arguments (`process.argv`)\n- Path to project root (`projectRoot`)\n- Configuration for local model and base URL (`args.model`, `args.baseUrl`)\n- File paths for worklist and symbol index (`worklistFile`, `symbolIndexFile`)\n\n### Output\n- A JSON report detailing the retry process, including configuration, iterations, symbols recovered/failed, and more.\n- Exit code indicating success or failure (0 for success, 1 for failure).\n\n### Immediate Dependencies\n- Node.js built-in modules: `fs/promises`, `path`, `url`, `os`\n- Custom modules: `../src/enrichment-attempts.mjs`, `../src/enrichment-config.mjs`, `../src/enrichment-driver.mjs`, `../src/providers/*`, `../src/sync-manifest.mjs`, `../src/retry-errors-runner.mjs`\n\n### Role in Module\nThe `main` function serves as the entry point for the retry process, integrating data handling, configuration management, and reporting with external modules to manage the project's enrichment tasks efficiently.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/retry-errors.mjs"
+  ]
+}

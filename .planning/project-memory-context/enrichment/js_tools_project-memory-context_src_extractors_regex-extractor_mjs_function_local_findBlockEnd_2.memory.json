@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `findBlockEnd` is responsible for identifying the index of the line immediately following the closing block (denoted by '}') that matches the opening block at the specified starting index. This is crucial for parsing and understanding the structure of code blocks, such as functions or loops, in a script.\n\n### Primary Inputs\n- `lines`: An array of strings where each string represents a line of code from a file or input source.\n- `startIdx`: The index within the `lines` array at which to begin searching for the closing block.\n\n### Output\n- The function returns an integer representing the index of the line immediately following the matching closing block, or the starting index plus one if no such block is found.\n\n### Immediate Dependencies\n- None explicitly listed in the provided code snippet; however, it implicitly depends on looping through each character in each string within `lines` and checking for '{' and '}' to manage depth and detect blocks correctly.\n\n### Role in Module\nIn the module where this function resides (`regex-extractor.mjs`), `findBlockEnd` plays a critical role in managing and navigating code structures, particularly through the use of nested braces that define scopes (functions, loops, etc.). This is essential for tasks such as parsing or transforming code based on these structural properties, which might include regex matching or more complex syntax analysis depending on how it's integrated into broader tooling.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/extractors/regex-extractor.mjs"
+  ]
+}

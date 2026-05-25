@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `detectRulesContext` is responsible for extracting rules from the provided README text. It identifies sentences that start with \"use\", \"avoid\", or \"keep\" (case insensitive), and considers them as potential rules. These extracted rules are then returned in a structured format.\n\n### Primary Inputs\n- **readmeText**: A string representing the content of the README file, which is expected to contain instructions or guidelines for some project context.\n\n### Output\n- **rules**: An array of strings where each string represents a rule extracted from the `readmeText`. Each rule is trimmed of leading and trailing whitespace.\n\n### Immediate Dependencies\n- None explicitly listed in the code snippet, but it uses JavaScript's asynchronous functions (`async`/`await`) which are part of ES2017 and may imply dependencies on environments that support these features.\n\n### Role in Module\nThis function serves as an extractor for rules from a README file. It is likely used within a larger module or application to automate the extraction of project-specific guidelines, making it easier to manage and analyze these rules programmatically.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/extractors/rules-extractor.mjs"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `writeMcpJson` function is responsible for creating or updating the `.mcp.json` file in the project root directory. This JSON file contains configuration data related to MCP (Module Context Provider) servers, which are merged with any existing configuration present in the file. If the file does not exist, it will be created with the new configuration.\n\n### Primary Inputs\n- `projectRoot`: A string representing the path to the project root directory where the `.mcp.json` file should be located or created.\n- `installState`: An object containing state information about the installation which is used to build the MCP server configuration.\n\n### Output\n- The function returns a promise that resolves with the path to the newly created or updated `.mcp.json` file.\n\n### Immediate Dependencies\n- Node.js's `fs/promises` module for filesystem operations (readFile, writeFile).\n- Node.js's `path` module for handling and transforming file paths.\n- Custom modules:\n  - `./artifacts.mjs`: Provides utility functions related to project artifacts, including ensuring the necessary directories exist and writing JSON artifacts.\n  - `./enrichment-config.mjs`: Defines constants such as `PMC_ENRICHMENT_CONFIG_FILE`.\n\n### Role in Module\nThe `writeMcpJson` function serves as a utility to manage the configuration file for MCP servers within the project. It ensures that any existing configuration is preserved and merged with new settings based on the current installation state, providing a flexible way to update or initialize this configuration without overwriting other parts of the configuration file. This function is crucial for maintaining consistent configurations across different stages of the project lifecycle.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/setup-bootstrap.mjs"
+  ]
+}

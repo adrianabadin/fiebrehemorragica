@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `parseArgs` function is responsible for parsing command line arguments to extract the desired format and the main question. It processes the input arguments, handles specific flags like `--format`, validates their values, and constructs a structured output containing the format and the concatenated question parts.\n\n### Primary Inputs\n- **args**: An array of strings representing the command line arguments passed to the script.\n\n### Output\n- **{ format, question }**: An object with two properties:\n  - `format`: A string indicating the desired output format ('text' or 'json').\n  - `question`: A string that is a concatenation and trimming of all non-flag arguments.\n\n### Immediate Dependencies\n- **node:fs/promises**: Used for potential future file system operations (not used in this function).\n- **node:path**: Provides utilities to work with filesystem paths (`dirname`, `join`, `resolve`).\n- **node:url**: Converts URL objects to and from file paths (`fileURLToPath`).\n- **../src/query/orchestrator.mjs**: Imports for potential future use in the module (not used directly here).\n\n### Role in Module\nThe `parseArgs` function serves as a utility within the CLI tool, facilitating the parsing of arguments to provide clear and consistent input for further processing or execution based on the parsed information.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/query.mjs"
+  ]
+}

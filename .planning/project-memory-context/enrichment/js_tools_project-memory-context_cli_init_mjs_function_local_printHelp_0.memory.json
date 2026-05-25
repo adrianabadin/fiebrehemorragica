@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `printHelp` function is responsible for providing usage instructions and information about the supported agent types for the CLI tool, specifically designed to manage project memory contexts. It serves as a guide on how to use the command line interface (CLI) to initialize different types of agents that this tool supports.\n\n### Primary Inputs\nThe primary input for `printHelp` is not explicitly defined in terms of parameters since it simply prints information to the console, but conceptually, no explicit inputs are required at the function call level. However, indirectly, the command line arguments might be considered as implicit inputs that determine what kind of help message should be displayed (e.g., which agent type was specified).\n\n### Output\nThe output is a series of text messages printed to the console, detailing how to use the CLI tool and specifying the available options for initializing different types of agents. This includes command usage syntax and supported agent types with brief descriptions.\n\n### Immediate Dependencies\n- **`console.log`**: Used within `printHelp` to output the help message directly to the terminal where the command was executed.\n\n### Role in Module\nIn this specific module, `printHelp` plays a crucial role as it is part of the CLI interface provided by the tool. It helps users understand how to interact with the application and what options are available for initializing various types of agents. This function enhances user experience by providing immediate guidance on using the CLI effectively without requiring prior knowledge about the internal workings or command syntax of the module.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/init.mjs"
+  ]
+}

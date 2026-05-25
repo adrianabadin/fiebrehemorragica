@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `findByFilePathAndName` function is responsible for locating a specific symbol within a graph of nodes based on its file path and name. It performs the following tasks:\n1. Normalizes the file paths to ensure consistent comparisons.\n2. Filters the graph nodes to find those that match the given file path.\n3. Searches among the filtered nodes for an exact match or an inferable match (based on kind) of the symbol's name.\n4. If no exact or inferable match is found, it searches for a normalized label match.\n5. Returns the matched node if found, otherwise returns `null`.\n\n### Primary Inputs\n- **graph**: An object representing the graph containing nodes.\n- **symbol**: An object containing at least two properties:\n  - `filePath`: A string representing the file path of the symbol.\n  - `name`: A string representing the name of the symbol.\n  - `kind`: (optional) A string representing the kind of the symbol, used for inferring matches.\n\n### Output\n- An object representing a node from the graph that matches the given file path and name, or `null` if no match is found.\n\n### Immediate Dependencies\n- **normalizePath**: A function to normalize file paths for consistent comparisons.\n- **extractLabelFromGraphify**: A function to extract and clean label text from nodes.\n- **inferKindFromLabel**: A function to infer the kind of a symbol based on its label.\n\n### Role in Module\nThis function serves as a core utility within the module, facilitating the retrieval of specific symbols by their file path and name. It helps maintain organization and efficiency when managing large sets of nodes and their associated metadata.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/graph-node-resolver.mjs"
+  ]
+}

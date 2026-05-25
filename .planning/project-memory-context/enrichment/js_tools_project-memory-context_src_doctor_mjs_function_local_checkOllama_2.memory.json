@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `checkOllama` is responsible for checking the availability and connectivity of an Ollama server. It does this by attempting to fetch a list of tags from the specified base URL, which typically indicates the health and accessibility of the server.\n\n### Primary Inputs\n- **env**: An environment object that should contain at least `PMC_LOCAL_MODEL_BASE_URL` for the base URL of the Ollama server. If this is not provided, it defaults to a known value (`DEFAULT_OLLAMA_URL`).\n- **fetchImpl**: A fetch implementation (presumably from Node.js's `node:fetch`) used to make HTTP requests to the Ollama server.\n\n### Output\nThe function returns an object with three properties:\n- **name**: Always 'ollama', indicating the service being checked.\n- **status**: One of 'ok' if the request was successful, or 'warn' if it failed or timed out.\n- **message**: A descriptive string that either confirms reachability and success or indicates failure and fallback mode.\n\n### Immediate Dependencies\n- `node:fs/promises` for file system operations (not directly used here but could be relevant in other contexts).\n- `fetchImpl` from the environment, presumably a function to make HTTP requests.\n\n### Role in Module\nThis function plays a crucial role in ensuring that the application can interact with an Ollama server and provides feedback on its connectivity status. It is particularly important for diagnosing issues related to local model deployment or configuration problems early during runtime, allowing for prompt adjustments or fallback mechanisms if necessary.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/doctor.mjs"
+  ]
+}

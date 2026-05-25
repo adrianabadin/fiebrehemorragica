@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `runProjectContextCli` is responsible for orchestrating the creation or refreshing of a project's memory context. It determines whether to bootstrap (initialize) or refresh an existing project context based on the presence of the `refresh` option in the input parameters. This function ensures that all necessary directories are set up and manages interactions with other modules to build or update the project's contextual data.\n\n### Primary Inputs\n- **projectRoot**: A string representing the root directory of the project, which is where the file system operations will be performed.\n- **options**: An optional object that can include a `refresh` flag to determine if an existing context should be refreshed rather than bootstrapped from scratch.\n\n### Output\n- This function does not return any direct output but performs actions such as setting up directories, reading or writing files, and interacting with other modules for data extraction and artifact management.\n\n### Immediate Dependencies\n- **ensureProjectMemoryContextDirs**: Ensures that the necessary directories for storing project context are present.\n- **runRefresh** (if `refresh` is true): Refreshes the existing project context by re-running extractors and materializers to update data.\n- **runBootstrap** (if `refresh` is false or not provided): Initializes a new project context by running necessary extractors and creating initial artifacts.\n\n### Role in Module\nThis function serves as an entry point for CLI commands related to managing project memory contexts, coordinating with other modules to ensure that the contextual data is accurate and up-to-date based on user actions or conditions specified through command line options. It abstracts the process of initializing or updating a project's context by leveraging various internal functions designed for specific tasks like extracting metadata from files or directories, managing file system operations, and rendering outputs in markdown format if needed.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/project-context.mjs"
+  ]
+}

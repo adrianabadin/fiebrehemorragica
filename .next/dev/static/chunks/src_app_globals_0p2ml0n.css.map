@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/aabad/Documents/CODE/fiebrehemorragica/src/app/globals.css"],"sourcesContent":[":root {\n  --primary: #00A4E4;\n  --secondary: #00558C;\n  --accent: #D92378;\n  --success: #28A745;\n  --background: #F8F9FA;\n  --surface: #FFFFFF;\n  --border: #E9ECEF;\n  --text-main: #333333;\n  --text-muted: #6C757D;\n  --radius-md: 4px;\n  --spacing-card: 24px;\n  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);\n}\n\nbody {\n  margin: 0;\n  background: var(--background);\n  color: var(--text-main);\n  font-family: Roboto, sans-serif;\n}"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;AAeA"}}]
-}

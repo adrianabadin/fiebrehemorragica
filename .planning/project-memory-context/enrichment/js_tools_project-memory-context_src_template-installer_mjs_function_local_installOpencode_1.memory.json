@@ -1,0 +1,11 @@
+{
+  "content": " ### Structured Explanation of `installOpencode` Function\n\n#### Responsibility\nThe `installOpencode` function is responsible for installing or updating specific templates and configuration files related to an \"opencode\" project. It ensures that the necessary command templates, agent configurations, and skill definitions are placed in predefined directories within a global configuration directory or directly into the project's root folder as specified by the user.\n\n#### Primary Inputs\n- **projectRoot**: The path where the main project files reside. This is where `AGENTS.md` will be updated if it exists.\n- **packageRoot**: The base directory from which templates are read.\n- **placeholders**: A set of key-value pairs used to replace placeholders in template files with actual data.\n- **globalConfigDir**: The path where all global configuration files (commands, agents, skills) will be stored.\n\n#### Output\nThe function does not return a value but performs file system operations including reading from and writing to the filesystem based on the provided inputs and templates.\n\n#### Immediate Dependencies\n- **fs/promises**: For asynchronous file system operations like `mkdir`, `readFile`, and `writeFile`.\n- **fs**: Specifically for checking if a file exists with `existsSync`.\n- **path**: Utilized via `dirname` to get the directory name of a path, and `join` to construct paths.\n- **url**: For converting file URLs to local paths using `fileURLToPath`.\n\n#### Role in Module\nThis function acts as an installer for specific templates related to an \"opencode\" project setup. It dynamically handles multiple types of files (command templates, agent configurations, skill definitions) and ensures they are placed correctly based on the provided configuration and user inputs. This makes it a crucial part of the tool's functionality for setting up or updating a project environment according to predefined templates.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/template-installer.mjs"
+  ]
+}

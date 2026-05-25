@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `makePlugins` function is responsible for generating an array of Babel plugins based on the file extension provided. It determines whether to include specific plugins (like 'decorators' and 'typescript') depending on the file type indicated by its extension.\n\n### Primary Inputs\n- **ext**: This is a string representing the file extension, which could be '.js', '.jsx', or '.ts'.\n\n### Output\n- An array of strings where each string represents a Babel plugin to be used for parsing the corresponding JavaScript or TypeScript files. The output will include 'decorators' by default and may include additional plugins based on whether the file extension is associated with JSX or TypeScript.\n\n### Immediate Dependencies\n- **TS_EXTENSIONS**: A set containing strings that represent TypeScript file extensions (e.g., '.ts', '.tsx').\n- **JSX_EXTENSIONS**: A set containing strings that represent JSX file extensions (e.g., '.jsx', '.tsx').\n\n### Role in Module\nThe `makePlugins` function serves as a utility to dynamically configure Babel's parsing behavior based on the nature of the files being processed, ensuring that appropriate plugins are included for handling decorators and TypeScript syntax if required by the file type. This modular approach allows flexibility in adapting the tooling to different types of JavaScript or TypeScript projects without hardcoding specific configurations.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/extractors/js-ts-extractor.mjs"
+  ]
+}

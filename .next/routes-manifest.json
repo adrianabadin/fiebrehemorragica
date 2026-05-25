@@ -42,10 +42,58 @@
       "namedRegex": "^/_not\\-found(?:/)?$"
     },
     {
+      "page": "/api/admin/calendar/block",
+      "regex": "^/api/admin/calendar/block(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/calendar/block(?:/)?$"
+    },
+    {
+      "page": "/api/admin/calendar/day",
+      "regex": "^/api/admin/calendar/day(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/calendar/day(?:/)?$"
+    },
+    {
+      "page": "/api/admin/schedule-rules",
+      "regex": "^/api/admin/schedule\\-rules(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/schedule\\-rules(?:/)?$"
+    },
+    {
+      "page": "/api/auth/login",
+      "regex": "^/api/auth/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/login(?:/)?$"
+    },
+    {
+      "page": "/api/auth/logout",
+      "regex": "^/api/auth/logout(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/logout(?:/)?$"
+    },
+    {
+      "page": "/api/auth/register",
+      "regex": "^/api/auth/register(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/register(?:/)?$"
+    },
+    {
       "page": "/api/solicitar-turno",
       "regex": "^/api/solicitar\\-turno(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/api/solicitar\\-turno(?:/)?$"
+    },
+    {
+      "page": "/login",
+      "regex": "^/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/register",
+      "regex": "^/register(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/register(?:/)?$"
     }
   ],
   "dataRoutes": [],

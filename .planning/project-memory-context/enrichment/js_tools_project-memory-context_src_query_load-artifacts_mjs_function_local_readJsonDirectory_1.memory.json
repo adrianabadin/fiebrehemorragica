@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `readJsonDirectory` function is responsible for reading the contents of a directory and filtering out only those files that are JSON files. It then returns an array of the names of these JSON files, sorted alphabetically. This function abstracts the process of listing and filtering files within a directory based on their extension, providing a straightforward interface for accessing JSON files in a given directory path.\n\n### Primary Inputs\n- `directoryPath`: A string representing the path to the directory whose contents need to be read.\n\n### Output\n- An array of strings, each being the name of a JSON file found within the specified directory. If no JSON files are found or if there is an error accessing the directory (excluding cases where the directory does not exist), it returns an empty array.\n\n### Immediate Dependencies\n- `readdir`: From Node.js's fs/promises module, used to read the contents of the directory.\n- `readFile`: From Node.js's fs/promises module, potentially used if more detailed file content checks are needed (though not utilized in this specific implementation).\n- `join`: From Node.js's path module, used for constructing full paths to files within the directory.\n\n### Role in Module\nThis function serves as a utility that abstracts the process of querying and filtering JSON files from a specified directory. It encapsulates file system operations into an easy-to-use asynchronous function, making it easier for other parts of the application to access JSON data stored in directories without having to handle low-level details such as error handling or path management. This modular approach enhances code reusability and maintainability across different modules that might need similar functionality.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/query/load-artifacts.mjs"
+  ]
+}

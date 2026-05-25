@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `fileExists` function is responsible for checking if a file exists at the specified path. It abstracts the asynchronous nature of Node.js's `fs.access` method into an async function, making it easier to use within async/await workflows.\n\n### Primary Inputs\n- **filePath**: A string representing the path to the file whose existence needs to be checked.\n\n### Output\n- **boolean**: Returns `true` if the file exists at the given path, otherwise returns `false`.\n\n### Immediate Dependencies\n- **node:fs** (imported as `{ access }`): Provides the method used to check for file existence.\n- **node:util/promises** (implicitly via `access`): To ensure compatibility with async/await syntax.\n\n### Role in Module\nThis function is part of a utility module that handles filesystem operations, aiding in tasks such as artifact reading and writing, ensuring the integrity of data storage and retrieval processes within the application.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/context.mjs"
+  ]
+}

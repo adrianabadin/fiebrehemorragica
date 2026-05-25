@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `tokenize` function is responsible for converting the input string into an array of tokens, where each token consists of lowercase alphanumeric characters and has at least 2 characters. This process involves:\n1. Converting the entire string to lowercase.\n2. Splitting the string by non-alphanumeric characters (excluding letters and numbers).\n3. Trimming any whitespace from individual tokens.\n4. Filtering out tokens that are shorter than 2 characters.\n\n### Primary Inputs\n- `value`: The input string that needs to be tokenized.\n\n### Output\n- An array of strings, where each string is a token meeting the specified criteria (lowercase alphanumeric and at least 2 characters long).\n\n### Immediate Dependencies\n- None explicitly listed in the code snippet provided; however, it assumes `String` and `Array.prototype` methods are available globally or via module imports.\n\n### Role in Module\nThe `tokenize` function serves as a utility to preprocess input data (in this case, strings) for further processing within the module, such as querying or analyzing text data more effectively by breaking it down into manageable tokens. This function is crucial for tasks that require detailed analysis of textual content, including search functionalities, keyword extraction, and similar applications where tokenization is a fundamental step.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/query/orchestrator.mjs"
+  ]
+}

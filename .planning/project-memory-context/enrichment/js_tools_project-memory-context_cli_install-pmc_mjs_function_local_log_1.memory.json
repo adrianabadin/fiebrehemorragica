@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `log` function is responsible for logging messages to the console, specifically prefixed with \"[install-pmc]\" and colored red (using `console.error`), which helps in distinguishing between regular logs and error messages during development or debugging sessions.\n\n### Primary Inputs\n- **msg**: A string that represents the message to be logged. This is the only input parameter for this function.\n\n### Output\n- The output of the `log` function is a side effect, which is displaying the provided message prefixed with \"[install-pmc]\" in red text on the console. There is no explicit return value.\n\n### Immediate Dependencies\n- **node:path**: Used for resolving and joining file paths.\n- **node:url**: Converts URL objects to file paths, which are used here to handle module paths correctly.\n\n### Role in Module\nThe `log` function serves as a utility or helper function within the module `tools/project-memory-context/cli/install-pmc.mjs`. It is likely used throughout the script for logging important steps or debugging information, making it easier to trace and understand what's happening during execution without cluttering the main logic with console logs.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/install-pmc.mjs"
+  ]
+}

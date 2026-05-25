@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `main` function is responsible for handling command line arguments, validating the target project directory, and orchestrating the copying of PMC tools into the specified target project.\n\n### Primary Inputs\n- Command line arguments (`process.argv`)\n- Default source root (`DEFAULT_SOURCE_ROOT`)\n\n### Output\n- Help message (if `--help` or `-h` is provided)\n- Error messages and status codes based on directory existence checks\n- Summary of copied files and directories\n\n### Immediate Dependencies\n- Node.js built-in modules: `process`, `path`, `url`\n- Custom module: `existsSync` (assumed to be available for checking directory existence)\n\n### Role in Module\nThe `main` function serves as the entry point for the PMC installation tool, providing a user interface and orchestrating the data flow between argument parsing, directory operations, and output reporting.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/install-pmc.mjs"
+  ]
+}

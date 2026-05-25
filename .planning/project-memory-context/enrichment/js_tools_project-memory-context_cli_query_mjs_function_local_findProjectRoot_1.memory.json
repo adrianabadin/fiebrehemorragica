@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `findProjectRoot` function is responsible for determining the root directory of a project by searching up the directory tree from the provided starting directory. It looks for a specific file (`.planning/project-memory-context/install.json`) that indicates the presence of a project. If this file is found, it returns the current directory as the project root; otherwise, it continues to search in parent directories until it reaches the filesystem root or finds the file.\n\n### Primary Inputs\n- `startDir` (optional): The starting directory from which to begin searching for the project root. Defaults to the current working directory (`process.cwd()`).\n\n### Output\n- A string representing the path to the project root if found, or `null` if no such file is found in the directory hierarchy up to the filesystem root.\n\n### Immediate Dependencies\n- **Node.js Core Modules**:\n  - `node:fs/promises`: Provides the `access` function for checking file existence asynchronously.\n  - `node:path`: Provides utilities (`dirname`, `join`, `resolve`) for manipulating and transforming file paths.\n  - `node:url`: Converts file URLs to local paths, used here to convert module URLs to filesystem paths.\n\n### Role in Module\nThis function serves as a utility within the module to locate the root directory of a project based on its internal structure (specifically looking for the presence of `.planning/project-memory-context/install.json`). It is part of the CLI tool's functionality, aiding in setting up or interacting with a specific project environment by locating key configuration files and directories.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/query.mjs"
+  ]
+}

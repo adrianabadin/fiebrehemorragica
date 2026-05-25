@@ -1,0 +1,11 @@
+{
+  "content": " ### Structured Explanation of `resolvePythonBin` Function\n\n#### Responsibility\nThe function `resolvePythonBin` is responsible for determining the appropriate Python binary to use based on the platform and, optionally, a provided implementation of `execFileSync`. It aims to find and return the correct Python executable (`python3` or `python`) that matches the system's architecture.\n\n#### Primary Inputs\n- **options**: An object containing optional parameters:\n  - **platform**: Specifies the operating system platform (default is `process.platform`).\n  - **execFileSyncImpl**: A custom implementation of `execFileSync` for testing or environment differences (default is `execFileSync` from Node.js).\n\n#### Output\n- The function returns a string representing the Python binary:\n  - If the platform is Windows (`win32`), it returns `'python'`.\n  - Otherwise, it attempts to execute `python3 --version` using the provided or default implementation of `execFileSync`. If successful, it returns `'python3'; otherwise, it defaults back to `'python'`.\n\n#### Immediate Dependencies\n- **Node.js Core Modules**:\n  - `node:child_process`: For executing child processes (used here for testing the Python version).\n  - `node:fs`: For file system operations (though not directly used in this function, it is imported as part of Node.js core modules).\n  - `node:os`: Provides access to operating system functionalities (used for platform detection).\n  - `node:path`: Handles and transforms file paths (imported but primarily used for path resolution within the module).\n\n#### Role in Module\nThis function serves as a utility to abstract the decision-making process of which Python binary to use based on the OS, providing flexibility through optional parameters for testing or environment differences. It simplifies the main logic by encapsulating the determination into a single function call, making it easier to manage and test across different environments.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/platform.mjs"
+  ]
+}

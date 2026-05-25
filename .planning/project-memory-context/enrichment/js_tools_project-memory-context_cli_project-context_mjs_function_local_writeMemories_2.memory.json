@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `writeMemories` function is responsible for writing memory artifacts to the file system. It takes an object containing directory paths (`dirs`) and an array of memory objects (`memories`). Each memory object contains metadata about its type (e.g., 'kind') and data that needs to be written to files.\n\n### Primary Inputs\n- `dirs`: An object containing paths to the project context materialization and markdown directories.\n- `memories`: An array of objects, each representing a memory with properties like `kind` and possibly other metadata specific to the type of memory being handled.\n\n### Output\nThe function outputs nothing directly but performs file system operations that result in the creation or updating of files based on the provided memories.\n\n### Immediate Dependencies\n- Node.js built-in modules:\n  - `node:path` for path manipulation (e.g., joining paths).\n  - `node:fs/promises` for file system operations like reading and writing files.\n  - `node:crypto` for creating a hash (though not used in this function directly, it's imported from the module).\n- Custom modules within the project:\n  - `../src/artifacts.mjs`: For writing JSON artifacts to disk.\n  - `../src/markdown-renderer.mjs`: To generate markdown content for each memory kind.\n\n### Role in Module\nThe `writeMemories` function plays a crucial role in the project's artifact generation and output process, particularly in managing how data specific to different kinds of memories (as defined by their `kind`) is persisted across file system operations. This function ensures that both JSON and Markdown representations of each memory type are created or updated as needed, facilitating easier access and analysis of these artifacts later in the project lifecycle.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/project-context.mjs"
+  ]
+}

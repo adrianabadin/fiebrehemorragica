@@ -1,0 +1,22 @@
+{
+  "memory_key": "project-context:technical-rules",
+  "title": "Technical rules",
+  "kind": "technical-rules",
+  "source_mode": "merged",
+  "summary": "",
+  "body": "",
+  "tags": [
+    "project-context",
+    "project:fiebrehemorragica",
+    "rules"
+  ],
+  "source_files": [
+    "README.md"
+  ],
+  "graph_refs": [],
+  "detected_sources": [],
+  "declared_sources": [],
+  "confidence": "medium",
+  "content_hash": "6d4c68abcca6fc2582b17822e3912dab55f9fdaef97c766d999e67d91ab9543e",
+  "updated_at": "2026-05-23T15:44:53.500Z"
+}

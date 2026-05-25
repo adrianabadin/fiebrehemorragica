@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `buildOpencodeMcpConfig` is responsible for constructing and returning the MCP (Memory Context Provider) configuration object based on the provided `installState`. This configuration includes settings such as the type of agent, command to run, whether it's enabled, and environment variables specific to the installation state.\n\n### Primary Inputs\n- **installState**: An object containing paths and other relevant information needed for configuring the MCP settings. Specifically:\n  - `installState.memoryDbPath`: Path to the memory database.\n  - `installState.embeddingCachePath` (optional): Path to the embedding cache, which can be omitted if not provided.\n\n### Output\n- An object representing the MCP configuration with properties like:\n  - `mcp`: A nested object containing details for the 'agent-memory' configuration.\n    - `type`: Set to 'local'.\n    - `command`: An array specifying the command to run, including the tool '@aabadin/agent-memory-mcp'.\n    - `enabled`: Boolean set to true.\n    - `environment`: An object containing environment variables for the MCP setup:\n      - `MEMORY_DB_PATH`: Set to `installState.memoryDbPath`.\n      - `EMBEDDING_CACHE_PATH` (optional): Set if `installState.embeddingCachePath` is provided, otherwise omitted.\n\n### Immediate Dependencies\n- The function directly depends on the existence of `installState` which includes:\n  - `memoryDbPath`: A required property for setting up the memory database path in the environment.\n  - `embeddingCachePath` (optional): An optional property to set the embedding cache path, enhancing configuration flexibility based on setup needs.\n\n### Role in Module\nThis function plays a crucial role in configuring and initializing the MCP settings during the project's setup or bootstrap process. It ensures that all necessary paths for databases and caching are correctly configured according to the provided `installState`, facilitating smooth operation of the memory context provider as specified by the tool '@aabadin/agent-memory-mcp'.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/setup-bootstrap.mjs"
+  ]
+}

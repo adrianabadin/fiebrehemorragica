@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `extractKotlin` function is responsible for extracting Kotlin class and function symbols from a list of lines of code. It identifies classes and functions using regular expressions, determines their visibility (exported or local), and constructs symbol objects with relevant metadata such as file path, kind, name, export status, and parameter count.\n\n### Primary Inputs\n- `lines`: An array of strings where each string represents a line of code from the source file.\n- `filePath`: A string representing the file path of the source file being processed.\n\n### Output\n- `symbols`: An array of objects, each representing a symbol (class or function) extracted from the input lines. Each object contains metadata about the symbol such as its kind, name, export status, and parameter count.\n\n### Immediate Dependencies\n- Regular Expressions: `/^(?:(?:public|private|protected|internal|abstract|open|sealed|data|inline|value|enum)\\s+)*(?:class|object|interface)\\s+(\\w+)/` for classes and `/(?:(?:public|private|protected|internal|override|suspend|inline|operator|infix|tailrec|external)\\s+)*fun\\s+(?:<[^>]+>\\s+)?(?:\\w+\\s*\\.\\s*)?(\\w+)\\s*(?:<[^>]+>)?\\s*\\(([^)]*)\\)/` for functions.\n- Helper function `makeSymbol`: Constructs a symbol object with the provided metadata.\n- Utility function `findBlockEnd`: Determines the end of the block (class or method) to accurately determine local vs exported status.\n\n### Role in Module\nThe `extractKotlin` function plays a crucial role in the module by providing an automated way to extract class and function symbols from Kotlin source files, which can be used for further analysis or documentation generation within the toolset. It simplifies the process of identifying and categorizing different elements of the codebase, making it easier to manage and understand the structure and relationships between components.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/extractors/regex-extractor.mjs"
+  ]
+}

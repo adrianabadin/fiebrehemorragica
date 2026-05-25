@@ -42,16 +42,26 @@ export async function POST(request: Request) {
       },
     });
 
-    if (futureAppointments.length > 0) {
-      await rescheduleAppointments(futureAppointments);
+    const validAppointments = futureAppointments
+      .filter((a): a is typeof a & { scheduledAt: Date } => a.scheduledAt !== null)
+      .map((a) => ({
+        id: a.id,
+        scheduledAt: a.scheduledAt,
+        email: a.email,
+        firstName: a.firstName,
+        lastName: a.lastName,
+      }));
+
+    if (validAppointments.length > 0) {
+      await rescheduleAppointments(validAppointments);
     }
 
     return NextResponse.json(rule);
   } catch (error) {
     if (error instanceof z.ZodError) {
-      return NextResponse.json({ error: error.errors }, { status: 400 });
+      return NextResponse.json({ error: error.message }, { status: 400 });
     }
-    if (error.message === "No autenticado") {
+    if (error instanceof Error && error.message === "No autenticado") {
       return NextResponse.json({ error: "No autenticado" }, { status: 401 });
     }
     return NextResponse.json({ error: "Error interno" }, { status: 500 });

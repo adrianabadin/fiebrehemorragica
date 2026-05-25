@@ -1,0 +1,11 @@
+{
+  "content": " ### Structured Explanation of `findBySymbolKey` Function\n\n#### Responsibility\nThe function `findBySymbolKey` is responsible for searching through the nodes of a graph structure to find a node that matches a given symbol key. It aims to locate any node within the graph where either the direct property `symbolKey` or an indirectly accessed metadata property (`getNodeMetadata(node).symbolKey`) equals the provided `symbolKey`.\n\n#### Primary Inputs\n- **graph**: An object representing the graph structure, expected to contain nodes which might have a `symbolKey` property.\n- **symbolKey**: A string identifier used for matching against either direct or indirect `symbolKey` properties in the graph nodes.\n\n#### Output\n- The function returns:\n  - The first node that matches the `symbolKey` (either directly on the node or via its metadata).\n  - If no such node is found, it returns `null`.\n\n#### Immediate Dependencies\n- **getNodeMetadata(node)**: A utility function assumed to be defined elsewhere in the module or imported from another module. This function extracts and returns the metadata object associated with a given graph node. The exact implementation details of `getNodeMetadata` are not provided here but are necessary for this function to operate correctly.\n\n#### Role in Module\n- **Graph Navigation**: This function serves as a utility to navigate through complex graph structures, specifically designed to locate nodes based on symbolic keys. It enhances the functionality of traversing and querying such graphs by providing a straightforward method to find specific nodes using their unique symbol identifiers.\n\nThis function is crucial for any operations that require accessing or manipulating elements in a graph database where each node might be identified by multiple possible properties, including its own direct property (`symbolKey`) and indirectly via metadata associated with it.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/graph-node-resolver.mjs"
+  ]
+}

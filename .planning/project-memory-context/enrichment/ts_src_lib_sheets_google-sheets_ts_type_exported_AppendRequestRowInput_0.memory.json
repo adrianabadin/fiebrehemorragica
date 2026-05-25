@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `AppendRequestRowInput` type is responsible for defining the structure of data that will be appended to a Google Sheets spreadsheet. This includes all necessary fields such as personal details (first name, last name), identification documents (document type and number), and contact information (email and phone).\n\n### Primary Inputs\n- `requestId`: A unique identifier for the request.\n- `createdAtIso`: The date and time when the request was created, formatted in ISO 8601 format.\n- `firstName`: The first name of the individual associated with the request.\n- `lastName`: The last name of the individual associated with the request.\n- `documentType`: The type of identification document (e.g., passport, ID card).\n- `documentNumber`: The number of the identification document.\n- `email`: The email address of the individual.\n- `phone`: The phone number of the individual.\n\n### Output\nThis type does not directly produce an output but is used to structure data that will be sent or appended in a Google Sheets spreadsheet.\n\n### Immediate Dependencies\n- `google` from the \"googleapis\" package: This dependency is necessary for interacting with Google Sheets API, although it's only imported and not directly used within this type definition.\n\n### Role in Module\nThe `AppendRequestRowInput` type serves as a data transfer object (DTO) that encapsulates all relevant information needed to create or append a new row of data in the Google Sheets spreadsheet. This type is likely used when making requests to add entries to the sheet, ensuring consistency and correctness of the data being added.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "ts",
+    "type",
+    "project:fiebrehemorragica",
+    "file:src/lib/sheets/google-sheets.ts"
+  ]
+}

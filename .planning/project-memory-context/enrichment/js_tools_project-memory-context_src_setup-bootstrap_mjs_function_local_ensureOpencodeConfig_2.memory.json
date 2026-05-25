@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `ensureOpencodeConfig` function is responsible for ensuring that the project has an `.opencode/opencode.json` configuration file, which includes necessary configurations for the `@aabadin/project-memory-context` plugin. This function sets up and manages the configuration for the specified plugin within the project's directory structure.\n\n### Primary Inputs\n1. **projectRoot**: The root directory of the project where the `.opencode` directory will be created or already exists.\n2. **installState**: An object that contains information about the installation state, which is used to build specific configurations for the plugin.\n\n### Output\n- **configPath**: A string representing the path to the `opencode.json` file within the `.opencode` directory. This file will be created if it does not exist or updated with necessary configurations if it exists.\n\n### Immediate Dependencies\n1. **node:fs/promises**: For filesystem operations like creating directories and writing files.\n2. **node:path**: To handle and manipulate file paths.\n3. **./artifacts.mjs**: Specifically, `ensureProjectMemoryContextDirs` and `writeJsonArtifact`, which are used to ensure the existence of necessary directories and write JSON data respectively.\n4. **./enrichment-config.mjs**: For the constant `PMC_ENRICHMENT_CONFIG_FILE`.\n\n### Role in Module\nThis function plays a crucial role in setting up and maintaining project configurations, particularly for plugins that manage memory contexts within the project. It ensures that the `.opencode/opencode.json` file is present with necessary plugin configurations and handles updates to this configuration based on runtime states or requirements.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/setup-bootstrap.mjs"
+  ]
+}

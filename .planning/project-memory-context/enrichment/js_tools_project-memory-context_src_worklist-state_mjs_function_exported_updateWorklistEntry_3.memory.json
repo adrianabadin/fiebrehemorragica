@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `updateWorklistEntry` function is responsible for updating an entry within a worklist based on the provided symbol key. It ensures that only the specified entry (identified by its unique symbol key) is modified, while all other entries remain unchanged. This functionality is crucial for maintaining and manipulating lists of items where each item can be uniquely identified and potentially updated with new properties or values.\n\n### Primary Inputs\n- `worklist`: An array representing the worklist which may contain multiple entries. Each entry is expected to have a property called `symbolKey` that serves as its unique identifier.\n- `symbolKey`: A value used to identify the specific entry within the worklist that needs to be updated.\n- `updates`: An object containing properties and their new values that will replace or augment the existing data of the identified entry in the worklist.\n\n### Output\nThe function returns a new array identical to the input `worklist` except that the entry with the matching `symbolKey` is replaced (or updated) according to the provided `updates`. If no entry matches the `symbolKey`, the original list is returned unchanged.\n\n### Immediate Dependencies\n- The function relies on JavaScript's array methods (`map`) and object spread operator (`...`), which are native to ES6, making it compatible with environments that support these features.\n\n### Role in Module\nThis function plays a pivotal role in managing state or data structures within the module `tools/project-memory-context/src/worklist-state.mjs`. It encapsulates the logic for modifying specific entries in a list based on unique identifiers, which can be used throughout the module and potentially other parts of the application where similar functionality is required. This modular approach promotes code reuse and maintainability by abstracting complex update operations into reusable functions.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/worklist-state.mjs"
+  ]
+}

@@ -10,6 +10,7 @@ export default function RegisterPage() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -29,9 +30,10 @@ export default function RegisterPage() {
         throw new Error(data.error || "Error al registrar");
       }
 
-      // Si se registra bien, puede loguear o mandar al login
-      router.push("/login");
-      router.refresh();
+      setSuccess("Cuenta creada correctamente. Redirigiendo...");
+      setTimeout(() => {
+        router.push("/login");
+      }, 1500);
     } catch (err: any) {
       setError(err.message);
     } finally {
@@ -44,6 +46,7 @@ export default function RegisterPage() {
       <div className={styles.card}>
         <h1 className={styles.title}>Crear Cuenta</h1>
         {error && <div style={{ color: "red", marginBottom: "16px", textAlign: "center" }}>{error}</div>}
+        {success && <div style={{ color: "green", marginBottom: "16px", textAlign: "center" }}>{success}</div>}
         <form onSubmit={handleSubmit}>
           <div className={styles.formGroup}>
             <label htmlFor="username" className={styles.label}>Usuario</label>

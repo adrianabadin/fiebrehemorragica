@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `extractCurrentSymbols` function is responsible for extracting top-level symbols from specified files within a project, calculating their code hashes, and returning the list of these symbols.\n\n### Primary Inputs\n- **projectRoot**: The root directory of the project where the files are located.\n- **files**: An array of file paths relative to `projectRoot`.\n\n### Output\n- A list of top-level symbols with additional properties, including their code hash.\n\n### Immediate Dependencies\n- Node.js built-in modules: `path`, `fs/promises`, `crypto`\n- Custom modules: `../src/artifacts.mjs`, `../src/symbol-extractor.mjs`, and others for handling project artifacts, symbols extraction, and other related tasks.\n\n### Role in Module\nThis function is a core part of the module's functionality that handles file reading, symbol extraction, and additional metadata generation (like code hashes) based on user inputs. It integrates with other modules to ensure comprehensive project data processing.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/sanitize.mjs"
+  ]
+}

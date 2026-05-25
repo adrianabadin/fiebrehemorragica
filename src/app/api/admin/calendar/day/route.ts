@@ -47,8 +47,18 @@ export async function DELETE(request: Request) {
       },
     });
 
+    const validAppointments = appointments
+      .filter((a): a is typeof a & { scheduledAt: Date } => a.scheduledAt !== null)
+      .map((a) => ({
+        id: a.id,
+        scheduledAt: a.scheduledAt,
+        email: a.email,
+        firstName: a.firstName,
+        lastName: a.lastName,
+      }));
+
     const result = await prisma.$transaction(async () => {
-      const res = await rescheduleAppointments(appointments);
+      const res = await rescheduleAppointments(validAppointments);
 
       await prisma.calendarException.create({
         data: {

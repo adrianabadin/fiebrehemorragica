@@ -1,0 +1,11 @@
+{
+  "content": " ### Structured Explanation of `sendTurnoEmail` Function\n\n#### Responsibility:\nThe function `sendTurnoEmail` is responsible for sending an email notification regarding a scheduled appointment. It constructs the email content using the provided input details and sends it via the Resend API.\n\n#### Primary Inputs:\n- **input**: An object containing:\n  - `to`: The recipient's email address.\n  - `fullName`: The full name of the person receiving the email.\n  - `scheduledDate`: The date of the appointment in string format (e.g., \"2023-10-15\").\n  - `scheduledTime`: The time of the appointment in string format (e.g., \"14:00\").\n\n#### Output:\n- **data**: Upon successful email sending, this will contain information about the sent email from the Resend API.\n- **error**: If the email fails to send, an error object is thrown with a descriptive message.\n\n#### Immediate Dependencies:\n- **Resend**: The `resend` library for sending emails via the Resend API.\n- **buildTurnoEmail**: A function defined in the same module (`./turno-email-template`) that constructs the email content based on the provided input.\n\n#### Role in Module:\nThis function serves as an interface between the application and the email service provider (via Resend). It encapsulates the logic for preparing and sending emails related to appointment scheduling, abstracting away the details of how these emails are constructed and transmitted.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "ts",
+    "function",
+    "project:fiebrehemorragica",
+    "file:src/lib/email/send-turno-email.ts"
+  ]
+}

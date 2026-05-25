@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `parseQueueConcurrency` function is responsible for parsing and validating the concurrency value from a given raw string input. It ensures that the parsed value is a positive integer, defaulting to 1 if the input is invalid or not provided.\n\n### Primary Inputs\n- **rawValue**: A string representing the potential concurrency value. This can be `null`, `undefined`, or any other non-string value which will result in a default of 1 being returned.\n\n### Output\n- **parsedConcurrency**: An integer that represents the parsed and validated concurrency setting, ensuring it is always a positive number greater than 0, otherwise defaults to 1.\n\n### Immediate Dependencies\n- **parseInt**: Used to convert the raw string value into an integer.\n- **Number.isFinite**: Checks if the parsed integer is a finite number.\n\n### Role in Module\nThis function serves as a utility to standardize and validate the concurrency setting for queue processing, ensuring that it meets the required criteria even when provided with unexpected inputs. This helps maintain consistent behavior across different configurations or user inputs within the module.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/enrich-queue.mjs"
+  ]
+}

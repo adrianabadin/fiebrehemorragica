@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `installAgentTemplates` function is responsible for installing templates specific to a given agent type (`agent`) into a project directory. It ensures that the provided agent is supported, handles optional configuration settings, and orchestrates the installation process based on the specified agent's requirements.\n\n### Primary Inputs\n- **projectRoot**: The root directory of the project where the templates will be installed.\n- **agent**: The type of agent for which the templates are to be installed (e.g., 'opencode').\n- **packageRoot**: An optional parameter specifying the root directory of the package, used by some agents like 'opencode'.\n- **globalConfigDir**: A required parameter that specifies a global configuration directory, applicable only to the 'opencode' agent.\n\n### Output\n- The function does not explicitly return data but rather performs actions such as creating directories and writing files based on the templates. It may throw errors if unsupported agents are specified or if required configurations are missing.\n\n### Immediate Dependencies\n- **node:fs/promises**: For file system operations like reading from and writing to files.\n- **node:fs**: Specifically `existsSync` for checking if a directory exists.\n- **node:path**: For path manipulation (joining paths).\n- **node:url**: To convert file URLs to file paths (`fileURLToPath`).\n\n### Role in Module\nThis function serves as an orchestrator and entry point for installing templates tailored to different agent types, ensuring that the installation process is both supported and correctly configured based on the provided parameters. It leverages other functions like `buildPlaceholders` and specific installer functions defined in `INSTALLERS` (assuming this is a map or object where each key corresponds to an agent type and maps to its respective installation function) for dynamic behavior according to the agent type.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/template-installer.mjs"
+  ]
+}

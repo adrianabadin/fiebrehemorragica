@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `readInstallState` function is responsible for reading and parsing the installation state of a project from a specific file located within the `.planning/project-memory-context/install.json` directory relative to the given `projectRoot`. It attempts to read the file, parse its content as JSON if successful, and return the parsed object or `null` if an error occurs during reading or parsing.\n\n### Primary Inputs\n- **projectRoot**: A string representing the root directory of the project where the `.planning/project-memory-context/install.json` file is located.\n\n### Output\n- The function returns a JavaScript object parsed from the `install.json` file if successful, or `null` if it fails to read the file or parse its content as JSON.\n\n### Immediate Dependencies\n- **readFile**: Imported from `node:fs/promises`, used to read the contents of the file at the specified path.\n- **join**: Imported from `node:path`, used to construct the full file path relative to the project root.\n- **JSON.parse**: Used to parse the JSON content of the file if it is successfully read.\n\n### Role in Module\nThis function serves as a utility for accessing and retrieving specific installation state information related to the project, which can be useful for various purposes such as configuration management or status checking within the application or tool that uses this module.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/plugin/index.mjs"
+  ]
+}

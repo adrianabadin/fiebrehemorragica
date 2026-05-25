@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `searchSymbolMatches` function is responsible for filtering and ranking symbols based on their relevance to the given search tokens and file filter. It aims to identify which symbols match the provided criteria, such as name, file path, or semantic summary, and then optionally further restrict matches by a specific file path filter. The results are sorted primarily by relevance score but also include secondary sorting by symbol name for consistency in case of ties.\n\n### Primary Inputs\n- **symbols**: An array of objects where each object represents a symbol with properties like `name`, `filePath`, and `semanticSummary`.\n- **tokens**: An array of strings representing the search tokens used to evaluate relevance.\n- **fileFilter**: A string that, if provided, restricts matches to symbols whose file path exactly matches this string.\n\n### Output\nAn array of symbol objects filtered and sorted according to their relevance based on the given tokens and optional file filter. Each object includes an additional property `score` which represents the match score calculated by comparing the symbol properties with the search tokens.\n\n### Immediate Dependencies\n- **normalizePath**: A function used to normalize the path part of the `fileFilter`. This is likely defined elsewhere in the module or imported from a utility file, as it's not explicitly defined within the provided code snippet.\n- **countMatches**: Another function that counts how many times each token appears in an array of strings (in this case, the symbol properties). It's assumed to be defined elsewhere and is used here to calculate the relevance score for each symbol.\n\n### Role in Module\nThis function plays a crucial role in the query orchestration related to symbols within a larger tool or system that deals with project-level data retrieval and analysis. It helps in refining search results based on user inputs, enhancing the usability and accuracy of queries about different components (symbols) in the project by providing thematically relevant matches according to predefined criteria.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/query/orchestrator.mjs"
+  ]
+}

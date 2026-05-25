@@ -1,0 +1,2256 @@
+{
+  "ts|scripts/sync-calendar-exceptions.ts|function|local|main|0": {
+    "memoryId": "queue-ts_scripts_sync-calendar-exceptions_ts_function_local_main_0",
+    "graphNodeId": "scripts_sync_calendar_exceptions_main",
+    "codeHash": "73578027fd2a19f5857a49f7e07cfc186035b1f9",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T11:04:33.953Z"
+  },
+  "ts|src/app/api/solicitar-turno/route.ts|function|exported|POST|1": {
+    "memoryId": "queue-ts_src_app_api_solicitar-turno_route_ts_function_exported_POST_1",
+    "graphNodeId": "solicitar_turno_route_post",
+    "codeHash": "a8ff96abece683b4b162b3ac0a0e632cdbd9c984",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T11:05:10.622Z"
+  },
+  "ts|src/lib/calendar/calendar.ts|function|exported|isBlockedDate|2": {
+    "memoryId": "queue-ts_src_lib_calendar_calendar_ts_function_exported_isBlockedDate_2",
+    "graphNodeId": "calendar_calendar_isblockeddate",
+    "codeHash": "18602d795d715fc1d1c73e3eff9aa457a4580f4e",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T11:05:38.282Z"
+  },
+  "ts|src/lib/calendar/calendar.ts|function|exported|nextFridayFrom|1": {
+    "memoryId": "queue-ts_src_lib_calendar_calendar_ts_function_exported_nextFridayFrom_1",
+    "graphNodeId": "calendar_calendar_nextfridayfrom",
+    "codeHash": "23c30a223144f21f2c06ebd2eb9e941ba99df69e",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T11:05:57.645Z"
+  },
+  "ts|src/lib/calendar/schedule.ts|function|local|toLocalDateString|1": {
+    "memoryId": "queue-ts_src_lib_calendar_schedule_ts_function_local_toLocalDateString_1",
+    "graphNodeId": "calendar_schedule_tolocaldatestring",
+    "codeHash": "460297846edbc69ff4d801c083657d2da3486675",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T11:06:21.672Z"
+  },
+  "ts|src/lib/calendar/calendar.ts|function|exported|loadBlockedDates|1": {
+    "memoryId": "queue-ts_src_lib_calendar_calendar_ts_function_exported_loadBlockedDates_1",
+    "graphNodeId": "calendar_calendar_loadblockeddates",
+    "codeHash": "2569eb95b915d6643d896134a6723960da67431a",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T11:06:44.370Z"
+  },
+  "ts|src/lib/calendar/schedule.ts|function|exported|assignSlotsForBatch|1": {
+    "memoryId": "queue-ts_src_lib_calendar_schedule_ts_function_exported_assignSlotsForBatch_1",
+    "graphNodeId": "calendar_schedule_assignslotsforbatch",
+    "codeHash": "5ab3a8f0e2654aa86cecf946f7e620cf543291b6",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T11:07:22.257Z"
+  },
+  "ts|src/lib/email/send-turno-email.ts|function|exported|sendTurnoEmail|1": {
+    "memoryId": "queue-ts_src_lib_email_send-turno-email_ts_function_exported_sendTurnoEmail_1",
+    "graphNodeId": "email_send_turno_email_sendturnoemail",
+    "codeHash": "c92019432b78d4b1eed1d7136ff12f941f9a06f7",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T11:07:50.993Z"
+  },
+  "ts|src/lib/email/turno-email-template.ts|function|exported|buildTurnoEmail|1": {
+    "memoryId": "queue-ts_src_lib_email_turno-email-template_ts_function_exported_buildTurnoEmail_1",
+    "graphNodeId": "email_turno_email_template_buildturnoemail",
+    "codeHash": "3b9f592a1c8dc42cd0c63fb6b2c4402bf04107fa",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T11:08:22.390Z"
+  },
+  "ts|src/lib/mutex.ts|class|exported|Mutex|0": {
+    "memoryId": "queue-ts_src_lib_mutex_ts_class_exported_Mutex_0",
+    "graphNodeId": "lib_mutex_mutex",
+    "codeHash": "cd9bfeab25883c502913c7df34146d12e852473e",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T11:08:42.711Z"
+  },
+  "ts|src/lib/queue/batch-processor.ts|function|exported|processBatch|1": {
+    "memoryId": "queue-ts_src_lib_queue_batch-processor_ts_function_exported_processBatch_1",
+    "graphNodeId": "queue_batch_processor_processbatch",
+    "codeHash": "30263d7248c97913335111359d26436e0274be15",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T11:09:19.700Z"
+  },
+  "ts|src/lib/queue/request-queue.ts|function|exported|reserveBatchIfReady|0": {
+    "memoryId": "queue-ts_src_lib_queue_request-queue_ts_function_exported_reserveBatchIfReady_0",
+    "graphNodeId": "queue_request_queue_reservebatchifready",
+    "codeHash": "f60f4b9d80b6a32a80a7f4614054e2869b4839dc",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T11:09:48.549Z"
+  },
+  "ts|src/lib/sheets/google-sheets.ts|function|exported|createSheetsAuth|0": {
+    "memoryId": "queue-ts_src_lib_sheets_google-sheets_ts_function_exported_createSheetsAuth_0",
+    "graphNodeId": "sheets_google_sheets_createsheetsauth",
+    "codeHash": "5d189284a0a7962c9d3576c47ca576ab7914f276",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T11:10:16.781Z"
+  },
+  "ts|src/lib/sheets/google-sheets.ts|function|local|getSheetsClient|0": {
+    "memoryId": "queue-ts_src_lib_sheets_google-sheets_ts_function_local_getSheetsClient_0",
+    "graphNodeId": "sheets_google_sheets_getsheetsclient",
+    "codeHash": "73180225289719a448a1228c3a2ab4f3365a4c96",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T11:10:39.217Z"
+  },
+  "ts|src/lib/sheets/google-sheets.ts|type|exported|AppendRequestRowInput|0": {
+    "memoryId": "queue-ts_src_lib_sheets_google-sheets_ts_type_exported_AppendRequestRowInput_0",
+    "graphNodeId": null,
+    "codeHash": "e7d06973ebe7c07a22c392df429f56f1efde3496",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T11:11:06.269Z"
+  },
+  "ts|src/lib/sheets/google-sheets.ts|function|exported|buildPendingRequestRowValues|1": {
+    "memoryId": "queue-ts_src_lib_sheets_google-sheets_ts_function_exported_buildPendingRequestRowValues_1",
+    "graphNodeId": "sheets_google_sheets_buildpendingrequestrowvalues",
+    "codeHash": "133c15a28650c158a2e892b3fcd3eacf5dbd7bb4",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T11:11:31.032Z"
+  },
+  "ts|src/lib/sheets/google-sheets.ts|type|exported|UpdateAssignedTurnRowInput|0": {
+    "memoryId": "queue-ts_src_lib_sheets_google-sheets_ts_type_exported_UpdateAssignedTurnRowInput_0",
+    "graphNodeId": null,
+    "codeHash": "ba12286e741f4f25053813773704e24407d437d2",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T11:12:02.992Z"
+  },
+  "ts|src/lib/sheets/google-sheets.ts|function|exported|buildAssignedTurnRowValues|1": {
+    "memoryId": "queue-ts_src_lib_sheets_google-sheets_ts_function_exported_buildAssignedTurnRowValues_1",
+    "graphNodeId": "sheets_google_sheets_buildassignedturnrowvalues",
+    "codeHash": "97d81d1b888f470514de573f7ca3433bcff22dca",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T11:12:31.623Z"
+  },
+  "ts|src/lib/validation/appointment-schema.ts|type|exported|AppointmentInput|0": {
+    "memoryId": "queue-ts_src_lib_validation_appointment-schema_ts_type_exported_AppointmentInput_0",
+    "graphNodeId": null,
+    "codeHash": "6f9277b272f00acb6d73c291efd8ea1b9ff0170b",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:45:47.348Z"
+  },
+  "ts|src/lib/sheets/google-sheets.ts|function|exported|updateAssignedTurnRow|1": {
+    "memoryId": "queue-ts_src_lib_sheets_google-sheets_ts_function_exported_updateAssignedTurnRow_1",
+    "graphNodeId": "sheets_google_sheets_updateassignedturnrow",
+    "codeHash": "d06a98e58b24806db44ae83440823aa375a4d5b3",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:45:36.666Z"
+  },
+  "ts|src/lib/sheets/google-sheets.ts|function|exported|appendPendingRequestRow|1": {
+    "memoryId": "queue-ts_src_lib_sheets_google-sheets_ts_function_exported_appendPendingRequestRow_1",
+    "graphNodeId": "sheets_google_sheets_appendpendingrequestrow",
+    "codeHash": "18b4ca77c21bce047a1290306d5c00c30f50e14d",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:45:15.838Z"
+  },
+  "js|tools/project-memory-context/cli/bootstrap.mjs|function|exported|mergeEnrichmentConfig|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_bootstrap_mjs_function_exported_mergeEnrichmentConfig_1",
+    "graphNodeId": "cli_bootstrap_mergeenrichmentconfig",
+    "codeHash": "f947bb6d595e1d103492716cc292afd191bf0521",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:47:03.823Z"
+  },
+  "ts|src/lib/validation/appointment-schema.ts|type|exported|DocumentType|0": {
+    "memoryId": "queue-ts_src_lib_validation_appointment-schema_ts_type_exported_DocumentType_0",
+    "graphNodeId": null,
+    "codeHash": "ae0acf52e56dbbaefbdfd538c08696ad83dfabed",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:45:59.824Z"
+  },
+  "js|tools/project-memory-context/cli/bootstrap.mjs|function|local|log|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_bootstrap_mjs_function_local_log_1",
+    "graphNodeId": "cli_bootstrap_log",
+    "codeHash": "9027cb94420c3db94ad37c80ccc5e76f1cca239d",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:46:16.569Z"
+  },
+  "js|tools/project-memory-context/cli/bootstrap.mjs|function|local|getTargetDir|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_bootstrap_mjs_function_local_getTargetDir_1",
+    "graphNodeId": "cli_bootstrap_gettargetdir",
+    "codeHash": "b9329f0e953bcc198b905b9d999ebe44628bc0f0",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:47:26.200Z"
+  },
+  "js|tools/project-memory-context/cli/bootstrap.mjs|function|exported|buildDefaultEnrichmentConfig|0": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_bootstrap_mjs_function_exported_buildDefaultEnrichmentConfig_0",
+    "graphNodeId": "cli_bootstrap_builddefaultenrichmentconfig",
+    "codeHash": "10debb67e095bb14ac2797dc03d25523770fba31",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:46:46.208Z"
+  },
+  "js|tools/project-memory-context/cli/bootstrap.mjs|function|local|ensureDir|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_bootstrap_mjs_function_local_ensureDir_1",
+    "graphNodeId": "cli_bootstrap_ensuredir",
+    "codeHash": "7a8879fcc4ba1f16e4189e9f2a07197313367eb0",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:47:43.857Z"
+  },
+  "js|tools/project-memory-context/cli/bootstrap.mjs|function|local|readJson|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_bootstrap_mjs_function_local_readJson_1",
+    "graphNodeId": "cli_bootstrap_readjson",
+    "codeHash": "e188682186671301027fa75ef767f6c935bb32e2",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:48:04.051Z"
+  },
+  "js|tools/project-memory-context/cli/bootstrap.mjs|function|local|installGraphify|0": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_bootstrap_mjs_function_local_installGraphify_0",
+    "graphNodeId": "cli_bootstrap_installgraphify",
+    "codeHash": "64a34fb53d1afedd9bec241bf243b7e9a597e84b",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:48:25.601Z"
+  },
+  "js|tools/project-memory-context/cli/bootstrap.mjs|function|local|runStageB|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_bootstrap_mjs_function_local_runStageB_1",
+    "graphNodeId": "cli_bootstrap_runstageb",
+    "codeHash": "1958c3440d4303e8bd6d346fe4af7c1d442cbec8",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:50:20.848Z"
+  },
+  "js|tools/project-memory-context/cli/bootstrap.mjs|function|local|runStageA|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_bootstrap_mjs_function_local_runStageA_1",
+    "graphNodeId": "cli_bootstrap_runstagea",
+    "codeHash": "41e1ed1eeb9f2b68edea1aa2680aeb4171024cc1",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:49:17.461Z"
+  },
+  "js|tools/project-memory-context/cli/bootstrap.mjs|function|local|syncToolsToTarget|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_bootstrap_mjs_function_local_syncToolsToTarget_1",
+    "graphNodeId": "cli_bootstrap_synctoolstotarget",
+    "codeHash": "d7438624e0d272f8537a1b3416d4ad50b2c75cda",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:48:44.798Z"
+  },
+  "js|tools/project-memory-context/cli/bootstrap.mjs|function|local|printUsage|0": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_bootstrap_mjs_function_local_printUsage_0",
+    "graphNodeId": "cli_bootstrap_printusage",
+    "codeHash": "2ab4be7cd39d9e91a94443e1cb16f9efb35917da",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:50:41.193Z"
+  },
+  "js|tools/project-memory-context/cli/bootstrap.mjs|function|local|findFiles|4": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_bootstrap_mjs_function_local_findFiles_4",
+    "graphNodeId": "cli_bootstrap_findfiles",
+    "codeHash": "3edd787c0394d9c0e14648f1795a4e579624bec3",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:49:49.256Z"
+  },
+  "js|tools/project-memory-context/cli/context.mjs|function|local|markContext|2": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_context_mjs_function_local_markContext_2",
+    "graphNodeId": "cli_context_markcontext",
+    "codeHash": "cd4c44fd3f11704b0385a8faaf8592ac3999b6d2",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:52:29.378Z"
+  },
+  "js|tools/project-memory-context/cli/context.mjs|function|exported|findProjectRoot|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_context_mjs_function_exported_findProjectRoot_1",
+    "graphNodeId": "cli_context_findprojectroot",
+    "codeHash": "73e60d267154cf2c3d875b263e3bd87b6b89390d",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:51:53.547Z"
+  },
+  "js|tools/project-memory-context/cli/bootstrap.mjs|function|exported|main|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_bootstrap_mjs_function_exported_main_1",
+    "graphNodeId": "cli_bootstrap_main",
+    "codeHash": "2a21acce15b90767e2274bb85970cf2506c3fbaa",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:51:10.737Z"
+  },
+  "js|tools/project-memory-context/cli/context.mjs|function|local|fileExists|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_context_mjs_function_local_fileExists_1",
+    "graphNodeId": "cli_context_fileexists",
+    "codeHash": "ef2328913116b6b091e406adcd550e91bf59eb90",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:51:31.617Z"
+  },
+  "js|tools/project-memory-context/cli/context.mjs|function|exported|parseArgs|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_context_mjs_function_exported_parseArgs_1",
+    "graphNodeId": "cli_context_parseargs",
+    "codeHash": "dbd9fa4a8c940223d6b61c8474118196dd6f2d64",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:52:50.674Z"
+  },
+  "js|tools/project-memory-context/cli/context.mjs|function|local|groupEdges|2": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_context_mjs_function_local_groupEdges_2",
+    "graphNodeId": "cli_context_groupedges",
+    "codeHash": "7fa2ff4f61e658d9c0753c7f6ee7df724d857655",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:53:44.667Z"
+  },
+  "js|tools/project-memory-context/cli/context.mjs|function|exported|buildRenderInput|3": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_context_mjs_function_exported_buildRenderInput_3",
+    "graphNodeId": "cli_context_buildrenderinput",
+    "codeHash": "10d6a5cec8f45ea215b6b2ea0daade8aad873201",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:54:42.261Z"
+  },
+  "js|tools/project-memory-context/cli/context.mjs|function|exported|loadArtifacts|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_context_mjs_function_exported_loadArtifacts_1",
+    "graphNodeId": "cli_context_loadartifacts",
+    "codeHash": "51868724e4e8340ef56945464c9f08bad3110008",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:53:21.371Z"
+  },
+  "js|tools/project-memory-context/cli/doctor.mjs|function|local|spawnCheck|2": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_doctor_mjs_function_local_spawnCheck_2",
+    "graphNodeId": "cli_doctor_spawncheck",
+    "codeHash": "21e93be7a27732656acabaca04d779037620dd42",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T11:58:08.615Z"
+  },
+  "js|tools/project-memory-context/cli/context.mjs|function|exported|runProjectContext|2": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_context_mjs_function_exported_runProjectContext_2",
+    "graphNodeId": "cli_context_runprojectcontext",
+    "codeHash": "ddf5842f211433b610a08b09d2527f2b4cb25539",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T11:58:43.148Z"
+  },
+  "js|tools/project-memory-context/cli/enrich-queue.mjs|function|exported|parseQueueConcurrency|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich-queue_mjs_function_exported_parseQueueConcurrency_1",
+    "graphNodeId": "cli_enrich_queue_parsequeueconcurrency",
+    "codeHash": "06598d223fc9347fdd70915043c3c1dd8fa71d8a",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T11:59:05.654Z"
+  },
+  "js|tools/project-memory-context/cli/context.mjs|function|exported|runTargetContext|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_context_mjs_function_exported_runTargetContext_1",
+    "graphNodeId": "cli_context_runtargetcontext",
+    "codeHash": "3a405853fdac60d3584127084f0a44b3ca324a3d",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T11:59:50.934Z"
+  },
+  "js|tools/project-memory-context/cli/enrich-queue.mjs|function|local|loadJson|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich-queue_mjs_function_local_loadJson_1",
+    "graphNodeId": "cli_enrich_queue_loadjson",
+    "codeHash": "a834359625a949d19fbbb30acba00205ba5f259b",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T12:00:22.055Z"
+  },
+  "js|tools/project-memory-context/cli/enrich-queue.mjs|function|local|loadOptionalJson|2": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich-queue_mjs_function_local_loadOptionalJson_2",
+    "graphNodeId": "cli_enrich_queue_loadoptionaljson",
+    "codeHash": "084a977edbae288113cbf926c1dbe2bbafdbb999",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T12:00:52.971Z"
+  },
+  "js|tools/project-memory-context/cli/context.mjs|function|exported|main|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_context_mjs_function_exported_main_1",
+    "graphNodeId": "cli_context_main",
+    "codeHash": "0e42218dea17d89e26bb134855a76dac4c610195",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T12:01:55.829Z"
+  },
+  "js|tools/project-memory-context/cli/context.mjs|function|local|printHelp|0": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_context_mjs_function_local_printHelp_0",
+    "graphNodeId": "cli_context_printhelp",
+    "codeHash": "7f1717118a8167f15446c33c3df9428cbeb83d1b",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T12:02:39.526Z"
+  },
+  "js|tools/project-memory-context/cli/enrich-queue.mjs|function|local|saveJson|2": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich-queue_mjs_function_local_saveJson_2",
+    "graphNodeId": "cli_enrich_queue_savejson",
+    "codeHash": "453fafbf20ffd74c42b36681afef6600c7f12932",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:55:06.527Z"
+  },
+  "js|tools/project-memory-context/cli/enrich-queue.mjs|function|local|safeKey|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich-queue_mjs_function_local_safeKey_1",
+    "graphNodeId": "cli_enrich_queue_safekey",
+    "codeHash": "3506916ab6a10dbce786b044890a5756964a5ed1",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T12:03:35.936Z"
+  },
+  "js|tools/project-memory-context/cli/enrich-queue.mjs|class|local|SlotTracker|0": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich-queue_mjs_class_local_SlotTracker_0",
+    "graphNodeId": "cli_enrich_queue_slottracker",
+    "codeHash": "96f39518fdec21f5c1d37a769504799b66a1801c",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:55:42.846Z"
+  },
+  "js|tools/project-memory-context/cli/enrich-queue.mjs|function|local|createAgentSubagentProvider|0": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich-queue_mjs_function_local_createAgentSubagentProvider_0",
+    "graphNodeId": "cli_enrich_queue_createagentsubagentprovider",
+    "codeHash": "fd0ee4447fb3a45279fac5869ad6798f47f2a26e",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:56:14.703Z"
+  },
+  "js|tools/project-memory-context/cli/enrich-queue.mjs|function|local|buildSymbolPrompt|2": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich-queue_mjs_function_local_buildSymbolPrompt_2",
+    "graphNodeId": "cli_enrich_queue_buildsymbolprompt",
+    "codeHash": "a97872df365886188c2deedb3ba8574a76f21eae",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:56:36.595Z"
+  },
+  "js|tools/project-memory-context/cli/enrich-queue.mjs|function|local|applyAttemptsToEntry|2": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich-queue_mjs_function_local_applyAttemptsToEntry_2",
+    "graphNodeId": "cli_enrich_queue_applyattemptstoentry",
+    "codeHash": "67e9509b48b09247673a42464781eeee69b763a4",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:56:59.968Z"
+  },
+  "js|tools/project-memory-context/cli/enrich-queue.mjs|function|local|getLastAttemptMode|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich-queue_mjs_function_local_getLastAttemptMode_1",
+    "graphNodeId": "cli_enrich_queue_getlastattemptmode",
+    "codeHash": "d8ff44c758c60621a3c30966a53f557504f792e6",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T12:06:15.162Z"
+  },
+  "js|tools/project-memory-context/cli/enrich-queue.mjs|function|local|getLastAttemptError|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich-queue_mjs_function_local_getLastAttemptError_1",
+    "graphNodeId": "cli_enrich_queue_getlastattempterror",
+    "codeHash": "9b805734064dcbae0efd7832bf2a0573ea135e66",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T12:06:47.206Z"
+  },
+  "js|tools/project-memory-context/cli/enrich-queue.mjs|function|local|createQueueEnrichmentError|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich-queue_mjs_function_local_createQueueEnrichmentError_1",
+    "graphNodeId": "cli_enrich_queue_createqueueenrichmenterror",
+    "codeHash": "69cb9d4dfd35a45bca3e8452c123d399efb7d0d2",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T12:07:22.597Z"
+  },
+  "js|tools/project-memory-context/cli/enrich-queue.mjs|function|exported|buildQueueSummary|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich-queue_mjs_function_exported_buildQueueSummary_1",
+    "graphNodeId": "cli_enrich_queue_buildqueuesummary",
+    "codeHash": "c9a42506bac9f4cf3cda59e6bb3010c406cd213b",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T12:07:51.877Z"
+  },
+  "js|tools/project-memory-context/cli/enrich-queue.mjs|function|local|loadRuntimeEnrichmentConfig|2": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich-queue_mjs_function_local_loadRuntimeEnrichmentConfig_2",
+    "graphNodeId": "cli_enrich_queue_loadruntimeenrichmentconfig",
+    "codeHash": "305bf250d7522834af1f0cfda034c21abf8e04c9",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T12:08:39.058Z"
+  },
+  "js|tools/project-memory-context/cli/enrich-queue.mjs|function|local|createQueueProviders|0": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich-queue_mjs_function_local_createQueueProviders_0",
+    "graphNodeId": "cli_enrich_queue_createqueueproviders",
+    "codeHash": "9c68d0125a25d43db862ffa0dfb34cd16e7f4d07",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T12:09:14.992Z"
+  },
+  "js|tools/project-memory-context/cli/enrich-queue.mjs|function|exported|runQueueSymbolEnrichment|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich-queue_mjs_function_exported_runQueueSymbolEnrichment_1",
+    "graphNodeId": "cli_enrich_queue_runqueuesymbolenrichment",
+    "codeHash": "16de9d8b43d130d3a08b9465bea47b470c13960f",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:57:52.154Z"
+  },
+  "js|tools/project-memory-context/cli/enrich-queue.mjs|function|exported|buildQueueState|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich-queue_mjs_function_exported_buildQueueState_1",
+    "graphNodeId": "cli_enrich_queue_buildqueuestate",
+    "codeHash": "889b7410ea84a2f923fa57434ce416b6b59d90c7",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:58:27.689Z"
+  },
+  "js|tools/project-memory-context/cli/enrich-queue.mjs|function|exported|writeQueueState|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich-queue_mjs_function_exported_writeQueueState_1",
+    "graphNodeId": "cli_enrich_queue_writequeuestate",
+    "codeHash": "c1aa2ad22f6a9ed952b5f6df9c4fbc16cde76365",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:58:49.748Z"
+  },
+  "js|tools/project-memory-context/cli/enrich-queue.mjs|function|exported|finalizeQueueState|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich-queue_mjs_function_exported_finalizeQueueState_1",
+    "graphNodeId": "cli_enrich_queue_finalizequeuestate",
+    "codeHash": "a12036c0afcc8f2c04f586d24453264459838a2c",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T12:11:46.358Z"
+  },
+  "js|tools/project-memory-context/cli/enrich-queue.mjs|function|local|checkpointSave|0": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich-queue_mjs_function_local_checkpointSave_0",
+    "graphNodeId": "cli_enrich_queue_checkpointsave",
+    "codeHash": "d73f775e91337446fa4b4c9f374bb8867796b00a",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T12:12:21.469Z"
+  },
+  "js|tools/project-memory-context/cli/enrich-queue.mjs|function|local|main|0": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich-queue_mjs_function_local_main_0",
+    "graphNodeId": "cli_enrich_queue_main",
+    "codeHash": "8634f733d562974c9583c12af9fb8bf7c32a33f1",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:59:50.961Z"
+  },
+  "js|tools/project-memory-context/cli/enrich-queue.mjs|function|exported|maybeLaunchRetryErrors|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich-queue_mjs_function_exported_maybeLaunchRetryErrors_1",
+    "graphNodeId": "cli_enrich_queue_maybelaunchretryerrors",
+    "codeHash": "7f7e9803feb063a2bc60ca6627f432f968bafede",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:00:35.018Z"
+  },
+  "js|tools/project-memory-context/cli/enrich-queue.mjs|function|local|launchRetryProcess|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich-queue_mjs_function_local_launchRetryProcess_1",
+    "graphNodeId": "cli_enrich_queue_launchretryprocess",
+    "codeHash": "1404725f9b1999c8ae8447b4ef9b60968fb102b4",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:01:02.099Z"
+  },
+  "js|tools/project-memory-context/cli/enrich-queue.mjs|function|exported|writeRetryState|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich-queue_mjs_function_exported_writeRetryState_1",
+    "graphNodeId": "cli_enrich_queue_writeretrystate",
+    "codeHash": "305e79239b720ef3a22efe9d09cf72c2ab44b1ba",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T12:14:54.508Z"
+  },
+  "js|tools/project-memory-context/cli/enrich.mjs|function|local|printHelp|0": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich_mjs_function_local_printHelp_0",
+    "graphNodeId": "cli_enrich_printhelp",
+    "codeHash": "96442448ca3f44b58db9361641611ceae3b2e6a6",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T12:15:12.549Z"
+  },
+  "js|tools/project-memory-context/cli/enrich.mjs|function|exported|runEnrichQueue|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich_mjs_function_exported_runEnrichQueue_1",
+    "graphNodeId": "cli_enrich_runenrichqueue",
+    "codeHash": "08a02da747519f1ef802dd159ff6b79e52e8b9a7",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T12:15:46.419Z"
+  },
+  "js|tools/project-memory-context/cli/enrich.mjs|function|exported|main|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_enrich_mjs_function_exported_main_1",
+    "graphNodeId": "cli_enrich_main",
+    "codeHash": "1a33a583d1522f71b570b0bc3170bb8cec562c9f",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T12:16:15.142Z"
+  },
+  "js|tools/project-memory-context/cli/init.mjs|function|local|parseArgs|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_init_mjs_function_local_parseArgs_1",
+    "graphNodeId": "cli_init_parseargs",
+    "codeHash": "aebbaabdabd1bfa6fee2861924328bcc24fb2cec",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T12:16:41.164Z"
+  },
+  "js|tools/project-memory-context/cli/init.mjs|function|local|printHelp|0": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_init_mjs_function_local_printHelp_0",
+    "graphNodeId": "cli_init_printhelp",
+    "codeHash": "f37c2c6e494f3b0c13d1013fc694390f1b107068",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T12:17:10.372Z"
+  },
+  "js|tools/project-memory-context/cli/init.mjs|function|exported|main|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_init_mjs_function_exported_main_1",
+    "graphNodeId": "cli_init_main",
+    "codeHash": "b554c5805f5d3581247ac9accd25d94f9e9f0826",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T12:17:37.726Z"
+  },
+  "js|tools/project-memory-context/cli/install-pmc.mjs|function|local|log|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_install-pmc_mjs_function_local_log_1",
+    "graphNodeId": "cli_install_pmc_log",
+    "codeHash": "e2edcf33e282c03dde699e2143f416790e40be9b",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T12:17:58.301Z"
+  },
+  "js|tools/project-memory-context/cli/install-pmc.mjs|function|local|copyMjsTree|3": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_install-pmc_mjs_function_local_copyMjsTree_3",
+    "graphNodeId": "cli_install_pmc_copymjstree",
+    "codeHash": "8c0afab9e0e96f7949b7e4e532624e084594a53c",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:01:23.872Z"
+  },
+  "js|tools/project-memory-context/cli/install-pmc.mjs|function|local|copyTemplatesDir|2": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_install-pmc_mjs_function_local_copyTemplatesDir_2",
+    "graphNodeId": "cli_install_pmc_copytemplatesdir",
+    "codeHash": "30b1a37557519ce3b4a0c9281f6f7b4cdbd6b43a",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:01:45.903Z"
+  },
+  "js|tools/project-memory-context/cli/project-context.mjs|function|local|buildDetectedContext|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_project-context_mjs_function_local_buildDetectedContext_1",
+    "graphNodeId": "cli_project_context_builddetectedcontext",
+    "codeHash": "0fe3c0dbb5e09ad2051ee7a4d0af63c670f71590",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:04:28.841Z"
+  },
+  "js|tools/project-memory-context/cli/project-context.mjs|function|local|log|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_project-context_mjs_function_local_log_1",
+    "graphNodeId": "cli_project_context_log",
+    "codeHash": "6f8c715202e57d10e87fc27069a765abc34a8ba8",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:03:27.994Z"
+  },
+  "js|tools/project-memory-context/cli/install-pmc.mjs|function|exported|installPmcTools|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_install-pmc_mjs_function_exported_installPmcTools_1",
+    "graphNodeId": "cli_install_pmc_installpmctools",
+    "codeHash": "ed1801ff4d1fbab630b56721f77a2ac06c45a01f",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:02:16.921Z"
+  },
+  "js|tools/project-memory-context/cli/new-project.mjs|function|exported|main|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_new-project_mjs_function_exported_main_1",
+    "graphNodeId": "cli_new_project_main",
+    "codeHash": "c11a7fedfc72950f690c05fddb44e7f230699f5c",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:03:08.235Z"
+  },
+  "js|tools/project-memory-context/cli/project-context.mjs|function|local|readText|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_project-context_mjs_function_local_readText_1",
+    "graphNodeId": "cli_project_context_readtext",
+    "codeHash": "8072533bc9ce8154f5b9d2e7a25ad82c6a665364",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:03:55.558Z"
+  },
+  "js|tools/project-memory-context/cli/install-pmc.mjs|function|local|main|0": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_install-pmc_mjs_function_local_main_0",
+    "graphNodeId": "cli_install_pmc_main",
+    "codeHash": "8bc13eaebc7fd058c3cf52bd6bae35619503dfef",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:02:39.296Z"
+  },
+  "js|tools/project-memory-context/cli/project-context.mjs|function|local|main|0": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_project-context_mjs_function_local_main_0",
+    "graphNodeId": "cli_project_context_main",
+    "codeHash": "1ba744897d16b0df3e3cfb1d9baa1737a219aaec",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:38:13.883Z"
+  },
+  "js|tools/project-memory-context/cli/project-context.mjs|function|local|markEnrichedSymbolsStale|2": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_project-context_mjs_function_local_markEnrichedSymbolsStale_2",
+    "graphNodeId": "cli_project_context_markenrichedsymbolsstale",
+    "codeHash": "f5e2e183e8c3dc165f2f999d8aee8c6ec663d3ec",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:38:55.261Z"
+  },
+  "js|tools/project-memory-context/cli/project-context.mjs|function|local|computeHashes|2": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_project-context_mjs_function_local_computeHashes_2",
+    "graphNodeId": "cli_project_context_computehashes",
+    "codeHash": "a52aed8d7d96e464f7a255c4b047130437c8339f",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:39:28.290Z"
+  },
+  "js|tools/project-memory-context/cli/project-context.mjs|function|local|runBootstrap|2": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_project-context_mjs_function_local_runBootstrap_2",
+    "graphNodeId": "cli_project_context_runbootstrap",
+    "codeHash": "cc34842f06fe2ec0689fcd3833a6b8c2bf60bd75",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:40:19.630Z"
+  },
+  "js|tools/project-memory-context/cli/project-context.mjs|function|local|writeMemories|2": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_project-context_mjs_function_local_writeMemories_2",
+    "graphNodeId": "cli_project_context_writememories",
+    "codeHash": "397bcb18c17939ac2f6d1f33caa898201522b5c0",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:41:00.455Z"
+  },
+  "js|tools/project-memory-context/cli/project-context.mjs|function|exported|runProjectContextCli|2": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_project-context_mjs_function_exported_runProjectContextCli_2",
+    "graphNodeId": "cli_project_context_runprojectcontextcli",
+    "codeHash": "093daacb616f5fe2cdae8514b91f01cc2bfeb8aa",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:41:43.543Z"
+  },
+  "js|tools/project-memory-context/cli/project-context.mjs|function|local|buildDeclaredContext|0": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_project-context_mjs_function_local_buildDeclaredContext_0",
+    "graphNodeId": "cli_project_context_builddeclaredcontext",
+    "codeHash": "22819ddfa2719169f5ad0ad05a54dd8ea4faa09e",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:42:26.048Z"
+  },
+  "js|tools/project-memory-context/cli/project-context.mjs|function|local|runRefresh|2": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_project-context_mjs_function_local_runRefresh_2",
+    "graphNodeId": "cli_project_context_runrefresh",
+    "codeHash": "6ed33dab46b22e2b184bea13ab6c5e019f054ad2",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:05:13.451Z"
+  },
+  "js|tools/project-memory-context/cli/query.mjs|function|local|printHelp|0": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_query_mjs_function_local_printHelp_0",
+    "graphNodeId": "cli_query_printhelp",
+    "codeHash": "dca8037fe5281ab88a7376056a3982e31464ea4c",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:43:12.436Z"
+  },
+  "js|tools/project-memory-context/cli/query.mjs|function|local|fileExists|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_query_mjs_function_local_fileExists_1",
+    "graphNodeId": "cli_query_fileexists",
+    "codeHash": "ef2328913116b6b091e406adcd550e91bf59eb90",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:43:50.087Z"
+  },
+  "js|tools/project-memory-context/cli/query.mjs|function|local|findProjectRoot|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_query_mjs_function_local_findProjectRoot_1",
+    "graphNodeId": "cli_query_findprojectroot",
+    "codeHash": "0de08688a38be095c1d75168903a1da35a57d39c",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:44:24.578Z"
+  },
+  "js|tools/project-memory-context/cli/query.mjs|function|local|parseArgs|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_query_mjs_function_local_parseArgs_1",
+    "graphNodeId": "cli_query_parseargs",
+    "codeHash": "ccfa5f0013dad4b9f572c20ade6d49d213d444b8",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:44:55.519Z"
+  },
+  "js|tools/project-memory-context/cli/query.mjs|function|local|formatSource|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_query_mjs_function_local_formatSource_1",
+    "graphNodeId": "cli_query_formatsource",
+    "codeHash": "02237d6843569d9681c30940521bb97ad4cfaefa",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:45:27.929Z"
+  },
+  "js|tools/project-memory-context/cli/query.mjs|function|local|printTextResult|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_query_mjs_function_local_printTextResult_1",
+    "graphNodeId": "cli_query_printtextresult",
+    "codeHash": "9ab1c4aa25c48b5aa18403946f28addf94846d44",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:46:02.780Z"
+  },
+  "js|tools/project-memory-context/cli/query.mjs|function|exported|main|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_query_mjs_function_exported_main_1",
+    "graphNodeId": "cli_query_main",
+    "codeHash": "34a6bfb89fe689db7877d3f67859253c5d674244",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:46:41.447Z"
+  },
+  "js|tools/project-memory-context/cli/retry-errors.mjs|function|local|loadJson|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_retry-errors_mjs_function_local_loadJson_1",
+    "graphNodeId": "cli_retry_errors_loadjson",
+    "codeHash": "a834359625a949d19fbbb30acba00205ba5f259b",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:47:11.062Z"
+  },
+  "js|tools/project-memory-context/cli/retry-errors.mjs|function|local|loadOptionalJson|2": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_retry-errors_mjs_function_local_loadOptionalJson_2",
+    "graphNodeId": "cli_retry_errors_loadoptionaljson",
+    "codeHash": "084a977edbae288113cbf926c1dbe2bbafdbb999",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:47:45.839Z"
+  },
+  "js|tools/project-memory-context/cli/retry-errors.mjs|function|local|saveJson|2": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_retry-errors_mjs_function_local_saveJson_2",
+    "graphNodeId": "cli_retry_errors_savejson",
+    "codeHash": "453fafbf20ffd74c42b36681afef6600c7f12932",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:48:19.385Z"
+  },
+  "js|tools/project-memory-context/cli/retry-errors.mjs|function|local|safeKey|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_retry-errors_mjs_function_local_safeKey_1",
+    "graphNodeId": "cli_retry_errors_safekey",
+    "codeHash": "3506916ab6a10dbce786b044890a5756964a5ed1",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:48:49.336Z"
+  },
+  "js|tools/project-memory-context/cli/retry-errors.mjs|function|local|buildSymbolPrompt|3": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_retry-errors_mjs_function_local_buildSymbolPrompt_3",
+    "graphNodeId": "cli_retry_errors_buildsymbolprompt",
+    "codeHash": "7133fda3793c116e112f4168b510a6965532235a",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:49:38.832Z"
+  },
+  "js|tools/project-memory-context/cli/retry-errors.mjs|function|local|parseArgs|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_retry-errors_mjs_function_local_parseArgs_1",
+    "graphNodeId": "cli_retry_errors_parseargs",
+    "codeHash": "d09a44ab956eb85ea87839508c15d8d93c8a410f",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:50:18.025Z"
+  },
+  "js|tools/project-memory-context/cli/retry-errors.mjs|function|local|printHelp|0": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_retry-errors_mjs_function_local_printHelp_0",
+    "graphNodeId": "cli_retry_errors_printhelp",
+    "codeHash": "86684585b54991bc86c291897f6279214bee72ad",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:50:43.395Z"
+  },
+  "js|tools/project-memory-context/cli/retry-errors.mjs|function|local|main|0": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_retry-errors_mjs_function_local_main_0",
+    "graphNodeId": "cli_retry_errors_main",
+    "codeHash": "0360d59a62c22c684dc64cb7e073b71719c98c70",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:06:03.006Z"
+  },
+  "js|tools/project-memory-context/cli/sanitize.mjs|function|local|log|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_sanitize_mjs_function_local_log_1",
+    "graphNodeId": "cli_sanitize_log",
+    "codeHash": "a82a990396e3f18107b2e53fe8ba20febd0099e2",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:06:24.426Z"
+  },
+  "js|tools/project-memory-context/cli/sanitize.mjs|function|local|safeKey|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_sanitize_mjs_function_local_safeKey_1",
+    "graphNodeId": "cli_sanitize_safekey",
+    "codeHash": "3506916ab6a10dbce786b044890a5756964a5ed1",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:06:45.929Z"
+  },
+  "js|tools/project-memory-context/cli/sanitize.mjs|function|local|codeHash|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_sanitize_mjs_function_local_codeHash_1",
+    "graphNodeId": "cli_sanitize_codehash",
+    "codeHash": "7ad6ec98a485efa11f5d78caf26aa270f624645e",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:53:10.821Z"
+  },
+  "js|tools/project-memory-context/cli/sanitize.mjs|function|local|getGraphifyExe|0": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_sanitize_mjs_function_local_getGraphifyExe_0",
+    "graphNodeId": "cli_sanitize_getgraphifyexe",
+    "codeHash": "47a40311fa0115996db22427d538e16c9b4af277",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:53:41.438Z"
+  },
+  "js|tools/project-memory-context/cli/sanitize.mjs|function|local|findSourceFiles|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_sanitize_mjs_function_local_findSourceFiles_1",
+    "graphNodeId": "cli_sanitize_findsourcefiles",
+    "codeHash": "58965523684ef1831581b7b5caa55bb4ed4a5506",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:54:22.949Z"
+  },
+  "js|tools/project-memory-context/cli/sanitize.mjs|function|local|runGraphifyUpdate|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_sanitize_mjs_function_local_runGraphifyUpdate_1",
+    "graphNodeId": "cli_sanitize_rungraphifyupdate",
+    "codeHash": "42463f5aa1895123bb36145b6ee15266bbeefa86",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:55:08.427Z"
+  },
+  "js|tools/project-memory-context/cli/sanitize.mjs|function|local|extractCurrentSymbols|2": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_sanitize_mjs_function_local_extractCurrentSymbols_2",
+    "graphNodeId": "cli_sanitize_extractcurrentsymbols",
+    "codeHash": "1d0218af8b68c7b889f75f0243f50277c132b75d",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:07:11.080Z"
+  },
+  "js|tools/project-memory-context/cli/sanitize.mjs|function|local|sanitize|0": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_sanitize_mjs_function_local_sanitize_0",
+    "graphNodeId": "cli_sanitize_sanitize",
+    "codeHash": "005bd6321ebb1d5faba74b886ea876f68df935b8",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:07:58.006Z"
+  },
+  "js|tools/project-memory-context/cli/setup.mjs|function|local|installGraphify|0": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_setup_mjs_function_local_installGraphify_0",
+    "graphNodeId": "cli_setup_installgraphify",
+    "codeHash": "00d211dd347f0737b3ab45b058ae6a563988dfd7",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:57:10.838Z"
+  },
+  "js|tools/project-memory-context/cli/setup.mjs|function|local|spawnCheck|2": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_setup_mjs_function_local_spawnCheck_2",
+    "graphNodeId": "cli_setup_spawncheck",
+    "codeHash": "21e93be7a27732656acabaca04d779037620dd42",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:57:39.885Z"
+  },
+  "js|tools/project-memory-context/cli/setup.mjs|function|local|parseArgs|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_setup_mjs_function_local_parseArgs_1",
+    "graphNodeId": "cli_setup_parseargs",
+    "codeHash": "7c26b799f5a1942f474f01317a10ae5795236856",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:58:08.356Z"
+  },
+  "js|tools/project-memory-context/cli/status.mjs|function|exported|summarizeWorklist|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_status_mjs_function_exported_summarizeWorklist_1",
+    "graphNodeId": "cli_status_summarizeworklist",
+    "codeHash": "43bf57b958f4b59ac093d9271e500ff884670489",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:58:31.403Z"
+  },
+  "js|tools/project-memory-context/cli/status.mjs|function|local|readJsonSafe|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_status_mjs_function_local_readJsonSafe_1",
+    "graphNodeId": "cli_status_readjsonsafe",
+    "codeHash": "37a396a04a8449c85b4b9173a7b9407bb7867638",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:58:59.379Z"
+  },
+  "js|tools/project-memory-context/cli/status.mjs|function|local|toIsoString|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_status_mjs_function_local_toIsoString_1",
+    "graphNodeId": "cli_status_toisostring",
+    "codeHash": "55d3c81fc63b63d898f686f4c1048ebe114735c6",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T15:59:34.932Z"
+  },
+  "js|tools/project-memory-context/cli/status.mjs|function|local|heartbeatIsFresh|3": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_status_mjs_function_local_heartbeatIsFresh_3",
+    "graphNodeId": "cli_status_heartbeatisfresh",
+    "codeHash": "994f6f089ded4511fd07606b57a9ee6b19e5b563",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:00:04.314Z"
+  },
+  "js|tools/project-memory-context/cli/status.mjs|function|local|deriveRuntimeState|3": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_status_mjs_function_local_deriveRuntimeState_3",
+    "graphNodeId": "cli_status_deriveruntimestate",
+    "codeHash": "e2b92a6b46aa6ae00c79d003076ee7963bfc0e2d",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:00:42.427Z"
+  },
+  "js|tools/project-memory-context/cli/status.mjs|function|local|getLastSyncTimestamp|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_status_mjs_function_local_getLastSyncTimestamp_1",
+    "graphNodeId": "cli_status_getlastsynctimestamp",
+    "codeHash": "a41a2997e26a96bd6aad4deafc65ed109bd3f990",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:01:07.571Z"
+  },
+  "js|tools/project-memory-context/cli/status.mjs|function|exported|buildStatusReport|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_status_mjs_function_exported_buildStatusReport_1",
+    "graphNodeId": "cli_status_buildstatusreport",
+    "codeHash": "6a1ba6a540a81778c61cfd1a3174f6905a24cae2",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:01:54.890Z"
+  },
+  "js|tools/project-memory-context/cli/status.mjs|function|exported|main|1": {
+    "memoryId": "queue-js_tools_project-memory-context_cli_status_mjs_function_exported_main_1",
+    "graphNodeId": "cli_status_main",
+    "codeHash": "6e286c2992033f2e55b5ea3f0ee36ee1b1e9bca0",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:02:25.696Z"
+  },
+  "js|tools/project-memory-context/mcp/local-model-server.mjs|function|local|generateSemanticReport|1": {
+    "memoryId": "queue-js_tools_project-memory-context_mcp_local-model-server_mjs_function_local_generateSemanticReport_1",
+    "graphNodeId": "mcp_local_model_server_generatesemanticreport",
+    "codeHash": "763a95acb3c75406738f7c01a1556c2b8b3fcc04",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:02:49.816Z"
+  },
+  "js|tools/project-memory-context/mcp/pmc-query-server.mjs|function|local|textResult|1": {
+    "memoryId": "queue-js_tools_project-memory-context_mcp_pmc-query-server_mjs_function_local_textResult_1",
+    "graphNodeId": "mcp_pmc_query_server_textresult",
+    "codeHash": "3dac18f5b86b173e285c24c6f099fd0df2c13b08",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:03:16.221Z"
+  },
+  "js|tools/project-memory-context/mcp/pmc-query-server.mjs|function|local|errorResult|2": {
+    "memoryId": "queue-js_tools_project-memory-context_mcp_pmc-query-server_mjs_function_local_errorResult_2",
+    "graphNodeId": "mcp_pmc_query_server_errorresult",
+    "codeHash": "71df2d1bb12e756bde78fe9480f367ff2efcadbf",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:03:49.856Z"
+  },
+  "js|tools/project-memory-context/plugin/index.mjs|function|local|readInstallState|1": {
+    "memoryId": "queue-js_tools_project-memory-context_plugin_index_mjs_function_local_readInstallState_1",
+    "graphNodeId": "plugin_index_readinstallstate",
+    "codeHash": "c85b38a03bb5ecec5113d681e68b539986f0a635",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:04:15.571Z"
+  },
+  "js|tools/project-memory-context/src/artifacts.mjs|function|exported|ensureProjectMemoryContextDirs|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_artifacts_mjs_function_exported_ensureProjectMemoryContextDirs_1",
+    "graphNodeId": "src_artifacts_ensureprojectmemorycontextdirs",
+    "codeHash": "42ddb9cee252a37d8de7352c91567b532c308541",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:04:47.628Z"
+  },
+  "js|tools/project-memory-context/src/artifacts.mjs|function|exported|writeJsonArtifact|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_artifacts_mjs_function_exported_writeJsonArtifact_2",
+    "graphNodeId": "src_artifacts_writejsonartifact",
+    "codeHash": "05255b255a22a667d7d0e90f2b60321a0f8348f3",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:05:18.123Z"
+  },
+  "js|tools/project-memory-context/src/artifacts.mjs|function|exported|readJsonArtifact|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_artifacts_mjs_function_exported_readJsonArtifact_2",
+    "graphNodeId": "src_artifacts_readjsonartifact",
+    "codeHash": "170882241d14cfff1c92394ce5c3b0087e2a6d8e",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:05:45.668Z"
+  },
+  "js|tools/project-memory-context/src/change-detector.mjs|function|exported|detectChangedFilesFromHashes|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_change-detector_mjs_function_exported_detectChangedFilesFromHashes_2",
+    "graphNodeId": "src_change_detector_detectchangedfilesfromhashes",
+    "codeHash": "a0561464d92503fa5e605d3fc9b9f2f97d72f3f1",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:06:04.752Z"
+  },
+  "js|tools/project-memory-context/src/command-dispatch.mjs|function|local|usageText|0": {
+    "memoryId": "queue-js_tools_project-memory-context_src_command-dispatch_mjs_function_local_usageText_0",
+    "graphNodeId": "src_command_dispatch_usagetext",
+    "codeHash": "a20de482bb1c81a113f65b9cc505abdae082f100",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:06:26.648Z"
+  },
+  "js|tools/project-memory-context/src/command-dispatch.mjs|function|local|writeLine|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_command-dispatch_mjs_function_local_writeLine_2",
+    "graphNodeId": "src_command_dispatch_writeline",
+    "codeHash": "3305ff5e24fa5382b6aa01fe5b550aec55796156",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:06:51.475Z"
+  },
+  "js|tools/project-memory-context/src/command-dispatch.mjs|function|exported|resolveCommand|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_command-dispatch_mjs_function_exported_resolveCommand_1",
+    "graphNodeId": "src_command_dispatch_resolvecommand",
+    "codeHash": "914efdc0dcd774090067a8fcf1454c5b3dbbb7d9",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:07:26.687Z"
+  },
+  "js|tools/project-memory-context/src/command-dispatch.mjs|function|exported|runCommand|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_command-dispatch_mjs_function_exported_runCommand_2",
+    "graphNodeId": "src_command_dispatch_runcommand",
+    "codeHash": "ff7c42acf7d89917ef67df222edcda53f6c2865c",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:08:02.074Z"
+  },
+  "js|tools/project-memory-context/src/declared-intake.mjs|function|exported|createDeclaredProjectContextTemplates|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_declared-intake_mjs_function_exported_createDeclaredProjectContextTemplates_1",
+    "graphNodeId": "src_declared_intake_createdeclaredprojectcontexttemplates",
+    "codeHash": "52855a6c8a4f622325a7a9ec40d5609c8dee8ff7",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:08:40.367Z"
+  },
+  "js|tools/project-memory-context/src/doctor.mjs|function|exported|runDoctor|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_doctor_mjs_function_exported_runDoctor_1",
+    "graphNodeId": "src_doctor_rundoctor",
+    "codeHash": "73e7520c56c9a005dbb1378c2cf3d587273f7561",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:09:15.311Z"
+  },
+  "js|tools/project-memory-context/src/doctor.mjs|function|local|checkNodeVersion|0": {
+    "memoryId": "queue-js_tools_project-memory-context_src_doctor_mjs_function_local_checkNodeVersion_0",
+    "graphNodeId": "src_doctor_checknodeversion",
+    "codeHash": "afcc744712149716f734d8630ef527e42bd78b5a",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:09:43.079Z"
+  },
+  "js|tools/project-memory-context/src/doctor.mjs|function|local|checkPython|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_doctor_mjs_function_local_checkPython_2",
+    "graphNodeId": "src_doctor_checkpython",
+    "codeHash": "a643492b0c04f58991b900aa4404aca9a6febfca",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:10:16.376Z"
+  },
+  "js|tools/project-memory-context/src/doctor.mjs|function|local|checkGraphify|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_doctor_mjs_function_local_checkGraphify_2",
+    "graphNodeId": "src_doctor_checkgraphify",
+    "codeHash": "747177d24e35da95865b0cc361512ada3332f676",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:10:48.104Z"
+  },
+  "js|tools/project-memory-context/src/doctor.mjs|function|local|checkOllama|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_doctor_mjs_function_local_checkOllama_2",
+    "graphNodeId": "src_doctor_checkollama",
+    "codeHash": "6afa8c36a9ca07031d04f802b8ff65de9a7e80ec",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:11:19.107Z"
+  },
+  "js|tools/project-memory-context/src/doctor.mjs|function|local|checkMemoryDbPath|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_doctor_mjs_function_local_checkMemoryDbPath_1",
+    "graphNodeId": "src_doctor_checkmemorydbpath",
+    "codeHash": "42a6f6f742b20f64e4a61cc946c53f55baca8cab",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:11:44.574Z"
+  },
+  "js|tools/project-memory-context/src/doctor.mjs|function|local|checkEmbeddingCachePath|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_doctor_mjs_function_local_checkEmbeddingCachePath_1",
+    "graphNodeId": "src_doctor_checkembeddingcachepath",
+    "codeHash": "e3cfbbd6e9b35540faa50bca8e94a4a2d270a297",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:12:11.633Z"
+  },
+  "js|tools/project-memory-context/src/enrichment-artifacts.mjs|function|local|safeSymbolKey|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_enrichment-artifacts_mjs_function_local_safeSymbolKey_1",
+    "graphNodeId": "src_enrichment_artifacts_safesymbolkey",
+    "codeHash": "bc6a7e44f8c80063fcb81152ce7ddcf6bc7d6fce",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:12:36.883Z"
+  },
+  "js|tools/project-memory-context/src/enrichment-artifacts.mjs|function|exported|buildEnrichmentArtifacts|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_enrichment-artifacts_mjs_function_exported_buildEnrichmentArtifacts_1",
+    "graphNodeId": "src_enrichment_artifacts_buildenrichmentartifacts",
+    "codeHash": "eb8ade951f968deef2bb17a1d626c558bf5c81d3",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:13:26.149Z"
+  },
+  "js|tools/project-memory-context/src/enrichment-artifacts.mjs|function|exported|persistEnrichmentArtifacts|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_enrichment-artifacts_mjs_function_exported_persistEnrichmentArtifacts_1",
+    "graphNodeId": "src_enrichment_artifacts_persistenrichmentartifacts",
+    "codeHash": "a8ab49b23905dd023e71f7f1bc4d2bc3385f1baa",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:14:09.564Z"
+  },
+  "js|tools/project-memory-context/src/enrichment-attempts.mjs|function|exported|appendProviderEvent|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_enrichment-attempts_mjs_function_exported_appendProviderEvent_2",
+    "graphNodeId": "src_enrichment_attempts_appendproviderevent",
+    "codeHash": "b5cb474378890a59ecb698215e3070d5c8065837",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:14:41.734Z"
+  },
+  "js|tools/project-memory-context/src/enrichment-attempts.mjs|function|exported|withRecordedAttempt|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_enrichment-attempts_mjs_function_exported_withRecordedAttempt_2",
+    "graphNodeId": "src_enrichment_attempts_withrecordedattempt",
+    "codeHash": "ce420ed2ca9f3a032c876032db89ad49d3570f43",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:15:09.911Z"
+  },
+  "js|tools/project-memory-context/src/enrichment-config.mjs|function|local|normalizePreferredModes|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_enrichment-config_mjs_function_local_normalizePreferredModes_1",
+    "graphNodeId": "src_enrichment_config_normalizepreferredmodes",
+    "codeHash": "9e0ca24c5f50797a7eead7b435b9dca61ac811de",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:15:27.974Z"
+  },
+  "js|tools/project-memory-context/src/enrichment-config.mjs|function|local|mergeConfig|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_enrichment-config_mjs_function_local_mergeConfig_2",
+    "graphNodeId": "src_enrichment_config_mergeconfig",
+    "codeHash": "3f80aaaacb59ed1cc7ebc72f22d55dae6983a796",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:15:55.777Z"
+  },
+  "js|tools/project-memory-context/src/enrichment-config.mjs|function|local|unwrapEnrichmentConfig|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_enrichment-config_mjs_function_local_unwrapEnrichmentConfig_1",
+    "graphNodeId": "src_enrichment_config_unwrapenrichmentconfig",
+    "codeHash": "d62e0c66a8f040ca76ab12386f757c93869711f3",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:16:25.913Z"
+  },
+  "js|tools/project-memory-context/src/enrichment-config.mjs|function|exported|readEnvPreferredModes|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_enrichment-config_mjs_function_exported_readEnvPreferredModes_1",
+    "graphNodeId": "src_enrichment_config_readenvpreferredmodes",
+    "codeHash": "c6e3a1393fee86b69057267b5acbe2ebff8e3ca7",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:16:51.706Z"
+  },
+  "js|tools/project-memory-context/src/enrichment-config.mjs|function|exported|resolveEnrichmentConfigPaths|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_enrichment-config_mjs_function_exported_resolveEnrichmentConfigPaths_1",
+    "graphNodeId": "src_enrichment_config_resolveenrichmentconfigpaths",
+    "codeHash": "2d300f5137bbd1893df07a7c09a419900373dee3",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:17:22.862Z"
+  },
+  "js|tools/project-memory-context/src/enrichment-config.mjs|function|exported|resolveEnrichmentConfig|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_enrichment-config_mjs_function_exported_resolveEnrichmentConfig_1",
+    "graphNodeId": "src_enrichment_config_resolveenrichmentconfig",
+    "codeHash": "d92c868022cb84211e94433900a58a79ac5b32da",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:18:02.759Z"
+  },
+  "js|tools/project-memory-context/src/enrichment-driver.mjs|function|local|isFallbackEligible|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_enrichment-driver_mjs_function_local_isFallbackEligible_1",
+    "graphNodeId": "src_enrichment_driver_isfallbackeligible",
+    "codeHash": "27d7030ed0a2da2810891d882e6a3d90e10a07e4",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:18:23.062Z"
+  },
+  "js|tools/project-memory-context/src/enrichment-driver.mjs|function|local|providerConfigForMode|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_enrichment-driver_mjs_function_local_providerConfigForMode_2",
+    "graphNodeId": "src_enrichment_driver_providerconfigformode",
+    "codeHash": "27e3b2c09530c4ebf8e3141eef725c365fcce080",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:18:43.191Z"
+  },
+  "js|tools/project-memory-context/src/enrichment-driver.mjs|function|local|providerNameForMode|3": {
+    "memoryId": "queue-js_tools_project-memory-context_src_enrichment-driver_mjs_function_local_providerNameForMode_3",
+    "graphNodeId": "src_enrichment_driver_providernameformode",
+    "codeHash": "2500b1bd61244318c2ba757d089e02ee20697509",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:19:07.466Z"
+  },
+  "js|tools/project-memory-context/src/enrichment-driver.mjs|function|exported|runEnrichmentWithFallback|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_enrichment-driver_mjs_function_exported_runEnrichmentWithFallback_1",
+    "graphNodeId": "src_enrichment_driver_runenrichmentwithfallback",
+    "codeHash": "d6ee77da03d68b66160711be3ee70805b5b0885d",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:19:55.511Z"
+  },
+  "js|tools/project-memory-context/src/enrichment-errors.mjs|function|local|messageOf|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_enrichment-errors_mjs_function_local_messageOf_1",
+    "graphNodeId": "src_enrichment_errors_messageof",
+    "codeHash": "6898e5691daf768a52485efa00588771dbc25163",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:20:21.686Z"
+  },
+  "js|tools/project-memory-context/src/enrichment-errors.mjs|function|exported|classifyEnrichmentError|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_enrichment-errors_mjs_function_exported_classifyEnrichmentError_1",
+    "graphNodeId": "src_enrichment_errors_classifyenrichmenterror",
+    "codeHash": "09af64b2c2726c61b49198514898e4c2613e3ab7",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:20:58.343Z"
+  },
+  "js|tools/project-memory-context/src/enrichment-linker.mjs|function|exported|applyEnrichmentResult|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_enrichment-linker_mjs_function_exported_applyEnrichmentResult_1",
+    "graphNodeId": "src_enrichment_linker_applyenrichmentresult",
+    "codeHash": "7d723b0071f05240abe96806cc450f8c9af27091",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:21:30.978Z"
+  },
+  "js|tools/project-memory-context/src/extractors/architecture-extractor.mjs|function|exported|detectArchitectureContext|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_architecture-extractor_mjs_function_exported_detectArchitectureContext_1",
+    "graphNodeId": "extractors_architecture_extractor_detectarchitecturecontext",
+    "codeHash": "98050b9badf2f93fef97feda96a33275c3d23e64",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:21:56.034Z"
+  },
+  "js|tools/project-memory-context/src/extractors/js-ts-extractor.mjs|function|local|makePlugins|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_js-ts-extractor_mjs_function_local_makePlugins_1",
+    "graphNodeId": "extractors_js_ts_extractor_makeplugins",
+    "codeHash": "74f2d9c8fe8427695754ea419da8118433d84439",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:22:20.017Z"
+  },
+  "js|tools/project-memory-context/src/extractors/js-ts-extractor.mjs|function|local|buildCodeHash|3": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_js-ts-extractor_mjs_function_local_buildCodeHash_3",
+    "graphNodeId": "extractors_js_ts_extractor_buildcodehash",
+    "codeHash": "42ca6cdfab76ecb755f9958590e2652bb2720af6",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:22:48.237Z"
+  },
+  "js|tools/project-memory-context/src/extractors/js-ts-extractor.mjs|function|local|isExported|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_js-ts-extractor_mjs_function_local_isExported_1",
+    "graphNodeId": "extractors_js_ts_extractor_isexported",
+    "codeHash": "3b842bd97b095ccda4a39bfe7a0c669e92e838dc",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:23:13.552Z"
+  },
+  "js|tools/project-memory-context/src/extractors/js-ts-extractor.mjs|function|local|symbolFromNode|7": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_js-ts-extractor_mjs_function_local_symbolFromNode_7",
+    "graphNodeId": "extractors_js_ts_extractor_symbolfromnode",
+    "codeHash": "4d42a94e857aaf27b403f4180052084b07670a8c",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:23:55.870Z"
+  },
+  "js|tools/project-memory-context/src/extractors/js-ts-extractor.mjs|function|exported|extractJsTsSymbols|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_js-ts-extractor_mjs_function_exported_extractJsTsSymbols_1",
+    "graphNodeId": "extractors_js_ts_extractor_extractjstssymbols",
+    "codeHash": "a119f6a0bacfd0fdc6d7d98d1f57c51c14ca4c71",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:24:41.761Z"
+  },
+  "js|tools/project-memory-context/src/extractors/regex-extractor.mjs|function|local|codeHash|3": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_regex-extractor_mjs_function_local_codeHash_3",
+    "graphNodeId": "extractors_regex_extractor_codehash",
+    "codeHash": "9b8cf54e9a69184dcc2ec5fd8c31f2285ad1b8c5",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:25:11.289Z"
+  },
+  "js|tools/project-memory-context/src/extractors/regex-extractor.mjs|function|local|findBlockEnd|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_regex-extractor_mjs_function_local_findBlockEnd_2",
+    "graphNodeId": "extractors_regex_extractor_findblockend",
+    "codeHash": "b31fb89a1adb62a91b7303257c3a5025bef0f1eb",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:25:38.222Z"
+  },
+  "js|tools/project-memory-context/src/extractors/regex-extractor.mjs|function|local|makeSymbol|9": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_regex-extractor_mjs_function_local_makeSymbol_9",
+    "graphNodeId": "extractors_regex_extractor_makesymbol",
+    "codeHash": "49689058427d4f3884a5f6ace0c0b48dd300ae8e",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:26:21.864Z"
+  },
+  "js|tools/project-memory-context/src/extractors/regex-extractor.mjs|function|local|extractPython|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_regex-extractor_mjs_function_local_extractPython_2",
+    "graphNodeId": "extractors_regex_extractor_extractpython",
+    "codeHash": "a7269efaffeed376fa1c338f2821ffdc77c7082a",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:27:12.809Z"
+  },
+  "js|tools/project-memory-context/src/extractors/regex-extractor.mjs|function|local|extractJava|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_regex-extractor_mjs_function_local_extractJava_2",
+    "graphNodeId": "extractors_regex_extractor_extractjava",
+    "codeHash": "ee7726bd01d8d4e30836b3eb6a812aa8947b2639",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:08:19.136Z"
+  },
+  "js|tools/project-memory-context/src/extractors/regex-extractor.mjs|function|local|extractGo|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_regex-extractor_mjs_function_local_extractGo_2",
+    "graphNodeId": "extractors_regex_extractor_extractgo",
+    "codeHash": "d2f4d9de3fed936689cf2b2db60f0065672c92ad",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:08:40.312Z"
+  },
+  "js|tools/project-memory-context/src/extractors/regex-extractor.mjs|function|local|extractRust|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_regex-extractor_mjs_function_local_extractRust_2",
+    "graphNodeId": "extractors_regex_extractor_extractrust",
+    "codeHash": "8cadb4bebb0a3a47892ff4a4ae85553f9bdcc30f",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:28:46.519Z"
+  },
+  "js|tools/project-memory-context/src/extractors/regex-extractor.mjs|function|local|extractRuby|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_regex-extractor_mjs_function_local_extractRuby_2",
+    "graphNodeId": "extractors_regex_extractor_extractruby",
+    "codeHash": "2d451e7479faab4822ed1d05ce7891ee5259213c",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:29:15.705Z"
+  },
+  "js|tools/project-memory-context/src/extractors/regex-extractor.mjs|function|local|extractPhp|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_regex-extractor_mjs_function_local_extractPhp_2",
+    "graphNodeId": "extractors_regex_extractor_extractphp",
+    "codeHash": "5c3468f47a1711f17f3968c49ed597689655abf9",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:29:49.844Z"
+  },
+  "js|tools/project-memory-context/src/extractors/regex-extractor.mjs|function|local|extractKotlin|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_regex-extractor_mjs_function_local_extractKotlin_2",
+    "graphNodeId": "extractors_regex_extractor_extractkotlin",
+    "codeHash": "2be3243af4a9c4c9a55a3b8db83840c4df56225e",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:30:34.379Z"
+  },
+  "js|tools/project-memory-context/src/extractors/regex-extractor.mjs|function|local|extractSwift|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_regex-extractor_mjs_function_local_extractSwift_2",
+    "graphNodeId": "extractors_regex_extractor_extractswift",
+    "codeHash": "cfc7ac5c0d6b7a224dff31079f3103afdb0a2092",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:31:08.887Z"
+  },
+  "js|tools/project-memory-context/src/extractors/regex-extractor.mjs|function|local|extractCpp|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_regex-extractor_mjs_function_local_extractCpp_2",
+    "graphNodeId": "extractors_regex_extractor_extractcpp",
+    "codeHash": "e98f60279f392cb3ac8caf744c6729306a2b6608",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:31:43.517Z"
+  },
+  "js|tools/project-memory-context/src/extractors/regex-extractor.mjs|function|local|extractCSharp|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_regex-extractor_mjs_function_local_extractCSharp_2",
+    "graphNodeId": "extractors_regex_extractor_extractcsharp",
+    "codeHash": "503502819e546910291be814953b41db415f5851",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:32:42.747Z"
+  },
+  "js|tools/project-memory-context/src/extractors/regex-extractor.mjs|function|exported|extractRegexSymbols|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_regex-extractor_mjs_function_exported_extractRegexSymbols_1",
+    "graphNodeId": "extractors_regex_extractor_extractregexsymbols",
+    "codeHash": "d0143d37fe4ddbf6a07aa4d8f435c3a3fdf7e262",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:08:55.242Z"
+  },
+  "js|tools/project-memory-context/src/extractors/rules-extractor.mjs|function|exported|detectRulesContext|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_rules-extractor_mjs_function_exported_detectRulesContext_1",
+    "graphNodeId": "extractors_rules_extractor_detectrulescontext",
+    "codeHash": "5af28a8d187c661792805ced8254e5aba2ae9437",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:33:33.027Z"
+  },
+  "js|tools/project-memory-context/src/extractors/stack-extractor.mjs|function|local|readJson|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_stack-extractor_mjs_function_local_readJson_1",
+    "graphNodeId": "extractors_stack_extractor_readjson",
+    "codeHash": "cc33acb309270e3e61ff0ab97a71c2246e2da6ba",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:33:54.150Z"
+  },
+  "js|tools/project-memory-context/src/extractors/stack-extractor.mjs|function|local|detectServicesFromSrc|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_stack-extractor_mjs_function_local_detectServicesFromSrc_1",
+    "graphNodeId": "extractors_stack_extractor_detectservicesfromsrc",
+    "codeHash": "16739fa52b92a01ef594ee13de18fe85ce850d50",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:34:22.835Z"
+  },
+  "js|tools/project-memory-context/src/extractors/stack-extractor.mjs|function|exported|detectStackContext|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_stack-extractor_mjs_function_exported_detectStackContext_1",
+    "graphNodeId": "extractors_stack_extractor_detectstackcontext",
+    "codeHash": "197d561d87075917100f7a4740b88ccf97163644",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:35:06.351Z"
+  },
+  "js|tools/project-memory-context/src/extractors/structure-extractor.mjs|function|local|listDirectories|5": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_structure-extractor_mjs_function_local_listDirectories_5",
+    "graphNodeId": "extractors_structure_extractor_listdirectories",
+    "codeHash": "18139e939430f69dcabbb0528a1a0846f654cad8",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:35:30.403Z"
+  },
+  "js|tools/project-memory-context/src/extractors/structure-extractor.mjs|function|exported|detectStructureContext|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_extractors_structure-extractor_mjs_function_exported_detectStructureContext_1",
+    "graphNodeId": "extractors_structure_extractor_detectstructurecontext",
+    "codeHash": "02f8ac3cdb63fa910f80fdc57b884e0582764a68",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:36:03.032Z"
+  },
+  "js|tools/project-memory-context/src/fail-enrichment.mjs|function|exported|recordEnrichmentFailure|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_fail-enrichment_mjs_function_exported_recordEnrichmentFailure_1",
+    "graphNodeId": "src_fail_enrichment_recordenrichmentfailure",
+    "codeHash": "482afa5f9d327caa5c37f21a7e810052463b347d",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:36:40.548Z"
+  },
+  "js|tools/project-memory-context/src/finalize-enrichment.mjs|function|exported|finalizeEnrichment|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_finalize-enrichment_mjs_function_exported_finalizeEnrichment_1",
+    "graphNodeId": "src_finalize_enrichment_finalizeenrichment",
+    "codeHash": "5303f51bfcd8657623cf387cdddea2fd1d4c5299",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:37:19.566Z"
+  },
+  "js|tools/project-memory-context/src/graph-backfill.mjs|function|exported|backfillGraphNode|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_graph-backfill_mjs_function_exported_backfillGraphNode_1",
+    "graphNodeId": "src_graph_backfill_backfillgraphnode",
+    "codeHash": "85e01ba7fd283f54999a2a0fa4945e3ab7f4a0ff",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:37:49.461Z"
+  },
+  "js|tools/project-memory-context/src/graph-node-resolver.mjs|function|local|normalizePath|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_graph-node-resolver_mjs_function_local_normalizePath_1",
+    "graphNodeId": "src_graph_node_resolver_normalizepath",
+    "codeHash": "488aeb3d681b1cf96caa96cc6cf0277c03baff66",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:38:21.599Z"
+  },
+  "js|tools/project-memory-context/src/graph-node-resolver.mjs|function|local|getNodeMetadata|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_graph-node-resolver_mjs_function_local_getNodeMetadata_1",
+    "graphNodeId": "src_graph_node_resolver_getnodemetadata",
+    "codeHash": "836bd576a26577ca2d66de7607c8eca868222bd2",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:38:47.577Z"
+  },
+  "js|tools/project-memory-context/src/graph-node-resolver.mjs|function|local|extractLabelFromGraphify|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_graph-node-resolver_mjs_function_local_extractLabelFromGraphify_1",
+    "graphNodeId": "src_graph_node_resolver_extractlabelfromgraphify",
+    "codeHash": "470dbe5e451220c4ccecbf8801205f666d012741",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:39:06.145Z"
+  },
+  "js|tools/project-memory-context/src/graph-node-resolver.mjs|function|local|inferKindFromLabel|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_graph-node-resolver_mjs_function_local_inferKindFromLabel_1",
+    "graphNodeId": "src_graph_node_resolver_inferkindfromlabel",
+    "codeHash": "565b8e9e28b004d9e1a6c7dce3625956aa740160",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:39:23.834Z"
+  },
+  "js|tools/project-memory-context/src/graph-node-resolver.mjs|function|local|findBySymbolKey|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_graph-node-resolver_mjs_function_local_findBySymbolKey_2",
+    "graphNodeId": "src_graph_node_resolver_findbysymbolkey",
+    "codeHash": "72c8ed5f77d2a3d0c66a0b4f90d249616f05b64b",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:39:55.568Z"
+  },
+  "js|tools/project-memory-context/src/graph-node-resolver.mjs|function|local|findByFilePathAndName|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_graph-node-resolver_mjs_function_local_findByFilePathAndName_2",
+    "graphNodeId": "src_graph_node_resolver_findbyfilepathandname",
+    "codeHash": "4aa1e13ee8c48bc4458eb99e80f6485f137c3b83",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:40:37.748Z"
+  },
+  "js|tools/project-memory-context/src/graph-node-resolver.mjs|function|exported|attachGraphNodeIds|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_graph-node-resolver_mjs_function_exported_attachGraphNodeIds_1",
+    "graphNodeId": "src_graph_node_resolver_attachgraphnodeids",
+    "codeHash": "40a66fcec06b765ccfde0422085235519b36ce06",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:41:04.289Z"
+  },
+  "js|tools/project-memory-context/src/intake-context.mjs|function|local|normalizeString|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_intake-context_mjs_function_local_normalizeString_1",
+    "graphNodeId": "src_intake_context_normalizestring",
+    "codeHash": "6d94a7b656adfbdb7fcdcf45bcd90cfda32dd38b",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:41:21.738Z"
+  },
+  "js|tools/project-memory-context/src/intake-context.mjs|function|local|normalizeList|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_intake-context_mjs_function_local_normalizeList_1",
+    "graphNodeId": "src_intake_context_normalizelist",
+    "codeHash": "94811767ea8fa0ef6e46a6238fd34f80023c0288",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:41:44.899Z"
+  },
+  "js|tools/project-memory-context/src/intake-context.mjs|function|exported|buildIntakeContext|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_intake-context_mjs_function_exported_buildIntakeContext_1",
+    "graphNodeId": "src_intake_context_buildintakecontext",
+    "codeHash": "c2862d618b11e2a20ebecb07229e0577f50a8ead",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:42:14.142Z"
+  },
+  "js|tools/project-memory-context/src/invalidation-matrix.mjs|function|exported|detectInvalidatedProjectContextKinds|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_invalidation-matrix_mjs_function_exported_detectInvalidatedProjectContextKinds_1",
+    "graphNodeId": "src_invalidation_matrix_detectinvalidatedprojectcontextkinds",
+    "codeHash": "7897f17bf3ce8980c8bd136595d56dd77901f3f5",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:42:43.866Z"
+  },
+  "js|tools/project-memory-context/src/markdown-renderer.mjs|function|exported|renderProjectContextMarkdown|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_markdown-renderer_mjs_function_exported_renderProjectContextMarkdown_1",
+    "graphNodeId": "src_markdown_renderer_renderprojectcontextmarkdown",
+    "codeHash": "e2c407b71ede22bd875a8113d0ce2d513095063e",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:43:16.237Z"
+  },
+  "js|tools/project-memory-context/src/materializer.mjs|function|local|formatList|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_materializer_mjs_function_local_formatList_2",
+    "graphNodeId": "src_materializer_formatlist",
+    "codeHash": "4900105bd1e1d32a04c25a06f68594a3b1304c70",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:43:35.482Z"
+  },
+  "js|tools/project-memory-context/src/materializer.mjs|function|exported|materializeProjectContextMemories|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_materializer_mjs_function_exported_materializeProjectContextMemories_1",
+    "graphNodeId": "src_materializer_materializeprojectcontextmemories",
+    "codeHash": "a61eefb09828e95013851ed35601327f9c902aa9",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:44:59.576Z"
+  },
+  "js|tools/project-memory-context/src/memory-payload.mjs|function|local|normalizeList|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_memory-payload_mjs_function_local_normalizeList_1",
+    "graphNodeId": "src_memory_payload_normalizelist",
+    "codeHash": "cb9aff64d84ccded8faaeb6f6ad8a660b340aa70",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:45:29.117Z"
+  },
+  "js|tools/project-memory-context/src/memory-payload.mjs|function|exported|buildMemoryPayload|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_memory-payload_mjs_function_exported_buildMemoryPayload_1",
+    "graphNodeId": "src_memory_payload_buildmemorypayload",
+    "codeHash": "5baec6297ee6f9f95f4a0ba763bfedc598e9c141",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:46:07.798Z"
+  },
+  "js|tools/project-memory-context/src/memory-payload.mjs|function|exported|buildEnrichmentResult|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_memory-payload_mjs_function_exported_buildEnrichmentResult_1",
+    "graphNodeId": "src_memory_payload_buildenrichmentresult",
+    "codeHash": "ddf120aecaebbaf2381ee1c611e5119763a5fc3d",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:09:26.075Z"
+  },
+  "js|tools/project-memory-context/src/persist-enrichment-result.mjs|function|exported|persistEnrichmentResult|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_persist-enrichment-result_mjs_function_exported_persistEnrichmentResult_1",
+    "graphNodeId": "src_persist_enrichment_result_persistenrichmentresult",
+    "codeHash": "3f951f90d188ac23c16918a39a61223083f55405",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:09:58.308Z"
+  },
+  "js|tools/project-memory-context/src/platform.mjs|function|exported|normalizeProjectPath|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_platform_mjs_function_exported_normalizeProjectPath_1",
+    "graphNodeId": "src_platform_normalizeprojectpath",
+    "codeHash": "c2b35c5d6d3de465a4e30e82ea229b4a7e392828",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:10:19.325Z"
+  },
+  "js|tools/project-memory-context/src/platform.mjs|function|exported|isAgentInstructionFile|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_platform_mjs_function_exported_isAgentInstructionFile_1",
+    "graphNodeId": "src_platform_isagentinstructionfile",
+    "codeHash": "2f8c9724703b4eb58bd35afcdd2a53681da23d73",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:48:03.877Z"
+  },
+  "js|tools/project-memory-context/src/platform.mjs|function|exported|detectAgentType|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_platform_mjs_function_exported_detectAgentType_1",
+    "graphNodeId": "src_platform_detectagenttype",
+    "codeHash": "bf07ab37332c7c45dc701a7f5b479b087f1bca06",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:48:29.311Z"
+  },
+  "js|tools/project-memory-context/src/platform.mjs|function|exported|detectSetupAgentType|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_platform_mjs_function_exported_detectSetupAgentType_2",
+    "graphNodeId": "src_platform_detectsetupagenttype",
+    "codeHash": "01955e82c5e89d84789aea04f34d70260a192ae3",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:49:04.409Z"
+  },
+  "js|tools/project-memory-context/src/platform.mjs|function|exported|resolveConfigDirs|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_platform_mjs_function_exported_resolveConfigDirs_2",
+    "graphNodeId": "src_platform_resolveconfigdirs",
+    "codeHash": "c5417daa1e512a31d64ca7a0f3289c6011f98b55",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:49:43.626Z"
+  },
+  "js|tools/project-memory-context/src/platform.mjs|function|exported|spawnBackground|3": {
+    "memoryId": "queue-js_tools_project-memory-context_src_platform_mjs_function_exported_spawnBackground_3",
+    "graphNodeId": "src_platform_spawnbackground",
+    "codeHash": "5f8c0f267977736e13695fc49c1490142c57d25f",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:50:14.267Z"
+  },
+  "js|tools/project-memory-context/src/platform.mjs|function|exported|resolvePythonBin|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_platform_mjs_function_exported_resolvePythonBin_1",
+    "graphNodeId": "src_platform_resolvepythonbin",
+    "codeHash": "44297beb0cd43c93e376193f321528d0e7ee2160",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:50:49.706Z"
+  },
+  "js|tools/project-memory-context/src/platform.mjs|function|exported|resolveGraphify|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_platform_mjs_function_exported_resolveGraphify_1",
+    "graphNodeId": "src_platform_resolvegraphify",
+    "codeHash": "839c04919ce88ea03f636b1cd2eeaba43513a74e",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:51:26.222Z"
+  },
+  "js|tools/project-memory-context/src/plugin-config.mjs|function|exported|buildInjectedPmcConfig|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_plugin-config_mjs_function_exported_buildInjectedPmcConfig_1",
+    "graphNodeId": "src_plugin_config_buildinjectedpmcconfig",
+    "codeHash": "2b1520a7fd6c196d9e01c0aafb7be7baef6c4649",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:51:53.185Z"
+  },
+  "js|tools/project-memory-context/src/prepare-semantic-jobs.mjs|function|exported|prepareSemanticJobs|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_prepare-semantic-jobs_mjs_function_exported_prepareSemanticJobs_1",
+    "graphNodeId": "src_prepare_semantic_jobs_preparesemanticjobs",
+    "codeHash": "2b36508274811f6584a3ed8042a6c08af587a717",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:52:22.832Z"
+  },
+  "js|tools/project-memory-context/src/project-context-schema.mjs|function|exported|buildProjectContextMemoryKey|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_project-context-schema_mjs_function_exported_buildProjectContextMemoryKey_1",
+    "graphNodeId": "src_project_context_schema_buildprojectcontextmemorykey",
+    "codeHash": "50b0743fe110055359b484585489d71ea7cdf997",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:52:47.468Z"
+  },
+  "js|tools/project-memory-context/src/project-context-schema.mjs|function|exported|hashProjectContextContent|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_project-context-schema_mjs_function_exported_hashProjectContextContent_1",
+    "graphNodeId": "src_project_context_schema_hashprojectcontextcontent",
+    "codeHash": "7de8cb84eb88aad2669bff31000c2b82baa0174b",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:53:06.591Z"
+  },
+  "js|tools/project-memory-context/src/project-context-schema.mjs|function|exported|createMaterializedProjectContext|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_project-context-schema_mjs_function_exported_createMaterializedProjectContext_1",
+    "graphNodeId": "src_project_context_schema_creatematerializedprojectcontext",
+    "codeHash": "f72391c2be0dcf61a04acda22a52bfd43ab9f60c",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:53:54.127Z"
+  },
+  "js|tools/project-memory-context/src/providers/cloud-api-provider.mjs|function|local|getCloudApiConfig|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_providers_cloud-api-provider_mjs_function_local_getCloudApiConfig_1",
+    "graphNodeId": "providers_cloud_api_provider_getcloudapiconfig",
+    "codeHash": "b131019ae3073069e4797ee9567656676cfee165",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:54:18.546Z"
+  },
+  "js|tools/project-memory-context/src/providers/cloud-api-provider.mjs|function|local|trimTrailingSlash|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_providers_cloud-api-provider_mjs_function_local_trimTrailingSlash_1",
+    "graphNodeId": "providers_cloud_api_provider_trimtrailingslash",
+    "codeHash": "fb409f53690c9a76dfc7765b881916436eeeaa86",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:54:36.944Z"
+  },
+  "js|tools/project-memory-context/src/providers/cloud-api-provider.mjs|function|local|buildSignal|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_providers_cloud-api-provider_mjs_function_local_buildSignal_1",
+    "graphNodeId": "providers_cloud_api_provider_buildsignal",
+    "codeHash": "1945c1335fde5b86c12583d1e55e16c6d2b648b2",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:54:58.162Z"
+  },
+  "js|tools/project-memory-context/src/providers/cloud-api-provider.mjs|function|exported|createCloudApiProvider|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_providers_cloud-api-provider_mjs_function_exported_createCloudApiProvider_1",
+    "graphNodeId": "providers_cloud_api_provider_createcloudapiprovider",
+    "codeHash": "a59c35b8ee343de903a43c78b461663f02197bae",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:55:37.435Z"
+  },
+  "js|tools/project-memory-context/src/providers/local-model-provider.mjs|function|local|getLocalModelConfig|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_providers_local-model-provider_mjs_function_local_getLocalModelConfig_1",
+    "graphNodeId": "providers_local_model_provider_getlocalmodelconfig",
+    "codeHash": "07e1e1e18502a0880f695ff4c5ab7532166619e5",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:56:01.035Z"
+  },
+  "js|tools/project-memory-context/src/providers/local-model-provider.mjs|function|local|buildSignal|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_providers_local-model-provider_mjs_function_local_buildSignal_1",
+    "graphNodeId": "providers_local_model_provider_buildsignal",
+    "codeHash": "1945c1335fde5b86c12583d1e55e16c6d2b648b2",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:56:20.422Z"
+  },
+  "js|tools/project-memory-context/src/providers/local-model-provider.mjs|function|exported|createLocalModelProvider|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_providers_local-model-provider_mjs_function_exported_createLocalModelProvider_1",
+    "graphNodeId": "providers_local_model_provider_createlocalmodelprovider",
+    "codeHash": "77a50822908af01cc9921c39006c69259f7bbbc3",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:56:58.499Z"
+  },
+  "js|tools/project-memory-context/src/query/load-artifacts.mjs|function|local|normalizePath|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_query_load-artifacts_mjs_function_local_normalizePath_1",
+    "graphNodeId": "query_load_artifacts_normalizepath",
+    "codeHash": "cfad1fc67a5e547dc8a1b566acb2cac5454ec080",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:57:15.340Z"
+  },
+  "js|tools/project-memory-context/src/query/load-artifacts.mjs|function|local|readJson|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_query_load-artifacts_mjs_function_local_readJson_2",
+    "graphNodeId": "query_load_artifacts_readjson",
+    "codeHash": "a2dde4154f8d244d46130920d86875985baf7109",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:57:42.707Z"
+  },
+  "js|tools/project-memory-context/src/query/load-artifacts.mjs|function|local|readJsonDirectory|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_query_load-artifacts_mjs_function_local_readJsonDirectory_1",
+    "graphNodeId": "query_load_artifacts_readjsondirectory",
+    "codeHash": "d856de6d1717e58bb4f5469b0a5c561a845e6513",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:58:12.276Z"
+  },
+  "js|tools/project-memory-context/src/query/load-artifacts.mjs|function|local|loadMemories|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_query_load-artifacts_mjs_function_local_loadMemories_1",
+    "graphNodeId": "query_load_artifacts_loadmemories",
+    "codeHash": "9ed0636c3924a131f62026ba2dc79d51e665f483",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:58:40.589Z"
+  },
+  "js|tools/project-memory-context/src/query/load-artifacts.mjs|function|local|parseSymbol|3": {
+    "memoryId": "queue-js_tools_project-memory-context_src_query_load-artifacts_mjs_function_local_parseSymbol_3",
+    "graphNodeId": "query_load_artifacts_parsesymbol",
+    "codeHash": "f413a57029d0397895128df04a1dc5aa64ceff43",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T16:59:23.313Z"
+  },
+  "js|tools/project-memory-context/src/query/load-artifacts.mjs|function|exported|loadQueryArtifacts|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_query_load-artifacts_mjs_function_exported_loadQueryArtifacts_1",
+    "graphNodeId": "query_load_artifacts_loadqueryartifacts",
+    "codeHash": "92ecaa21a22b48b401955bb47515dbdbd33aed9e",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:00:11.659Z"
+  },
+  "js|tools/project-memory-context/src/query/orchestrator.mjs|function|local|normalizePath|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_query_orchestrator_mjs_function_local_normalizePath_1",
+    "graphNodeId": "query_orchestrator_normalizepath",
+    "codeHash": "cfad1fc67a5e547dc8a1b566acb2cac5454ec080",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:00:30.521Z"
+  },
+  "js|tools/project-memory-context/src/query/orchestrator.mjs|function|local|tokenize|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_query_orchestrator_mjs_function_local_tokenize_1",
+    "graphNodeId": "query_orchestrator_tokenize",
+    "codeHash": "2a858b2d186e611eca119fe17e33d919db5b566e",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:00:53.707Z"
+  },
+  "js|tools/project-memory-context/src/query/orchestrator.mjs|function|local|countMatches|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_query_orchestrator_mjs_function_local_countMatches_2",
+    "graphNodeId": "query_orchestrator_countmatches",
+    "codeHash": "33d010bea4aa355a94092bfaf0c75bcfe57dc04c",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:01:25.988Z"
+  },
+  "js|tools/project-memory-context/src/query/orchestrator.mjs|function|local|searchMemoryMatches|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_query_orchestrator_mjs_function_local_searchMemoryMatches_2",
+    "graphNodeId": "query_orchestrator_searchmemorymatches",
+    "codeHash": "e6050e10cd4e468eb8de687ea3a0e7b2ed492a48",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:01:55.384Z"
+  },
+  "js|tools/project-memory-context/src/query/orchestrator.mjs|function|local|searchSymbolMatches|3": {
+    "memoryId": "queue-js_tools_project-memory-context_src_query_orchestrator_mjs_function_local_searchSymbolMatches_3",
+    "graphNodeId": "query_orchestrator_searchsymbolmatches",
+    "codeHash": "2eda0198f1f217a0fcb7b9e35fe7d9512d563667",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:02:27.293Z"
+  },
+  "js|tools/project-memory-context/src/query/orchestrator.mjs|function|local|buildRelatedSymbols|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_query_orchestrator_mjs_function_local_buildRelatedSymbols_1",
+    "graphNodeId": "query_orchestrator_buildrelatedsymbols",
+    "codeHash": "5e31d46ce86b3e0671b408640c0fbba38c963b16",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:02:53.529Z"
+  },
+  "js|tools/project-memory-context/src/query/orchestrator.mjs|function|exported|createQueryOrchestrator|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_query_orchestrator_mjs_function_exported_createQueryOrchestrator_1",
+    "graphNodeId": "query_orchestrator_createqueryorchestrator",
+    "codeHash": "74b74f3cd546788dacd27f1600db6b5aa041933a",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:03:48.563Z"
+  },
+  "js|tools/project-memory-context/src/refresh-state.mjs|function|exported|createEmptyRefreshState|0": {
+    "memoryId": "queue-js_tools_project-memory-context_src_refresh-state_mjs_function_exported_createEmptyRefreshState_0",
+    "graphNodeId": "src_refresh_state_createemptyrefreshstate",
+    "codeHash": "0c7a3e71656fd9b838bd9e46713a2fb00bfbc1aa",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:04:10.718Z"
+  },
+  "js|tools/project-memory-context/src/refresh-state.mjs|function|exported|updateRefreshStateEntry|3": {
+    "memoryId": "queue-js_tools_project-memory-context_src_refresh-state_mjs_function_exported_updateRefreshStateEntry_3",
+    "graphNodeId": "src_refresh_state_updaterefreshstateentry",
+    "codeHash": "331005bc04ca14812477f33a4ba268e3e338785a",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:04:33.328Z"
+  },
+  "js|tools/project-memory-context/src/refresh-state.mjs|function|exported|shouldRefreshProjectContext|3": {
+    "memoryId": "queue-js_tools_project-memory-context_src_refresh-state_mjs_function_exported_shouldRefreshProjectContext_3",
+    "graphNodeId": "src_refresh_state_shouldrefreshprojectcontext",
+    "codeHash": "3bdb4210e5d3ba70e790e383c5ccf680feb6bc9f",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:04:58.329Z"
+  },
+  "js|tools/project-memory-context/src/result-input.mjs|function|exported|loadResultInput|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_result-input_mjs_function_exported_loadResultInput_1",
+    "graphNodeId": "src_result_input_loadresultinput",
+    "codeHash": "90aea2c1c3c52db764d59acc930bb28f8148ed0f",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:05:24.406Z"
+  },
+  "js|tools/project-memory-context/src/retrieval/context-renderer-v1.mjs|function|exported|renderTargetContext|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_retrieval_context-renderer-v1_mjs_function_exported_renderTargetContext_1",
+    "graphNodeId": "retrieval_context_renderer_v1_rendertargetcontext",
+    "codeHash": "466323108687367cba92b78c2fd61de0b3c457c6",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:06:04.756Z"
+  },
+  "js|tools/project-memory-context/src/retrieval/context-renderer.mjs|function|exported|renderContext|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_retrieval_context-renderer_mjs_function_exported_renderContext_1",
+    "graphNodeId": "retrieval_context_renderer_rendercontext",
+    "codeHash": "d25528279fdecf99f06930621acd13b8a648db68",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:07:08.215Z"
+  },
+  "js|tools/project-memory-context/src/retrieval/query-engine.mjs|function|exported|createDepthConfig|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_retrieval_query-engine_mjs_function_exported_createDepthConfig_1",
+    "graphNodeId": "retrieval_query_engine_createdepthconfig",
+    "codeHash": "dce8e3381d3ffb3db0efe89ccc372ba112e55831",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:07:27.298Z"
+  },
+  "js|tools/project-memory-context/src/retrieval/query-engine.mjs|function|local|parseSymbolKeyParts|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_retrieval_query-engine_mjs_function_local_parseSymbolKeyParts_1",
+    "graphNodeId": "retrieval_query_engine_parsesymbolkeyparts",
+    "codeHash": "305772f4cf408167ef84157b0035d304abe75506",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:07:45.682Z"
+  },
+  "js|tools/project-memory-context/src/retrieval/query-engine.mjs|function|local|extractName|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_retrieval_query-engine_mjs_function_local_extractName_1",
+    "graphNodeId": "retrieval_query_engine_extractname",
+    "codeHash": "3e783ba4358972cdb7078fa5cd89cbdec626bb72",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:08:08.671Z"
+  },
+  "js|tools/project-memory-context/src/retrieval/query-engine.mjs|function|local|extractFilePath|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_retrieval_query-engine_mjs_function_local_extractFilePath_1",
+    "graphNodeId": "retrieval_query_engine_extractfilepath",
+    "codeHash": "95f23cfd009f71ff6270c42e96557704d93fe1ea",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:08:25.345Z"
+  },
+  "js|tools/project-memory-context/src/retrieval/query-engine.mjs|function|local|normalizePath|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_retrieval_query-engine_mjs_function_local_normalizePath_1",
+    "graphNodeId": "retrieval_query_engine_normalizepath",
+    "codeHash": "cfad1fc67a5e547dc8a1b566acb2cac5454ec080",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:08:41.273Z"
+  },
+  "js|tools/project-memory-context/src/retrieval/query-engine.mjs|function|exported|focusToEdgeTypes|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_retrieval_query-engine_mjs_function_exported_focusToEdgeTypes_1",
+    "graphNodeId": "retrieval_query_engine_focustoedgetypes",
+    "codeHash": "32ed4ff3371a750a4c5be4b4d8e20575515cb9f0",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:09:09.504Z"
+  },
+  "js|tools/project-memory-context/src/retrieval/query-engine.mjs|function|exported|createQueryEngine|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_retrieval_query-engine_mjs_function_exported_createQueryEngine_1",
+    "graphNodeId": "retrieval_query_engine_createqueryengine",
+    "codeHash": "1050218b724ba875a1d2c4a794d056a4e8db716a",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:10:45.988Z"
+  },
+  "js|tools/project-memory-context/src/retrieval/target-resolver.mjs|function|local|normalizeTargetPath|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_retrieval_target-resolver_mjs_function_local_normalizeTargetPath_1",
+    "graphNodeId": "retrieval_target_resolver_normalizetargetpath",
+    "codeHash": "abf94ece3360bae368553c4509462b52b1eee04e",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:11:06.183Z"
+  },
+  "js|tools/project-memory-context/src/retrieval/target-resolver.mjs|function|local|hasFileNameishLastSegment|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_retrieval_target-resolver_mjs_function_local_hasFileNameishLastSegment_1",
+    "graphNodeId": "retrieval_target_resolver_hasfilenameishlastsegment",
+    "codeHash": "d7a09f56c49a3854e544c7e8065308cb01ad8f07",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:11:35.929Z"
+  },
+  "js|tools/project-memory-context/src/retrieval/target-resolver.mjs|function|local|looksLikePath|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_retrieval_target-resolver_mjs_function_local_looksLikePath_1",
+    "graphNodeId": "retrieval_target_resolver_lookslikepath",
+    "codeHash": "cf016f107b97bda9a9ac7f41b599a7f48f4c476e",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:12:09.653Z"
+  },
+  "js|tools/project-memory-context/src/retrieval/target-resolver.mjs|function|local|looksLikeBareFilename|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_retrieval_target-resolver_mjs_function_local_looksLikeBareFilename_1",
+    "graphNodeId": "retrieval_target_resolver_lookslikebarefilename",
+    "codeHash": "3f855764e3f67ba2e83c06e809b15bb8c8d8edbf",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:12:32.810Z"
+  },
+  "js|tools/project-memory-context/src/retrieval/target-resolver.mjs|function|local|resolveSymbolTarget|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_retrieval_target-resolver_mjs_function_local_resolveSymbolTarget_2",
+    "graphNodeId": "retrieval_target_resolver_resolvesymboltarget",
+    "codeHash": "316ca20a56e78079804ac97d15cdb1ecf86ba4c4",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:13:00.588Z"
+  },
+  "js|tools/project-memory-context/src/retrieval/target-resolver.mjs|function|exported|resolveTarget|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_retrieval_target-resolver_mjs_function_exported_resolveTarget_1",
+    "graphNodeId": "retrieval_target_resolver_resolvetarget",
+    "codeHash": "e4edcb83a6951eefd967dd91be7b85df9b853635",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:13:30.963Z"
+  },
+  "js|tools/project-memory-context/src/retry-errors-runner.mjs|function|exported|collectRetryCandidates|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_retry-errors-runner_mjs_function_exported_collectRetryCandidates_1",
+    "graphNodeId": "src_retry_errors_runner_collectretrycandidates",
+    "codeHash": "35538e7f4679fe517e8e01890c1d429557803ff1",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:11:07.408Z"
+  },
+  "js|tools/project-memory-context/src/semantic-report.mjs|function|exported|normalizeSemanticReport|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_semantic-report_mjs_function_exported_normalizeSemanticReport_1",
+    "graphNodeId": "src_semantic_report_normalizesemanticreport",
+    "codeHash": "6f9111b2aef34c416e003506da3751f337797fd0",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:12:50.164Z"
+  },
+  "js|tools/project-memory-context/src/retry-errors-runner.mjs|function|exported|buildRetryState|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_retry-errors-runner_mjs_function_exported_buildRetryState_1",
+    "graphNodeId": "src_retry_errors_runner_buildretrystate",
+    "codeHash": "c2965f970c2c77f509a7d94e67f7715708a8e96e",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:11:38.588Z"
+  },
+  "js|tools/project-memory-context/src/retry-errors-runner.mjs|function|exported|runRetryLoop|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_retry-errors-runner_mjs_function_exported_runRetryLoop_1",
+    "graphNodeId": "src_retry_errors_runner_runretryloop",
+    "codeHash": "b692b45b9e0b9920df10700a8bc207bfea8269a9",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:12:14.530Z"
+  },
+  "js|tools/project-memory-context/src/semantic-unit.mjs|function|local|collectTypeScriptContext|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_semantic-unit_mjs_function_local_collectTypeScriptContext_2",
+    "graphNodeId": "src_semantic_unit_collecttypescriptcontext",
+    "codeHash": "9a8e3acc211370ddd7f99115c697d3c4b3c23995",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:13:16.062Z"
+  },
+  "js|tools/project-memory-context/src/retry-errors-runner.mjs|function|local|collectPreviousErrors|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_retry-errors-runner_mjs_function_local_collectPreviousErrors_1",
+    "graphNodeId": "src_retry_errors_runner_collectpreviouserrors",
+    "codeHash": "e60be6c81083df3710cb2ad35973765096230c0b",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:10:47.278Z"
+  },
+  "js|tools/project-memory-context/src/semantic-unit.mjs|function|local|sliceLines|3": {
+    "memoryId": "queue-js_tools_project-memory-context_src_semantic-unit_mjs_function_local_sliceLines_3",
+    "graphNodeId": "src_semantic_unit_slicelines",
+    "codeHash": "da6b9a5e2fbdbf4aea3dd37a13bf01db2d5ec46f",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:13:02.465Z"
+  },
+  "js|tools/project-memory-context/src/semantic-report.mjs|function|local|parseList|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_semantic-report_mjs_function_local_parseList_1",
+    "graphNodeId": "src_semantic_report_parselist",
+    "codeHash": "6357142dcb5e0f26975c121517301dc449ccee83",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:12:27.001Z"
+  },
+  "js|tools/project-memory-context/src/setup-bootstrap.mjs|function|local|readJson|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_setup-bootstrap_mjs_function_local_readJson_2",
+    "graphNodeId": "src_setup_bootstrap_readjson",
+    "codeHash": "9c23500b0c36291672e249f7b39bdec4ff21f14d",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:20:50.714Z"
+  },
+  "js|tools/project-memory-context/src/setup-bootstrap.mjs|function|local|buildOpencodeMcpConfig|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_setup-bootstrap_mjs_function_local_buildOpencodeMcpConfig_1",
+    "graphNodeId": "src_setup_bootstrap_buildopencodemcpconfig",
+    "codeHash": "61e719d4a5dad364b1f541ac417cdd6f30caaf3c",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:21:26.542Z"
+  },
+  "js|tools/project-memory-context/src/semantic-unit.mjs|function|local|collectCSharpContext|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_semantic-unit_mjs_function_local_collectCSharpContext_2",
+    "graphNodeId": "src_semantic_unit_collectcsharpcontext",
+    "codeHash": "4b95b181a05a74eb3de0ee5d94d1e54050e9923c",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:21:50.639Z"
+  },
+  "js|tools/project-memory-context/src/semantic-unit.mjs|function|exported|buildSemanticPrompt|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_semantic-unit_mjs_function_exported_buildSemanticPrompt_1",
+    "graphNodeId": "src_semantic_unit_buildsemanticprompt",
+    "codeHash": "195f00777ba8a7efc1a97da55b867c89a9584ca0",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:22:22.369Z"
+  },
+  "js|tools/project-memory-context/src/setup-bootstrap.mjs|function|local|writeMcpJson|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_setup-bootstrap_mjs_function_local_writeMcpJson_2",
+    "graphNodeId": "src_setup_bootstrap_writemcpjson",
+    "codeHash": "677d4bc97164b4e2c013cbd034ce0c6c8b3506a8",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:22:57.160Z"
+  },
+  "js|tools/project-memory-context/src/semantic-unit.mjs|function|exported|buildSemanticUnit|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_semantic-unit_mjs_function_exported_buildSemanticUnit_1",
+    "graphNodeId": "src_semantic_unit_buildsemanticunit",
+    "codeHash": "69898f192d79d7fc1e4c0df6cb565fa17528b264",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:23:47.740Z"
+  },
+  "js|tools/project-memory-context/src/setup-bootstrap.mjs|function|local|ensureOpencodeConfig|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_setup-bootstrap_mjs_function_local_ensureOpencodeConfig_2",
+    "graphNodeId": "src_setup_bootstrap_ensureopencodeconfig",
+    "codeHash": "34361ee5ecb8cc01d807f436c389d8a026fb77e0",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:24:24.423Z"
+  },
+  "js|tools/project-memory-context/src/setup-bootstrap.mjs|function|local|buildMcpConfig|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_setup-bootstrap_mjs_function_local_buildMcpConfig_1",
+    "graphNodeId": "src_setup_bootstrap_buildmcpconfig",
+    "codeHash": "6cc6ab716aed9917bed7dfc104e1e4dd688478b2",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:25:02.748Z"
+  },
+  "js|tools/project-memory-context/src/setup-bootstrap.mjs|function|local|ensureEnrichmentConfig|3": {
+    "memoryId": "queue-js_tools_project-memory-context_src_setup-bootstrap_mjs_function_local_ensureEnrichmentConfig_3",
+    "graphNodeId": "src_setup_bootstrap_ensureenrichmentconfig",
+    "codeHash": "84d8f818927bad75f1c22f085810aec3a9a270b1",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:25:34.378Z"
+  },
+  "js|tools/project-memory-context/src/setup-bootstrap.mjs|function|local|ensureAgentConfigs|3": {
+    "memoryId": "queue-js_tools_project-memory-context_src_setup-bootstrap_mjs_function_local_ensureAgentConfigs_3",
+    "graphNodeId": "src_setup_bootstrap_ensureagentconfigs",
+    "codeHash": "2c590dd24a3baef6b1baf058641d417f4ec93f77",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:26:11.992Z"
+  },
+  "js|tools/project-memory-context/src/setup-bootstrap.mjs|function|local|copyTemplate|3": {
+    "memoryId": "queue-js_tools_project-memory-context_src_setup-bootstrap_mjs_function_local_copyTemplate_3",
+    "graphNodeId": "src_setup_bootstrap_copytemplate",
+    "codeHash": "5248e98fb9e5b563423cb15fdf7618f6e998baa4",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:26:39.338Z"
+  },
+  "js|tools/project-memory-context/src/setup-bootstrap.mjs|function|exported|bootstrapProjectInstall|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_setup-bootstrap_mjs_function_exported_bootstrapProjectInstall_1",
+    "graphNodeId": "src_setup_bootstrap_bootstrapprojectinstall",
+    "codeHash": "4a422aab03b2f9c07a95edb99155716c8dbbf63f",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T18:13:36.690Z"
+  },
+  "js|tools/project-memory-context/src/symbol-extractor.mjs|function|exported|extractTopLevelSymbols|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_symbol-extractor_mjs_function_exported_extractTopLevelSymbols_1",
+    "graphNodeId": "src_symbol_extractor_extracttoplevelsymbols",
+    "codeHash": "c585ab87b884bdf5125dacf5733f81efbfdfc82b",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:27:52.220Z"
+  },
+  "js|tools/project-memory-context/src/symbol-extractor.mjs|function|exported|buildEnrichmentWorklist|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_symbol-extractor_mjs_function_exported_buildEnrichmentWorklist_1",
+    "graphNodeId": "src_symbol_extractor_buildenrichmentworklist",
+    "codeHash": "82ae90acd0f19acc9bbe18f1233797625ae7dec9",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:28:19.270Z"
+  },
+  "js|tools/project-memory-context/src/symbol-index.mjs|function|exported|upsertSymbolIndexEntry|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_symbol-index_mjs_function_exported_upsertSymbolIndexEntry_2",
+    "graphNodeId": "src_symbol_index_upsertsymbolindexentry",
+    "codeHash": "1d9aba67e76dcfd3bd8e8efc527d985cb9fa5647",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:28:46.217Z"
+  },
+  "js|tools/project-memory-context/src/symbol-index.mjs|function|exported|findGraphNodeIdByMemoryId|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_symbol-index_mjs_function_exported_findGraphNodeIdByMemoryId_2",
+    "graphNodeId": "src_symbol_index_findgraphnodeidbymemoryid",
+    "codeHash": "51120035e6921d95dac8c5c170f5036b27d9050a",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:29:10.096Z"
+  },
+  "js|tools/project-memory-context/src/symbol-index.mjs|function|exported|findMemoryIdByGraphNodeId|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_symbol-index_mjs_function_exported_findMemoryIdByGraphNodeId_2",
+    "graphNodeId": "src_symbol_index_findmemoryidbygraphnodeid",
+    "codeHash": "350a0e29c810742e9b6ba9199351fa5d370e1a47",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:29:32.544Z"
+  },
+  "js|tools/project-memory-context/src/symbol-keys.mjs|function|local|normalizePath|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_symbol-keys_mjs_function_local_normalizePath_1",
+    "graphNodeId": "src_symbol_keys_normalizepath",
+    "codeHash": "7265e8aaae4ebcfda9aea5e4f1496ef08b158e6c",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:29:48.716Z"
+  },
+  "js|tools/project-memory-context/src/symbol-keys.mjs|function|exported|buildSymbolKey|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_symbol-keys_mjs_function_exported_buildSymbolKey_1",
+    "graphNodeId": "src_symbol_keys_buildsymbolkey",
+    "codeHash": "e90ebabd9f0d72080fb133f35a1e3b85876acc31",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:30:11.330Z"
+  },
+  "js|tools/project-memory-context/src/sync-manifest.mjs|function|local|manifestPath|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_sync-manifest_mjs_function_local_manifestPath_1",
+    "graphNodeId": "src_sync_manifest_manifestpath",
+    "codeHash": "cf4b4f75f90ae350de217bcb2faa62897d0f660b",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:30:29.577Z"
+  },
+  "js|tools/project-memory-context/src/sync-manifest.mjs|function|exported|readSyncManifest|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_sync-manifest_mjs_function_exported_readSyncManifest_1",
+    "graphNodeId": "src_sync_manifest_readsyncmanifest",
+    "codeHash": "25de231ee65967423ff8b049b45af547a4062e8e",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:30:56.924Z"
+  },
+  "js|tools/project-memory-context/src/sync-manifest.mjs|function|exported|writeSyncManifest|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_sync-manifest_mjs_function_exported_writeSyncManifest_2",
+    "graphNodeId": "src_sync_manifest_writesyncmanifest",
+    "codeHash": "78d574fb6fdea1e6b0e4431bbf2fea12ff4fd04e",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:31:23.015Z"
+  },
+  "js|tools/project-memory-context/src/sync-manifest.mjs|function|local|withManifestLock|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_sync-manifest_mjs_function_local_withManifestLock_2",
+    "graphNodeId": "src_sync_manifest_withmanifestlock",
+    "codeHash": "570a95f7348d33b040881e933d4ead7fe5329ab5",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:32:02.808Z"
+  },
+  "js|tools/project-memory-context/src/sync-manifest.mjs|function|exported|createSyncEntry|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_sync-manifest_mjs_function_exported_createSyncEntry_1",
+    "graphNodeId": "src_sync_manifest_createsyncentry",
+    "codeHash": "fe801d2061f2f4da4e2202a47a35178dbc77a0fc",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:32:42.062Z"
+  },
+  "js|tools/project-memory-context/src/sync-manifest.mjs|function|exported|appendSyncEntry|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_sync-manifest_mjs_function_exported_appendSyncEntry_2",
+    "graphNodeId": "src_sync_manifest_appendsyncentry",
+    "codeHash": "e53bf2ac1db259bdff2579d873abd2a7e4dfee22",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:33:09.644Z"
+  },
+  "js|tools/project-memory-context/src/sync-manifest.mjs|function|exported|appendSyncEntries|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_sync-manifest_mjs_function_exported_appendSyncEntries_2",
+    "graphNodeId": "src_sync_manifest_appendsyncentries",
+    "codeHash": "1bb2170a5227d8e3fe3fff4d7f7914a061850014",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:33:36.270Z"
+  },
+  "js|tools/project-memory-context/src/sync-manifest.mjs|function|exported|getPendingEntries|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_sync-manifest_mjs_function_exported_getPendingEntries_1",
+    "graphNodeId": "src_sync_manifest_getpendingentries",
+    "codeHash": "9ade898b22f82651c1f03ea2aef1e0ef2c2b6b9c",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:33:54.004Z"
+  },
+  "js|tools/project-memory-context/src/sync-manifest.mjs|function|exported|getPendingUpserts|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_sync-manifest_mjs_function_exported_getPendingUpserts_1",
+    "graphNodeId": "src_sync_manifest_getpendingupserts",
+    "codeHash": "05671d552ec2bf6105b295958b8e183ced388dac",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:34:12.261Z"
+  },
+  "js|tools/project-memory-context/src/sync-manifest.mjs|function|exported|getPendingDeletes|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_sync-manifest_mjs_function_exported_getPendingDeletes_1",
+    "graphNodeId": "src_sync_manifest_getpendingdeletes",
+    "codeHash": "cb68cefae0c1843c7088dc5cd4ba0941215a3df0",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:34:31.299Z"
+  },
+  "js|tools/project-memory-context/src/sync-manifest.mjs|function|exported|markEntriesSynced|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_sync-manifest_mjs_function_exported_markEntriesSynced_2",
+    "graphNodeId": "src_sync_manifest_markentriessynced",
+    "codeHash": "9453ffd5c567b139ebb32ecdc63ba886ad895c58",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:34:59.310Z"
+  },
+  "js|tools/project-memory-context/src/sync-manifest.mjs|function|exported|removeSyncedEntries|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_sync-manifest_mjs_function_exported_removeSyncedEntries_1",
+    "graphNodeId": "src_sync_manifest_removesyncedentries",
+    "codeHash": "8f715832ea0a71dd02ab3c193edda693c06b6134",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:35:19.775Z"
+  },
+  "js|tools/project-memory-context/src/sync-manifest.mjs|function|exported|clearManifest|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_sync-manifest_mjs_function_exported_clearManifest_1",
+    "graphNodeId": "src_sync_manifest_clearmanifest",
+    "codeHash": "88f0b53ccf136f423c7afb17fc4a9da2ec206450",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:35:44.027Z"
+  },
+  "js|tools/project-memory-context/src/template-installer.mjs|function|exported|renderTemplate|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_template-installer_mjs_function_exported_renderTemplate_2",
+    "graphNodeId": "src_template_installer_rendertemplate",
+    "codeHash": "f96ebf7a58024762809689199be0d90012168d8b",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:36:12.476Z"
+  },
+  "js|tools/project-memory-context/src/template-installer.mjs|function|local|resolvePackageRoot|0": {
+    "memoryId": "queue-js_tools_project-memory-context_src_template-installer_mjs_function_local_resolvePackageRoot_0",
+    "graphNodeId": "src_template_installer_resolvepackageroot",
+    "codeHash": "ac743b986d59275b250e9ff835bc929bf1982792",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:36:41.317Z"
+  },
+  "js|tools/project-memory-context/src/template-installer.mjs|function|local|loadBinNames|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_template-installer_mjs_function_local_loadBinNames_1",
+    "graphNodeId": "src_template_installer_loadbinnames",
+    "codeHash": "d6bbe699d7f5cba35fcb9d718b8f415d2b9ae8e7",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:37:08.384Z"
+  },
+  "js|tools/project-memory-context/src/template-installer.mjs|function|local|buildPlaceholders|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_template-installer_mjs_function_local_buildPlaceholders_2",
+    "graphNodeId": "src_template_installer_buildplaceholders",
+    "codeHash": "00d1c4ac928afae2f0e289ed9f64557ca46ce5c4",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:37:39.380Z"
+  },
+  "js|tools/project-memory-context/src/template-installer.mjs|function|local|readTemplate|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_template-installer_mjs_function_local_readTemplate_2",
+    "graphNodeId": "src_template_installer_readtemplate",
+    "codeHash": "c6c0de7bafaa8ad549c30d7f362187f011010427",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:38:09.344Z"
+  },
+  "js|tools/project-memory-context/src/template-installer.mjs|function|local|writeIfMissingOrForced|3": {
+    "memoryId": "queue-js_tools_project-memory-context_src_template-installer_mjs_function_local_writeIfMissingOrForced_3",
+    "graphNodeId": "src_template_installer_writeifmissingorforced",
+    "codeHash": "ceaae5c45f4ff7fb23b5b9affa32d39790838f29",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:38:41.254Z"
+  },
+  "js|tools/project-memory-context/src/template-installer.mjs|function|local|hasBlockMarker|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_template-installer_mjs_function_local_hasBlockMarker_2",
+    "graphNodeId": "src_template_installer_hasblockmarker",
+    "codeHash": "a326e4d8774286817815d99c5ddd84304991300b",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:39:00.220Z"
+  },
+  "js|tools/project-memory-context/src/template-installer.mjs|function|local|replaceOrAppendBlock|3": {
+    "memoryId": "queue-js_tools_project-memory-context_src_template-installer_mjs_function_local_replaceOrAppendBlock_3",
+    "graphNodeId": "src_template_installer_replaceorappendblock",
+    "codeHash": "17583ab3fa77501357647345f0a88da089e01ef6",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:39:32.268Z"
+  },
+  "js|tools/project-memory-context/src/template-installer.mjs|function|local|stripBlockMarkers|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_template-installer_mjs_function_local_stripBlockMarkers_2",
+    "graphNodeId": "src_template_installer_stripblockmarkers",
+    "codeHash": "9301770142f4b134b92cce7e8b5477d355a02e3c",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:39:58.428Z"
+  },
+  "js|tools/project-memory-context/src/template-installer.mjs|function|local|wrapBlock|2": {
+    "memoryId": "queue-js_tools_project-memory-context_src_template-installer_mjs_function_local_wrapBlock_2",
+    "graphNodeId": "src_template_installer_wrapblock",
+    "codeHash": "53c8d71e9f5d568902939aea461035574ff6006e",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:40:18.749Z"
+  },
+  "js|tools/project-memory-context/src/template-installer.mjs|function|local|installWithBlockMarker|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_template-installer_mjs_function_local_installWithBlockMarker_1",
+    "graphNodeId": "src_template_installer_installwithblockmarker",
+    "codeHash": "954084ebc8ddb1d2851137ed24471669a3c864cc",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:41:03.602Z"
+  },
+  "js|tools/project-memory-context/src/template-installer.mjs|function|local|installOpencode|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_template-installer_mjs_function_local_installOpencode_1",
+    "graphNodeId": "src_template_installer_installopencode",
+    "codeHash": "52827cc3a58462e7a977dac21e5fdf92a22afeae",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:41:45.023Z"
+  },
+  "js|tools/project-memory-context/src/template-installer.mjs|function|local|installClaudeCode|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_template-installer_mjs_function_local_installClaudeCode_1",
+    "graphNodeId": "src_template_installer_installclaudecode",
+    "codeHash": "5c1a5e7a3f4997aeb2126e4713e4012983c33f2c",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:42:10.406Z"
+  },
+  "js|tools/project-memory-context/src/template-installer.mjs|function|local|installCursor|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_template-installer_mjs_function_local_installCursor_1",
+    "graphNodeId": "src_template_installer_installcursor",
+    "codeHash": "a7114cc87aa3b7d9e47b992a8a257fb0cf67a22a",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:42:47.785Z"
+  },
+  "js|tools/project-memory-context/src/template-installer.mjs|function|local|installGeneric|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_template-installer_mjs_function_local_installGeneric_1",
+    "graphNodeId": "src_template_installer_installgeneric",
+    "codeHash": "b3d0c641f7c99d3410c73ec54f3d0c3edb80907f",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:43:31.429Z"
+  },
+  "js|tools/project-memory-context/src/template-installer.mjs|function|exported|installAgentTemplates|1": {
+    "memoryId": "queue-js_tools_project-memory-context_src_template-installer_mjs_function_exported_installAgentTemplates_1",
+    "graphNodeId": "src_template_installer_installagenttemplates",
+    "codeHash": "8de4b57200169da08849105b50a59ae0baded35f",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:44:03.983Z"
+  },
+  "js|tools/project-memory-context/src/worklist-state.mjs|function|exported|updateWorklistEntry|3": {
+    "memoryId": "queue-js_tools_project-memory-context_src_worklist-state_mjs_function_exported_updateWorklistEntry_3",
+    "graphNodeId": "src_worklist_state_updateworklistentry",
+    "codeHash": "ec8dfd32ba65187e412017d58cf2483192f6e64b",
+    "status": "enriched",
+    "lastEnrichedAt": "2026-05-23T17:44:32.432Z"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "content": " **Responsibility**: Defines the structure of an `AppointmentInput` type based on the `appointmentSchema`.\n\n**Primary Inputs**: The schema defined by `appointmentSchema`.\n\n**Output**: A TypeScript type (`AppointmentInput`) that represents the expected format and constraints for appointment data.\n\n**Immediate Dependencies**: \"zod\" library for using `z.infer` to extract the inferred type from the schema.\n\n**Role in Module**: Ensures type safety and consistency across modules when handling appointment input data, adhering to predefined validation rules.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "ts",
+    "type",
+    "project:fiebrehemorragica",
+    "file:src/lib/validation/appointment-schema.ts"
+  ]
+}

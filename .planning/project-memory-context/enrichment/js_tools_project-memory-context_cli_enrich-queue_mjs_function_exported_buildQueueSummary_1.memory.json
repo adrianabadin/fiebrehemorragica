@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `buildQueueSummary` function is responsible for summarizing the statuses of entries in a worklist. It provides an overview of how many entries are enriched, have errors, and are pending or stale.\n\n### Primary Inputs\n- **worklist**: An array of objects representing each entry in the worklist. Each object contains a `status` field which indicates its current state (e.g., 'enriched', 'error', 'pending').\n\n### Output\n- A summary object containing three properties:\n  - `enriched`: The count of entries that are either 'enriched' or 'already_enriched'.\n  - `errors`: The count of entries that have encountered an error.\n  - `pending`: The count of entries that are either 'pending' or 'stale'.\n\n### Immediate Dependencies\n- None explicitly listed in the provided code snippet, but it operates on arrays and filters based on statuses which suggests integration with other parts of the system possibly involving data structures or functions handling similar data.\n\n### Role in Module\nThis function serves as a utility to provide quick insights into the state of entries within a worklist, aiding in monitoring and reporting progress or issues related to enrichment tasks. It is used for generating reports or summaries that help understand the current status and performance of the enrichment process.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/enrich-queue.mjs"
+  ]
+}

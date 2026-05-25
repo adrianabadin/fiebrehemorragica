@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function's main responsibility is to recursively traverse through directories starting from a given root directory, collecting information about each directory encountered. It records the relative path of each directory and its depth within the hierarchy, excluding any ignored directories as specified by `IGNORED_DIRECTORIES`.\n\n### Primary Inputs\n- **entries**: An array of objects representing filesystem entries (either files or directories) obtained from a call to `readdir` on a specific directory. Each entry has properties like `name` and `isDirectory()`.\n- **dir**: The root directory path where the traversal starts.\n- **root**: The absolute path used as the reference point for calculating relative paths.\n- **depth**: An integer representing the current depth level of recursion, starting from 0 for the initial call.\n- **maxDepth**: The maximum allowed depth to recurse into subdirectories; if not specified, it defaults to a high value ensuring full traversal.\n- **acc**: An accumulator array that collects objects containing `rel` (relative path) and `depth`.\n\n### Output\n- **acc**: An array of objects where each object contains the relative path (`rel`) and depth information, collected during the recursive traversal.\n\n### Immediate Dependencies\n- **readdir** from 'node:fs/promises': Used to list directory contents asynchronously.\n- **stat** from 'node:fs/promotes': Used to check if an entry is a directory before processing it further.\n- **join** and **relative** from 'node:path': These are used for path manipulation, converting absolute paths to relative and vice versa.\n\n### Role in Module\nThis function serves as a utility within the module responsible for exploring and structuring the filesystem hierarchy of a project, aiding in operations like dependency analysis or resource indexing by providing detailed directory traversal data that can be filtered or further processed based on application-specific requirements.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/extractors/structure-extractor.mjs"
+  ]
+}

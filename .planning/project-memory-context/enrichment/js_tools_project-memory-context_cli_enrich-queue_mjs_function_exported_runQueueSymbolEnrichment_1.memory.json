@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `runQueueSymbolEnrichment` function is responsible for orchestrating the enrichment process of a single symbol within a project. It builds a prompt from the symbol, runs enrichment using configured providers, and updates the worklist and symbol index based on the result.\n\n### Primary Inputs\n- **symbol**: The symbol object to be enriched.\n- **projectRoot**: Root directory of the project.\n- **projectSlug**: Identifier for the project.\n- **timeoutMs**: Enrichment timeout in milliseconds.\n- **enrichmentDir**: Directory where enrichment results are stored.\n- **worklist**: Array representing the worklist, which tracks symbols awaiting enrichment.\n- **symbolIndex**: Object containing indexed information about symbols.\n- **config**: Configuration settings for enrichment.\n- **providers**: List of providers used for enrichment.\n- **env**: Environment variables (default is `process.env`).\n\n### Output\n- Updates the `worklist` and `symbolIndex` based on the result of the enrichment process.\n- Saves enriched data to specified files in `enrichmentDir`.\n\n### Immediate Dependencies\n- **buildSymbolPrompt**: Function to build a prompt from the symbol.\n- **runEnrichmentWithFallback**: Function to run enrichment with fallback mechanisms.\n- **appendProviderEvent**: Function to append provider events.\n- **saveJson**: Utility function to save JSON data to a file.\n- **applyAttemptsToEntry**: Function to apply attempts to an entry in the worklist.\n- **getLastAttemptMode**: Function to get the last mode used in enrichment attempts.\n- **createQueueEnrichmentError**: Function to create an error object for queue enrichment failures.\n\n### Role in Module\nThis function serves as a central orchestrator for symbol enrichment within a project, handling both successful and failed enrichment scenarios, and updating relevant data structures accordingly.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/enrich-queue.mjs"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `symbolFromNode` function is responsible for creating a standardized representation of a symbol extracted from a JavaScript or TypeScript node. This includes details such as the language, file path, kind (type), name, export scope, arity (number of parameters), and a unique code hash based on the node's location in the source code. The function also generates a `symbolKey` which is derived from the symbol's properties using the `buildSymbolKey` function.\n\n### Primary Inputs\n- **node**: A Babel AST node representing a JavaScript or TypeScript element (e.g., variable, function).\n- **lines**: An array of strings where each string represents a line in the source file.\n- **filePath**: The path to the source file from which the symbol is extracted.\n- **language**: A string indicating the language of the code ('js' or 'ts').\n- **kind**: A string representing the type of the symbol (e.g., 'function', 'variable').\n- **name**: The name of the symbol.\n- **arity**: The number of parameters the symbol has.\n\n### Output\n- An object containing properties such as `language`, `filePath`, `kind`, `name`, `exportScope`, `arity`, `range` (start and end lines), and `codeHash`. Additionally, it includes a `symbolKey` which is derived from all these properties using the `buildSymbolKey` function.\n\n### Immediate Dependencies\n- **@babel/parser**: Used to parse JavaScript or TypeScript code into an AST.\n- **node:crypto**: Specifically `createHash` from 'node:crypto' to generate a hash of the symbol's source code snippet for uniqueness and integrity checks.\n- **../symbol-keys.mjs**: The `buildSymbolKey` function is used to create a unique key for each symbol based on its properties.\n\n### Role in Module\nThe `symbolFromNode` function serves as a central utility within the module responsible for converting abstract syntax tree (AST) nodes into structured, language-agnostic symbols. This standardized output is crucial for various downstream processes such as analysis, indexing, and retrieval across different tools or systems that might not natively understand JavaScript or TypeScript specifics.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/extractors/js-ts-extractor.mjs"
+  ]
+}

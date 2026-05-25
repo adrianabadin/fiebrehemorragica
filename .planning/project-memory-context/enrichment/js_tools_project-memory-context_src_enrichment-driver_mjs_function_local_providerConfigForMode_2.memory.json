@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `providerConfigForMode` function is responsible for extracting configuration settings based on the specified mode. It provides default empty objects if the mode does not match any predefined case, ensuring a consistent return type regardless of the input mode.\n\n### Primary Inputs\n- **config**: An object containing various configuration settings.\n- **mode**: A string that determines which configuration setting to extract from `config`. Possible values are 'local-model', 'cloud-api', and 'agent-subagent'.\n\n### Output\n- Returns an object based on the specified mode, defaulting to an empty object if the mode does not match any predefined case.\n\n### Immediate Dependencies\n- **import { classifyEnrichmentError } from './enrichment-errors.mjs';** This import is used for error classification but is not directly a dependency of `providerConfigForMode`.\n\n### Role in Module\nThis function serves as a utility to abstract the retrieval of configuration settings based on different modes, making it easier to access these configurations throughout the module without repeating the extraction logic. It enhances modularity and maintainability by centralizing this functionality within one place.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/enrichment-driver.mjs"
+  ]
+}

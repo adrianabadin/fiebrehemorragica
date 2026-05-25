@@ -27,8 +27,8 @@ export default async function Header() {
           </div>
         ) : (
           <div className={styles.authLinks}>
-            <Link href="/login" className={styles.link}>Sign In</Link>
-            <Link href="/register" className={styles.cta}>Sign Up</Link>
+            <Link href="/login" className={styles.link}>Iniciar Sesión</Link>
+            <Link href="/register" className={styles.cta}>Registrarse</Link>
           </div>
         )}
       </nav>

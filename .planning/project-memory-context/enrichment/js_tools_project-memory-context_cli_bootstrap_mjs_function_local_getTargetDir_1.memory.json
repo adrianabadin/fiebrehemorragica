@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `getTargetDir` function is responsible for determining the target directory based on command line arguments. It checks if any argument starts with `--`, and if so, it interprets that as a path to the target directory. If no valid argument is found, it defaults to the current working directory (`process.cwd()`).\n\n### Primary Inputs\n- `args`: An array of string arguments passed to the script.\n\n### Output\n- A resolved path if an argument starting with `--` is provided; otherwise, the current working directory. If `--help` or `-h` is found, it returns `null`.\n\n### Immediate Dependencies\n- `resolve`: From `node:path`, used to resolve file paths.\n- `process.cwd()`: To return the current working directory if no valid argument is provided.\n\n### Role in Module\nThis function serves as a utility to handle command line arguments related to target directories, providing flexibility for different execution contexts within the module.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/bootstrap.mjs"
+  ]
+}

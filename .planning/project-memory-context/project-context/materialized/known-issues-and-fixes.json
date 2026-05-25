@@ -1,0 +1,22 @@
+{
+  "memory_key": "project-context:known-issues-and-fixes",
+  "title": "Known issues and fixes",
+  "kind": "known-issues-and-fixes",
+  "source_mode": "declared",
+  "summary": "0 known issues recorded.",
+  "body": "- No known issues recorded.",
+  "tags": [
+    "project-context",
+    "project:fiebrehemorragica",
+    "issues"
+  ],
+  "source_files": [
+    ".planning/project-memory-context/project-context/declared/known-issues-and-fixes.json"
+  ],
+  "graph_refs": [],
+  "detected_sources": [],
+  "declared_sources": [],
+  "confidence": "high",
+  "content_hash": "9f9cfb38f378b7a117ab05a00c6f0f9098afcf10267ec7a593594a6d6acadd31",
+  "updated_at": "2026-05-23T15:44:53.500Z"
+}

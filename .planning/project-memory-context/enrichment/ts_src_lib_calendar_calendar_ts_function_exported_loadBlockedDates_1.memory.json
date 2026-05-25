@@ -1,0 +1,11 @@
+{
+  "content": " ### Structured Explanation\n\n#### Responsibility\nThe function `loadBlockedDates` is responsible for fetching and processing dates from the database that are marked as exceptions (blocked) for a specific year. It queries the `calendarException` table in the Prisma schema to find all entries corresponding to the given year, extracts the date fields from these entries, and then converts them into a string representation using the \"en-CA\" locale settings.\n\n#### Primary Inputs\n- **year: number** - The specific year for which blocked dates are requested.\n\n#### Output\n- **Promise<string[]>** - A promise that resolves to an array of strings, each representing a date in the \"YYYY-MM-DD\" format, based on the \"en-CA\" locale settings.\n\n#### Immediate Dependencies\n- **prisma**: The Prisma client used to interact with the database for fetching calendar exceptions. This is imported from `../db/prisma`.\n\n#### Role in Module\nThis function serves as a utility within the module responsible for handling date and time operations related to the calendar, specifically focusing on retrieving dates that are blocked or have special statuses due to exceptions. It supports other parts of the application requiring access to these specific dates without having direct knowledge of how they are stored or retrieved from the database.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "ts",
+    "function",
+    "project:fiebrehemorragica",
+    "file:src/lib/calendar/calendar.ts"
+  ]
+}

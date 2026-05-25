@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThis code defines an enumeration of document types used for appointments, mapping the possible values to a TypeScript type.\n\n### Primary Inputs\n- `DOCUMENT_TYPES`: An array containing strings representing different document types.\n\n### Output\n- `DocumentType`: A TypeScript type that represents one of the items in `DOCUMENT_TYPES`.\n\n### Immediate Dependencies\n- The module imports `z` from \"zod\", which is a library for schema validation in JavaScript and TypeScript.\n\n### Role in Module\nThis code serves as a type definition to ensure consistency and correctness when handling appointment document types within the application, leveraging Zod's capabilities for type safety.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "ts",
+    "type",
+    "project:fiebrehemorragica",
+    "file:src/lib/validation/appointment-schema.ts"
+  ]
+}

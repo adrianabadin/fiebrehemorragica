@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `persistEnrichmentResult` function is responsible for ensuring the project's memory context directories are set up and then updating and saving the graph and symbol index based on the enrichment result.\n\n### Primary Inputs\n- **projectRoot**: The root directory of the project where the memory context will be managed.\n- **result**: The enrichment result containing data to update the graph and symbol index.\n\n### Output\n- An object containing:\n  - `graphFile`: Path to the updated graph JSON file.\n  - `indexFile`: Path to the updated symbol index JSON file.\n  - `graph`: The updated graph data after applying enrichment results.\n  - `symbolIndex`: The updated symbol index data after applying enrichment results.\n\n### Immediate Dependencies\n- **ensureProjectMemoryContextDirs**: Ensures necessary directories for memory context are present.\n- **readJsonArtifact**: Reads the current state of the graph and symbol index from files.\n- **writeJsonArtifact**: Writes the updated graph and symbol index back to their respective files.\n- **applyEnrichmentResult**: Updates the graph and symbol index based on the enrichment result.\n\n### Role in Module\nThis function acts as a utility that manages the persistence of data related to project memory context, ensuring it is kept up-to-date with new insights from enrichment processes.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/persist-enrichment-result.mjs"
+  ]
+}

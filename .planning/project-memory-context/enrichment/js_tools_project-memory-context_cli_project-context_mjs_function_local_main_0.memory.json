@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `main` function is responsible for setting up and running the project context CLI. It handles command line arguments to determine whether to refresh the context, identifies the project root directory, and then delegates the rest of the processing to the `runProjectContextCli` function.\n\n### Primary Inputs\n- Command line arguments (`process.argv`): The script accepts `--refresh` as an argument to indicate if the context should be refreshed. It also expects a path to the project root directory as its first non-flag argument.\n\n### Output\n- None explicitly returned; instead, it performs actions like setting up and managing file system operations asynchronously.\n\n### Immediate Dependencies\n- Node.js built-in modules: `node:path`, `node:fs/promises`, `node:crypto`\n- Custom modules from the project: \n  - `../src/artifacts.mjs`: Handles artifact creation and reading.\n  - `../src/extractors/*`: Extracts context from various parts of the project (e.g., stack, structure, architecture).\n  - `../src/declared-intake.mjs`, `../src/materializer.mjs`, `../src/markdown-renderer.mjs`: Manage and render project contexts.\n  - `../src/sync-manifest.mjs`: Manages sync entries for the project context.\n\n### Role in Module\nThe `main` function serves as the entry point for executing the CLI tool related to managing project memory contexts. It orchestrates input parsing, argument handling (including whether to refresh data), and delegates significant processing to other modules based on the identified project root directory. This setup allows the module to be invoked directly from a command line interface, making it easily accessible for users to interact with the functionality of this tool.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/project-context.mjs"
+  ]
+}

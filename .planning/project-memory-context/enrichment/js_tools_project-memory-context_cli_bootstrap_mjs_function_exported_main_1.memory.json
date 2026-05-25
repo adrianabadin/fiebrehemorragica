@@ -1,0 +1,11 @@
+{
+  "content": " The `main` function is responsible for orchestrating the installation and setup of a project using PMC tools. It takes command line arguments to determine configuration settings, such as target directory and run stages. Its primary inputs are command line arguments, while its output is either success (0) or failure (1). Immediate dependencies include path manipulation, file system operations, and child process management. The function plays a crucial role in setting up the project environment by installing necessary tools and generating context artifacts based on specified flags for stages A and B.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/bootstrap.mjs"
+  ]
+}

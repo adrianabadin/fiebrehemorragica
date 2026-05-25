@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `nextFridayFrom` function is responsible for finding the next Friday from a given date. It iterates through each subsequent day, checking if the current day is Friday (represented by the number 5 in JavaScript's `getDay()` method, where Sunday is 0). Once it finds a Friday, it returns that date.\n\n### Primary Inputs\n- **date**: A JavaScript `Date` object representing the starting point from which to find the next Friday.\n\n### Output\n- **Date**: Returns a new `Date` object set to the next Friday after the input date. If the input date is already a Friday, it returns that same day.\n\n### Immediate Dependencies\n- None explicitly imported; however, it uses JavaScript's built-in Date methods (`getDay()`, `getDate()`, and `setDate()`).\n\n### Role in Module\nThis function serves as a utility to assist with date manipulations or calculations within the module where it is used. It helps standardize dates to always be on Fridays, which could be particularly useful for scheduling tasks or events that recur every Friday.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "ts",
+    "function",
+    "project:fiebrehemorragica",
+    "file:src/lib/calendar/calendar.ts"
+  ]
+}

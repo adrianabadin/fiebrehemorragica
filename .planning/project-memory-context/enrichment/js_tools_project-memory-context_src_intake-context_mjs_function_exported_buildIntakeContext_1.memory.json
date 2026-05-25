@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `buildIntakeContext` function is responsible for constructing a standardized context object that includes essential information about a project, such as its description and mapping goals. This function ensures that the input strings are normalized (e.g., trimmed and converted to lowercase) before being included in the output object. Additionally, it automatically adds the current date and time to the context when the function is called.\n\n### Primary Inputs\n- `projectDescription`: A string representing a brief description of the project.\n- `mappingGoals`: An array or list of strings that outline specific goals related to mapping aspects of the project.\n- `focusAreas` (optional): An array or list of strings specifying areas within the project where attention and resources should be concentrated; defaults to an empty array if not provided.\n\n### Output\nThe function outputs a JavaScript object with the following properties:\n- `projectDescription`: A normalized string version of the input description.\n- `mappingGoals`: A normalized list (array) of goals.\n- `focusAreas`: A normalized list (array) of focus areas, defaulting to an empty array if not provided.\n- `createdAt`: The current date and time in ISO format, ensuring that each context object is timestamped when it is created.\n\n### Immediate Dependencies\nThe function does not directly import any external modules or functions; all operations are performed within the scope of the function using native JavaScript methods.\n\n### Role in Module\nThis function serves as a utility to standardize and prepare project-related data for further processing or storage, ensuring that each piece of information is clean and ready for use without requiring additional preprocessing steps from consuming modules. It contributes to maintaining consistent data structures across different parts of the application where this context might be utilized.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/intake-context.mjs"
+  ]
+}

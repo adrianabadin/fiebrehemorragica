@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `spawnCheck` function is responsible for executing an external command using Node.js's `child_process.spawnSync` method and capturing the result, including its exit code, standard output (stdout), and standard error (stderr). This function serves as a utility to check the availability and functionality of specified binaries (e.g., Python) on the system.\n\n### Primary Inputs\n- **bin**: A string representing the command or binary to be executed.\n- **args**: An array of strings representing arguments to pass to the command.\n\n### Output\nThe function returns an object containing:\n- `exitCode`: The exit code of the executed command, defaulting to 1 if not available.\n- `stdout`: The standard output captured from the command execution.\n- `stderr`: The standard error captured from the command execution.\n\n### Immediate Dependencies\n- **`node:child_process`**: Specifically `spawnSync` method for executing commands synchronously.\n\n### Role in Module\nIn the context of the module, `spawnCheck` acts as a utility function that abstracts away the process of spawning and capturing output from external processes. This abstraction is particularly useful for tasks such as checking the installation status or version of tools like Python, which are often invoked via command line interfaces (CLIs). The function's ability to handle both successful execution and potential errors makes it valuable for diagnostic purposes within the application, helping ensure that other functionalities relying on these external tools can operate under expected conditions.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/doctor.mjs"
+  ]
+}

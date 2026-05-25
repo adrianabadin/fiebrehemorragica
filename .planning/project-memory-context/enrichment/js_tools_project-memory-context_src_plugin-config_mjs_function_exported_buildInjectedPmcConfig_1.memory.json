@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `buildInjectedPmcConfig` is responsible for constructing and returning the configuration object for the PMC (Project Memory Context) plugin. This includes setting up the necessary commands, types, environment variables, and enabling/disabling certain functionalities based on the provided `installState`.\n\n### Primary Inputs\n- **installState**: An object containing properties such as `projectRoot` and `memoryDbPath`, which are essential for configuring the PMC plugin.\n\n### Output\nThe function outputs a configuration object tailored for the PMC plugin, including:\n- Command configurations (`pmc-query` and `pmc-agent-memory`) with their respective types, commands, enabling status, and environment variables set according to the provided `installState`.\n\n### Immediate Dependencies\nNone explicitly listed in the code snippet. However, it uses ES6 syntax and assumes a JavaScript runtime environment that supports these features.\n\n### Role in Module\nThis function is part of a larger module or toolset designed for managing project memory contexts, likely used within a development workflow to configure and manage plugins such as `@aabadin/project-memory-context` and `@aabadin/agent-memory-mcp`. It plays a crucial role in setting up these tools with appropriate configurations based on the current state of the installation.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/plugin-config.mjs"
+  ]
+}

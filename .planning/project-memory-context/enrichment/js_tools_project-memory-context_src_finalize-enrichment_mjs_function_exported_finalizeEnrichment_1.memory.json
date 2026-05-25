@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `finalizeEnrichment` function is responsible for finalizing the enrichment process by persisting the result and updating the worklist entry. It ensures that the enriched data is stored appropriately and the worklist reflects the completion of the enrichment task.\n\n### Primary Inputs\n- **projectRoot**: A string representing the root directory of the project where the memory context is managed.\n- **result**: An object containing details about the enrichment result, including:\n  - `symbolKey`: A unique identifier for the symbol being enriched.\n  - `status`: The status of the enrichment process (e.g., 'success', 'failure').\n  - `memoryId`: An identifier for the memory context where the symbol is stored.\n  - `graphNodeId`: Optional, an identifier for a node in a graph database related to the symbol.\n  - `enrichedAt`: The timestamp when the enrichment was performed.\n  - `error`: Optional, details about any errors encountered during enrichment (default is set to `undefined`).\n\n### Output\n- An object containing:\n  - `persisted`: The result of persisting the enrichment result.\n  - `worklistFile`: The path to the worklist file where updates are made.\n  - `worklist`: The updated worklist after incorporating the enrichment results.\n\n### Immediate Dependencies\n- **persistEnrichmentResult**: A function that persists the enrichment result to a storage location specified by `projectRoot`.\n- **ensureProjectMemoryContextDirs**: A function that ensures the necessary directories for managing project memory context are present.\n- **readJsonArtifact**: A utility function to read JSON data from a file, defaulting to an empty array if the file does not exist.\n- **updateWorklistEntry**: A function that updates the worklist entry with enrichment results.\n- **writeJsonArtifact**: A utility function to write JSON data to a file.\n\n### Role in Module\nThis function is crucial for integrating and finalizing the enrichment process within the project's memory management system, ensuring that all related artifacts (like the worklist) are updated appropriately based on the outcome of the enrichment task.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/finalize-enrichment.mjs"
+  ]
+}

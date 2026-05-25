@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `getCloudApiConfig` is responsible for extracting the cloud API configuration from the provided context object. It checks if the context and its nested config property have a defined `cloudApi` property, and if so, returns it. If not, it defaults to an empty object. This ensures that the function can be used in scenarios where the cloud API configuration might or might not be present.\n\n### Primary Inputs\n- **context**: An object which is expected to contain a nested `config` object with at least one property named `cloudApi`.\n\n### Output\n- The output of `getCloudApiConfig(context)` is an object representing the cloud API configuration, or an empty object if the context does not provide such configuration.\n\n### Immediate Dependencies\n- **import { classifyEnrichmentError } from '../enrichment-errors.mjs';**: This import statement indicates that there might be some error handling related to enrichment in other parts of the codebase, but it is not directly a dependency of `getCloudApiConfig`.\n\n### Role in Module\nThis function serves as a utility or helper function within the module where it resides (`tools/project-memory-context/src/providers/cloud-api-provider.mjs`). It helps to abstract and standardize the retrieval of cloud API configuration, making other parts of the codebase that need this information more predictable and easier to maintain.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/providers/cloud-api-provider.mjs"
+  ]
+}

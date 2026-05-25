@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `renderProjectContextMarkdown` function is responsible for converting the project memory context, which includes details about source files and graph references, into a formatted markdown string. This function ensures that the data is presented clearly and concisely by structuring it into sections such as title, summary, body, source files, and graph references.\n\n### Primary Inputs\n- `memory`: An object containing various properties including:\n  - `title`: A string representing the title of the project.\n  - `kind`: A string indicating the kind of the project (e.g., \"project\", \"report\").\n  - `updated_at`: A date or timestamp when the project was last updated.\n  - `summary`: A brief summary of the project.\n  - `body`: The main content or description of the project.\n  - `source_files`: An array of strings representing file paths related to the project.\n  - `graph_refs`: An array of strings representing references to graphs or diagrams associated with the project.\n\n### Output\n- A markdown string that can be rendered as a document, containing sections like title, summary, body, source files, and graph references, all formatted appropriately.\n\n### Immediate Dependencies\n- None explicitly listed in the code snippet provided; however, it assumes `memory` contains the necessary properties for rendering.\n\n### Role in Module\nThis function serves as a utility to format project memory data into a user-friendly markdown output, which can be used for documentation, reporting, or display purposes within an application that handles project management and documentation. It enhances the readability and accessibility of detailed project information by converting it into a standardized markup language suitable for various presentation contexts (e.g., web pages, terminal outputs).",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/markdown-renderer.mjs"
+  ]
+}

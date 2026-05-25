@@ -1,0 +1,11 @@
+{
+  "content": " ### Structured Explanation of `main` Function\n\n#### Responsibility\nThe `main` function is responsible for syncing calendar exceptions, specifically handling the addition or update of holiday dates based on a provided year. It fetches data from an external source (a webpage), extracts relevant dates, and then uses these dates to create or update entries in the Prisma-managed database related to calendar exceptions.\n\n#### Primary Inputs\n1. **Year**: The function accepts a year as input which defaults to the current year if not provided via command line arguments.\n2. **External Data Source URL**: Constructs an URL based on the provided year to fetch holiday data from a specific webpage.\n\n#### Output\n- **Console Logs**: Provides detailed logs about each step of the process, including fetching data, processing dates, and database operations.\n- **Database Updates**: Upserts (updates if exists, creates otherwise) calendar exception records in the Prisma-managed database for both national holidays and a local exception specific to Chivilcoy.\n\n#### Immediate Dependencies\n1. **`prisma`**: Used for interacting with the database to create or update calendar exception records.\n2. **`fetch` from Node.js**: For retrieving data from the external source (webpage).\n3. **Environment Variables (`CHIVILCOY_LOCAL_MONTH`, `CHIVILCOY_LOCAL_DAY`)**: Provides specific dates for Chivilcoy's local exception, which are essential for constructing the date object used in database operations.\n\n#### Role in Module\nThe `main` function serves as the primary entry point for syncing calendar exceptions based on user input or default settings. It encapsulates all necessary steps to gather data from an external source, process it according to business logic specific to holiday dates and locations, and persist this information into a database. This function is crucial for maintaining accurate records of holidays across different years in the application's context.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "ts",
+    "function",
+    "project:fiebrehemorragica",
+    "file:scripts/sync-calendar-exceptions.ts"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `checkPython` function is responsible for checking the availability and version of Python 3 on the system. It performs the following tasks:\n1. Attempts to resolve the Python binary path using the provided `resolvePythonBin` function, defaulting to `null` if not provided.\n2. If no Python binary is found, it returns a failure status with a message suggesting downloading or setting up Python.\n3. If a Python binary is found, it optionally spawns a check process to verify its version using the `spawnCheck` function.\n4. Based on the result of the verification (exit code), it sets the status and constructs a message indicating whether Python was successfully checked or if there were issues.\n\n### Primary Inputs\n- `resolvePythonBin`: A function that returns the path to the Python binary, or `null` if not found.\n- `spawnCheck`: An optional function used to spawn a process checking the Python version.\n\n### Output\nA structured object with the following properties:\n- `name`: Always 'python'.\n- `status`: Either 'ok' if Python is found and passes the check, or 'fail' if it is not found or fails the check.\n- `message`: A descriptive message indicating the result of the check, including the path to the Python binary and any version information.\n\n### Immediate Dependencies\n- `node:fs/promises` for file system access operations (imported as `access` and `constants`).\n\n### Role in Module\nThe `checkPython` function serves as a utility to ensure that the application has access to a functional Python 3 installation. It is used within the module to provide feedback on the Python environment, which can be crucial for tasks that depend on Python, such as running scripts or checking compatibility with specific versions of Python.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/doctor.mjs"
+  ]
+}

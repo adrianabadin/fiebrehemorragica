@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `readJson` function is responsible for reading and parsing a JSON file from the given file path. It attempts to read the file content, parse it as JSON, and return the parsed object if successful. If an error occurs during the process (e.g., file not found or invalid JSON), it returns `null`.\n\n### Primary Inputs\n- **filePath**: A string representing the path to the JSON file that needs to be read and parsed.\n\n### Output\n- The output is a JavaScript object if the JSON parsing is successful, otherwise it returns `null`.\n\n### Immediate Dependencies\n- **readFile**: Imported from 'node:fs/promises', used to read the content of the file at the given path.\n- **JSON.parse**: A built-in JavaScript function that parses a string as JSON and constructs the JavaScript value or object described by the string.\n\n### Role in Module\nThe `readJson` function serves as a utility function within the module, providing a standardized way to read and parse JSON files across different parts of the application. It encapsulates file reading and parsing logic, making it easier to reuse and maintain throughout the project. This function is particularly useful for initializing or configuring modules by loading settings from JSON files.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/extractors/stack-extractor.mjs"
+  ]
+}

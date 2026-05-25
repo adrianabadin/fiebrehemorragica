@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `writeRetryState` function is responsible for writing the retry state of an enrichment process to a JSON file. This includes capturing various details such as status, PID (Process ID), project root directory, timestamps for when the process started and last had a heartbeat, and any errors encountered during the process.\n\n### Primary Inputs\n- `{ enrichmentDir, status, pid, projectRoot, startedAt, heartbeatAt, finishedAt = null, lastError = null }`: This object contains all necessary information to describe the state of an enrichment process, including its directory, current status, PID, project root path, timestamps for when it started and last had a heartbeat, and optional fields for finishing time and any errors encountered.\n\n### Output\n- The function writes a JSON file named `retry-state.json` located in the specified `enrichmentDir`. This file contains all the input data serialized as JSON.\n\n### Immediate Dependencies\n- **Node.js Modules**: \n  - `node:fs/promises`: For file system operations like reading and writing files.\n  - `node:path`: For resolving paths to ensure the file is written to the correct directory.\n- **Local Module Functions**:\n  - `saveJson(filePath, data)`: A utility function that serializes JavaScript objects into JSON format and writes them to a file. This is assumed to be defined elsewhere in the module based on the context provided (`tools/project-memory-context/cli/enrich-queue.mjs`).\n\n### Role in Module\nThis function serves as an essential utility within the enrichment process management system of the application. It encapsulates the mechanism for persisting the state and details of each retry attempt, which is crucial for debugging, logging, and ensuring that the state can be recovered or analyzed later if needed. This functionality supports the broader goal of providing a robust error handling and recovery mechanism for tasks executed within the module's scope.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/enrich-queue.mjs"
+  ]
+}

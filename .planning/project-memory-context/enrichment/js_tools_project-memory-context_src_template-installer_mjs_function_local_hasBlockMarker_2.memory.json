@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `hasBlockMarker` is responsible for checking if a given string (`content`) contains a specific marker (in the form of `<!-- pmc:{marker} -->`). This functionality is useful for detecting whether a particular comment block exists within the content.\n\n### Primary Inputs\n- **content**: A string that represents the text to be searched for the marker.\n- **marker**: A string representing the specific identifier (e.g., \"start\" or \"end\") of the comment block to look for.\n\n### Output\n- The function returns a boolean value (`true` if the marker is found in the content, otherwise `false`).\n\n### Immediate Dependencies\n- **content**: The string where the search for the marker will be performed.\n- **marker**: The identifier that needs to be matched within the content.\n\n### Role in Module\nThis function serves as a utility to facilitate template installation by allowing checks on whether specific comment blocks are present in the configuration files or other text assets, which can be crucial for determining further steps in the installation process based on the presence of certain markers.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/template-installer.mjs"
+  ]
+}

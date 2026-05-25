@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `checkGraphify` function is responsible for checking if the `graphifyy` package can be imported using the provided Python binary (`resolvePythonBin`) and a spawn check method (`spawnCheck`). It determines whether the `graphifyy` library is installed by attempting to import it from the specified Python binary.\n\n### Primary Inputs\n- `resolvePythonBin`: A function that returns the path or command to use for invoking Python. If not provided, it defaults to 'python3'.\n- `spawnCheck`: A method used to execute a command and check its output. This is typically an asynchronous function that spawns a child process and waits for it to complete.\n\n### Output\nThe function returns an object with three properties:\n- `name`: Always 'graphifyy' indicating the name of the check.\n- `status`: Either 'ok', 'fail', or 'warn'. It is 'ok' if the import was successful (i.e., exit code 0), 'fail' if it failed, and 'warn' if no spawn check was provided.\n- `message`: A descriptive message indicating whether the check passed, failed, or was skipped due to missing inputs.\n\n### Immediate Dependencies\n- `node:fs/promises` for file system access operations (imported but not directly used in this function).\n\n### Role in Module\nThe `checkGraphify` function serves as a utility within the module to ensure that the necessary Python environment and dependencies are correctly configured before proceeding with further tasks. It acts as a health check or prerequisite checker for ensuring that the required library (`graphifyy`) is available in the system's Python environment.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/doctor.mjs"
+  ]
+}

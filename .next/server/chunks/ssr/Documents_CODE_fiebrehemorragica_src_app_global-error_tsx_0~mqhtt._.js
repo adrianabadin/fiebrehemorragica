@@ -1,0 +1,3 @@
+module.exports=[86846,a=>{"use strict";var b=a.i(95330);a.s(["default",0,function({error:a,reset:c}){return(0,b.jsx)("html",{lang:"es",children:(0,b.jsx)("body",{children:(0,b.jsxs)("div",{style:{padding:"2rem",textAlign:"center",fontFamily:"sans-serif"},children:[(0,b.jsx)("h2",{children:"Algo salió mal"}),(0,b.jsx)("p",{children:a.message||"Error inesperado del servidor."}),(0,b.jsx)("button",{onClick:c,style:{marginTop:"1rem",padding:"0.5rem 1.5rem",cursor:"pointer",borderRadius:"6px",border:"none",background:"#0070f3",color:"white"},children:"Reintentar"})]})})})}])}];
+
+//# sourceMappingURL=Documents_CODE_fiebrehemorragica_src_app_global-error_tsx_0~mqhtt._.js.map

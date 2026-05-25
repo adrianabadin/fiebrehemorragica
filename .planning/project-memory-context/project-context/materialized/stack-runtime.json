@@ -1,0 +1,23 @@
+{
+  "memory_key": "project-context:stack-runtime",
+  "title": "Project stack and runtime",
+  "kind": "stack-runtime",
+  "source_mode": "detected",
+  "summary": "Languages: typescript. Frameworks: next, react.",
+  "body": "- Languages: typescript\n- Runtimes: node\n- Frameworks: next, react\n- Package managers: Not detected",
+  "tags": [
+    "project-context",
+    "project:fiebrehemorragica",
+    "stack"
+  ],
+  "source_files": [
+    "package.json",
+    "tsconfig.json"
+  ],
+  "graph_refs": [],
+  "detected_sources": [],
+  "declared_sources": [],
+  "confidence": "high",
+  "content_hash": "604f6ca1e2d1cca8679ff73a826e922136bb988e1d4fbdf0ab8c799e7cec33a7",
+  "updated_at": "2026-05-23T15:44:53.500Z"
+}

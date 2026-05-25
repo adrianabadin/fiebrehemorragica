@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `printUsage` function is responsible for displaying the usage information of the script, including command line arguments and environment variables.\n\n### Primary Inputs\n- None (it does not take any parameters as input)\n\n### Output\n- It prints a formatted help message to the console.\n\n### Immediate Dependencies\n- `console.log` for outputting the usage information.\n\n### Role in Module\nThe `printUsage` function serves as a self-documenting mechanism, providing users with clear instructions on how to use the script and what options are available, enhancing user experience and facilitating understanding of the tool's functionality.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/bootstrap.mjs"
+  ]
+}

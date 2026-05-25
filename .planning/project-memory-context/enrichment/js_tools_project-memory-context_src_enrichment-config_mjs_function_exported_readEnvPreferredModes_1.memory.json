@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `readEnvPreferredModes` is responsible for extracting and processing the preferred modes from an environment variable. It reads the value of `PMC_ENRICHMENT_PREFERRED_MODES`, splits it by commas to get individual mode strings, trims any extra whitespace, filters out empty strings, and returns the resulting array of non-empty, trimmed mode strings. If the environment variable is not set, it returns `null`.\n\n### Primary Inputs\n- **env**: An object that contains environment variables. Specifically, it looks for an environment variable named `PMC_ENRICHMENT_PREFERRED_MODES`.\n\n### Output\n- Returns an array of strings (mode names) if the environment variable is set and not empty; otherwise, returns `null`.\n\n### Immediate Dependencies\n- **node:path**: Imported for potential future use but currently unused in this function.\n- **./platform.mjs**: Imported to resolve configuration directories, which are not directly used by this function but might be relevant for broader context.\n\n### Role in Module\nThis function serves as a utility to read and process specific environment variables that configure the preferred modes for some project or system operation. It ensures that any provided mode strings are clean (i.e., no leading or trailing whitespace) before returning them, which can help maintain consistency and avoid errors in further processing based on these mode names.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/enrichment-config.mjs"
+  ]
+}

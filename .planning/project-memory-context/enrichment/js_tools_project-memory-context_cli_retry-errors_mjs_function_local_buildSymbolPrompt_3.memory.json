@@ -1,0 +1,11 @@
+{
+  "content": " ```json\n{\n  \"responsibility\": \"buildSymbolPrompt is responsible for generating a detailed and structured prompt from the code context of a given symbol, including its location, imports, and relevant code snippet.\",\n  \"primary_inputs\": [\n    {\n      \"name\": \"symbol\",\n      \"description\": \"An object containing details about the symbol such as name, kind, language, file path, and range (start and end lines).\"\n    },\n    {\n      \"name\": \"projectRoot\",\n      \"description\": \"The root directory of the project where the symbol is located.\"\n    },\n    {\n      \"name\": \"maxCodeLines\",\n      \"description\": \"An optional parameter to limit the number of lines displayed in the code section, defaulting to 80.\"\n    }\n  ],\n  \"output\": \"A string containing a compact structured explanation with details about the symbol's responsibility, primary inputs, output, immediate dependencies, and role in module.\",\n  \"immediate_dependencies\": [\n    {\n      \"name\": \"readFile\",\n      \"description\": \"Function to read file content from the filesystem.\"\n    },\n    {\n      \"name\": \"writeFile\",\n      \"description\": \"Function to write data to a file on the filesystem.\"\n    },\n    {\n      \"name\": \"mkdir\",\n      \"description\": \"Function to create directories on the filesystem.\"\n    }\n  ],\n  \"role_in_module\": \"This function plays a crucial role in providing detailed context about symbols within a codebase, aiding in debugging, documentation generation, and understanding of the module's structure. It helps in quickly grasping the purpose and usage of each symbol by offering a compact summary that includes key details like location, imports, and relevant code snippet.\"\n}\n```",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/retry-errors.mjs"
+  ]
+}

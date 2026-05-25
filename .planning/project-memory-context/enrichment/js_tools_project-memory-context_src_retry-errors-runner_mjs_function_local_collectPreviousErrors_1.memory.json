@@ -1,0 +1,11 @@
+{
+  "content": " **Responsibility:**\nThe `collectPreviousErrors` function is responsible for collecting and formatting previous error details from an entry object, which includes attempts and potential overall errors. It filters failed attempts to extract relevant error information and formats it into a structured array of objects containing provider, error type, message, and timestamp of the failure. If no specific failures are found in attempts, it falls back to using the overall error property if available.\n\n**Primary Inputs:**\n- `entry`: An object that may contain an array of attempt objects (`attempts`), a string indicating an error (`error`), and timestamps for when the entry failed (`failedAt`).\n\n**Output:**\n- An array of objects, each containing:\n  - `provider`: The provider associated with the error (or null if not available).\n  - `errorType`: The type of error (or null if not available).\n  - `message`: The error message.\n  - `failedAt`: The timestamp when the error occurred.\n- If no specific errors are found in attempts or the entry itself, it returns an empty array.\n\n**Immediate Dependencies:**\n- None explicitly listed; assumes standard JavaScript functionality and possibly utility functions within the module context.\n\n**Role in Module:**\nThis function serves as a utility to consolidate error details from multiple sources (attempts and overall errors) into a consistent format for further processing or reporting, enhancing the module's ability to handle and report on failure scenarios effectively.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/retry-errors-runner.mjs"
+  ]
+}

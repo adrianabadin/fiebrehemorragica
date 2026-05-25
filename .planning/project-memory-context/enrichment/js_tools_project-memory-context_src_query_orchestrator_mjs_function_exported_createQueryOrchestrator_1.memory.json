@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `createQueryOrchestrator` function is responsible for creating an orchestrator that can handle various types of queries related to symbols and memories within a project. It provides methods to search for symbol matches, query answers from both memory and symbol data, and retrieve related symbols based on their keys and directions (inbound or outbound).\n\n### Primary Inputs\n- `{ projectRoot, loadArtifacts = loadQueryArtifacts }`: An object containing the root directory of the project (`projectRoot`) and an optional function to load artifacts (`loadArtifacts`). The default is set to `loadQueryArtifacts`.\n\n### Output\nThe output of this function is an object with methods:\n- `query(question)`: Takes a query string, processes it, retrieves relevant data from the project's memory and symbols, and returns an answer along with sources.\n- `searchSymbols(query, fileFilter)`: Searches for symbol matches based on a given query and optional file filter.\n- `getDependents(symbolKey)`: Retrieves dependent symbols of a given symbol key.\n- `getDependencies(symbolKey)`: Retrieves dependency symbols of a given symbol key.\n\n### Immediate Dependencies\n- `loadQueryArtifacts` from `./load-artifacts.mjs`: This function is used to load the necessary artifacts (symbols and memories) for querying.\n\n### Role in Module\nThis function serves as a central hub for handling all query operations within the module, providing methods that can be used by other parts of the application to interact with the project's data related to symbols and memories. It abstracts away the details of how artifacts are loaded and provides high-level interfaces for querying and retrieving relationships between symbols.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/query/orchestrator.mjs"
+  ]
+}

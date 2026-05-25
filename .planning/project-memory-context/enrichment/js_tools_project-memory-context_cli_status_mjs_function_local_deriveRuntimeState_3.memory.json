@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `deriveRuntimeState` function is responsible for analyzing the current state of a task queue and determining its runtime status. It takes into account the `queueState`, which includes details about the process ID (pid), timestamps for when the task started, last heartbeat, and completion, as well as any error messages (`lastError`). Additionally, it uses an optional parameter `staleAfterSeconds` to determine if a heartbeat is considered fresh or not.\n\n### Primary Inputs\n- **queueState**: An object containing details about the task's status, including its pid, timestamps for start and heartbeat, completion status, and any error messages.\n- **now**: A timestamp representing the current time when the function is called. This is used to check if the last heartbeat is still within the acceptable stale period.\n- **staleAfterSeconds** (optional): The number of seconds after which a heartbeat is considered stale. Defaults to `DEFAULT_STALE_AFTER_SECONDS` if not provided.\n\n### Output\nThe function returns an object with two properties:\n- **state**: A string indicating the current state of the task, which can be one of 'idle', 'running', 'stalled', 'finished', or 'failed'.\n- **runtime**: An object containing detailed runtime information about the task.\n\n### Immediate Dependencies\nThe function directly depends on:\n- `queueState`: The primary input that provides all necessary details to determine the state of the task.\n- `now`: To check if the heartbeat is fresh or not.\n- `staleAfterSeconds` (optional): For determining what constitutes a stale heartbeat.\n\n### Role in Module\nThis function plays a crucial role in managing and monitoring the runtime status of tasks within the application. It helps to determine whether a task is idle, running, stalled, finished, or failed based on its current state and the provided timestamps and error details. This information is essential for various operational aspects such as resource allocation, alerting mechanisms, and logging.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/status.mjs"
+  ]
+}

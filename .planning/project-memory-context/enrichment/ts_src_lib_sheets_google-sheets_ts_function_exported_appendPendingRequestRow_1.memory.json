@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `appendPendingRequestRow` function is responsible for appending a new row to a specific sheet within a Google Sheets document. It constructs the row based on provided input, handles environment variable validation, and manages interactions with the Google Sheets API.\n\n### Primary Inputs\n- **input**: An object containing data necessary to build the new row (`AppendRequestRowInput`).\n\n### Output\n- A promise that resolves to an object containing the sheet's row number where the new row was appended.\n\n### Immediate Dependencies\n- `google`: The Google Sheets API client.\n- `process.env.GOOGLE_SHEETS_SPREADSHEET_ID`: The ID of the spreadsheet where rows will be appended.\n\n### Role in Module\nThis function serves as a utility to facilitate data entry into a predefined section (e.g., \"Solicitudes!A:O\") of a Google Sheets document, abstracting away the API interactions and error handling for easier integration with other parts of the application.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "ts",
+    "function",
+    "project:fiebrehemorragica",
+    "file:src/lib/sheets/google-sheets.ts"
+  ]
+}

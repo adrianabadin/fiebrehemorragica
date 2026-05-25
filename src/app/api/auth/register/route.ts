@@ -30,7 +30,7 @@ export async function POST(request: Request) {
       } catch (e) {
         const status = e instanceof AuthError ? e.status : 401;
         return NextResponse.json(
-          { error: "No autenticado" },
+          { error: "Solo un administrador puede crear nuevos usuarios. Iniciá sesión primero." },
           { status },
         );
       }

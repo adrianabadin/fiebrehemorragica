@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `safeKey` function is responsible for sanitizing and transforming a given key string to ensure it only contains alphanumeric characters, underscores (`_`), and hyphens (`-`). This helps in creating safe and valid identifiers that can be used in various contexts where strict character restrictions are necessary.\n\n### Primary Inputs\n- `key`: A string input which is the key to be sanitized.\n\n### Output\n- The output of `safeKey` is a new string with all characters not matching the regex `/[^a-zA-Z0-9_-]+/g` replaced by underscores (`_`). This results in a key that only contains letters, numbers, underscores, and hyphens.\n\n### Immediate Dependencies\n- The function does not directly import or use any external dependencies beyond the standard JavaScript environment provided by Node.js. It relies solely on built-in language features for string manipulation.\n\n### Role in Module\nThe `safeKey` function serves as a utility to ensure that keys used within the module are clean and meet specific formatting requirements. This is particularly useful when generating identifiers or names for internal processes, where invalid characters could lead to errors or unexpected behavior. By providing this function, the module maintains control over its data processing pipelines by enforcing strict character rules on key inputs.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/enrich-queue.mjs"
+  ]
+}

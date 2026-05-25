@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `renderTemplate` function is responsible for replacing placeholders in a given template string with corresponding values provided in the `placeholders` object. It uses JavaScript's `reduce` method to iterate over each placeholder and replace its occurrence in the template text.\n\n### Primary Inputs\n- **content**: A string representing the template content that may contain placeholders like `{{key}}`.\n- **placeholders**: An object where keys are the names of the placeholders and values are the replacements for those placeholders.\n\n### Output\nThe output is a new string with all specified placeholders replaced by their corresponding values from the `placeholders` object.\n\n### Immediate Dependencies\n- **Object.entries(placeholders)**: Converts the `placeholders` object into an array of key-value pairs, which are used in the subsequent `reduce` method.\n- **reduce((text, [key, value]) => text.replaceAll(`{{${key}}}`, value), content)**: Iterates over each key-value pair in the placeholders, replacing all occurrences of a placeholder (e.g., `{{key}}`) with its corresponding value in the template string.\n\n### Role in Module\nThe `renderTemplate` function serves as a utility to dynamically replace placeholders within a predefined template format. This is particularly useful for generating configuration files or any other text-based outputs where specific values need to be inserted at runtime based on user inputs or configurations.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/template-installer.mjs"
+  ]
+}

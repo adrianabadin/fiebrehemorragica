@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `applyAttemptsToEntry` function is responsible for updating an entry object by incorporating details from multiple attempts, enhancing the entry's metadata with information about each attempt.\n\n### Primary Inputs\n- **entry**: The initial data structure representing a project or resource that needs to be enriched with attempt details.\n- **attempts**: An array of objects, where each object represents an attempt made on the entry. Each attempt typically contains some form of feedback or result relevant to the entry.\n\n### Output\n- A new object (`updated`) which is a copy of the original `entry` but with additional properties reflecting the outcomes of the attempts.\n\n### Immediate Dependencies\n- The function directly depends on the utility functions `withRecordedAttempt` from `../src/enrichment-attempts.mjs`, which are responsible for recording and updating attempt details within the entry object.\n\n### Role in Module\nThis function serves as a utility to integrate multiple attempts into an initial data structure, providing a mechanism to track and reflect upon various stages of processing or interaction with each entry in the module's context.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/enrich-queue.mjs"
+  ]
+}

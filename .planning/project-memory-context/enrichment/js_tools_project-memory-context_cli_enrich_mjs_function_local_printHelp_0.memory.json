@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `printHelp` function is responsible for displaying the usage information of the CLI tool when the user requests help. It provides guidance on how to use the command, specifically \"pmc enrich\".\n\n### Primary Inputs\nThere are no inputs required by the `printHelp` function other than its invocation.\n\n### Output\nThe output of the `printHelp` function is a console log displaying the usage information: \"Usage: pmc enrich\".\n\n### Immediate Dependencies\n- **Node.js Core Modules**: The function uses `console.log` which is part of Node.js core modules, and does not directly import other Node.js modules but relies on them being available in context (e.g., global environment or module system).\n\n### Role in Module\nThe `printHelp` function serves as a utility to provide immediate feedback about the CLI tool's usage when invoked with help-related flags or commands, enhancing user experience and understanding of how to interact with the application through its command line interface.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/enrich.mjs"
+  ]
+}

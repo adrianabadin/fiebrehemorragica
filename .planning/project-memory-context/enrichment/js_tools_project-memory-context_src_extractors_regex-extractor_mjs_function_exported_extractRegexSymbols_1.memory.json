@@ -1,0 +1,11 @@
+{
+  "content": " The `extractRegexSymbols` function is responsible for extracting symbols from the content of a file based on its extension. It takes two primary inputs, `filePath` and `content`, to determine the language and extract relevant regex patterns associated with that language. The output is an array of extracted symbols, which are identified using regex patterns specific to different programming languages. Immediate dependencies include `node:crypto` for creating hash values and `../symbol-keys.mjs` for building symbol keys. This function plays a crucial role in the module by providing a way to dynamically extract meaningful symbols from various file types based on their language, enhancing the project's ability to manage and analyze code symbols effectively.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/extractors/regex-extractor.mjs"
+  ]
+}

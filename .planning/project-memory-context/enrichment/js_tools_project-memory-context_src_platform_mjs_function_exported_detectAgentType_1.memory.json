@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `detectAgentType` function is responsible for detecting the type of agent (or tool) associated with a given project root directory. It does this by checking for specific files or directories that are commonly used by certain tools or agents.\n\n### Primary Inputs\n- **projectRoot**: A string representing the path to the root directory of the project.\n\n### Output\n- The function returns a string indicating the type of agent:\n  - 'opencode' if `.opencode` exists in the project root.\n  - 'claude-code' if `CLAUDE.md` or `.claude` exists in the project root.\n  - 'cursor' if `.cursorrules` or `.cursor` exists in the project root.\n  - 'generic' if none of the above conditions are met.\n\n### Immediate Dependencies\n- **node:fs**: Used to check for the existence of files and directories (`existsSync`).\n- **node:path**: Used to construct file paths (`join`, `resolve`).\n\n### Role in Module\nThis function is part of a module that likely deals with managing or detecting characteristics of projects related to specific tools (e.g., OpenCode, Claude, Cursor). It provides a way to identify the tool being used based on common indicators within the project directory structure.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/platform.mjs"
+  ]
+}

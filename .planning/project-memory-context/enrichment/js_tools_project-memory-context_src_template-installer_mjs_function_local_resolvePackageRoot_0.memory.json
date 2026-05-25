@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `resolvePackageRoot` function is responsible for determining the root directory of the current Node.js package by resolving the path from the module's URL. This is useful for locating configuration files, scripts, or other resources that are part of the package.\n\n### Primary Inputs\n- **import.meta.url**: The URL of the currently executing module (in this case, `template-installer.mjs`).\n\n### Output\n- A string representing the absolute path to the root directory of the Node.js package.\n\n### Immediate Dependencies\n- **dirname(fileURLToPath(import.meta.url))**: Converts the module's URL from a file URL format to a filesystem path and then gets the directory name of that path.\n- **join(...)**: Joins the directory name with '..' to navigate up one level in the directory tree, effectively reaching the root directory of the package.\n\n### Role in Module\nThe `resolvePackageRoot` function serves as a utility to simplify access to the root directory of the Node.js module, making it easier to locate and interact with files within the same package without hardcoding paths. This is particularly useful for maintaining modularity and ensuring that scripts can always find their configuration or other dependencies regardless of where they are run from.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/template-installer.mjs"
+  ]
+}

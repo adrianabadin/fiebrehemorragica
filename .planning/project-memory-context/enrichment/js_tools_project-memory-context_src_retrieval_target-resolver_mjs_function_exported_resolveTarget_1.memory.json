@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `resolveTarget` is responsible for determining the appropriate mode and target path based on the provided input parameters. It uses heuristics to decide whether the target should be treated as a file, query, or symbol, considering both explicit user inputs and implicit cues from the engine's capabilities.\n\n### Primary Inputs\n- **engine**: An object that presumably provides methods for querying symbols by file path.\n- **explicitMode**: A string that can be 'query', 'file', or 'symbol'. If provided, it directly influences the output mode.\n- **target**: The target path or identifier to resolve.\n\n### Output\nThe function returns an object with two properties:\n- `mode`: Indicates whether the target should be treated as a file ('file'), query ('query'), or symbol ('symbol').\n- **target**: Depending on the mode, this can either be the original input path (if 'query' or if no suitable match is found) or a normalized version of the input path.\n\n### Immediate Dependencies\n- `normalizeTargetPath`: A function that normalizes file paths to ensure consistency in handling different representations of file paths.\n- `looksLikePath`, `looksLikeBareFilename`: Functions used to determine if the target resembles a file path or bare filename, respectively.\n- `resolveSymbolTarget`: A function that resolves targets as symbols based on the engine's capabilities.\n\n### Role in Module\nThis function serves as a central dispatcher for resolving various types of targets based on the provided inputs and heuristics. It integrates with other utility functions to make decisions about how to interpret and handle target paths, ensuring flexibility and robustness in handling different scenarios that might arise during target resolution.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/retrieval/target-resolver.mjs"
+  ]
+}

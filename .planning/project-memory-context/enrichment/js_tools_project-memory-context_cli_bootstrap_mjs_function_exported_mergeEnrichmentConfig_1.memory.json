@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `mergeEnrichmentConfig` function is responsible for merging the current enrichment configuration with default settings, ensuring that all necessary fields are populated.\n\n### Primary Inputs\n- `current`: The current enrichment configuration object.\n\n### Output\n- A merged configuration object that includes defaults where values are not provided in `current`.\n\n### Immediate Dependencies\n- `buildDefaultEnrichmentConfig()`: Function to generate default settings for the enrichment configuration.\n\n### Role in Module\nThis function serves as a utility to initialize and configure the enrichment settings, ensuring that all aspects of the configuration have appropriate defaults if not explicitly provided.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/bootstrap.mjs"
+  ]
+}

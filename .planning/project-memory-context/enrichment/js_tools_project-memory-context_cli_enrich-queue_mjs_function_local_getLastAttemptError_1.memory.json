@@ -1,0 +1,11 @@
+{
+  "content": " ### Structured Explanation\n\n#### Responsibility\nThe function `getLastAttemptError` is responsible for retrieving the last error message from an array of enrichment attempts. It iterates through the array starting from the end, checking each attempt's `errorMessage`. If it finds a non-null or non-undefined `errorMessage`, it returns that message immediately. If no such message is found after iterating through all attempts, it defaults to returning 'All enrichment providers failed'.\n\n#### Primary Inputs\n- **attempts**: An array of objects representing the results of various enrichment attempts. Each object in the array can have an optional `errorMessage` property which holds a string describing any error that occurred during the attempt.\n\n#### Output\n- The function returns a string:\n  - If it finds an `errorMessage` in any of the attempts, it returns this message.\n  - If all attempts fail and none have an `errorMessage`, it returns 'All enrichment providers failed'.\n\n#### Immediate Dependencies\n- **Array manipulation**: Utilizes array indexing (`for` loop) to iterate over elements from the end towards the beginning.\n- **Conditional checking**: Checks if `errorMessage` is not null or undefined before returning it.\n\n#### Role in Module\nThis function serves as a utility to provide meaningful feedback about the last encountered error during enrichment attempts, providing clear and concise information that can be used for debugging or user notifications. It helps in maintaining transparency regarding what went wrong when multiple providers are involved in an operation.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/enrich-queue.mjs"
+  ]
+}

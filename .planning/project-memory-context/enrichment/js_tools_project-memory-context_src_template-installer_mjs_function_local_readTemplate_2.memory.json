@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `readTemplate` function is responsible for reading the content of a template file from the specified path within a package's templates directory. It constructs the full path to the template by joining the provided `packageRoot` with the relative `templatePath`, and then reads the file using Node.js's `fs/promises` module, interpreting its contents as UTF-8 encoded text.\n\n### Primary Inputs\n1. **packageRoot**: A string representing the root directory of a package where templates are stored under the 'templates' subdirectory.\n2. **templatePath**: A string representing the relative path within the 'templates' directory to the template file that needs to be read.\n\n### Output\n- The output is a Promise that resolves to a string containing the content of the template file. If the file does not exist, it will resolve with `null` or handle the error appropriately depending on how the function is used in the application.\n\n### Immediate Dependencies\n1. **Node.js's fs/promises**: Specifically imported for its `readFile` method to read the template file asynchronously.\n2. **Node.js path module**: Imported via `join` and `dirname` for constructing the full path to the template file.\n3. **URL module**: Imported via `fileURLToPath` to convert a file URL to a local file path, which is useful in environments where URLs are used as paths.\n\n### Role in Module\nThe `readTemplate` function serves as a utility within the module responsible for handling template reading operations. It encapsulates the logic required to fetch templates from the filesystem, making it reusable and abstracting away the details of file system access and path manipulation. This abstraction is beneficial for maintaining clean code and ensuring consistency in how templates are accessed across different parts of the application or by other modules that interact with this function.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/template-installer.mjs"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "content": " ### Structured Explanation of `installGeneric` Function\n\n#### Responsibility\nThe `installGeneric` function is responsible for installing or updating a generic README file (`README-SETUP.md`) into the project root directory, along with creating a state marker to indicate that it has been installed. This function ensures that the content from a template is dynamically rendered and inserted into the readme without overwriting existing content unless explicitly instructed to do so.\n\n#### Primary Inputs\n- `{ projectRoot, packageRoot, placeholders }`: \n  - **projectRoot**: The root directory of the project where the README file will be installed or updated.\n  - **packageRoot**: The base directory from which templates are loaded.\n  - **placeholders**: A set of key-value pairs used to replace placeholders in the template content with actual values.\n\n#### Output\n- No explicit return value; the function operates directly on file system operations based on its inputs.\n\n#### Immediate Dependencies\n- Node.js built-in modules:\n  - `fs/promises`: For filesystem operations like reading, writing, and creating directories.\n  - `path`: Specifically for path manipulation (`dirname`, `join`).\n  - `url`: To convert file URLs to file paths (`fileURLToPath`).\n\n#### Role in Module\nThis function serves as a utility within the module responsible for managing project setup documentation by dynamically inserting or updating content based on templates and user-defined placeholders. It ensures that the generic template is correctly integrated into the project structure, handling both initial installation and subsequent updates without overwriting existing data unless necessary.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/template-installer.mjs"
+  ]
+}

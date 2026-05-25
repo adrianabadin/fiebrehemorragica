@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `extractLabelFromGraphify` is responsible for **cleaning up and normalizing labels** extracted from Graphify data. It removes leading dots (`'.'`) and trailing parentheses followed by an empty string (`()`) from the input strings, which are typical formatting artifacts found in such contexts.\n\n### Primary Inputs\n- `raw`: This is a string that represents the raw label or identifier obtained from Graphify data.\n\n### Output\n- The output of `extractLabelFromGraphify` is a cleaned and normalized version of the input string, with leading dots and trailing parentheses removed.\n\n### Immediate Dependencies\nThere are no external dependencies mentioned in the code snippet provided. It appears to be a standalone function designed for local use within the module or context where it is implemented.\n\n### Role in Module\nThis function serves as a utility within the `graph-node-resolver.mjs` module, ensuring that any labels retrieved from Graphify are consistently formatted and ready for further processing or display. It helps maintain data integrity by removing unnecessary characters that might interfere with identification or usage of these labels elsewhere in the application logic.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/graph-node-resolver.mjs"
+  ]
+}

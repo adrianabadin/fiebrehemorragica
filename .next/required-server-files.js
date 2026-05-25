@@ -104,7 +104,7 @@ self.__SERVER_FILES_MANIFEST={
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica",
+    "outputFileTracingRoot": "C:\\Users\\aabad",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -304,12 +304,12 @@ self.__SERVER_FILES_MANIFEST={
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
     "turbopack": {
-      "root": "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica"
+      "root": "C:\\Users\\aabad"
     },
     "distDirRoot": ".next"
   },
   "appDir": "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica",
-  "relativeAppDir": "",
+  "relativeAppDir": "Documents\\CODE\\fiebrehemorragica",
   "files": [
     ".next\\routes-manifest.json",
     ".next\\server\\pages-manifest.json",

@@ -1,0 +1,11 @@
+{
+  "content": " ### Structured Explanation of `processBatch` Function\n\n#### Responsibility:\nThe `processBatch` function is responsible for processing a batch of appointment requests. It involves fetching the batch details, calculating available slots based on previous appointments and blocked dates, updating each request's status with the assigned slot information, and finally marking the batch as completed. Additionally, it handles sending emails to notify users about their scheduled appointments.\n\n#### Primary Input:\n- `batch`: An object containing a single property `id` which is a string representing the unique identifier of the batch to be processed.\n\n#### Output:\n- The function does not explicitly return anything but performs asynchronous operations that result in updates to the database and sends emails. It throws an error if a request is missing its sheet row number or if the batch is not found.\n\n#### Immediate Dependencies:\n- `prisma`: Used for interacting with the database to fetch, update, and create records related to batches and appointment requests.\n- `assignSlotsForBatch`, `loadBlockedDates`: Custom functions imported from other modules that handle slot assignment and fetching blocked dates respectively.\n- `updateAssignedTurnRow`, `sendTurnoEmail`: Functions for updating Google Sheets and sending emails which are also imported from other modules.\n\n#### Role in Module:\nThe function plays a pivotal role in the workflow of handling appointment requests, ensuring that each request is processed according to its assigned slot and all necessary updates (database and email) are performed accurately. It encapsulates the core logic for managing batch processing within the application's business logic layer.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "ts",
+    "function",
+    "project:fiebrehemorragica",
+    "file:src/lib/queue/batch-processor.ts"
+  ]
+}

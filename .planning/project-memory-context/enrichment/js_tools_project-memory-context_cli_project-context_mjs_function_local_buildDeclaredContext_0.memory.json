@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `buildDeclaredContext` is responsible for initializing a basic structure of the project context. It sets up an initial state for various aspects of the project, such as architecture, rules, requirements, and known issues and fixes. This serves as a foundational template that can be expanded or modified based on the actual data extracted during runtime or further defined by user inputs.\n\n### Primary Inputs\n- None explicitly passed as parameters; all properties are initialized within the function.\n\n### Output\nThe output is an object containing placeholders for different aspects of the project context:\n- `architectureTarget`: An object with a placeholder property `architecture`.\n- `technicalRules`: An object with a placeholder property `rules` which is an array.\n- `projectRequirements`: An object with a placeholder property `requirements` which is an array.\n- `knownIssuesAndFixes`: An object with a placeholder property `items` which is an array.\n\n### Immediate Dependencies\nThe function relies on the following immediate dependencies:\n- **Imports from Node.js standard library**: These are used for basic operations like file system access and hashing (`node:path`, `node:fs/promises`, `node:crypto`).\n- **Custom modules**: These include utilities for artifact handling (`../src/artifacts.mjs`), context extraction (`../src/extractors/*`), template creation (`../src/declared-intake.mjs`), and markdown rendering (`../src/markdown-renderer.mjs`).\n\n### Role in Module\nThis function plays a crucial role in the module by providing a default, empty structure for project contexts that can be populated with runtime data or user inputs as needed. It acts as a baseline template that other parts of the application might use to build upon when processing and analyzing specific projects.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/project-context.mjs"
+  ]
+}

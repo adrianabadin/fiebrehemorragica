@@ -1,0 +1,11 @@
+{
+  "content": " The `buildMemoryPayload` function is designed to create a structured payload containing detailed information about a software symbol. This function takes an object with properties `projectSlug`, `job`, and `semantic` as input, where:\n\n- `projectSlug` is the identifier for the project.\n- `job` contains details such as the name, kind, language, file path, and line range of the symbol.\n- `semantic` includes additional semantic information about the symbol, such as its inputs, dependencies, responsibility, output, and role in the module.\n\nHere's a compact structured explanation derived from the function:\n\n### Responsibility:\nThe primary responsibility of the software symbol is outlined in the `semantic.responsibility`. This explains what the symbol is designed to do or manage within the system.\n\n### Primary Inputs:\nThe inputs are extracted and normalized from `semantic.inputs`. These are the essential data or resources that the symbol uses to perform its function. The inputs are presented as a list, with each input item prefixed by a bullet point (`-`). If there are no inputs detected, it defaults to 'None detected'.\n\n### Output:\nThe output of the symbol is provided in `semantic.output`. This represents what the symbol produces or outputs after processing its inputs.\n\n### Immediate Dependencies:\nDependencies on other symbols or modules are captured in `semantic.dependencies`. These dependencies are listed, each prefixed by a bullet point (`-`). If there are no dependencies detected, it defaults to 'None detected'.\n\n### Role in Module:\nThe role of the symbol within its module is specified in `semantic.role`. This explains how and where the symbol fits into the broader structure or functionality of the module.\n\nThis function encapsulates all these details into a structured format that includes content, category, and tags, which can be used for further analysis, documentation, or visualization purposes.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/memory-payload.mjs"
+  ]
+}

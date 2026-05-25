@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `getLocalModelConfig` function is responsible for extracting the local model configuration from the provided context object. It checks if the context and its nested config property have been defined, and if so, returns the value of the `localModel` property within that config. If either the context or the config property is not present, it defaults to an empty object (`{}`).\n\n### Primary Inputs\n- **context**: An object which may contain a `config` property that includes a `localModel` property.\n\n### Output\n- The function returns the value of `context?.config?.localModel ?? {}`. This means if `context` or `context.config` is not defined, it will return an empty object (`{}`). Otherwise, it returns the `localModel` configuration from the context.\n\n### Immediate Dependencies\n- **import { classifyEnrichmentError } from '../enrichment-errors.mjs';**\n  - This import statement indicates that there is a dependency on another function defined in the `enrichment-errors.mjs` module, specifically the `classifyEnrichmentError` function.\n\n### Role in Module\nThe `getLocalModelConfig` function serves as a utility to extract specific configuration settings from a more complex context object within the same module or potentially across different modules that share this pattern of structuring configurations. This function helps maintain modularity and encapsulation by abstracting the retrieval logic into a single, reusable function.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/providers/local-model-provider.mjs"
+  ]
+}

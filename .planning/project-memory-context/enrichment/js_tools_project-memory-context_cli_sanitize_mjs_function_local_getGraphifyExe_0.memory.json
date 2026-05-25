@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `getGraphifyExe` function is responsible for determining the path to the Graphify executable based on the operating system. It checks if the current platform is Windows and, if so, constructs a path to the Graphify executable located in the Python installation directory under the Local AppData folder. If the platform is not Windows, it returns 'graphify' as the default executable name.\n\n### Primary Inputs\n- `process.platform`: A property that indicates the operating system platform.\n- `process.env.LOCALAPPDATA` and `process.env.APPDATA`: Environment variables used to construct the path on Windows.\n\n### Output\n- The function returns a string representing the path to the Graphify executable, either constructed based on environment variables or as 'graphify' for non-Windows systems.\n\n### Immediate Dependencies\n- `process.platform`: Provides information about the operating system.\n- `process.env.LOCALAPPDATA` and `process.env.APPDATA`: Access environment variables to construct paths.\n- `resolve`, `dirname`, `basename`, and `relative` from 'node:path': Used for path manipulation.\n\n### Role in Module\nThis function is part of the CLI tool's utility functions, specifically designed to handle platform-specific executable paths. It ensures that the correct Graphify executable can be located regardless of whether the system is Windows or not, making it easier to manage and execute the application consistently across different environments.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/sanitize.mjs"
+  ]
+}

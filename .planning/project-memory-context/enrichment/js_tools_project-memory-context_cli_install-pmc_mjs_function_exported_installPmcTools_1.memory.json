@@ -1,0 +1,11 @@
+{
+  "content": " The `installPmcTools` function is responsible for installing PMC tools from a source root to a target root. It copies CLI, src, MCP, plugin, and template files from the source root to the corresponding directories in the target root. It also handles package.json file copying and creates an install state JSON file with details about the installation.\n\n**Primary Inputs:**\n- `sourceRoot`: The path where PMC tools are located.\n- `targetRoot`: The destination directory for installed files.\n\n**Output:**\n- An object containing counts of CLI, src, and template files copied.\n\n**Immediate Dependencies:**\n- Node.js built-in modules: `path`, `url`, `fs`.\n\n**Role in Module:**\nThis function is crucial for setting up the environment where PMC tools can be executed or utilized by copying necessary files from a source to a target location, ensuring all required components are available for further operations.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/install-pmc.mjs"
+  ]
+}

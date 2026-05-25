@@ -1,0 +1,482 @@
+{
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\eslint.config.mjs": {
+    "mtime": 1779463035.2257433,
+    "hash": "f82d3559fc536848eca9b1c2cea098d7"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\next-env.d.ts": {
+    "mtime": 1779526265.4195776,
+    "hash": "2a74d3909800ca5467fa83b0ab4a4890"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\next.config.ts": {
+    "mtime": 1779461591.176538,
+    "hash": "877c3eec8615e79955e5dab8386704cc"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\vitest.config.ts": {
+    "mtime": 1779465927.2566023,
+    "hash": "3fff8979bf088b818315120f5836a0e0"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\prisma\\migrations\\20260522152608_init\\migration.sql": {
+    "mtime": 1779463568.6661518,
+    "hash": "efed27428fac180491f180ec1f5167df"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\prisma\\migrations\\20260522153048_add_indexes_and_enums\\migration.sql": {
+    "mtime": 1779463848.3712761,
+    "hash": "5906da0eb7b4e9282d8bc43adc1fd4d2"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\scripts\\sync-calendar-exceptions.ts": {
+    "mtime": 1779469832.397815,
+    "hash": "2ef801a0a1f6797bc5d4719a7b081af7"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\src\\app\\layout.tsx": {
+    "mtime": 1779469621.6717782,
+    "hash": "a7cdda51417738ff7f50c1923770e007"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\src\\app\\page.tsx": {
+    "mtime": 1779494257.0594416,
+    "hash": "6e6431f809dfd49214c6fe73ebc9506d"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\src\\app\\api\\solicitar-turno\\route.ts": {
+    "mtime": 1779504949.4749298,
+    "hash": "9d34625a3edb2090c178a798382550f2"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\src\\components\\forms\\appointment-form.tsx": {
+    "mtime": 1779505006.9357831,
+    "hash": "82dfe404533969da9404d453983f87c9"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\src\\components\\ui\\button.tsx": {
+    "mtime": 1779469623.6145656,
+    "hash": "ea24048516bd24f02f34a1feb5d5ad95"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\src\\components\\ui\\card.tsx": {
+    "mtime": 1779469622.886376,
+    "hash": "4f74af28216931b9e4c71a813fc3ff15"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\src\\components\\ui\\input.tsx": {
+    "mtime": 1779469624.75605,
+    "hash": "122f592d482d353513006f41d71cb902"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\src\\components\\ui\\status-message.tsx": {
+    "mtime": 1779469624.75605,
+    "hash": "752197cf8c115deb8173f7854bee5ec3"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\src\\components\\ui\\textarea.tsx": {
+    "mtime": 1779469624.75605,
+    "hash": "2a1576fba3dd0cafde3437d50b8ac190"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\src\\lib\\mutex.ts": {
+    "mtime": 1779465869.209419,
+    "hash": "494ea97ba5963e5caa699809f8f84cf7"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\src\\lib\\calendar\\calendar.test.ts": {
+    "mtime": 1779465251.48667,
+    "hash": "e21a5fc7c13bb941ca94fab8e8eddc4a"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\src\\lib\\calendar\\calendar.ts": {
+    "mtime": 1779527930.3036556,
+    "hash": "b7483959cdd393553728afbfaa5fdfc4"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\src\\lib\\calendar\\schedule.ts": {
+    "mtime": 1779465100.654381,
+    "hash": "6371bc48e9d7ebf67086109d981dd9e0"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\src\\lib\\db\\prisma.ts": {
+    "mtime": 1779463325.0662775,
+    "hash": "2730d1cc049add0a74692f9c65f75c99"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\src\\lib\\email\\send-turno-email.ts": {
+    "mtime": 1779504995.640035,
+    "hash": "b38bb2366caa8a9b573541ee92225c7a"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\src\\lib\\email\\turno-email-template.test.ts": {
+    "mtime": 1779504999.4373052,
+    "hash": "5265653cbe512d293febc943af17ab16"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\src\\lib\\email\\turno-email-template.ts": {
+    "mtime": 1779504992.1442535,
+    "hash": "befaf3fe4be00df2c70bd13f1bdc9e87"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\src\\lib\\queue\\batch-processor.ts": {
+    "mtime": 1779504986.6497078,
+    "hash": "574b6b2f38ee85cee113eb03171cf7e6"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\src\\lib\\queue\\request-queue.test.ts": {
+    "mtime": 1779465887.7242842,
+    "hash": "f5baf1f1e1d30fabc6bd31e46aecccf7"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\src\\lib\\queue\\request-queue.ts": {
+    "mtime": 1779466301.2885096,
+    "hash": "86fa87a27ee9fb066abac83cd7cb12d4"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\src\\lib\\sheets\\google-sheets.test.ts": {
+    "mtime": 1779504933.1356618,
+    "hash": "b32cbcb163851238fca06dcb669d8508"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\src\\lib\\sheets\\google-sheets.ts": {
+    "mtime": 1779504928.534209,
+    "hash": "588bc5c6f7b06aca1ea6e02df1a10e0f"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\src\\lib\\validation\\appointment-schema.test.ts": {
+    "mtime": 1779504635.8718312,
+    "hash": "4df3aa537e25d39cc169d96f1004c0dd"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\src\\lib\\validation\\appointment-schema.ts": {
+    "mtime": 1779504366.1039834,
+    "hash": "8feacda899714871c52f9ac4461c8c78"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\apply-enrichment-result.mjs": {
+    "mtime": 1778936460.7602687,
+    "hash": "5ab6848137ee4f9091d2894d766bd585"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\batch-enrich.mjs": {
+    "mtime": 1779069892.5717022,
+    "hash": "ff79f37adbbbec633f868ebe887ebf13"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\bootstrap.mjs": {
+    "mtime": 1779534166.8982127,
+    "hash": "5d3facf01c9fa3e0fa7f145a9b80a25e"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\build-worklist.mjs": {
+    "mtime": 1778935406.1597607,
+    "hash": "6fca07b303172f41de1b67289a429a1b"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\context.mjs": {
+    "mtime": 1779400392.9566474,
+    "hash": "276a14f2120f3cdac2f907f3e256a04a"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\doctor.mjs": {
+    "mtime": 1779166753.2022107,
+    "hash": "777d392159996c47282f5f13385dbb69"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\enrich-batch.mjs": {
+    "mtime": 1779069880.8914907,
+    "hash": "3f5bff06cad67364b9d872fe964d0670"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\enrich-orchestrator.mjs": {
+    "mtime": 1779069905.4671285,
+    "hash": "3d85fbc89d7eb74439c5a8189246cbeb"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\enrich-queue.mjs": {
+    "mtime": 1779375533.0021317,
+    "hash": "91b25049c2a88cde8a6fef4029d9660a"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\enrich-sync.mjs": {
+    "mtime": 1779069913.9652195,
+    "hash": "d8f8b0911324aaef58eb0ceeea4b7131"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\enrich.mjs": {
+    "mtime": 1779139500.6168313,
+    "hash": "bbde6d26da3d7508afd2e3806c2e115f"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\fail-enrichment.mjs": {
+    "mtime": 1778946301.8143215,
+    "hash": "faf99cc1471d3ef5a1411496f87e1b15"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\finalize-enrichment.mjs": {
+    "mtime": 1778946301.8143215,
+    "hash": "d1611f31b09cdd8cf6f22c7354851f00"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\init.mjs": {
+    "mtime": 1779140207.08063,
+    "hash": "8b2386a187e232a4b2ce32c589c817e9"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\install-pmc.mjs": {
+    "mtime": 1779228171.7815945,
+    "hash": "b0c01843b492a8a0eb28f457d1ce6208"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\materialize-enrichment-artifacts.mjs": {
+    "mtime": 1778944513.862501,
+    "hash": "312c4ec1ad8f147fbb466a7f4dc6ade8"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\new-project.mjs": {
+    "mtime": 1779139156.3872144,
+    "hash": "7df095f45aab165390b5c328a1949c7e"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\prepare-semantic-jobs.mjs": {
+    "mtime": 1778936242.9711826,
+    "hash": "36b6d440de50def8c895df4d1e861907"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\project-context.mjs": {
+    "mtime": 1779139828.559737,
+    "hash": "4e272d2a99e8f328f632cf99adecaf32"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\query.mjs": {
+    "mtime": 1779226807.9721467,
+    "hash": "24296aa408dd73c4431f6c72588e1d5f"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\retry-errors.mjs": {
+    "mtime": 1779374992.1244187,
+    "hash": "31d9eb7764d903415eb1889a96a45c20"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\sanitize.mjs": {
+    "mtime": 1779169501.860279,
+    "hash": "4f21e5187bf2c5cdbe26fba1869db3d5"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\save-intake-context.mjs": {
+    "mtime": 1778855604.8412592,
+    "hash": "81cd7a640cc20821394bbe6a423bc1f7"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\setup.mjs": {
+    "mtime": 1779191691.057517,
+    "hash": "2ad5eb48dff59cf3f736def12c5664b9"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\cli\\status.mjs": {
+    "mtime": 1779325921.4842608,
+    "hash": "7d06f5933717ad7d727e4de3597e8f27"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\mcp\\local-model-server.mjs": {
+    "mtime": 1778947249.1316657,
+    "hash": "6778ed62becfcf3495aaf38d3bb35ef4"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\mcp\\pmc-query-server.mjs": {
+    "mtime": 1779227044.6688912,
+    "hash": "229e79358fb8eaf008cd8b2b0a94817c"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\plugin\\index.mjs": {
+    "mtime": 1779169903.242293,
+    "hash": "fdfc5241559f015b32a2eaaa8c761e14"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\artifacts.mjs": {
+    "mtime": 1779042828.2303455,
+    "hash": "32a38bb28e71a466decedd33137edb42"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\change-detector.mjs": {
+    "mtime": 1779043189.0392404,
+    "hash": "c43f7f0f73954a0d0b795d01aa111a34"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\command-dispatch.mjs": {
+    "mtime": 1779401979.650052,
+    "hash": "0b60467f5de4ec5139918d5673384e5b"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\declared-intake.mjs": {
+    "mtime": 1779043059.1972237,
+    "hash": "6c3f6a44ee2411e6824ae7ec664d6b85"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\doctor.mjs": {
+    "mtime": 1779191164.7474425,
+    "hash": "a1a8ad1f493c28d4db1a0bac3f96edb1"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\enrichment-artifacts.mjs": {
+    "mtime": 1778944481.6108916,
+    "hash": "fc64bfe5cb55787542ccc24c48291d52"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\enrichment-attempts.mjs": {
+    "mtime": 1779055978.661764,
+    "hash": "35362b07b5741051782b4c5d436a319b"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\enrichment-config.mjs": {
+    "mtime": 1779137374.5112793,
+    "hash": "789d0e5615c70cd80203da8e1b754015"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\enrichment-driver.mjs": {
+    "mtime": 1779056985.5397413,
+    "hash": "5020edac0bcf35ab52d555c02a2e6581"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\enrichment-errors.mjs": {
+    "mtime": 1779056809.5714724,
+    "hash": "88c893f46bd5258d72892e0aeacc3e5d"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\enrichment-linker.mjs": {
+    "mtime": 1778935239.9886308,
+    "hash": "314070548ec1c86ba6f6402895876395"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\fail-enrichment.mjs": {
+    "mtime": 1778946301.8143215,
+    "hash": "62d328da7596ddcb37cc9b178c575a8c"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\finalize-enrichment.mjs": {
+    "mtime": 1778946301.8143215,
+    "hash": "c740f88e4a9a89f234e3b751f62a66d6"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\graph-backfill.mjs": {
+    "mtime": 1778935239.9807434,
+    "hash": "12d4c243f603ea94d623856384b61b4d"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\graph-node-resolver.mjs": {
+    "mtime": 1779061486.2095633,
+    "hash": "bf3a667828883680ba5e0113b03b70ee"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\index.mjs": {
+    "mtime": 1779134810.844801,
+    "hash": "559ca09f7c6301cd9ee8381d0b189157"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\intake-context.mjs": {
+    "mtime": 1778855604.8255186,
+    "hash": "75a62e31b2df620096048174f4b2b27d"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\invalidation-matrix.mjs": {
+    "mtime": 1779137946.807414,
+    "hash": "1e36fdf3148551936b918e21cd4c9905"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\markdown-renderer.mjs": {
+    "mtime": 1779043202.3190153,
+    "hash": "20cd21e6cb1e414aa4b0c3a07954c59a"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\materializer.mjs": {
+    "mtime": 1779043211.733548,
+    "hash": "5d67b0e35d5397e3918066120d094110"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\memory-payload.mjs": {
+    "mtime": 1778936385.822818,
+    "hash": "013bcc282da185b74dcb55a978ebbd64"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\persist-enrichment-result.mjs": {
+    "mtime": 1778935331.5141492,
+    "hash": "dc2a7ee7b8e8cc21904d5c12927d47dc"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\platform.mjs": {
+    "mtime": 1779175346.1113367,
+    "hash": "bdddb5bfcf2a7df1d405c0960998b983"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\plugin-config.mjs": {
+    "mtime": 1779227840.0905626,
+    "hash": "38e3d334da79c158ee60be2085c8188c"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\prepare-semantic-jobs.mjs": {
+    "mtime": 1778936242.9711826,
+    "hash": "f9d8fa30bd76b561aeb9052cfb872dc7"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\project-context-schema.mjs": {
+    "mtime": 1779042951.0325704,
+    "hash": "51b65135f7bca08bbf49fe54b0437c13"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\refresh-state.mjs": {
+    "mtime": 1779042934.6795382,
+    "hash": "ce61a3389e0ba85dd9671638537e4faf"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\result-input.mjs": {
+    "mtime": 1778936460.7602687,
+    "hash": "55be67145ac08dde38ea87fe7aeb6911"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\retry-errors-runner.mjs": {
+    "mtime": 1779374331.4872391,
+    "hash": "105337d5a117666eeeb041bf5455dddb"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\semantic-report.mjs": {
+    "mtime": 1778936699.5958793,
+    "hash": "b9f3dd0a8db9cfebf5dccfa5d90017eb"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\semantic-unit.mjs": {
+    "mtime": 1778936242.9711826,
+    "hash": "b8dbdb81a863f2fce9c19ef865653113"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\setup-bootstrap.mjs": {
+    "mtime": 1779227499.9018319,
+    "hash": "020d2e2fa1b8a9191f641b852f69238c"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\symbol-extractor.mjs": {
+    "mtime": 1779166617.642395,
+    "hash": "57407eb7f6a0f7bdaf80c35e71a7e5b5"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\symbol-index.mjs": {
+    "mtime": 1778935239.9807434,
+    "hash": "dd2c4c811020bf550476c4db5eebd69f"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\symbol-keys.mjs": {
+    "mtime": 1778855604.8255186,
+    "hash": "38be6dd17100edc199582850eb656581"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\sync-manifest.mjs": {
+    "mtime": 1779058008.16414,
+    "hash": "1b2b0fe77235d54ea763fd0c9c286405"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\template-installer.mjs": {
+    "mtime": 1779401921.4290762,
+    "hash": "26748a7a3430bdfb283238e82239a999"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\worklist-state.mjs": {
+    "mtime": 1778946301.8056588,
+    "hash": "577eafb3d9b68a9b2ccb13fe53e4fd0f"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\extractors\\architecture-extractor.mjs": {
+    "mtime": 1779043051.1371233,
+    "hash": "d87fb80f3dcfa87197081b2af9fdf0a0"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\extractors\\js-ts-extractor.mjs": {
+    "mtime": 1779166544.0422885,
+    "hash": "3cf7646ced48bcf665ab39c898139d33"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\extractors\\regex-extractor.mjs": {
+    "mtime": 1779169324.2482202,
+    "hash": "81bfd40a632863f4e6c3818ffda8423b"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\extractors\\rules-extractor.mjs": {
+    "mtime": 1779043051.1418264,
+    "hash": "01bb0a2ce32631748762f29a1feffb92"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\extractors\\stack-extractor.mjs": {
+    "mtime": 1779042941.007577,
+    "hash": "51141c3db49fb0fefdfc8a23644c1cc1"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\extractors\\structure-extractor.mjs": {
+    "mtime": 1779043056.5861378,
+    "hash": "83f7e168442451684b80d8c6f22d8548"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\providers\\cloud-api-provider.mjs": {
+    "mtime": 1779057122.6130571,
+    "hash": "c5d03f06bf0ae44011ab0afeae80a9a4"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\providers\\local-model-provider.mjs": {
+    "mtime": 1779057104.7709582,
+    "hash": "4ee4fc94b27d8cfb7e92e50bbd3d07da"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\query\\load-artifacts.mjs": {
+    "mtime": 1779225631.0255089,
+    "hash": "e3b7d71b7883340373df0ab2ee1fa175"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\query\\orchestrator.mjs": {
+    "mtime": 1779226204.9996717,
+    "hash": "b988141f5090e33f32505695b855de39"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\retrieval\\context-renderer-v1.mjs": {
+    "mtime": 1779239252.009771,
+    "hash": "45edd4d92a9ac8b1804e0109c0396821"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\retrieval\\context-renderer.mjs": {
+    "mtime": 1779067455.1384163,
+    "hash": "b4c2b4654a2519e545298c216d34bc5a"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\retrieval\\query-engine.mjs": {
+    "mtime": 1779067321.7327871,
+    "hash": "f9a22319ff6e02312eac54b0055b5b83"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\src\\retrieval\\target-resolver.mjs": {
+    "mtime": 1779238616.8924334,
+    "hash": "d58737509b9c197736047f18defbc4c3"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\project-memory-context workflow.md": {
+    "mtime": 1779534200.4501395,
+    "hash": "3c32352e31386145044200494c679b22"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\project-memory-context.md": {
+    "mtime": 1779534200.4501395,
+    "hash": "dc37bab256f2289fd3ebaca81830646a"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\README.md": {
+    "mtime": 1779469969.173727,
+    "hash": "5898ce84014e2521815c1120824b5a68"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\docs\\plans\\2026-05-22-fiebre-hemorragica-turnos-design.md": {
+    "mtime": 1779461106.6059399,
+    "hash": "08e3736d4d4fb0afaa49286d8be7a02a"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\docs\\plans\\2026-05-22-fiebre-hemorragica-turnos-plan.md": {
+    "mtime": 1779461197.8302002,
+    "hash": "0f1ef5caf468615a48d1e37458827274"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\docs\\superpowers\\plans\\2026-05-22-turnos-identidad-documento-plan.md": {
+    "mtime": 1779504173.0362723,
+    "hash": "8f058c721648c7497a87e6dafff8d79a"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\docs\\superpowers\\specs\\2026-05-22-turnos-identidad-documento-design.md": {
+    "mtime": 1779503833.8376935,
+    "hash": "19ff1d86bde42135614d3e3c30e16443"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\templates\\project-memory-context workflow.md": {
+    "mtime": 1778950594.7568686,
+    "hash": "c54d723e5ba0480aaf9f5faef84e38b6"
+  },
+  "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\tools\\project-memory-context\\templates\\project-memory-context.md": {
+    "mtime": 1778947249.1356874,
+    "hash": "dc37bab256f2289fd3ebaca81830646a"
+  }
+}

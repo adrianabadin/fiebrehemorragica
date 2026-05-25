@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `ensureAgentConfigs` function is responsible for ensuring that the necessary configuration files for specified agents ('opencode', 'claude-code', and 'cursor') are created or updated in the project directory. It also sets up a primary configuration path which defaults to `.mcp.json`. This function ensures that each agent's specific configuration directories and files are set up correctly, using helper functions like `ensureOpencodeConfig`, `ensureEnrichmentConfig`, and `writeMcpJson` for different aspects of setup.\n\n### Primary Inputs\n- **projectRoot**: The root directory of the project where configurations will be stored.\n- **installState**: An object that might contain state information needed for setting up configurations, such as installation status or environment details.\n- **agents**: An array of strings representing the agents ('opencode', 'claude-code', and 'cursor') whose configurations need to be ensured.\n\n### Output\n- A string path to the primary configuration file (either `.mcp.json` if created during this process or an existing one).\n\n### Immediate Dependencies\n- Node.js built-in modules: `node:fs/promises`, `node:path`.\n- Local module functions: `ensureOpencodeConfig`, `ensureEnrichmentConfig`, and `writeMcpJson` from the same module (`./artifacts.mjs`).\n\n### Role in Module\nThis function plays a crucial role in setting up the project's environment for specified agents by ensuring that each agent has its configuration files ready in the appropriate directories under the project root. It abstracts and orchestrates the setup process for different types of configurations based on which agents are part of the installation or operation state, making it modular and reusable across other parts of the application if needed.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/setup-bootstrap.mjs"
+  ]
+}

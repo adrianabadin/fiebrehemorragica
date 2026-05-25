@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `buildAssignedTurnRowValues` function is responsible for constructing an array of values that represent the details of an assigned turn, specifically tailored for a Google Sheets row. This function takes an input object (`UpdateAssignedTurnRowInput`) which contains information about the scheduled date and time, as well as other metadata related to the appointment type and location.\n\n### Primary Inputs\n- `input: UpdateAssignedTurnRowInput` - An object containing the following properties:\n  - `scheduledDate`: A string representing the date of the appointment.\n  - `scheduledTime`: A string representing the time of the appointment.\n\n### Output\n- The function returns an array of strings where each element corresponds to a cell's value in the Google Sheets row. These values include:\n  - Date (`scheduledDate`)\n  - Time (`scheduledTime`)\n  - Location (hardcoded as \"Hijas de San Jose 145\")\n  - Region (hardcoded as \"Region Sanitaria X\")\n  - Appointment Type (hardcoded as \"Vacunacion de fiebre hemorragica\")\n  - Status (hardcoded as \"turno asignado\")\n\n### Immediate Dependencies\n- The function directly depends on the input object (`UpdateAssignedTurnRowInput`) which contains the `scheduledDate` and `scheduledTime`.\n\n### Role in Module\nThis function serves as a utility to format specific details into a predefined structure suitable for insertion into a Google Sheets row. It encapsulates the logic required to prepare data for display or further processing within a Google Sheets environment, making it easier to integrate with other functionalities that might require this structured data format.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "ts",
+    "function",
+    "project:fiebrehemorragica",
+    "file:src/lib/sheets/google-sheets.ts"
+  ]
+}

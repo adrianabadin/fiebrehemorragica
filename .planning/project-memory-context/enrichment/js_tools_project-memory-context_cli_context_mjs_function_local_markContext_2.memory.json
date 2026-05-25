@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `markContext` function is responsible for managing the active node IDs in a project's memory context. It ensures that the list of active nodes includes all specified node IDs and persists this information to a JSON file within the project's `.planning/project-memory-context` directory.\n\n### Primary Inputs\n- `projectRoot`: The root directory of the project where the function operates.\n- `nodeIds`: An array of node IDs that need to be marked as active in the context.\n\n### Output\n- None explicitly returned; it modifies a JSON file (`context-tracker.json`) within the specified project root.\n\n### Immediate Dependencies\n- Node.js's `fs` module for file system operations (existsSync, readFileSync, writeFileSync).\n- Node.js's `path` module for path manipulation (join, dirname).\n- Node.js's `url` module for URL conversion (fileURLToPath).\n- Custom modules:\n  - `../src/artifacts.mjs`: For reading JSON artifacts (though not directly used in this function).\n  - `../src/retrieval/query-engine.mjs`, `../src/retrieval/target-resolver.mjs`, and `../src/retrieval/context-renderer-v1.mjs`: These are part of a larger retrieval system, but the function does not interact with them directly for its core operations.\n\n### Role in Module\nThis function serves as a utility to maintain and update the state of active nodes within the project's context, facilitating persistence across sessions or updates by saving this information into a designated file under `.planning/project-memory-context`. This setup is crucial for maintaining application state relevant to specific parts of the codebase.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/context.mjs"
+  ]
+}

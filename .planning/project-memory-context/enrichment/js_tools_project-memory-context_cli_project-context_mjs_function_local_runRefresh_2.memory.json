@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `runRefresh` function is responsible for refreshing the project context by detecting changes, invalidating outdated memories, and updating relevant parts of the project context.\n\n### Primary Inputs\n- `projectRoot`: The root directory of the project.\n- `dirs`: An object containing necessary directories for operations like state storage and artifact writing.\n\n### Output\n- Updates the project context by rewriting or creating new memory files based on detected changes.\n- Appends sync entries to the sync manifest if there are any changes affecting architecture or structure.\n\n### Immediate Dependencies\n- `computeHashes`: Computes file hashes for tracked files in the project.\n- `readJsonArtifact`, `writeJsonArtifact`: Read/write JSON artifact functions to manage state and metadata.\n- `detectChangedFilesFromHashes`, `detectInvalidatedProjectContextKinds`: Detect changes in files and invalidate outdated memories based on these changes.\n- `materializeProjectContextMemories`, `writeMemories`: Materialize and write updated project context memories.\n- `createSyncEntry`, `appendSyncEntries`: Manage sync manifest entries for tracking changes.\n- `markEnrichedSymbolsStale`: Mark symbols as stale if architecture or structure has changed.\n\n### Role in Module\nThe function acts as a core orchestrator, handling the lifecycle of refreshing project context based on file system changes and updating related artifacts accordingly. It integrates multiple modules to ensure that only relevant parts of the context are updated, maintaining data integrity and efficiency.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/project-context.mjs"
+  ]
+}

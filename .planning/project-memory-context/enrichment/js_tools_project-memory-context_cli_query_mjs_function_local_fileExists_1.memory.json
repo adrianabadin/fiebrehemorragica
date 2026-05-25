@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `fileExists` function is responsible for checking if a file exists at the specified path. It does this by attempting to access the file using Node.js's `fs/promises` module. If the file can be accessed (i.e., it exists), the function returns `true`; otherwise, it returns `false`.\n\n### Primary Inputs\n- **filePath**: A string representing the path to the file that needs to be checked for existence. This input is expected to be a valid file path in the filesystem.\n\n### Output\n- The output of the `fileExists` function is a boolean (`true` if the file exists, and `false` otherwise).\n\n### Immediate Dependencies\n- **node:fs/promises**: This module provides an API for interacting with the file system in a way that returns promises, which allows for asynchronous operations. The specific method used here is `access`, which checks whether the file at the given path exists and can be accessed in accordance to the mode specified by the `flags` argument (which defaults to `fs.constants.F_OK`).\n- **node:path**: This module provides utilities for handling and transforming file paths. The functions `dirname` and `join` are used to manipulate the provided `filePath`.\n- **node:url**: Although not directly used in this function, it's imported as part of a broader set of imports that likely support other functionalities within the same module or across different modules in the project.\n\n### Role in Module\nIn the context of the module where this function is defined (`tools/project-memory-context/cli/query.mjs`), `fileExists` serves as a utility function to facilitate decision-making and control flow based on whether specific files exist or not. This might be used within higher-level functions or commands that require such checks before proceeding with operations like reading from, writing to, or manipulating the file system objects.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/query.mjs"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `getPendingEntries` function is responsible for filtering and returning entries from the manifest that have a status of \"pending\". This function helps to isolate only those entries which are awaiting further processing or action.\n\n### Primary Inputs\n- **manifest**: An object containing an array of entries (`manifest.entries`), where each entry has a `status` property.\n\n### Output\n- Returns an array of objects that have a `status` property equal to \"pending\".\n\n### Immediate Dependencies\n- None explicitly listed in the code snippet, but it uses standard JavaScript functions:\n  - `filter`: A method available on arrays in JavaScript which is used to create a new array with all elements that pass the test implemented by the provided function.\n\n### Role in Module\nThis function serves as a utility within the module for managing and manipulating the entries of a sync manifest, specifically targeting those that are pending based on their status. It enhances the functionality of the `sync-manifest` module by providing a way to query specific subsets of data from the overall manifest structure.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/sync-manifest.mjs"
+  ]
+}

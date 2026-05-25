@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `buildRelatedSymbols` function is responsible for transforming the input array of symbols into two maps: \n1. A map (`symbolByKey`) where each key is a symbol's unique identifier (`symbolKey`), and the value is the entire symbol object.\n2. A map (`symbolKeyByNodeId`) where each key is a node ID from the graph (`graphNodeId`), and the value is the corresponding `symbolKey`.\n\n### Primary Inputs\n- **symbols**: An array of objects, each representing a symbol with properties such as `symbolKey` and `graphNodeId`.\n\n### Output\n- **{ symbolByKey, symbolKeyByNodeId }**: An object containing two maps: \n  - `symbolByKey`: A map where keys are `symbolKey` values from the input symbols.\n  - `symbolKeyByNodeId`: A map where keys are `graphNodeId` values from the input symbols that have a non-null `graphNodeId`.\n\n### Immediate Dependencies\n- **Map**: The function uses JavaScript's `Map` constructor to create and populate the maps (`symbolByKey` and `symbolKeyByNodeId`).\n\n### Role in Module\nThis function is crucial for organizing and querying symbol data efficiently. It prepares the necessary mappings from keys to full symbols and vice versa, which are essential for various operations such as fetching or updating specific symbols based on their unique identifiers or graph node IDs. This setup enables quick lookups and maintains a clear structure that supports other parts of the application that need to interact with these symbols.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/query/orchestrator.mjs"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `createAgentSubagentProvider` function is responsible for creating a provider that represents an agent subagent within the CLI context. It defines the structure and behavior of this provider, including its configuration status and availability.\n\n### Primary Inputs\n- `context`: An object containing configuration details about the agent subagent.\n\n### Output\n- A provider object with properties:\n  - `kind`: Always 'agent-subagent'.\n  - `isConfigured(context)`: Checks if the agent subagent is enabled and returns its name or an error message if disabled.\n  - `isAvailable()`: Indicates that the agent subagent is unavailable in a CLI context, returning an appropriate error status.\n  - `enrich()`: Throws an error indicating the provider's unavailability for enrichment tasks.\n\n### Immediate Dependencies\n- Node.js built-in modules: `fs/promises`, `path`, `url`, and `child_process`.\n- Local module functions: `enrichment-attempts.mjs`, `enrichment-config.mjs`, `enrichment-driver.mjs`, `providers/cloud-api-provider.mjs`, `providers/local-model-provider.mjs`, and `sync-manifest.mjs`.\n\n### Role in Module\nThis function serves as a foundational provider within the CLI's enrichment framework, ensuring that it can be dynamically included or excluded based on configuration settings and providing clear feedback about its operational status.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/enrich-queue.mjs"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "memory_key": "project-context:structure-summary",
+  "title": "Project structure summary",
+  "kind": "structure-summary",
+  "source_mode": "detected",
+  "summary": "Root directories: .opencode, docs, prisma, scripts, src, tools.",
+  "body": "- Root directories: .opencode, docs, prisma, scripts, src, tools\n- Key subtrees: .opencode/skills, docs/plans, docs/superpowers, prisma/migrations, src/app, src/components, src/lib, tools/project-memory-context\n- Entry points: Not detected",
+  "tags": [
+    "project-context",
+    "project:fiebrehemorragica",
+    "structure"
+  ],
+  "source_files": [],
+  "graph_refs": [],
+  "detected_sources": [],
+  "declared_sources": [],
+  "confidence": "high",
+  "content_hash": "8366c611b2ab40988a9745ffeb3a9b93ff43d8298097ea1b528f982ab2552dba",
+  "updated_at": "2026-05-23T15:44:53.500Z"
+}

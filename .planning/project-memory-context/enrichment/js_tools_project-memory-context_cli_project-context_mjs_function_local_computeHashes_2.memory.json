@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `computeHashes` function is responsible for generating SHA-256 hash values for specified files within a project. It reads the content of each file, computes its hash using the SHA-256 algorithm, and stores these hashes in an object. This function helps in tracking changes or ensuring data integrity by providing unique identifiers (hashes) for each file's content.\n\n### Primary Inputs\n- `projectRoot`: The root directory path of the project where files are located.\n- `files`: An array of relative paths to the files within the project whose contents need to be hashed.\n\n### Output\n- A JavaScript object (`hashes`) where keys are file paths and values are SHA-256 hashes of the corresponding file contents.\n\n### Immediate Dependencies\n- **Node.js Core Modules**: \n  - `node:path`: For joining file paths.\n  - `node:fs/promises`: To read file content asynchronously.\n  - `node:crypto`: To create SHA-256 hash objects and update them with file contents.\n\n### Role in Module\nThis function is crucial for generating a baseline of hashes that can be used to detect changes in the project files, which is essential for various functionalities such as version control, change detection, and artifact management within the tool or module where it resides. It supports tasks like ensuring consistency between versions, tracking modifications, and facilitating operations based on file states (e.g., detecting changes before and after a build).",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/project-context.mjs"
+  ]
+}

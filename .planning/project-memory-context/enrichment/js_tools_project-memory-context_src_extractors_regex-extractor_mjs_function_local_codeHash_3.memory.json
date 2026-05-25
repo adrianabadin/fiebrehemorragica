@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `codeHash` function is responsible for generating a SHA-1 hash of the specified lines from an array of strings. This is done by concatenating the selected lines (from `startLine` to `endLine`, inclusive) with newline characters, and then computing the SHA-1 hash of this concatenated string.\n\n### Primary Inputs\n- **lines**: An array of strings where each element represents a line of code or text.\n- **startLine**: A number representing the first line index in the `lines` array to include in the hash computation.\n- **endLine**: A number representing the last line index in the `lines` array to include in the hash computation.\n\n### Output\n- The output is a string representing the hexadecimal representation of the SHA-1 hash computed from the specified lines.\n\n### Immediate Dependencies\n- **createHash** from 'node:crypto': This function is used to create a cryptographic hash object that will be updated with the concatenated lines and then digested into a hex string.\n- **update** method on the hash object: This method updates the hash content with the specified lines, joined by newline characters.\n- **digest('hex')**: This method finalizes the digest computation and returns it as a hexadecimal string.\n\n### Role in Module\nThe `codeHash` function serves as an utility within the module for generating unique identifiers (hashes) based on specific segments of code or text, which can be useful for versioning, caching, or other purposes where uniqueness and integrity are important. It is part of the tool's functionality related to extracting and processing textual data from source files.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/extractors/regex-extractor.mjs"
+  ]
+}

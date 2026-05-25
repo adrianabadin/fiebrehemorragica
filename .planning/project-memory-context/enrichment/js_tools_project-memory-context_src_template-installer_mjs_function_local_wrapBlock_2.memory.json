@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `wrapBlock` function is responsible for wrapping a given block of content with specific markers, which are used to identify and manipulate sections within HTML or similar templated documents. This helps in managing and manipulating parts of the document without altering the entire structure.\n\n### Primary Inputs\n- **marker**: A string that serves as an identifier for the section being wrapped.\n- **block**: The content that needs to be enclosed by the markers.\n\n### Output\nThe output is a string formatted as:\n```html\n<!-- pmc:${marker} -->\n${block}\n<!-- /pmc:${marker} -->\n```\nThis string includes the marker prefixed and suffixed with specific comments, which can be used for parsing or manipulation later.\n\n### Immediate Dependencies\n- **None explicitly listed** but implicitly relies on JavaScript's ability to handle strings and template literals.\n\n### Role in Module\nThe `wrapBlock` function is a utility that enhances the functionality of handling templates by providing a standardized way to mark sections within text, which can be particularly useful for dynamic content insertion or extraction in HTML manipulation tools, configuration management systems, or any application where structured templated content needs to be managed.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/template-installer.mjs"
+  ]
+}

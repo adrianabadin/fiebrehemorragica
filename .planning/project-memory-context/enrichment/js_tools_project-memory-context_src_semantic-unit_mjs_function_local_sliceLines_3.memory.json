@@ -1,0 +1,11 @@
+{
+  "content": " The `sliceLines` function is responsible for extracting a portion of text from a larger block, specifically delimited by lines. It takes three parameters as input: the entire content (a string), and the start and end line numbers which define the range to be extracted. The output is a single string containing only the specified lines from the original content. Immediate dependencies include `split` for breaking the text into lines, `slice` for selecting the relevant portion of the array, and `join` for reassembling the selected lines back into a single string. This function plays a crucial role in managing textual data within the module by allowing selective extraction of information based on line numbers.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/semantic-unit.mjs"
+  ]
+}

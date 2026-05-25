@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `copyMjsTree` function is responsible for recursively copying JavaScript modules (.mjs files) and directories from a source directory to a destination directory, while skipping certain predefined patterns and system directories.\n\n### Primary Inputs\n- `srcDir`: The source directory containing the files and folders to be copied.\n- `dstDir`: The destination directory where the files and folders will be copied.\n- `opts`: An optional object that can include `skipPatterns` (an array of patterns to skip).\n\n### Output\n- Returns the count of files copied (`copied`), which is useful for tracking progress or ensuring all intended files are copied.\n\n### Immediate Dependencies\n- Node.js built-in modules: `fs`, `path`.\n\n### Role in Module\nThis function serves as a utility to facilitate copying specific types of files and directories based on conditions defined within the function, enhancing modularity by abstracting file manipulation logic from other parts of the application.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/install-pmc.mjs"
+  ]
+}

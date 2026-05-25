@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `loadArtifacts` function is responsible for loading and returning the graph, symbol index, and worklist artifacts from the project's `.planning/project-memory-context` directory. This function ensures that these artifacts are read from JSON files and handles any errors that might occur during this process by throwing an error with a descriptive message if it fails to load the artifacts.\n\n### Primary Inputs\n- `projectRoot`: The root directory of the project where the `.planning/project-memory-context` directory is located.\n\n### Output\n- An object containing:\n  - `graph`: A JSON object representing the graph structure.\n  - `symbolIndex`: A JSON object representing the symbol index.\n  - `worklist`: An array representing the worklist of items.\n\n### Immediate Dependencies\n- Node.js built-in modules: `fs`, `path`, and `url`.\n- Custom modules from the project: `../src/artifacts.mjs` for reading JSON files, and `../src/retrieval/query-engine.mjs`, `../src/retrieval/target-resolver.mjs`, and `../src/retrieval/context-renderer-v1.mjs` for related functionalities.\n\n### Role in Module\nThis function serves as a utility to abstract the process of loading specific artifacts from the project's internal storage, providing a consistent interface for accessing these data structures across different parts of the application that depend on them.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/context.mjs"
+  ]
+}

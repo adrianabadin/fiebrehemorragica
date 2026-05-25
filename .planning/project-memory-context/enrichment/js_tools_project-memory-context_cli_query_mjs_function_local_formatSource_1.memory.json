@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `formatSource` is responsible for formatting the source information, whether it's a project context or a symbol, into a human-readable string. This helps in providing clear and concise representations of these sources when they are used in various outputs or logs within the application.\n\n### Primary Inputs\n- **source**: An object that contains either `type`, `title`, `path` (for project context) or `symbolKey`, `filePath` (for symbols). This input is expected to be an object with specific properties based on its type (`project-context` or `symbol`).\n\n### Output\n- **String**: The function returns a string that represents the formatted source information. If the source is a project context, it includes details like title and path; if it's a symbol, it includes the symbol key and file path.\n\n### Immediate Dependencies\n- **node:path**: Used to handle and transform file paths (`dirname` for directory name extraction and `join` for joining paths).\n- **node:url**: Specifically `fileURLToPath` is used to convert a file URL to a file system path, which is necessary for working with file paths in URLs.\n- **node:fs/promises**: Although not directly used here, it's part of the import set and could be relevant if more file system operations were needed within this module.\n\n### Role in Module\nThis function plays a crucial role in the CLI tool by providing a standardized way to display information about project contexts or symbols. It ensures that any external caller can easily understand what kind of data they are dealing with, facilitating better interaction and debugging through clear outputs.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/query.mjs"
+  ]
+}

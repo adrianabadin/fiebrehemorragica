@@ -1,0 +1,13 @@
+{
+  "status": "finished",
+  "pid": 3208,
+  "startedAt": "2026-05-25T02:42:26.797Z",
+  "heartbeatAt": "2026-05-25T02:42:26.798Z",
+  "finishedAt": "2026-05-25T02:42:26.798Z",
+  "lastError": null,
+  "summary": {
+    "pending": 0,
+    "enriched": 322,
+    "errors": 0
+  }
+}

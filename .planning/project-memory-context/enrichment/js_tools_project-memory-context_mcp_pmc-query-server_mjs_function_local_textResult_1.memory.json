@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `textResult` function is responsible for converting any given JavaScript value into a formatted text representation. This includes stringifying the value and wrapping it within an object that conforms to a specific structure, which is used for rendering or displaying textual information.\n\n### Primary Inputs\n- **value**: The input can be of any type (string, number, array, object, etc.), which needs to be converted into a human-readable text format.\n\n### Output\nThe output is an object with the following structure:\n```javascript\n{\n  content: [{ type: 'text', text: JSON.stringify(value, null, 2) }]\n}\n```\nThis includes:\n- `content`: An array containing a single object.\n  - `type`: A string literal 'text' indicating the type of content.\n  - `text`: The stringified version of the input value formatted with indentation (JSON.stringify(value, null, 2)).\n\n### Immediate Dependencies\n- **JSON**: Directly used within the function to convert the input value into a JSON string.\n\n### Role in Module\nThe `textResult` function serves as a utility for formatting data into a human-readable text format, which can be particularly useful when dealing with structured data that needs to be presented clearly or logged without losing its structure. This function is likely used within the module to provide consistent output formats for various types of queries or results processed by the system.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/mcp/pmc-query-server.mjs"
+  ]
+}

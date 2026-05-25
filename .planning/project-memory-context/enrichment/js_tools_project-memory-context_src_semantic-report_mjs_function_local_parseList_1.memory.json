@@ -1,0 +1,11 @@
+{
+  "content": " The `parseList` function is responsible for parsing a string of comma-separated values and returning an array of trimmed, non-empty strings. It uses the nullish coalescing operator (`??`) to handle potential undefined or null input values by converting them to empty strings before processing. This function's primary inputs are any string that may contain multiple values separated by commas, and its output is a compact array of these individual values after trimming and filtering out any empty entries. The immediate dependencies include `String`, `split`, `map`, and `filter`. In the module, it serves to facilitate data extraction from a comma-separated format into an easily manipulable array structure.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/semantic-report.mjs"
+  ]
+}

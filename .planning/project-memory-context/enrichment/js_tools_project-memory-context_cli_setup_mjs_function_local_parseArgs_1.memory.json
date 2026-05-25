@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `parseArgs` is responsible for parsing command line arguments and extracting agent types based on predefined flags. It takes an array of strings (`args`) as input, where each string represents a command line argument. The function then checks if any of these arguments match known agent flags defined in the `AGENT_FLAGS` object. If a match is found, it adds the corresponding agent type to the list of agents and returns this list along with other relevant information.\n\n### Primary Inputs\n- **args**: An array of strings where each string represents a command line argument.\n\n### Output\n- A JavaScript object containing an array named `agents`. This array contains all the agent types that were identified from the input arguments based on predefined flags.\n\n### Immediate Dependencies\n- **AGENT_FLAGS**: A predefined object used to map command line arguments to corresponding agent types. The exact structure and content of this object are not provided in the code snippet but are assumed to be available elsewhere in the module or globally accessible if defined inline.\n\n### Role in Module\nThe `parseArgs` function serves as a utility for preprocessing command line inputs, specifically designed to extract relevant information about which agent types should be set up or used based on user input during script execution. This is particularly useful when setting up and configuring projects where different agents might need to be activated according to specific flags provided by the user.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/setup.mjs"
+  ]
+}

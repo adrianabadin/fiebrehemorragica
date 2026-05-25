@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility:\nThe `launchRetryProcess` function is responsible for launching a retry process to handle the execution of a script at a specified path within a project root, capturing its standard output and error streams.\n\n### Primary Inputs:\n- `projectRoot`: The root directory of the project where the script should be executed.\n- `scriptPath`: The path to the script that needs to be run for retry processing.\n- `stdoutPath`: The file path where the standard output of the process will be redirected.\n- `stderrPath`: The file path where the standard error of the process will be redirected.\n\n### Output:\n- No explicit return value; it initiates a child process that runs asynchronously.\n\n### Immediate Dependencies:\n- Node.js built-in modules: `fs/promises`, `path`, `url`, and `child_process`.\n- Local module functions: `open` from `node:fs/promises`, `spawn` from `node:child_process`.\n\n### Role in Module:\nThis function is crucial for handling retries by spawning a new process with specified paths for output streams, ensuring that the retry operation can be logged and monitored independently of the main execution flow.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/enrich-queue.mjs"
+  ]
+}

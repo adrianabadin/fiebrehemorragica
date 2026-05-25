@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `buildMcpConfig` function is responsible for constructing and returning an MCP (Memory Context Provider) configuration object based on the provided `installState`. This configuration includes settings for the MCP server, such as the command to run (`npx`), arguments to pass (`-y @aabadin/agent-memory-mcp`), and environment variables that depend on the state of the installation.\n\n### Primary Inputs\nThe primary input is:\n- `installState`: An object containing properties like `memoryDbPath` and optional `embeddingCachePath`. These inputs are used to set specific environment variables for the MCP server configuration.\n\n### Output\nThe output is an object that represents the MCP configuration, structured as follows:\n```javascript\n{\n  mcpServers: {\n    'agent-memory': {\n      command: 'npx',\n      args: ['-y', '@aabadin/agent-memory-mcp'],\n      env: {\n        MEMORY_DB_PATH: installState.memoryDbPath,\n        ...(installState.embeddingCachePath ? { EMBEDDING_CACHE_PATH: installState.embeddingCachePath } : {})\n      },\n    },\n  },\n}\n```\nThis configuration includes the command and arguments for running the MCP server (`agent-memory`), along with environment variables that are dynamically set based on whether `embeddingCachePath` is provided in the `installState`.\n\n### Immediate Dependencies\nThe immediate dependencies include:\n- Import statements from Node.js's fs/promises, path (dirname and join), and custom modules (`./artifacts.mjs`, `./enrichment-config.mjs`) for ensuring project directories are set up and writing JSON artifacts.\n\n### Role in Module\nThe `buildMcpConfig` function serves as a utility within the module to generate specific configurations required by MCP servers based on the current state of the installation, such as database paths and optional cache paths. This configuration is crucial for setting up and running MCP servers according to the application's needs.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/setup-bootstrap.mjs"
+  ]
+}

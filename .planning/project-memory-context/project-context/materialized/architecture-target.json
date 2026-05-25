@@ -1,0 +1,23 @@
+{
+  "memory_key": "project-context:architecture-target",
+  "title": "Target architecture",
+  "kind": "architecture-target",
+  "source_mode": "declared",
+  "summary": "No target architecture declared.",
+  "body": "No target architecture declared.",
+  "tags": [
+    "project-context",
+    "project:fiebrehemorragica",
+    "architecture",
+    "target-state"
+  ],
+  "source_files": [
+    ".planning/project-memory-context/project-context/declared/architecture-target.json"
+  ],
+  "graph_refs": [],
+  "detected_sources": [],
+  "declared_sources": [],
+  "confidence": "high",
+  "content_hash": "db2f647875ee62a94595c5501ab8a7d093f26c93e1ee83abd5872fc3c1aebd7f",
+  "updated_at": "2026-05-23T15:44:53.500Z"
+}

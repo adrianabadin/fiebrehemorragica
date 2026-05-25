@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `spawnCheck` function is responsible for executing an external command using Node.js's `child_process` module and capturing its output, including standard output (`stdout`) and standard error (`stderr`), along with the exit code. This function serves as a utility to run system commands within the application context, providing detailed results of the execution.\n\n### Primary Inputs\n- **bin**: A string representing the command or binary to be executed.\n- **args**: An array of strings representing arguments to pass to the command.\n\n### Output\nThe function returns an object containing:\n- `exitCode`: The exit code of the executed command, defaulting to 1 if not provided by the system call.\n- `stdout`: The standard output captured from the command execution.\n- `stderr`: The standard error captured from the command execution.\n\n### Immediate Dependencies\n- **spawnSync**: A method from Node.js's `child_process` module used to spawn a new process with given arguments and options, capturing its stdout, stderr, and exit code.\n\n### Role in Module\nThe `spawnCheck` function is part of the setup utility within the project memory context CLI tool. It facilitates running system checks or any other external command that might be necessary during the setup or diagnostic phase of the application. This function helps ensure that commands are executed correctly, and their results are accessible for further processing or reporting.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/setup.mjs"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `ensureEnrichmentConfig` function is responsible for ensuring that the enrichment configuration file (`PMC_ENRICHMENT_CONFIG_FILE`) exists and is correctly populated with the necessary information from the `installState`. This includes updating or creating the config file with the provided base URL and model name.\n\n### Primary Inputs\n- **projectRoot**: The root directory of the project where the configuration will be managed.\n- **configDir**: The directory within the project where the enrichment configuration file is located or should be created.\n- **installState**: An object containing necessary installation state information, specifically `ollamaBaseUrl` and `ollamaModel`.\n\n### Output\n- This function does not explicitly return a value but ensures that the enrichment configuration file exists with updated content.\n\n### Immediate Dependencies\n- **fs/promises**: For filesystem operations like reading from and writing to files.\n- **path**: For manipulating file paths, specifically `dirname` and `join`.\n- **artifacts.mjs**: Specifically for utility functions related to managing project artifacts (though not directly used here).\n- **enrichment-config.mjs**: Provides the constant `PMC_ENRICHMENT_CONFIG_FILE` which defines the name of the enrichment configuration file.\n\n### Role in Module\nThis function serves as a crucial part of the setup process for ensuring that the project's enrichment configuration is correctly set up based on the installation state, which can be used to configure local models or other related settings during runtime or initialization phases of the application.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/setup-bootstrap.mjs"
+  ]
+}

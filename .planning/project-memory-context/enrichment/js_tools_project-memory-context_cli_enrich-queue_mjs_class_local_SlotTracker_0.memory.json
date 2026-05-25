@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `SlotTracker` class is responsible for managing and tracking the allocation of \"slots\" for processing tasks. It ensures that no more than a predefined number of slots are actively used, allowing for efficient resource management and task scheduling.\n\n### Primary Inputs\n- **maxSlots**: The maximum number of slots available for processing tasks.\n\n### Output\n- **allocate(symbol)**: Returns an index of a slot if one is available or -1 if no slots are available.\n- **complete(slotIdx, result)**: Marks a task as completed and returns details about the task including its duration and result.\n- **fail(slotIdx, error)**: Marks a task as failed and returns details including its duration and error.\n- **isFull()**: Indicates whether all slots are currently in use.\n- **activeCount()**: Returns the number of active slots.\n- **hasActiveSlots()**: Indicates whether any slots are currently in use.\n\n### Immediate Dependencies\n- **Map**: Used to store information about each slot and its associated task.\n- **Date.now()**: To measure the duration of tasks.\n\n### Role in Module\nThe `SlotTracker` class plays a crucial role in ensuring that the module can manage multiple concurrent processing tasks efficiently, providing feedback on the status of these tasks through methods like `complete`, `fail`, and `isFull`.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "class",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/enrich-queue.mjs"
+  ]
+}

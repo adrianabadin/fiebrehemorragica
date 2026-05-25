@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `printHelp` function is responsible for displaying the usage and options information of the CLI tool, specifically designed to re-enrich symbols that failed using a full provider fallback chain. This function provides clear instructions on how to use the script with its available options and arguments.\n\n### Primary Inputs\n- None (the function does not take any parameters as input)\n\n### Output\n- The output is console logs of usage and option information, which are displayed in the terminal or command line interface where the script is run.\n\n### Immediate Dependencies\n- `console.log`: Used to print the help message to the standard output.\n\n### Role in Module\nThe `printHelp` function serves as a utility within the CLI tool module for providing usage information, making it easier for users to understand how to operate the script and what options are available without having to read through the entire codebase or documentation.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/retry-errors.mjs"
+  ]
+}

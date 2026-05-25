@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `resolveCommand` function is responsible for parsing and resolving command arguments to determine the appropriate command name and its associated module path. It also checks if the provided command exists in a predefined map of commands (`COMMANDS`), returning detailed information about the command's validity, name, and related module path.\n\n### Primary Inputs\n- `argv`: An array representing command line arguments, where the first element is typically the command name.\n\n### Output\nThe function returns an object containing:\n- `name`: The resolved command name (defaulting to 'help' if not provided).\n- `modulePath`: The absolute path to the module associated with the command, or `null` if the command is not found in `COMMANDS`.\n- `args`: The remaining arguments after the command name.\n- `valid`: A boolean indicating whether the command is valid (exists in `COMMANDS`).\n\n### Immediate Dependencies\n- **Node.js Core Modules**: \n  - `node:path`: Used for resolving relative paths to absolute paths (`resolve` function).\n  - `node:url`: Converts file URLs to file paths (`fileURLToPath` is used internally by `resolve`).\n- **External Module**:\n  - `node:child_process`: Used for spawning subprocesses (though not directly in this function, but relevant in other parts of the application that might use this module).\n\n### Role in Module\nThis function serves as a central dispatcher and validator for command line arguments within the application. It helps in mapping user inputs to specific functionalities defined in the `COMMANDS` map, ensuring that commands are resolved correctly and providing useful feedback on whether a command is valid or not. This setup supports better modularity and maintainability by decoupling argument parsing from direct module invocations.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/command-dispatch.mjs"
+  ]
+}

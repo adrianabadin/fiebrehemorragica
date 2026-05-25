@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `buildQueueState` function is responsible for constructing a standardized state object for each item in the build queue. This includes essential details such as status, process ID, timestamps, and summary statistics of pending, enriched, and error counts.\n\n### Primary Inputs\n- **status**: The current status of the build (e.g., 'pending', 'enriching', 'completed').\n- **pid**: Process ID associated with the build.\n- **startedAt**: Timestamp when the build started.\n- **heartbeatAt**: Most recent timestamp indicating activity or heartbeat for the build.\n- **finishedAt** (optional): Timestamp when the build completed, defaults to `null` if not provided.\n- **lastError** (optional): Information about any errors encountered during the build, defaults to `null`.\n- **summary**: An object containing counts of pending, enriched, and error items related to the build.\n\n### Output\nA structured output object with properties:\n- **status**: The current status of the build.\n- **pid**: Process ID associated with the build.\n- **startedAt**: Timestamp when the build started.\n- **heartbeatAt**: Most recent timestamp indicating activity or heartbeat for the build.\n- **finishedAt**: Timestamp when the build completed (or `null` if not finished).\n- **lastError**: Information about any errors encountered during the build (or `null` if no errors).\n- **summary**: An object containing counts of pending, enriched, and error items related to the build.\n\n### Immediate Dependencies\n- The function directly uses inputs provided as arguments.\n\n### Role in Module\nThis function serves as a utility for creating consistent state representations of builds within the module, ensuring uniformity across different parts of the application that interact with this data structure.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/enrich-queue.mjs"
+  ]
+}

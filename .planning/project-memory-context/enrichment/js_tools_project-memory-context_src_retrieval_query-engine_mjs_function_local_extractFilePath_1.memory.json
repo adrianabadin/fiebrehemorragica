@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `extractFilePath` is responsible for extracting the file path from an array of string parts. It checks if there are at least two elements in the array and returns the second element as the file path, or `null` if there aren't enough elements.\n\n### Primary Inputs\n- **parts**: An array of strings where each element represents a part of the file path.\n\n### Output\n- The function outputs the file path (second element in the input array) if there are at least two elements, otherwise it returns `null`.\n\n### Immediate Dependencies\n- None. This function is standalone and does not rely on external dependencies or modules.\n\n### Role in Module\nThis function serves as a utility to help with file path extraction from structured data (in this case, an array of strings). It helps maintain the logic for retrieving specific parts of the file path within the module where it's used.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/retrieval/query-engine.mjs"
+  ]
+}

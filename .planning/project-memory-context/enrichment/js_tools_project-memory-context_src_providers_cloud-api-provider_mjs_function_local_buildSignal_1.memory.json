@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `buildSignal` function is responsible for creating an AbortSignal based on the presence of a `timeoutMs` property in the provided request object. If `timeoutMs` is present, it creates an AbortSignal that will abort after the specified number of milliseconds. Otherwise, it returns `undefined`.\n\n### Primary Inputs\n- **request**: An object expected to contain a `timeoutMs` property which specifies the timeout duration in milliseconds.\n\n### Output\n- The function returns either an AbortSignal instance if `timeoutMs` is provided or `undefined` if not.\n\n### Immediate Dependencies\n- **AbbrtSignal**: A built-in JavaScript object that allows for cooperative cancellation of asynchronous operations.\n- **import { classifyEnrichmentError } from '../enrichment-errors.mjs';** (from the context provided): This import is related to error handling, but not directly used within `buildSignal`.\n\n### Role in Module\nThe `buildSignal` function serves as a utility to facilitate asynchronous operations with potential timeouts based on user input, enhancing the flexibility and reliability of API requests. It helps manage resource usage by aborting operations that exceed predefined time limits, thus preventing unnecessary delays or resource depletion.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/providers/cloud-api-provider.mjs"
+  ]
+}

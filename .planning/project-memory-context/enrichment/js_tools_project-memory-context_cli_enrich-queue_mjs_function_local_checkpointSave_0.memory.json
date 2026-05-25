@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `checkpointSave` function is responsible for saving the progress of the enrichment process to disk. It ensures that both the worklist and symbol index are saved at regular intervals, providing a checkpoint for resuming the enrichment process if it is interrupted or stopped.\n\n### Primary Inputs\n- `_worklistFile`: The path to the file where the worklist (a list of symbols to be enriched) is stored.\n- `_worklist`: An array representing the current state of the worklist, including each symbol's status (`pending`, `enriched`, or `error`).\n- `_symbolIndexFile`: The path to the file where the symbol index (a mapping of symbols to their enriched data) is stored.\n- `_symbolIndex`: An object representing the current state of the symbol index, where each key is a symbol and the value is its corresponding enriched data.\n\n### Output\nThe function does not explicitly return any output but instead logs messages indicating that progress is being saved and the counts of pending, enriched, and error symbols.\n\n### Immediate Dependencies\n- `saveJson`: A utility function to write JSON data to a file. This function is assumed to be defined elsewhere in the module based on the import statements (`import { saveJson } from '../utils/file-helpers.mjs';`).\n\n### Role in Module\nThe `checkpointSave` function plays a crucial role in maintaining the integrity and recoverability of the enrichment process by periodically saving the state of the worklist and symbol index to disk. This allows users to resume the process without starting from scratch if needed, enhancing robustness against interruptions or crashes during execution.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/enrich-queue.mjs"
+  ]
+}

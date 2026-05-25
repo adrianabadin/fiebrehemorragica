@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `resolveEnrichmentConfigPaths` function is responsible for determining the paths to the project and global enrichment configuration files based on the provided options. It uses the current working directory as a default project root if not specified, retrieves configuration directories using `resolveConfigDirs`, and constructs the file paths accordingly.\n\n### Primary Inputs\n- **projectRoot**: The root directory of the project (default is the current working directory).\n- **env**: An object representing environment variables (default is `process.env`).\n- **platformOptions**: Additional options specific to the platform, which are used to determine configuration directories.\n\n### Output\nAn object containing:\n- `fileName`: The name of the enrichment configuration file (`PMC_ENRICHMENT_CONFIG_FILE`).\n- `projectConfigPath`: The path to the project-specific enrichment configuration file, defaulting to a directory within `projectConfigDir` if not overridden by environment variables.\n- `globalConfigPath`: The path to the global enrichment configuration file, defaulting to a directory within `globalConfigDir` if not overridden by environment variables.\n\n### Immediate Dependencies\n- **join** from 'node:path': Used to concatenate paths safely.\n- **resolveConfigDirs** from './platform.mjs': A function that returns the project and global configuration directories based on the provided root directory and options.\n\n### Role in Module\nThis function serves as a utility to abstract the process of determining where enrichment configuration files should be located, providing flexibility through environment variables for overriding default paths. It is used within the module to ensure consistent access to these configuration files regardless of their actual locations.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/enrichment-config.mjs"
+  ]
+}

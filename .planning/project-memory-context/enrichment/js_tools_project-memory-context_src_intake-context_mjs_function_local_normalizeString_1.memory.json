@@ -1,0 +1,11 @@
+{
+  "content": " **Responsibility:**\nThe function `normalizeString` is responsible for ensuring that the input string is properly formatted by converting it to a string if necessary, and then trimming any leading or trailing whitespace. This helps maintain consistency and cleanliness of strings within the system.\n\n**Primary Inputs:**\n- `value`: The input value which can be of any type (e.g., string, number, null, undefined).\n\n**Output:**\n- A normalized string with all leading and trailing whitespaces removed. If the input is not a string or is `null`/`undefined`, it returns an empty string (`''`).\n\n**Immediate Dependencies:**\n- The function does not rely on any external dependencies; it solely uses JavaScript's built-in methods for string manipulation.\n\n**Role in Module:**\nThe `normalizeString` function serves as a utility within the module to ensure that all inputs passed through this function are clean, standardized strings. This can be crucial for maintaining data integrity and consistency across different parts of the application where this function might be used.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/intake-context.mjs"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `isBlockedDate` function is responsible for determining whether a given date (in ISO format) is included in the list of blocked dates. This function helps to check if a specific date is unavailable or reserved due to previous bookings or other constraints.\n\n### Primary Inputs\n- **dateIso**: A string representing the date in ISO 8601 format (e.g., \"2023-10-05\").\n- **blockedDates**: An array of strings, each representing a date in ISO 8601 format.\n\n### Output\n- The function returns a boolean value: `true` if the given `dateIso` is found within the `blockedDates` array; otherwise, it returns `false`.\n\n### Immediate Dependencies\n- **prisma**: This dependency is imported from \"../db/prisma\" and used to interact with the database. However, in this specific function, its role is limited to providing data storage for the blocked dates. The actual logic of checking if a date is blocked does not directly involve database operations but relies on array manipulation.\n\n### Role in Module\nThe `isBlockedDate` function serves as a utility within the module responsible for managing calendar events and reservations. It enhances the functionality by providing a way to query whether a specific date is available or not, based solely on predefined blocked dates stored either locally (in this case, within the array) or remotely (via database queries). This modular approach keeps other parts of the application focused on their core responsibilities while delegating such ancillary tasks to helper functions like `isBlockedDate`.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "ts",
+    "function",
+    "project:fiebrehemorragica",
+    "file:src/lib/calendar/calendar.ts"
+  ]
+}

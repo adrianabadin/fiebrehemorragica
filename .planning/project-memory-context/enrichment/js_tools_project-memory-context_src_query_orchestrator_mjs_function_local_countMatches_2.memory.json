@@ -1,0 +1,11 @@
+{
+  "content": " ### Structured Explanation of `countMatches` Function\n\n#### Responsibility\nThe function `countMatches` is responsible for counting the number of times each token appears in the concatenated string of all fields, ignoring case sensitivity. It provides a score based on how many tokens are found within the combined field strings.\n\n#### Primary Inputs\n- **tokens**: An array of strings representing individual search terms or patterns.\n- **fields**: An array of strings where each string represents a separate data segment (e.g., from different parts of a document).\n\n#### Output\n- The output is an integer score that indicates the total number of tokens found in the concatenated field strings. If no tokens are provided, it returns 0.\n\n#### Immediate Dependencies\n- **None** explicitly listed; however, it implicitly depends on the existence and properties of `tokens` and `fields`.\n\n#### Role in Module\nThe function is part of a larger module that likely handles query operations or data retrieval from artifacts within a project context. It contributes to the functionality related to querying and matching strings across multiple fields, which could be used for tasks such as content analysis, search functionalities, or similar applications where token presence in concatenated field data matters.\n\n### Summary\n- **Responsibility**: Counts how many times each token appears in the concatenated string of all fields, ignoring case sensitivity.\n- **Primary Inputs**: `tokens` (array of strings) and `fields` (array of strings).\n- **Output**: Integer score representing the total number of tokens found across the combined field strings.\n- **Immediate Dependencies**: None explicitly listed but inherently depends on the presence and properties of input arrays.\n- **Role in Module**: Supports query operations or data retrieval from artifacts, contributing to string matching capabilities within a project context.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/query/orchestrator.mjs"
+  ]
+}

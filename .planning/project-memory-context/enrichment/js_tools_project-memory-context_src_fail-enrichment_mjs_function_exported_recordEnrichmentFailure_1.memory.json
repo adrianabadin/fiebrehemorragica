@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `recordEnrichmentFailure` function is responsible for recording the failure of enrichment for a given symbol within a project. It involves updating the worklist and maintaining a record of failures, both of which are crucial for tracking and debugging the enrichment process.\n\n### Primary Inputs\n- **projectRoot**: A string representing the root directory of the project.\n- **symbolKey**: A unique identifier or key for the symbol that failed enrichment.\n- **error**: An error object containing details about why the enrichment failed.\n- **failedAt**: A timestamp or stage in the process where the failure occurred.\n\n### Output\nThe function returns an object containing:\n- `worklistFile`: The path to the worklist JSON file.\n- `failuresFile`: The path to the failures JSON file.\n- `worklist`: An updated version of the worklist with the status set to 'error' for the specified symbol.\n- `failures`: An array of objects, each containing details about failed symbols including their key and the error encountered.\n\n### Immediate Dependencies\n- **ensureProjectMemoryContextDirs**: A function imported from an external module (assumed here as it is not defined in the provided code snippet). This function ensures that necessary directories for project memory context exist.\n- **readJsonArtifact**: Assumed to be a utility function to read JSON files, possibly imported from './utils/file-io.mjs' or similar.\n- **writeJsonArtifact**: Another assumed utility function to write data to JSON files.\n- **updateWorklistEntry**: A function that updates the worklist entry for the specified symbol key with the error and failure details.\n\n### Role in Module\nThis function plays a critical role in maintaining project state during the enrichment process, ensuring that any failures are recorded and can be reviewed later to improve or debug the enrichment workflow. It is central to the handling of errors within the module responsible for managing project memory contexts.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/fail-enrichment.mjs"
+  ]
+}

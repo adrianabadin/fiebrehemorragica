@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `prepareSemanticJobs` function is responsible for preparing and generating semantic job data based on the status of symbols within a project. It reads a worklist file to identify pending symbols, then resolves their absolute file paths, reads their contents, and constructs semantic jobs for each pending symbol. Finally, it writes the generated semantic jobs to an output file.\n\n### Primary Inputs\n- `projectRoot`: A string representing the root directory of the project.\n\n### Output\n- An object containing:\n  - `file`: The path to the output file where the semantic jobs are stored.\n  - `count`: The number of pending symbols processed.\n  - `jobs`: An array of semantic job objects, each corresponding to a pending symbol.\n\n### Immediate Dependencies\n- **Node.js Modules**:\n  - `node:fs/promises`: For file system operations (read and write).\n  - `node:path`: For path manipulation (resolving absolute paths).\n- **Local Module**:\n  - `./semantic-unit.mjs`: To build semantic units from the symbol contents.\n\n### Role in Module\nThis function serves as a central orchestrator for preparing and generating semantic jobs based on the status of symbols within a project. It integrates file system operations, path resolution, and local module interactions to achieve its goal. This role is crucial for ensuring that only pending symbols are processed and their corresponding semantic units are correctly generated and stored.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/prepare-semantic-jobs.mjs"
+  ]
+}

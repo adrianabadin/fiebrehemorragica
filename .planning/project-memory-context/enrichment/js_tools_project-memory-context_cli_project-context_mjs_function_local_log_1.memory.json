@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `log` function is responsible for logging messages to the console, prefixed with \"[project-context]\" and including the actual message. This is used for debugging and informational purposes within the project context management tool.\n\n### Primary Inputs\n- **message**: A string that represents the log message to be displayed.\n\n### Output\n- The function outputs the logged message to the console, prefixed with \"[project-context]\".\n\n### Immediate Dependencies\n- `console.error`: This is a JavaScript standard object used for printing error messages to the console.\n\n### Role in Module\nThe `log` function serves as a utility within the module to facilitate debugging and logging of information during the execution of tasks related to project context management, such as artifact reading/writing, memory creation, etc.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/project-context.mjs"
+  ]
+}

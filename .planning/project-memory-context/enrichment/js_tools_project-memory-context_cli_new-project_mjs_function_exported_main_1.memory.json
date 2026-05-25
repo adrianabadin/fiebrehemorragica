@@ -1,0 +1,11 @@
+{
+  "content": " The `main` function is responsible for bootstrapping a new project using the `project-memory-context` installer. It takes command line arguments, specifically `<target-repo>`, and optional flags like `--stage-a`, `--stage-b`, `--all`, and `--enrich`. If the help flag (`--help` or `-h`) is included, it prints usage instructions. Otherwise, it spawns a child process to run the installer script with the provided arguments. The function returns a promise that resolves when the child process exits, indicating success or failure.\n\n**Primary Inputs:** Command line arguments and flags (`<target-repo>`, `--stage-a`, `--stage-b`, `--all`, `--enrich`) passed to the `new-project` script.\n\n**Output:** A promise that resolves with the exit code of the child process or rejects with an error if it exits due to a signal or encounters an error.\n\n**Immediate Dependencies:** The function relies on Node.js's built-in modules (`process`, `child_process`, `path`, and `url`) for handling command line arguments, spawning processes, and path manipulations.\n\n**Role in Module:** This function serves as the entry point for initializing a new project using the PMC installer, providing user interaction via command line interface and managing process spawns to execute the installation script.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/new-project.mjs"
+  ]
+}

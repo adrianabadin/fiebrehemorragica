@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `runDoctor` function is responsible for running a series of diagnostic checks to ensure that the environment meets the requirements for the project. It verifies various aspects such as Node.js version, Python installation, Graphify availability, Ollama integration, and paths for memory databases and embedding caches.\n\n### Primary Inputs\n- `env`: An object representing the environment variables (default: `process.env`).\n- `fetchImpl`: The implementation of the fetch API to use for network requests (default: `globalThis.fetch`).\n- `resolvePythonBin`: A function to resolve the Python binary path (default: a no-op function returning null).\n- `resolveGraphify`: A function to resolve the Graphify binary or script path (default: a no-op function returning null).\n- `spawnCheck`: An optional function to spawn check processes (default: null).\n\n### Output\nThe output is an object containing the results of all the checks performed by the `runDoctor` function. The structure of this object is not detailed in the provided code snippet, but it likely includes a status and any relevant error messages or details from each check.\n\n### Immediate Dependencies\n- **Node.js fs/promises**: For file system operations like checking paths and accessing files.\n- **Global fetch API**: If `fetchImpl` is not overridden, for network requests (e.g., to check Ollama).\n\n### Role in Module\nThe `runDoctor` function serves as a central entry point for running all the diagnostic checks required by the module. It abstracts and orchestrates the execution of individual check functions (`checkNodeVersion`, `checkPython`, etc.), collecting their results into a single output object that can be used to report on the overall health of the environment setup for the project. This function is crucial for ensuring that the application or tool runs correctly in its intended environment, providing clear feedback when issues are detected.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/doctor.mjs"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `resolveConfigDirs` function is responsible for determining the configuration directories for a project and its globally accessible configurations. It does this by searching for predefined directory names within the project root, defaulting to a specific name if no other directories are found, and also checking common global configuration paths.\n\n### Primary Inputs\n- `projectRoot`: The root directory of the project (default is the current working directory).\n- `options`: An object that can override the default behavior for checking file existence (`exists`) and determining the home directory (`homeDir`).\n\n### Output\nThe function returns an object containing:\n- `projectRoot`: The resolved path to the project root.\n- `projectConfig`: The first existing configuration directory found within the project or a default path if none are found.\n- `globalConfig`: The first existing global configuration directory found among predefined paths.\n- `projectConfigDir`: Alias for `projectConfig`.\n- `globalConfigDir`: Alias for `globalConfig`.\n\n### Immediate Dependencies\n- `node:child_process` (for execution and spawning processes, though not used in this function):\n  - `execFileSync`: Synchronously executes a file in a child process.\n  - `spawn`: Spawns a new process with the given command.\n- `node:fs`:\n  - `existsSync`: Checks if a path exists synchronously.\n- `node:os`:\n  - `homedir`: Returns the home directory of the current user.\n- `node:path`:\n  - `join`: Joins all given path segments together, then normalizes the resulting path.\n  - `resolve`: Resolves a sequence of paths or path segments into an absolute path.\n\n### Role in Module\nThis function serves as a utility to standardize and simplify access to configuration directories for both project-specific and globally accessible configurations. It abstracts away the details of how these directories are determined, providing a straightforward API for other parts of the module to use when they need to interact with configuration files or settings.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/platform.mjs"
+  ]
+}

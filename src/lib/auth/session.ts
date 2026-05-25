@@ -17,7 +17,7 @@ export async function getSession() {
     return {
       userId: payload.userId as string,
       role: payload.role as string,
-      name: (payload.username as string) || "Usuario" // Fallback ya que no está en token
+      name: (payload.name as string) || "Usuario"
     };
   } catch (error) {
     return null;

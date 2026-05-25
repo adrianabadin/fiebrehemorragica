@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `summarizeWorklist` function is responsible for summarizing the statuses of a worklist. It takes an array of objects (`worklist`) where each object represents a task or item with a `status` property, and returns an object containing counts of tasks based on their status.\n\n### Primary Inputs\n- **worklist**: An array of objects where each object has a `status` property.\n\n### Output\n- A summary object with three properties:\n  - `pending`: The count of tasks with status 'pending' or 'stale'.\n  - `enriched`: The count of tasks with status 'enriched' or 'already_enriched'.\n  - `errors`: The count of tasks with the status 'error'.\n\n### Immediate Dependencies\n- None explicitly listed in the code snippet, but implicitly depends on JavaScript environment and standard library functions (`filter`, `length`).\n\n### Role in Module\nThis function is part of the CLI tool for managing a project's memory context. It helps in quickly summarizing the current state of tasks or items based on their statuses, which can be useful for debugging, reporting, or decision-making processes within the application.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/status.mjs"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `getSheetsClient` is responsible for creating and returning an authenticated Google Sheets API client. This client can be used to interact with Google Sheets, allowing the execution of various operations such as reading from or writing to spreadsheets.\n\n### Primary Inputs\n- **None** (the function does not take any direct inputs; it relies on pre-configured authentication)\n\n### Output\n- An authenticated instance of the Google Sheets API client (`google.sheets({ version: \"v4\", auth: createSheetsAuth() })`).\n\n### Immediate Dependencies\n- `google`: The main module from the `googleapis` package, which provides a set of libraries for accessing various Google APIs.\n- `createSheetsAuth()`: A function that handles the authentication process to access the Sheets API. This is assumed to be defined elsewhere in the codebase and returns an OAuth2 client configured with appropriate credentials.\n\n### Role in Module\n`getSheetsClient` serves as a factory function for creating instances of Google Sheets API clients, abstracting away the details of how authentication and API interaction are handled. It ensures that any part of the application can obtain a properly authenticated Sheets client without needing to know or manage the underlying implementation details of authentication and API versioning. This promotes modularity and encapsulation by centralizing the logic for creating connections to external services within this single function.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "ts",
+    "function",
+    "project:fiebrehemorragica",
+    "file:src/lib/sheets/google-sheets.ts"
+  ]
+}

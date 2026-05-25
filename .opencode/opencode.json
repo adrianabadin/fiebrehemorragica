@@ -1,0 +1,21 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugin": [
+    "@aabadin/project-memory-context"
+  ],
+  "mcp": {
+    "agent-memory": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@aabadin/agent-memory-mcp"
+      ],
+      "enabled": true,
+      "environment": {
+        "MEMORY_DB_PATH": "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\.planning\\project-memory-context\\memory-db",
+        "EMBEDDING_CACHE_PATH": "C:\\Users\\aabad\\Documents\\CODE\\fiebrehemorragica\\.planning\\project-memory-context\\embedding-cache"
+      }
+    }
+  }
+}

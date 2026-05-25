@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `groupEdges` function is responsible for organizing edges by their relation types. It takes an array of edges and a list of allowed edge types, then groups the edges by their relation type (kind) if they are included in the allowed list.\n\n### Primary Inputs\n- **edges**: An array of objects where each object represents an edge with properties `relation` and `target`.\n- **edgeTypes**: An array of strings representing the valid kinds of relations that can be grouped.\n\n### Output\n- A new array of objects, where each object contains a `kind` (the relation type) and its corresponding `items` (an array of targets).\n\n### Immediate Dependencies\n- **Map**: Used to efficiently group edges by their kind.\n- **Array.prototype.includes**: Checks if an edge's relation is in the list of allowed types.\n\n### Role in Module\nThis function serves as a utility to preprocess data (edges) before further processing or rendering, ensuring that only relevant edges are considered for downstream operations defined by `edgeTypes`.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/context.mjs"
+  ]
+}

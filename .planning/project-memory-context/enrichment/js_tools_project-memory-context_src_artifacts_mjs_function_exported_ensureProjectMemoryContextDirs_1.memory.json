@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `ensureProjectMemoryContextDirs` function is responsible for ensuring that the necessary directory structure for managing project memory contexts exists under the specified project root. It creates all required directories if they do not already exist, and returns an object containing paths to these directories.\n\n### Primary Inputs\n- **projectRoot**: A string representing the path to the root of the project where the context directories should be created or verified.\n\n### Output\n- An object containing paths to the various directories:\n  - `base`: The base directory for all project memory context related files.\n  - `intake`: Directory for intake related data.\n  - `graph`: Directory for graph related data.\n  - `enrichment`: Directory for enrichment related data.\n  - `runs`: Directory for run related data.\n  - `projectContext`: The main project context directory.\n  - `projectContextDetected`, `projectContextDeclared`, `projectContextMaterialized`, `projectContextMarkdown`, and `projectContextState`: Subdirectories within the `projectContext` directory.\n\n### Immediate Dependencies\n- **fs/promises**: Used for file system operations like creating directories (`mkdir`) and reading/writing files (though not directly in this function, it's used in other parts of the module).\n- **path**: Specifically `dirname` and `join` from 'node:path' to handle path construction.\n\n### Role in Module\nThis function is crucial for setting up the directory structure required by the rest of the application to manage project memory contexts, ensuring that all necessary directories are present and correctly named under the specified root directory.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/artifacts.mjs"
+  ]
+}

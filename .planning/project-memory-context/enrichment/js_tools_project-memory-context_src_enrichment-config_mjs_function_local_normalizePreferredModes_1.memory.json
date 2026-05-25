@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `normalizePreferredModes` function is responsible for processing and refining the list of preferred modes based on predefined valid modes and default settings. It ensures that only valid modes are included in the final list, filling in defaults if necessary.\n\n### Primary Inputs\n- **modes**: An array representing different modes which could include invalid or undefined values.\n\n### Output\n- A new array containing unique, valid preferred modes. If no valid modes are provided, it returns a default set of preferred modes (`DEFAULTS.preferredModes`).\n\n### Immediate Dependencies\n- **VALID_MODES**: A Set containing all predefined valid mode types that can be included in the `modes` input.\n- **DEFAULTS**: An object containing default settings including `preferredModes`.\n\n### Role in Module\nThis function is crucial for maintaining data integrity and providing a consistent set of preferred modes across different uses within the module, ensuring that only acceptable values are used and falling back to defaults when necessary.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/enrichment-config.mjs"
+  ]
+}

@@ -22,7 +22,7 @@ export async function processBatch(batch: { id: string }) {
   const batchYear = new Date().getFullYear();
   const blockedDates = await loadBlockedDates(batchYear);
 
-  const slots = assignSlotsForBatch({ totalAssignedBeforeBatch, blockedDates });
+  const slots = await assignSlotsForBatch({ totalAssignedBeforeBatch, blockedDates });
 
   for (const [index, request] of reserved.requests.entries()) {
     const slot = slots[index];

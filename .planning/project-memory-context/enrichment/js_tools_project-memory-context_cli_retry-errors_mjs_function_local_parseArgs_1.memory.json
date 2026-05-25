@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `parseArgs` function is responsible for parsing command line arguments provided to the script. It converts these raw arguments into an object containing meaningful parameters that can be used within the script, such as timeout duration, model identifier, base URL for API requests, and a limit on the number of retries.\n\n### Primary Inputs\n- `argv`: An array of strings where each element is a command line argument passed to the script.\n\n### Output\n- An object (`args`) containing parsed arguments:\n  - `timeoutMs`: A number representing the timeout duration in milliseconds (default is 600000 ms or 10 minutes).\n  - `model`: A string identifier for a model, if provided.\n  - `baseUrl`: A string URL that serves as the base address for API requests.\n  - `reportFile`: A string representing the file path where results might be stored or logged.\n  - `limit`: An integer specifying the maximum number of retry iterations (if not specified, it defaults to a value defined elsewhere in the module).\n\n### Immediate Dependencies\n- The function directly uses standard JavaScript functions and Node.js modules:\n  - `parseInt` for converting string representations of numbers into integers.\n  - Standard library functions from Node.js (`argv`, `for...of` loop, etc.).\n\n### Role in Module\nThis function serves as a utility to handle command line interface (CLI) inputs specific to the operations defined by this module. It helps configure and manage how the script interacts with external systems or users based on provided arguments.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/retry-errors.mjs"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "content": " The `normalizeSemanticReport` function processes a semantic report by extracting and organizing relevant information from the report data. It creates a map of fields, primarily focusing on 'responsibility', 'inputs', 'output', 'dependencies', and 'role'. If these specific fields are not present in the report, it defaults to 'Not specified' for those missing values. The function then returns an object containing these organized details.\n\n- **Responsibility**: This is derived from the finding that starts with 'responsibility:' or defaults to the summary if no such responsibility is found.\n- **Primary Inputs**: These are parsed from the field labeled 'inputs', defaulting to an empty array if not specified.\n- **Output**: Extracted from the report, defaulting to 'Not specified' if absent.\n- **Immediate Dependencies**: Parsed from the field labeled 'dependencies', defaulting to an empty array if unspecified.\n- **Role in Module**: Taken from the finding that starts with 'role:' or defaults to 'Not specified' if no such role is found.\n- **Summary**: The raw summary text, trimmed of whitespace, which might include additional context not explicitly captured by other fields.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/semantic-report.mjs"
+  ]
+}

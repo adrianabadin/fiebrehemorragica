@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `createSheetsAuth` function is responsible for creating and configuring an authentication object using Google's JWT (JSON Web Token) method, which allows the application to interact with Google Sheets API. This function ensures that necessary environment variables (`GOOGLE_SERVICE_ACCOUNT_EMAIL` and `GOOGLE_PRIVATE_KEY`) are set before proceeding, as these are required for creating the authentication object.\n\n### Primary Inputs\n- **Environment Variables**: \n  - `GOOGLE_SERVICE_ACCOUNT_EMAIL`: The email address of a Google service account.\n  - `GOOGLE_PRIVATE_KEY`: The private key associated with the service account, used for authentication.\n\n### Output\n- An instance of `google.auth.JWT`, configured with the provided environment variables and default scope (`SHEETS_SCOPE`). This object is used to authenticate requests to Google Sheets API.\n\n### Immediate Dependencies\n- **google**: The primary dependency, imported from the \"googleapis\" package, which provides the necessary classes and methods for interacting with Google APIs including Google Sheets.\n\n### Role in Module\nThe `createSheetsAuth` function serves as a utility within the module responsible for handling interactions with Google Sheets via API. It encapsulates the logic required to set up authentication using environment variables specific to a Google service account, which is crucial for accessing and manipulating spreadsheets through the Google Sheets API. This setup enables secure and authorized access to Google services from within the application, ensuring that only authenticated requests are made to avoid unauthorized data manipulation or retrieval.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "ts",
+    "function",
+    "project:fiebrehemorragica",
+    "file:src/lib/sheets/google-sheets.ts"
+  ]
+}

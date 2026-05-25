@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `runCommand` function is responsible for executing external commands based on the provided arguments. It abstracts the process of spawning child processes and handling their standard input, output, and error streams. The function ensures that the command to be executed is valid before proceeding, and it provides a way to handle the results or errors from the command execution.\n\n### Primary Inputs\n- `argv`: An array representing the arguments for the command. This includes the command name and its parameters.\n- `options`: An object containing optional settings such as `stdio`, `stdout`, and `stderr`. These options control how the process handles input/output streams.\n\n### Output\n- The function returns a promise that resolves to the exit code of the executed command or rejects with an error if something goes wrong during execution.\n\n### Immediate Dependencies\n- **`spawn` from 'node:child_process`:** This is used to create and manage child processes in Node.js.\n- **`resolve` and `dirname` from 'node:path`:** These are used for resolving file paths, which is necessary when dealing with modules that might be specified as relative paths or URLs.\n- **`fileURLToPath` from 'node:url`:** This function converts a file URL to a local file path, allowing the module paths to be resolved correctly.\n\n### Role in Module\nThe `runCommand` function serves as an interface between the application and external command executions. It abstracts the complexity of spawning child processes and provides a standardized way to execute commands with optional configuration for output handling. This abstraction is particularly useful for tasks that require interacting with system tools or running scripts, making it easier to manage and test these interactions within the Node.js environment.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/command-dispatch.mjs"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `mergeConfig` function is responsible for merging two configuration objects (`base` and `override`) deeply. It ensures that any nested properties (like `localModel`, `cloudApi`, and `agentSubagent`) are also merged recursively, preserving the structure of the original configurations.\n\n### Primary Inputs\n- **base**: An object representing the base configuration.\n- **override**: An object representing the configuration to be merged in place of or in addition to the base configuration.\n\n### Output\nA new object that is a deep merge of `base` and `override`. If there are conflicts (i.e., properties with the same name but different types), the value from `override` will take precedence.\n\n### Immediate Dependencies\n- **node:path**: Imported as `join` for path manipulation, though not directly used in the function itself. This is more of a utility provided by Node.js for file system paths.\n- **resolveConfigDirs** from `./platform.mjs`: This function likely resolves configuration directories or sources but is not directly imported and used within `mergeConfig`. It might be part of a larger module responsible for resolving platform-specific configurations.\n\n### Role in Module\nThe `mergeConfig` function serves as a utility to combine different configurations, ensuring that all levels of nested objects are merged correctly. This is particularly useful in scenarios where default settings need to be overridden by user-defined options or when merging multiple configuration sources (like environment variables, command-line arguments, and local files).",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/enrichment-config.mjs"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "content": " ### Structured Explanation of `extractPython` Function\n\n#### Responsibility\nThe `extractPython` function is responsible for extracting Python class and function symbols from a list of lines of code. It identifies classes and functions defined using regular expressions, determines their scope (local or exported), and constructs symbol objects with relevant metadata such as file path, type, name, etc.\n\n#### Primary Inputs\n- `lines`: An array of strings where each string represents a line of code from the Python script.\n- `filePath`: A string representing the file path of the Python script.\n\n#### Output\n- `symbols`: An array of objects, each representing a symbol (class or function) extracted from the lines of code. Each object contains metadata about the symbol such as its type, name, scope, and location in the source file.\n\n#### Immediate Dependencies\n- Regular Expressions: \n  - `/^(class)\\s+(\\w+)/`: Matches class definitions.\n  - `/^(async\\s+def|def)\\s+(\\w+)\\s*\\(([^)]*)\\)/`: Matches function and async def definitions, capturing the function name and parameters.\n  - `/^(async\\s+def|def)\\s+(\\w+)/`: Matches decorated functions (e.g., `@decorator def func`).\n- Helper Functions:\n  - `findBlockEnd(lines, i)`: A utility function to find the end of a block (class or function), used to determine the scope of symbols.\n  - `makeSymbol(filePath, type, kind, name, scope, lines, startLine, endLine, arity)`: Constructs a symbol object with detailed metadata.\n\n#### Role in Module\nThe `extractPython` function plays a crucial role in the module by providing an automated way to extract and categorize symbols from Python code files. This is particularly useful for tools or environments that need to index, search, or analyze Python source code, offering functionalities such as autocompletion, jump-to-definition, or static analysis. It helps in maintaining a structured representation of the code elements within the module, facilitating further operations and integrations with other parts of the system.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/extractors/regex-extractor.mjs"
+  ]
+}

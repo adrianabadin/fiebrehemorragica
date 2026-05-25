@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `persistEnrichmentArtifacts` function is responsible for persisting the results of an enrichment process to disk. It ensures that the necessary artifacts (memory payload and, optionally, enrichment result) are written to specific files within a project's memory context directory. This includes resolving the project root, creating necessary directories, building the artifact objects, and writing these objects to JSON files.\n\n### Primary Inputs\n- `projectRoot`: The root directory of the project where the memory context will be stored.\n- `projectSlug`: A unique identifier for the project.\n- `job`: An object containing details about the job being processed, including its symbol key.\n- `report`: The semantic report to be included in the artifacts.\n- `memoryId`: An optional ID that uniquely identifies this memory context; if provided, an enrichment result file will also be created.\n- `enrichedAt`: Timestamp indicating when the project was enriched.\n\n### Output\nThe function returns an object containing:\n- The built `memoryPayload` and optionally `enrichmentResult`.\n- Paths to the written JSON files (`memoryPayloadFile` and `enrichmentResultFile`).\n\n### Immediate Dependencies\n- Node's `path` module for resolving file paths.\n- Custom modules:\n  - `./memory-payload.mjs`: Provides functions `buildEnrichmentResult` and `buildMemoryPayload`.\n  - `./semantic-report.mjs`: Provides the function `normalizeSemanticReport`.\n\n### Role in Module\nThis function serves as a central point for managing and persisting all artifacts generated during the enrichment process of a project's memory context. It encapsulates the logic required to ensure that these artifacts are correctly named, stored, and retrieved based on their unique identifiers (derived from `job.symbolKey`). This role is crucial for maintaining organizational integrity and facilitating easy access to data related to specific projects or jobs within the system.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/enrichment-artifacts.mjs"
+  ]
+}

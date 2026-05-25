@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `readJsonArtifact` function is responsible for reading and parsing a JSON file from the given file path. It also handles the case where the file does not exist by returning a fallback value, defaulting to `null`. If there's any other error during the read operation, it throws the error.\n\n### Primary Inputs\n- **filePath**: A string representing the path to the JSON file that needs to be read.\n- **fallback** (optional): A default value to return if the file does not exist or cannot be read due to some other reason. Defaults to `null`.\n\n### Output\n- The function returns a JavaScript object parsed from the JSON content of the given file path, or the fallback value if the file does not exist or there's an error in reading it.\n\n### Immediate Dependencies\n- **`readFile`**: A method from Node.js's `fs/promises` module used to read the contents of the file at the specified path. It reads the file as UTF-8 encoded data.\n- **`JSON.parse`**: A built-in JavaScript function that parses a JSON string and converts it into an object. This is used to convert the file content (expected to be in JSON format) into a JavaScript object.\n\n### Role in Module\nThis function serves as a utility for reading and parsing JSON files, which can be used across different parts of the module where such operations are necessary but might not want to handle file I/O or error handling themselves. It abstracts these details away from the main logic, making the code cleaner and more maintainable.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/artifacts.mjs"
+  ]
+}

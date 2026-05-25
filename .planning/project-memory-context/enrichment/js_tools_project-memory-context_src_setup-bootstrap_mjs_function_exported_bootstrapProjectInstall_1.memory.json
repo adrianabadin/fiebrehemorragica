@@ -1,0 +1,11 @@
+{
+  "content": " The `bootstrapProjectInstall` function is responsible for setting up the initial structure and configuration of a project's memory context. Its primary inputs include the project root, package root, Ollama base URL, Ollama model, embedding cache path, optional agents list, and an optional single agent. It outputs an object containing installation state, paths to config and workflow files, and resolved agents. Immediate dependencies are from Node.js's fs/promises for file system operations and custom modules for artifact management and template copying. This function plays a crucial role in bootstrapping the project environment by ensuring necessary directories, configuration files, and templates are created and configured according to the provided inputs.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/setup-bootstrap.mjs"
+  ]
+}

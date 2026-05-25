@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `printHelp` function is responsible for providing usage instructions and explanations of the different modes and options available when using the PMC (Project Memory Context) CLI tool to retrieve structural context about symbols, files, or free-text queries from the project graph.\n\n### Primary Inputs\n- None explicitly passed as parameters; the function relies on command line arguments or inputs determined by the mode specified (`symbol`, `file`, or `query`).\n\n### Output\nThe output is a series of console logs that display the usage instructions, descriptions of different modes and options, and examples demonstrating how to use these features.\n\n### Immediate Dependencies\n- The function uses Node.js core modules for file system operations (`fs`), path manipulations (`path`), and URL parsing (`url`). These are imported as follows:\n  ```javascript\n  import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';\n  import { dirname, join, resolve } from 'node:path';\n  import { fileURLToPath } from 'node:url';\n  ```\n- It also imports functions and modules from within the same project for artifact reading (`readJsonArtifact`), query engine creation (`createQueryEngine`), target resolution (`resolveTarget`), and rendering context (`renderTargetContext`). These are imported from specific paths like `../src/artifacts.mjs`, `../src/retrieval/query-engine.mjs`, etc.\n\n### Role in Module\nThe `printHelp` function serves as a utility to assist users in understanding and utilizing the CLI tool for querying project context effectively. It is invoked when the user provides the `--help` flag, ensuring that users can quickly access guidance on how to use the tool without needing to delve into detailed documentation or source code.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/context.mjs"
+  ]
+}

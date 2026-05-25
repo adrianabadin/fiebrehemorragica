@@ -1,0 +1,11 @@
+{
+  "content": " To create a function that generates a semantic prompt based on the provided `unit` object, you can use JavaScript (JS) to construct and return a string that includes all the specified details. Here's how you could implement this function:\n\n```javascript\nexport function buildSemanticPrompt(unit) {\n  // Constructing the prompt as an array of strings for better readability\n  const promptParts = [\n    `Symbol Key: ${unit.symbolKey}`,\n    `Language: ${unit.language}`,\n    `Kind: ${unit.kind}`,\n    `Name: ${unit.name}`,\n    `Location: ${unit.filePath}:${unit.range.startLine}-${unit.range.endLine}`,\n    '',\n    'Context:',\n    unit.context || 'None',\n    '',\n    'Code:',\n    unit.code,\n    '',\n    'Return a compact structured explanation with:',\n    '- responsibility',\n    '- primary inputs',\n    '- output',\n    '- immediate dependencies',\n    '- role in module',\n  ];\n\n  // Joining all parts into a single string separated by newline characters\n  return promptParts.join('\\n');\n}\n```\n\nThis function takes an object `unit` as input, which presumably contains properties such as `symbolKey`, `language`, `kind`, `name`, `filePath`, `range`, `context`, and `code`. It constructs a detailed semantic prompt by concatenating these details into a single string with each part separated by a newline. The function also handles the case where `unit.context` might be missing, defaulting to \"None\" in such scenarios.\n\nThis implementation ensures that all specified elements are included in the final output, providing a structured and detailed semantic prompt tailored to the needs of understanding the role and functionality of the symbol defined by the `unit`.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/semantic-unit.mjs"
+  ]
+}

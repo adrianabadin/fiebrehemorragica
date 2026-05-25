@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `runGraphifyUpdate` function is responsible for running the Graphify tool to generate or update structural AST (Abstract Syntax Tree) of a project. It orchestrates the process of invoking the Graphify executable, handling its output, and managing file copying from the temporary output directory to the final storage location within the project's `.planning/project-memory-context/graph` directory.\n\n### Primary Inputs\n1. **projectRoot**: A string representing the root directory of the project where the Graphify tool will be executed.\n\n### Output\n- **Boolean**: Returns `true` if the graphify update is successful, otherwise returns `false`.\n\n### Immediate Dependencies\n1. **getGraphifyExe()**: Function to retrieve the path or executable for the Graphify tool.\n2. **resolve(projectRoot, 'graphify-out')**: Constructs a path to the temporary output directory where Graphify stores its results.\n3. **resolve(projectRoot, '.planning', 'project-memory-context', 'graph')**: Constructs a path to the final storage location for the generated graph files.\n4. **spawnSync(`\"${graphifyExe}\"`, ['update', `\"${projectRoot}\"`], { cwd: projectRoot, stdio: 'inherit', shell: true })**: Executes the Graphify update command with the specified working directory and input/output settings.\n5. **readdir(graphifyOutDir)**: Lists all files in the temporary output directory to identify specific files for copying.\n6. **copyFileSync(resolve(graphifyOutDir, f), resolve(graphOutDir, f))**: Copies selected Graphify output files from the temporary location to the final storage location within the project.\n\n### Role in Module\nThis function serves as an interface between the application and the external tool (Graphify) for generating or updating structural AST representations of a software project. It ensures that the generated outputs are correctly stored and managed according to the project's directory structure, providing a robust mechanism for integrating Graphify results into the project's development workflow.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/sanitize.mjs"
+  ]
+}

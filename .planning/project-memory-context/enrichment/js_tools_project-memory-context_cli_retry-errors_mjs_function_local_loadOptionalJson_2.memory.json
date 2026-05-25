@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `loadOptionalJson` function is responsible for attempting to load and parse a JSON file from the specified path. If the file cannot be read or parsed, it will return a fallback value (defaulting to `null`). This function acts as a utility to handle optional JSON loading with graceful error handling.\n\n### Primary Inputs\n- **path**: A string representing the file system path to the JSON file that needs to be loaded.\n- **fallback** (optional): A default value to return if the JSON file cannot be read or parsed. Defaults to `null`.\n\n### Output\n- The function returns a JavaScript object if the JSON file at the specified path is successfully read and parsed. If the file does not exist, is unreadable, or fails to parse as JSON, it returns the provided fallback value (`null` by default).\n\n### Immediate Dependencies\n- **node:fs/promises**: For reading the file from the filesystem.\n- **node:path**: For resolving and manipulating file paths.\n- **node:url**: To convert URL objects to local file paths.\n- **homedir** (from `node:os`): For handling user's home directory, which might be needed for constructing paths relative to the user's home directory.\n\n### Role in Module\nThis function serves as a utility within the module and is used primarily for loading optional JSON configuration files that may or may not exist without causing errors elsewhere in the application logic. It helps maintain robustness by providing a default fallback mechanism when such configurations are absent or malformed.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/retry-errors.mjs"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `searchMemoryMatches` function is responsible for evaluating the relevance of memories based on provided tokens and returning them sorted by their relevance score. It does this by mapping over each memory, calculating a match score for each memory using the `countMatches` function, filtering out those with no matches, and then sorting the remaining memories by their scores in descending order. If two memories have the same score, they are further sorted lexicographically by their file paths.\n\n### Primary Inputs\n- **memories**: An array of objects representing memory entries, each containing at least `title`, `summary`, `body`, and optionally `tags` fields.\n- **tokens**: An array of strings used to evaluate the relevance of each memory entry.\n\n### Output\nAn array of memory objects sorted by their relevance scores in descending order. Each object includes an additional `score` field indicating its relevance based on the provided tokens. If two memories have identical scores, they are ordered by their file paths.\n\n### Immediate Dependencies\n- **countMatches**: A function that takes tokens and a list of strings (like memory titles, summaries, bodies, and tags) to count how many times each token appears in these strings. This is used within the `searchMemoryMatches` function to calculate the relevance score for each memory entry.\n\n### Role in Module\nThe `searchMemoryMatches` function serves as a core component of the query orchestration system responsible for evaluating and sorting memories based on their content relevance to the user's search tokens. It is part of the module that handles querying and retrieving relevant information from memory stores, making it an essential tool for enhancing retrieval accuracy and efficiency in applications like document indexing or semantic search engines.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/query/orchestrator.mjs"
+  ]
+}

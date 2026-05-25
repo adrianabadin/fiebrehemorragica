@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `runStageB` is responsible for building a worklist of files from the project root, including both TypeScript (.ts), JavaScript (.js), and C# (.cs) files, by running a specific script (`build-worklist.mjs`) which processes these files to generate a list for further processing or analysis.\n\n### Primary Inputs\n- `projectRoot`: The directory path where the project is located.\n\n### Output\n- A boolean indicating success (true) or failure (false) of the stage-b execution.\n\n### Immediate Dependencies\n- Node.js built-in modules: `path`, `url`, `fs/promises`, `fs` (with sync methods), and `child_process`.\n- Local scripts: `build-worklist.mjs`, located in the PMC_CLI_ROOT or within the project's tools directory.\n\n### Role in Module\nThis function is a critical part of the setup process for handling various file types within a software project, ensuring that necessary files are identified and processed correctly to support further development tasks or quality assurance processes.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/bootstrap.mjs"
+  ]
+}

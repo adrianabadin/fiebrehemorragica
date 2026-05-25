@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `withRecordedAttempt` function is responsible for updating an entry object to include a new attempt and managing the state related to attempts, specifically handling the addition of new attempts and maintaining information about the last mode used.\n\n### Primary Inputs\n- **entry**: An object representing the current state or context which includes possibly existing attempts and other relevant data like the last mode used.\n- **attempt**: An object containing details of a specific attempt to be added, including optional properties such as `mode`.\n\n### Output\nThe function returns an updated version of the input `entry` with:\n- The new `attempts` array that includes all previous attempts plus the newly provided `attempt`.\n- Updates the `lastModeUsed` property if a mode is specified in the `attempt`, otherwise retains its current value or defaults to `null`.\n\n### Immediate Dependencies\nThe function directly uses Node.js's built-in modules:\n- **fs/promises**: For file system operations, though not explicitly used here, typical for filesystem interactions in a Node.js environment.\n- **path**: Used indirectly via the `join` function to handle and construct file paths, which is common when dealing with file systems in Node.js applications.\n\n### Role in Module\nThis function serves as a utility within the module responsible for managing attempts related data structures. It ensures that every time an attempt is made (or recorded), the system's state about these attempts is consistently updated and maintained, providing easy access to historical records of attempts along with metadata like the last mode used. This setup supports functionalities such as analytics or reporting on user interactions based on different modes.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/enrichment-attempts.mjs"
+  ]
+}

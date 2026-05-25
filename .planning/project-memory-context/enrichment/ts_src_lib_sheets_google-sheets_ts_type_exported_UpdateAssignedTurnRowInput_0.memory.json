@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `UpdateAssignedTurnRowInput` type is responsible for defining the structure of input data expected when updating a row's scheduled date and time in a Google Sheets document. This type ensures that any function or method which requires this information will receive it in a standardized format, facilitating consistency and easier maintenance across different parts of the application.\n\n### Primary Inputs\n- **scheduledDate**: A string representing the date component of the schedule, formatted as per ISO 8601 (e.g., \"2023-10-05\"). This input is crucial for specifying when the event or task is scheduled to occur.\n- **scheduledTime**: A string representing the time component of the schedule, typically in a 24-hour format followed by optional minutes and/or seconds (e.g., \"14:30\" or \"14:30:00\"). This input helps specify when within the scheduled date the event or task is planned to take place.\n\n### Output\nThere is no direct output defined in this type, as it solely serves as a structure for input data. However, its usage ensures that any function expecting such data will receive valid and consistent inputs.\n\n### Immediate Dependencies\n- **google**: This dependency is imported from the `googleapis` package and is used to interact with Google Sheets API. The specific type definition here does not directly depend on any functions or classes within this library, but its usage in a broader application context might involve interactions that could indirectly rely on these imports for data handling or configuration settings related to Google services.\n\n### Role in Module\nIn the context of the module dealing with Google Sheets operations (as inferred from the import statement), `UpdateAssignedTurnRowInput` serves as a foundational type definition within this specific part of the application logic. It helps maintain coherence and clarity in how data is passed around functions or methods that are responsible for updating scheduled times and dates in the sheets, ensuring that all such interactions adhere to a consistent schema defined by this type.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "ts",
+    "type",
+    "project:fiebrehemorragica",
+    "file:src/lib/sheets/google-sheets.ts"
+  ]
+}

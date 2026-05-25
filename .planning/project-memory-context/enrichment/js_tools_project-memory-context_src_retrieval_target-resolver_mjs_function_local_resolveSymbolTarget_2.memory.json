@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `resolveSymbolTarget` is responsible for resolving the target symbol within an engine by searching for its corresponding key. It determines whether the target is unambiguous, ambiguous, or missing and returns a structured object indicating this resolution.\n\n### Primary Inputs\n- **engine**: An object that has a method `findSymbolKeyByName(target)`, which searches for keys associated with the given symbol name.\n- **target**: The name of the symbol to be resolved within the engine.\n\n### Output\nThe function returns an object structured as follows:\n- **mode**: A string indicating the result of the resolution, which can be one of three values: 'symbol', 'symbol-ambiguous', or 'symbol-missing'.\n- **target**: The original target symbol name being resolved.\n- **symbolKey** (optional if mode is not 'symbol'): The key associated with the resolved symbol. This field is only present when there is a single unambiguous match.\n- **symbolKeys** (optional if mode is not 'symbol-ambiguous'): An array of keys corresponding to the ambiguous or missing target symbols. This field is only present when there are multiple matches or no matches found, respectively.\n\n### Immediate Dependencies\nThe function does not explicitly import any other functions or variables from its environment, relying solely on the provided `engine` object and its method for resolution.\n\n### Role in Module\nThis function plays a crucial role in the module by providing a mechanism to resolve symbol targets within an engine context. It helps in managing cases where multiple potential matches might exist (ambiguous) or when no match is found at all (missing), ensuring that the application can handle such scenarios gracefully and provide appropriate feedback based on these resolutions.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/retrieval/target-resolver.mjs"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "memory_key": "project-context:project-requirements",
+  "title": "Project requirements",
+  "kind": "project-requirements",
+  "source_mode": "declared",
+  "summary": "",
+  "body": "- No declared requirements.",
+  "tags": [
+    "project-context",
+    "project:fiebrehemorragica",
+    "requirements"
+  ],
+  "source_files": [
+    ".planning/project-memory-context/project-context/declared/project-requirements.json"
+  ],
+  "graph_refs": [],
+  "detected_sources": [],
+  "declared_sources": [],
+  "confidence": "high",
+  "content_hash": "573c2eeb6f067361b3c83c116647e1f4fc4f9ed957c10a4d4824ef94cf6f33c4",
+  "updated_at": "2026-05-23T15:44:53.500Z"
+}

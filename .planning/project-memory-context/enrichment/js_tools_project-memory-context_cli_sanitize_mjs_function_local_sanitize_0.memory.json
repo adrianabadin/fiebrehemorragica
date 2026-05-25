@@ -1,0 +1,11 @@
+{
+  "content": " ### Structured Explanation of `sanitize` Function\n\n**Responsibility:**  \nThe `sanitize` function is responsible for analyzing the current state of symbols within a project, comparing them with previously recorded states, and updating or marking entries accordingly. It determines which symbols are new, stale (due to code changes), removed, unchanged, or pending enrichment.\n\n**Primary Inputs:**  \n- `PROJECT_ROOT`: The root directory of the project.\n- Source files: Files from which symbols are extracted.\n- Previous artifact data (`worklist.json`): Records previous states of symbols.\n\n**Output:**  \n- A report detailing the number of new, stale, removed, and unchanged symbols, along with other statistics about the state of symbol enrichment.\n\n**Immediate Dependencies:**  \n- `ensureProjectMemoryContextDirs`, `readJsonArtifact`, `writeJsonArtifact`: Functions to manage artifact files.\n- `extractCurrentSymbols`, `attachGraphNodeIds`: Functions for extracting and resolving symbols.\n- Utility functions from Node.js (`fs/promises`, `path`, etc.): For file system operations.\n\n**Role in Module:**  \nThe `sanitize` function plays a crucial role in the project's lifecycle by ensuring that the state of symbol information is up-to-date and accurate, facilitating decisions on further processing (like enrichment) based on this analysis.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/sanitize.mjs"
+  ]
+}

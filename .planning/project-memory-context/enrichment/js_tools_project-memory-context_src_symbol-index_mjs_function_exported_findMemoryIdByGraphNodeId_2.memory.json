@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `findMemoryIdByGraphNodeId` function is responsible for looking up and retrieving the memory ID associated with a given graph node ID from an index object. This function iterates over all entries in the index, checking if any entry has a matching graph node ID, and returns the corresponding memory ID if found. If no match is found, it returns `null`.\n\n### Primary Inputs\n- **index**: An object where each key-value pair represents an entry with properties `graphNodeId` and `memoryId`.\n- **graphNodeId**: A unique identifier for a graph node, which is used to find the corresponding memory ID.\n\n### Output\n- The function returns the `memoryId` associated with the given `graphNodeId`, or `null` if no such ID exists in the index.\n\n### Immediate Dependencies\n- **Object.values(index)**: This method is used to get an array of all values (entries) from the index object, allowing iteration over each entry.\n- The comparison operation `entry.graphNodeId === graphNodeId` checks for a match between the provided `graphNodeId` and the one stored in each entry.\n\n### Role in Module\nThis function serves as a utility to facilitate mapping between graph node IDs and their corresponding memory IDs within the module or application where it is used. It helps maintain organization and accessibility of data by providing a straightforward method for querying these mappings.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/symbol-index.mjs"
+  ]
+}

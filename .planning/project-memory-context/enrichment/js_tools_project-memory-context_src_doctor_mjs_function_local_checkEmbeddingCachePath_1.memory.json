@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `checkEmbeddingCachePath` is responsible for checking if the specified path (`env.EMBEDDING_CACHE_PATH`) exists and whether it is writable. It serves as a health check to ensure that the embedding cache directory can be accessed and used, either by confirming its existence and writability or by indicating that it will be created upon first use if it does not exist.\n\n### Primary Inputs\n- `env`: An object containing environment variables, specifically looking for `EMBEDDING_CACHE_PATH`.\n\n### Output\nThe function returns an object with three properties:\n- `name`: A string identifying the check as 'embedding-cache'.\n- `status`: A string indicating the status of the cache path ('ok' if writable and exists, or 'warn' if it does not exist but will be created).\n- `message`: A human-readable message describing the result of the check.\n\n### Immediate Dependencies\n- `node:fs/promises`: The module provides asynchronous file system operations that return promises. Specifically, `access` and `constants` are used to check for existence and write permissions.\n\n### Role in Module\nThis function plays a crucial role in ensuring the proper functioning of the embedding cache mechanism by validating its initialization state. It helps users understand whether the cache path is correctly set up or if it needs to be created, providing clear feedback through its output properties.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/doctor.mjs"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `buildDefaultEnrichmentConfig` function is responsible for constructing and returning a default configuration object tailored for enrichment features, including preferred modes of operation and specific settings for local model, cloud API, and agent subagent.\n\n### Primary Inputs\nThis function does not take any external inputs directly; it generates the configuration based on predefined values (`OLLAMA_URL`, `OLLAMA_MODEL`).\n\n### Output\nThe output is a JavaScript object conforming to the specified structure:\n```javascript\n{\n  preferredModes: ['local-model', 'cloud-api', 'agent-subagent'],\n  localModel: { provider: 'ollama', baseUrl: OLLAMA_URL, model: OLLAMA_MODEL },\n  cloudApi: { provider: 'openai-compatible', baseUrl: '', model: '', apiKeyEnv: 'PMC_CLOUD_API_KEY' },\n  agentSubagent: { enabled: true, agentName: 'enrich' }\n}\n```\n\n### Immediate Dependencies\nThe function relies on environment variables `OLLAMA_URL` and `OLLAMA_MODEL`.\n\n### Role in Module\nThis function serves as a utility to provide consistent default settings for the enrichment configuration, ensuring that these settings are readily available whenever needed within the module.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/bootstrap.mjs"
+  ]
+}

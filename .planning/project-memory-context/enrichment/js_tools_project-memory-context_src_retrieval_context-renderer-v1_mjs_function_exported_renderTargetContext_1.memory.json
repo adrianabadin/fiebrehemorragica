@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `renderTargetContext` function is responsible for generating a formatted string that summarizes and displays the context of a target object, including its summary, relevant items, relations, next reads, and metadata. This function ensures that all provided properties are included in the output if they exist, providing a clear and structured representation of the context.\n\n### Primary Inputs\nThe primary inputs to this function are an object containing optional properties:\n- `summary`: An array of strings describing the summary of the target.\n- `target`: An object that can include properties such as `mode`, `name`, `value`, and `filePath`.\n- `relevant`: An array of objects, each potentially including properties like `filePath` or `label`.\n- `relations`: An array of objects where each includes a `kind` and an optional `items` array.\n- `nextReads`: An array of strings representing the next reads related to the target.\n- `metadata`: An object that can include properties such as `depth` and `focus`.\n\n### Output\nThe output is a single string formatted with each section (summary, target, relevant, relations, next reads, metadata) followed by newline characters (`\\n`). Each item within these sections is listed on its own line preceded by a dash or other appropriate marker. If a list is empty, it indicates so appropriately.\n\n### Immediate Dependencies\nThe function does not explicitly import any external dependencies but uses JavaScript's native array and object handling capabilities to process the input data.\n\n### Role in Module\nThis function serves as a utility within the module for debugging or informational purposes, providing a clear and structured way to visualize the context of various targets used throughout the application or system being developed. It enhances transparency and understanding by presenting complex contextual information in a user-friendly format.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/retrieval/context-renderer-v1.mjs"
+  ]
+}

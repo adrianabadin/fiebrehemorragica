@@ -1,0 +1,11 @@
+{
+  "content": " The `buildRenderInput` function is responsible for constructing the input data structure required to render a user interface based on the results of querying a project's symbol context. \n\n**Primary Inputs:**\n1. **engine**: An instance of a query engine used to retrieve and analyze the project's symbols and their relationships.\n2. **resolved**: An object containing details about the target being queried, including its mode (e.g., 'symbol', 'file') and other relevant keys like symbolKey or filePath.\n3. **depth** and **focus**: Parameters that dictate the scope and focus of the query, affecting what data is retrieved from the engine.\n\n**Output:**\nA structured object containing:\n- `summary`: A list of strings providing a brief description of the result (e.g., symbol name and kind).\n- `target`: Details about where the query was focused (file path or ambiguous symbols).\n- `relevant`: List of related symbols based on the query results.\n- `relations`: Grouped edges between symbols, filtered by specified edge types.\n- `nextReads`: A list of file paths that should be read next for further analysis.\n- `metadata`: Additional details about the depth and focus used in the query.\n\n**Immediate Dependencies:**\n1. **node:fs**: For file system operations to read or write data files.\n2. **node:path**: To handle and transform file paths.\n3. **node:url**: For converting URL objects to local file paths.\n4. **../src/artifacts.mjs**: To read JSON artifact files related to the project's state.\n5. **../src/retrieval/query-engine.mjs** and **target-resolver.mjs**: For querying and resolving target information from the engine.\n6. **../src/retrieval/context-renderer-v1.mjs**: To group edges between symbols based on specified types.\n\n**Role in Module:**\nThis function serves as a central hub for converting raw query results into a format suitable for rendering within a UI, providing clear and structured information about the project's symbol relationships and contexts to users or other modules that need this data for display or further processing.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/context.mjs"
+  ]
+}

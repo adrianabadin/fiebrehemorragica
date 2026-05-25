@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `errorResult` function is responsible for creating an error response object that includes the name of the tool and the error message. This function takes two parameters, `toolName` (a string representing the tool's name) and `error` (an error object), and returns a structured object containing the error information in a user-friendly format.\n\n### Primary Inputs\n1. **toolName** - A string that represents the name of the tool or service where the error occurred. This helps in identifying which part of the system failed.\n2. **error** - An error object, typically an instance of `Error`, containing details about what went wrong.\n\n### Output\nThe output is a structured object with two properties:\n- **content**: An array of objects where each object contains a type (`'text'`) and text which is the combined message of the tool name and the error stringified. This allows for flexibility in adding more types of content later if needed, but currently, it only includes plain text.\n- **isError**: A boolean that indicates whether the result represents an error. This helps consumers of this function to easily check if they should handle the response as an error or not.\n\n### Immediate Dependencies\n1. **String(error)** - The `String` constructor is used to convert the error object into a string representation, which is then concatenated with the tool name in the returned object. This conversion ensures that even if the error does not have a meaningful `.toString()` method, it will at least provide some basic information about what went wrong.\n\n### Role in Module\nThe `errorResult` function serves as a utility to standardize and centralize the way errors are reported across different tools or services within the module. This helps in maintaining consistency in error handling and provides a clear interface for any part of the system that might need to consume these error messages, whether for logging, user feedback, or other purposes.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/mcp/pmc-query-server.mjs"
+  ]
+}

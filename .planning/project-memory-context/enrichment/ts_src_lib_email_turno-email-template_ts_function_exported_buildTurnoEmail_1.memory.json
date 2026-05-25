@@ -1,0 +1,11 @@
+{
+  "content": " ### Structured Explanation of `buildTurnoEmail` Function\n\n#### Responsibility:\nThe function `buildTurnoEmail` is responsible for constructing an email template tailored to inform a patient about their scheduled fever hemorrhagic vaccination appointment. It dynamically generates the email content based on provided user details such as full name, scheduled date, and time.\n\n#### Primary Inputs:\n- **input**: An object containing:\n  - `fullName`: A string representing the patient's full name.\n  - `scheduledDate`: A string representing the date of the appointment in a format like \"YYYY-MM-DD\".\n  - `scheduledTime`: A string representing the time of the appointment in a format like \"HH:MM\".\n\n#### Output:\nThe function returns an object containing two properties:\n- **subject**: The subject line for the email, which is set to \"Se le ha asignado un turno para vacunacion de fiebre hemorragica\" (You have been assigned a turn for fever hemorrhagic vaccination).\n- **html**: A string containing HTML content that will be rendered as part of the email body. This includes personalized greetings, details about the appointment, and static information like the venue address and sede.\n\n#### Immediate Dependencies:\nThe function does not import any external modules or rely on other functions within its immediate scope. It is self-contained in terms of dependencies.\n\n#### Role in Module:\nThis function serves as a utility that encapsulates the logic for generating email content specifically tailored to patients who have been scheduled for fever hemorrhagic vaccinations. It ensures that each patient receives an email with their personalized appointment details, enhancing communication and ensuring clarity around scheduling without requiring additional intervention from other modules or services.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "ts",
+    "function",
+    "project:fiebrehemorragica",
+    "file:src/lib/email/turno-email-template.ts"
+  ]
+}

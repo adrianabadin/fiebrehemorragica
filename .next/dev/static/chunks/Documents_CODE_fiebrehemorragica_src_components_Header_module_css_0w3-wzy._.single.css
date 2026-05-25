@@ -1,0 +1,90 @@
+/* [project]/Documents/CODE/fiebrehemorragica/src/components/Header.module.css [app-client] (css) */
+.Header-module__hxL9Xq__header {
+  background-color: var(--surface);
+  border-bottom: 1px solid var(--border);
+  z-index: 50;
+  box-shadow: var(--shadow-sm);
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+.Header-module__hxL9Xq__logo {
+  color: var(--primary);
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.Header-module__hxL9Xq__nav {
+  align-items: center;
+  gap: 16px;
+  display: flex;
+}
+
+.Header-module__hxL9Xq__link {
+  color: var(--text-main);
+  border-radius: var(--radius-md);
+  padding: 8px 12px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color .2s;
+}
+
+.Header-module__hxL9Xq__link:hover {
+  background-color: var(--background);
+}
+
+.Header-module__hxL9Xq__cta {
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  border: none;
+  padding: 8px 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color .2s;
+}
+
+.Header-module__hxL9Xq__cta:hover {
+  background-color: var(--secondary);
+}
+
+.Header-module__hxL9Xq__userContainer {
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  display: flex;
+}
+
+.Header-module__hxL9Xq__userName {
+  color: var(--cta);
+  font-weight: 600;
+}
+
+.Header-module__hxL9Xq__logoutBtn {
+  color: var(--text-muted);
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: .8rem;
+  text-decoration: underline;
+  transition: color .2s;
+}
+
+.Header-module__hxL9Xq__logoutBtn:hover {
+  color: var(--primary);
+}
+
+.Header-module__hxL9Xq__authLinks {
+  align-items: center;
+  gap: 8px;
+  display: flex;
+}
+
+/*# sourceMappingURL=Documents_CODE_fiebrehemorragica_src_components_Header_module_css_0w3-wzy._.single.css.map*/

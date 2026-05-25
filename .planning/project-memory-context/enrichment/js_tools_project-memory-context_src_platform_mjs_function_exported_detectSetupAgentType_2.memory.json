@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `detectSetupAgentType` function is responsible for determining the type of setup agent (e.g., 'opencode') associated with a given project root directory based on predefined criteria and user options. It helps to identify if there's an existing configuration or specific file that indicates the presence of a particular setup agent within the project environment.\n\n### Primary Inputs\n- `projectRoot`: The path to the project directory where the setup agent type needs to be detected.\n- `options`: An optional object containing additional parameters such as:\n  - `requestedAgent`: A specific agent type that might have been requested by the user.\n  - `exists`: A function (defaulting to `existsSync`) used to check for file existence.\n  - `homeDir`: The home directory path (defaulting to the system's homedir provided by `homedir()`).\n\n### Output\n- Returns a string representing the detected setup agent type:\n  - 'opencode' if a specific configuration or file is found in the user's home directory under `.config/opencode`.\n  - 'generic' if no specific agent is detected.\n  - The `requestedAgent` if it was explicitly provided in the options.\n\n### Immediate Dependencies\n- `node:child_process`: For executing child processes (though not used directly here).\n- `node:fs`: Specifically, `existsSync` to check for file existence.\n- `node:os`: For accessing the home directory via `homedir()`.\n- `node:path`: For path manipulation and joining (`join()`).\n\n### Role in Module\nThis function serves as a utility within the module to abstract the logic of detecting the setup agent type based on predefined rules and user inputs. It provides flexibility by allowing optional parameters that can be overridden or supplemented according to specific needs, making it adaptable for various project setups without hardcoding paths or assumptions about environments.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/platform.mjs"
+  ]
+}

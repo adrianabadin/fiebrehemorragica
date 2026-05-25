@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `stripBlockMarkers` function is responsible for removing specific block markers from the provided content. It targets markers that start with \"<!-- pmc:\" and end with \"-->\". These markers are used to delimit sections of text within a larger document, such as comments or placeholders in HTML templates. The function replaces these markers with an empty string, effectively stripping them out.\n\n### Primary Inputs\n- **content**: A string that represents the content from which block markers need to be stripped. This could be any kind of text, including HTML, JavaScript, or other markup languages.\n- **marker**: A string identifier for the specific marker to be removed. The function is designed to handle multiple markers by using a regular expression that matches \"<!-- pmc:{marker} -->\" and \"<!-- /pmc:{marker} -->\".\n\n### Output\nThe output of `stripBlockMarkers` is a modified version of the input content where all instances of the specified block marker have been removed. The function also trims any whitespace around the remaining text to ensure clean, marker-free content.\n\n### Immediate Dependencies\n- **RegExp**: Used in the `replace` method to create a pattern that matches both opening and closing markers with the specific format.\n- **trim()**: A string method used after replacement to remove leading or trailing whitespace from the result.\n\n### Role in Module\nThis function serves as a utility within the module, particularly useful for preparing content by stripping out unnecessary parts before further processing or rendering. It helps maintain clean data and ensures that only relevant sections are processed or displayed.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/template-installer.mjs"
+  ]
+}

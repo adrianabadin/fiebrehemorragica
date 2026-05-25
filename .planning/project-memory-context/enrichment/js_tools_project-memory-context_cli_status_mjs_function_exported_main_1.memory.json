@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `main` function is responsible for handling command line interface (CLI) interactions related to the status of a project. It parses command line arguments, determines the project root directory if not provided, constructs a status report by calling `buildStatusReport`, and then prints the report in JSON format. This includes showing enrichment queue state, worklist counts, config location, agent type, and last sync timestamp.\n\n### Primary Inputs\n- `args`: An array of command line arguments passed to the script, excluding the first two elements which are typically used for Node.js script invocation (`node` and the script path). This input is optional and defaults to `process.argv.slice(2)` if not provided.\n\n### Output\n- The function outputs a status report in JSON format via `console.log`. If `--help` or `-h` flags are included in the arguments, it prints usage instructions instead.\n\n### Immediate Dependencies\n- **Node.js Core Modules**: \n  - `process`: For accessing command line arguments and process environment.\n  - `console`: For outputting information to the console.\n- **Custom Modules**:\n  - `buildStatusReport`: A function that constructs the status report based on the project root directory. This is an asynchronous function which returns a promise resolving to the report object.\n\n### Role in Module\nThe `main` function serves as the entry point for CLI interactions specific to the module's functionality, interacting with Node.js core modules and custom utility functions to provide information about the status of a project setup according to the module's design.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/status.mjs"
+  ]
+}

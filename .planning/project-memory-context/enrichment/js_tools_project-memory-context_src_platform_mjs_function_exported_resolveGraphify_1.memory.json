@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `resolveGraphify` function is responsible for resolving the path to the `graphify` executable. It does this by checking environment variables first (`PMC_GRAPHIFY_PATH` or `PMC_GRAPHIFY_BIN`), and if those are not set, it attempts to locate the `graphify` executable using either a Windows command (`where`) or a Unix command (`which`). If the executable is found, its path is returned; otherwise, an error is thrown indicating that `graphify` was not found.\n\n### Primary Inputs\n- **options**: An object containing optional parameters such as environment variables and platform type.\n  - **env**: An object representing the environment variables (default: `process.env`).\n  - **platform**: A string representing the operating system platform (default: `process.platform`).\n  - **execFileSyncImpl**: A function to execute a file synchronously, defaulting to `execFileSync`.\n\n### Output\n- The path to the `graphify` executable as a string if found; otherwise, an error is thrown.\n\n### Immediate Dependencies\n- **node:child_process** (specifically `execFileSync`) for executing commands to find the executable.\n- **node:fs** (specifically `existsSync`) indirectly through its use of `execFileSync`.\n- **node:os** (specifically `homedir`).\n- **node:path** (specifically `join`, `posix`, and `resolve`).\n\n### Role in Module\nThe `resolveGraphify` function serves as a utility to locate the `graphify` executable, which is likely used by other parts of the application for specific functionalities related to graph visualization or management. This function abstracts the process of finding the binary across different operating systems and environment configurations, providing a consistent way to access it throughout the module.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/platform.mjs"
+  ]
+}

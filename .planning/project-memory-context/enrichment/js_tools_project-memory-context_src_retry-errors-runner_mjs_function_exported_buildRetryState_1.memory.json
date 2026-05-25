@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility:\nThe `buildRetryState` function is responsible for creating a standardized structure (`state`) that encapsulates the current status and relevant details of a retry operation, including timestamps and error information. This helps in managing and tracking the state of retry operations consistently across different modules or contexts.\n\n### Primary Inputs:\n- **status**: A string indicating the current status of the retry operation (e.g., 'running', 'failed', 'completed').\n- **pid**: Process ID or identifier related to this retry operation.\n- **projectRoot**: The root directory path for the project associated with this retry operation.\n- **startedAt**: Timestamp when the retry operation started.\n- **heartbeatAt**: Timestamp of the last heartbeat indicating activity in the operation.\n- **finishedAt** (optional): Timestamp when the retry operation completed or was terminated.\n- **lastError** (optional): The most recent error encountered during the retry process, if any.\n\n### Output:\nThe function outputs an object with keys corresponding to each input parameter, providing a structured representation of the current state of the retry operation.\n\n### Immediate Dependencies:\nNone explicitly listed in the provided code snippet; it seems self-contained for creating a retry state object based on given inputs.\n\n### Role in Module:\nThis function serves as a utility within the module to standardize and encapsulate details about each retry operation, facilitating easier management of these operations across different parts of the application or system where retries might be initiated.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/retry-errors-runner.mjs"
+  ]
+}

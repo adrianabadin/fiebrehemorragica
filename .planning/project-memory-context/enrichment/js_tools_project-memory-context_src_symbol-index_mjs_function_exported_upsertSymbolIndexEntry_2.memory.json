@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `upsertSymbolIndexEntry` is responsible for updating or inserting an entry into a symbol index. It takes an existing index and a new entry, and returns a new index with the updated or inserted entry. The purpose of this function is to manage the state of symbols in the index, ensuring that each symbol has its corresponding memoryId, graphNodeId, codeHash, status, and lastEnrichedAt (if provided).\n\n### Primary Inputs\n- `index`: An object representing the current state of the symbol index.\n- `entry`: An object containing the following properties:\n  - `symbolKey`: A unique identifier for the symbol.\n  - `memoryId` (optional): Identifier related to memory.\n  - `graphNodeId` (optional): Identifier related to a graph node.\n  - `codeHash`: A hash representing the code associated with the symbol.\n  - `status`: The current status of the symbol.\n  - `lastEnrichedAt` (optional): Timestamp of when the symbol was last enriched.\n\n### Output\n- An updated object that represents the new state of the symbol index, including the newly added or updated entry.\n\n### Immediate Dependencies\n- None explicitly listed in the code provided; however, it assumes `entry` has all necessary properties to construct a valid index entry.\n\n### Role in Module\nThis function serves as a utility for managing and updating the state of symbol entries within the module responsible for handling symbols and their related data (presumably part of a larger application or system). It ensures that each symbol's metadata is consistently maintained, even when new information becomes available or needs to be updated.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/symbol-index.mjs"
+  ]
+}

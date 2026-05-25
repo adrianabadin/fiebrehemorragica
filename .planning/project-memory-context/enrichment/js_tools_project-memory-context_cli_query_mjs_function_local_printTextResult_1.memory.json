@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `printTextResult` function is responsible for printing the results of a query, specifically formatted as text, to the console. It takes an object containing the result of a query and formats it into a human-readable string that includes the answer, sources (if any), and tokens saved.\n\n### Primary Inputs\nThe primary input to this function is `result`, which is expected to be an object with at least the following properties:\n- `answer`: A string representing the result of the query.\n- `sources`: An array of objects that describe where the information came from (could be empty).\n- `tokens_saved`: A number indicating how many tokens were saved by the query.\n\n### Output\nThe output is a side effect, which is printing formatted text to the console. The function does not return any value; it simply prints data to standard output.\n\n### Immediate Dependencies\nThe immediate dependencies of this function include:\n- `console.log`: Used for printing strings to the console.\n- `formatSource(source)`: A hypothetical function that formats each source object into a string representation, which is used within the loop over `result.sources`. This dependency assumes there's an additional utility or helper function defined elsewhere in the module (not shown here).\n\n### Role in Module\nIn the context of the module, `printTextResult` serves as a utility function that helps users interact with and understand the output of query results. It enhances user experience by providing clear and structured information about what the query has returned, including where this information is sourced from and how much it saved in terms of tokens. This functionality is particularly useful for debugging or when you want to provide immediate feedback on the result of a query without additional processing steps.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/query.mjs"
+  ]
+}

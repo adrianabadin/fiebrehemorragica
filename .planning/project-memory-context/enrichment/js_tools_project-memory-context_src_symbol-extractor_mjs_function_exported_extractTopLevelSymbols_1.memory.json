@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `extractTopLevelSymbols` is responsible for extracting top-level symbols from a given file based on its extension. It determines the language of the file (either JavaScript/TypeScript or Regex) and uses the appropriate extractor to gather these symbols.\n\n### Primary Inputs\n- **filePath**: A string representing the path to the file whose symbols need to be extracted.\n- **content**: The content of the file as a string, which includes the code to be analyzed for symbols.\n\n### Output\n- An array of objects representing top-level symbols found in the file. Each object contains details about the symbol such as its name and location.\n\n### Immediate Dependencies\n- **extractJsTsSymbols**: A function imported from `./extractors/js-ts-extractor.mjs` used to extract JavaScript/TypeScript symbols.\n- **extractRegexSymbols**: A function imported from `./extractors/regex-extractor.mjs` used to extract Regex symbols.\n- **EXTENSION_TO_LANGUAGE**: An object imported from `./extractors/regex-extractor.mjs` that maps file extensions to their corresponding languages.\n- **JS_TS_EXTENSIONS**: A set of known JavaScript/TypeScript file extensions, which is assumed to be available in the environment where this function runs.\n\n### Role in Module\nThis function serves as an entry point for symbol extraction based on file type, delegating the actual extraction logic to specialized functions (`extractJsTsSymbols` and `extractRegexSymbols`) depending on whether the file is a JavaScript/TypeScript or Regex file respectively. It uses the file's extension to decide which extractor to use, making it adaptable to different programming languages within the same module.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/symbol-extractor.mjs"
+  ]
+}

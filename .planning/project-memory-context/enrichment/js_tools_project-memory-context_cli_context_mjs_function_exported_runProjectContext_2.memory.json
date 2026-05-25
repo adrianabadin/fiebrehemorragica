@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `runProjectContext` is responsible for running the project context CLI command. It imports and executes the appropriate CLI command from the `./project-context.mjs` module, passing along the provided `projectRoot` and `refresh` arguments to this command. This function abstracts the mechanism of invoking a specific CLI command related to the project's memory context based on its implementation in the `./project-context.mjs` module.\n\n### Primary Inputs\n- **projectRoot**: The root directory of the project, defaults to the current working directory (`process.cwd()`). This is where the necessary files and configurations for the context retrieval are expected to be located.\n- **refresh**: A boolean flag that indicates whether to refresh the context or not. This helps in determining if existing data should be overwritten with fresh data from the project's sources.\n\n### Output\n- The function returns a promise that resolves to either the result of executing the CLI command (if it exists) or `null` if the command is not found in the module.\n\n### Immediate Dependencies\nThe function directly depends on:\n- **importing modules**: It imports functions and variables from various Node.js core modules (`node:fs`, `node:path`, `node:url`) and local modules (`../src/artifacts.mjs`, `../src/retrieval/query-engine.mjs`, etc.).\n- **local module check**: It checks if the specific CLI command (`runProjectContextCli`) is available in the imported module before attempting to execute it.\n\n### Role in Module\nThis function serves as an entry point for running project context CLI commands, providing a flexible interface that can be easily adapted or extended by modifying the import path and checking logic without changing its core usage pattern. It acts as a bridge between higher-level modules and the actual CLI command implementations, ensuring modularity and separation of concerns within the module structure.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/context.mjs"
+  ]
+}

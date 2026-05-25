@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `main` function is responsible for handling the command line interface (CLI) interactions for querying a PMC-enabled project. It parses arguments, finds the project root, creates an orchestrator to handle queries, and then processes the query result based on the specified format (`text` or `json`).\n\n### Primary Inputs\n- `args`: Command line arguments passed to the script, excluding the first two elements which are typically used for node runtime and file path.\n\n### Output\n- The function can output help information if `--help` or `-h` is included in the arguments, or it will print the query result based on the specified format (`text` or `json`).\n\n### Immediate Dependencies\n- **Node.js Core Modules**:\n  - `process`: Access to command line arguments via `process.argv`.\n  - `fs/promises`: For asynchronous file system operations (imported as `access`, though not used in this function directly).\n  - `path`: For path manipulation (`dirname` and `join` for directory paths, and `resolve` for absolute paths).\n  - `url`: To convert file URLs to file paths (`fileURLToPath`).\n- **Local Module**:\n  - `../src/query/orchestrator.mjs`: Imports the function `createQueryOrchestrator` to create an orchestrator instance used for querying the project memory context.\n\n### Role in Module\nThe `main` function serves as the entry point for executing queries from the CLI, managing input parsing, and coordinating interactions with other parts of the system that handle specific tasks such as argument parsing, file system access checks, and query execution.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/query.mjs"
+  ]
+}

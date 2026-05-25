@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `printHelp` function is responsible for providing usage instructions and information about the command line interface (CLI) tool. It informs users how to use the tool, what arguments it accepts, and what options are available.\n\n### Primary Inputs\n- None explicitly passed as parameters; the function is invoked directly.\n\n### Output\n- The function outputs a formatted help message to the console, detailing usage instructions and functionalities of the CLI tool.\n\n### Immediate Dependencies\n- `console.log`: Used for printing messages to the standard output (console).\n\n### Role in Module\nIn the context of the module `tools/project-memory-context/cli/query.mjs`, `printHelp` serves as a utility function that enhances user experience by providing clear and concise guidance on how to use the CLI tool for querying project data, including specifying format options (`text` or `json`) if needed. This aids in making the tool more accessible and easier to understand for users who might not be familiar with its functionalities.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/query.mjs"
+  ]
+}

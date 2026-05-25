@@ -1,0 +1,11 @@
+{
+  "content": " ```json\n{\n  \"responsibility\": \"Generates a detailed prompt for symbol analysis, including its kind, language, location, and relevant code context.\",\n  \"primary_inputs\": [\"symbol\", \"projectRoot\"],\n  \"output\": \"A structured explanation detailing the symbol's responsibility, primary inputs, output, immediate dependencies, and role in the module.\",\n  \"immediate_dependencies\": [\"readFile\", \"resolve\", \"split\", \"filter\", \"join\"],\n  \"role_in_module\": \"This function is crucial for providing detailed context about symbols within a codebase, aiding in debugging, documentation generation, or automated refactoring tasks.\"\n}\n```",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/enrich-queue.mjs"
+  ]
+}

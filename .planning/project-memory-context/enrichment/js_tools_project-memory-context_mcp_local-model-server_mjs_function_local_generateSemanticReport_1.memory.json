@@ -1,0 +1,11 @@
+{
+  "content": " ```json\n{\n  \"responsibility\": \"Analyzes a single code symbol and provides a compact structured report based on the analysis.\",\n  \"inputs\": [\"prompt\"],\n  \"output\": {\n    \"summary\": \"A concise summary of the responsibility extracted from the response, or the raw response if no summary is found.\",\n    \"findings\": \"An array of findings parsed from the raw response, each trimmed of whitespace and filtered to remove empty strings.\",\n    \"raw\": \"The entire unprocessed response from the Ollama API.\"\n  },\n  \"dependencies\": [\"@modelcontextprotocol/sdk/server/mcp.js\", \"@modelcontextprotocol/sdk/server/stdio.js\"],\n  \"role\": \"This function is responsible for generating a semantic report for a code symbol by interacting with an external API (Ollama) based on the provided prompt.\"\n}\n```",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/mcp/local-model-server.mjs"
+  ]
+}

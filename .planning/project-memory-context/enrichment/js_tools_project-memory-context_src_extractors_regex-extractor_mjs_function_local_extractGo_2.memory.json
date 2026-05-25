@@ -1,0 +1,11 @@
+{
+  "content": " The `extractGo` function is responsible for extracting Go language functions and types from source code lines. It uses regular expressions to identify `func` and `type` declarations, determining if they are exported based on capitalization. It then constructs symbol objects with details like name, kind (function or class), and scope (exported or local). The primary input is an array of strings representing the lines of a Go source file, and the output is an array of symbol objects. Immediate dependencies include `node:crypto` for hashing and internal modules for building symbol keys. This function plays a crucial role in providing context-aware symbols within the module for further analysis or documentation generation.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/extractors/regex-extractor.mjs"
+  ]
+}

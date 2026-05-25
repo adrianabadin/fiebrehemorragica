@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `runRetryLoop` function is responsible for orchestrating the retry mechanism to handle errors encountered during processing. It manages retries of symbols, tracks results across iterations, and updates the status of each symbol based on its outcomes.\n\n### Primary Inputs\n- **worklist**: An array of objects representing tasks or data units that need to be processed.\n- **maxIterations** (optional): The maximum number of retry attempts allowed before stopping.\n- **retrySymbol**: A function that handles the actual processing and error handling for each symbol in the worklist.\n\n### Output\nReturns an object containing detailed results of all symbols' retries, including iteration outcomes, final statuses, and a summary of the overall process.\n\n### Immediate Dependencies\n- `collectRetryCandidates`: A function that collects candidates from the worklist based on specific criteria for retry.\n- `retrySymbol`: An asynchronous function used to handle each symbol's processing with error handling capabilities.\n\n### Role in Module\nThis function serves as a core component of the module responsible for managing and resolving errors encountered during data processing, ensuring that tasks are retried appropriately until they either succeed or reach a predefined limit on attempts.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/retry-errors-runner.mjs"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `POST` function is responsible for handling the creation of a new appointment request. It validates the incoming request data against a schema, creates a record in a database (using Prisma), and appends related information to a Google Sheet. If successful, it returns a response containing the unique identifier of the created request and the row number in the Google Sheet where the data was appended.\n\n### Primary Inputs\n- **request**: An HTTP POST request containing JSON data that includes details for creating an appointment request (e.g., first name, last name, document type, etc.).\n\n### Output\n- A JSON response indicating success or failure:\n  - On success, it returns a JSON object with `requestId` and `sheetRowNumber`.\n  - On error, it returns a JSON object with an appropriate error message and status code.\n\n### Immediate Dependencies\n- **Imports**: The function relies on several modules for its operations:\n  - `NextResponse`: To construct HTTP responses in the Next.js ecosystem.\n  - `randomUUID`: For generating unique identifiers.\n  - `appointmentSchema`: A validation schema to ensure data integrity before processing.\n  - `appendPendingRequestRow`: A function to append data to a Google Sheet.\n  - `prisma`: The ORM (Object-Relational Mapping) used for database operations.\n\n### Role in Module\nThis function serves as the primary endpoint for creating new appointment requests via an HTTP POST request. It encapsulates all necessary steps from data validation to database interaction and external service communication, ensuring that each step is handled with appropriate error handling and response formatting.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "ts",
+    "function",
+    "project:fiebrehemorragica",
+    "file:src/app/api/solicitar-turno/route.ts"
+  ]
+}

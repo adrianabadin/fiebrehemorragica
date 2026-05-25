@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `usageText` function is responsible for generating and returning a usage string that lists the available commands. This helps users understand what commands are supported by the tool and how to use them.\n\n### Primary Inputs\nThere are no primary inputs required for this function as it operates solely on internal data structures (specifically, the `COMMANDS` object which is assumed to be defined elsewhere in the module).\n\n### Output\nThe output of the `usageText` function is a string that describes how to use the tool. This string includes all the available commands separated by a pipe (`|`) and enclosed within angle brackets (`<>`), making it easy for users to understand the syntax.\n\n### Immediate Dependencies\n- **JavaScript Standard Library**: The usage of array destructuring (`...COMMANDS.keys()`), template literals, and object methods like `join` and `keys` indicates reliance on JavaScript's standard library features without additional dependencies.\n\n### Role in Module\nThe `usageText` function serves as a utility to provide clear instructions for the tool's usage, which is crucial for user interaction and understanding of what commands are available. It contributes to making the command-line interface (CLI) more informative and user-friendly.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/command-dispatch.mjs"
+  ]
+}

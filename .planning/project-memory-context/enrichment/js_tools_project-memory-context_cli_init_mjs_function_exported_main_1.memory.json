@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `main` function is responsible for initializing a project by detecting the agent type (e.g., 'opencode') and installing corresponding templates based on the detected or requested agent. It handles command line arguments, resolves configuration directories, detects the agent type, and installs necessary templates.\n\n### Primary Inputs\n- `args`: Command line arguments passed to the script, excluding the script name (`process.argv.slice(2)`).\n\n### Output\n- Returns a promise that resolves to an integer (0 for success, non-zero for failure).\n\n### Immediate Dependencies\n- **Node.js Modules**: \n  - `node:path`: For resolving file paths.\n  - `node:url`: To convert URL objects to file paths.\n- **Local Modules**:\n  - `../src/platform.mjs`: Resolves configuration directories.\n  - `../src/template-installer.mjs`: Detects agent type and installs templates.\n\n### Role in Module\nThe `main` function serves as the entry point for initializing a project using the CLI tool, orchestrating tasks such as argument parsing, agent detection, template installation, and error handling. It integrates various internal modules to perform specific tasks required for setting up a new project based on the detected or specified agent type.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/init.mjs"
+  ]
+}

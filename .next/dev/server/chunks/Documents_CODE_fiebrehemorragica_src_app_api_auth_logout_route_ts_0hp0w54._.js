@@ -1,0 +1,10 @@
+module.exports = [
+"[project]/Documents/CODE/fiebrehemorragica/src/app/api/auth/logout/route.ts [app-route] (ecmascript, async loader)", ((__turbopack_context__) => {
+
+__turbopack_context__.v((parentImport) => {
+    return Promise.resolve().then(() => {
+        return parentImport("[project]/Documents/CODE/fiebrehemorragica/src/app/api/auth/logout/route.ts [app-route] (ecmascript)");
+    });
+});
+}),
+];

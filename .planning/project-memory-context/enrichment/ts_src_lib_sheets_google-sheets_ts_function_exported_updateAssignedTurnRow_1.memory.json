@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `updateAssignedTurnRow` function is responsible for updating a specific row in a Google Sheets spreadsheet related to assigned turns, using data provided via the input.\n\n### Primary Inputs\n- **input**: An object containing details needed to update the row, including `sheetRowNumber` and other necessary turn information.\n\n### Output\n- The function does not return any value but rather performs an asynchronous operation that updates a specific cell or range of cells in a Google Sheets document.\n\n### Immediate Dependencies\n- **google**: This is imported from the \"googleapis\" package, used to interact with Google Sheets API.\n- **process.env.GOOGLE_SHEETS_SPREADSHEET_ID**: This environment variable must be set for the function to execute correctly.\n\n### Role in Module\nThis function serves as a utility within a module responsible for managing interactions with Google Sheets, specifically for updating data related to assigned turns. It encapsulates the logic required to modify specific cells or rows based on provided inputs.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "ts",
+    "function",
+    "project:fiebrehemorragica",
+    "file:src/lib/sheets/google-sheets.ts"
+  ]
+}

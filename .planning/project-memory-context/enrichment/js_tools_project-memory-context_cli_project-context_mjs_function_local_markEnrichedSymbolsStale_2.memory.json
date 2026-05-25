@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `markEnrichedSymbolsStale` is responsible for marking symbols that are marked as \"enriched\" in the worklist as \"stale\". It updates the status of each enriched symbol to 'stale' and records the reason as 'base-memory-changed'. Additionally, it appends delete entries to the sync-manifest indicating which symbols have become stale.\n\n### Primary Inputs\n1. **dirs**: An object containing directories paths necessary for operations.\n2. **projectSlug**: A string representing the slug of the project.\n\n### Output\n- The function does not return a value but performs side effects:\n  - Updates the worklist JSON file to mark enriched symbols as stale.\n  - Appends delete entries to the sync-manifest indicating which symbols have become stale.\n\n### Immediate Dependencies\n1. **readFile**: To read the worklist from the specified path.\n2. **writeFile**: To update the worklist with the new status of enriched symbols.\n3. **appendSyncEntries**: To append delete entries to the sync-manifest.\n4. **createSyncEntry**: To create a new entry in the sync-manifest for each stale symbol.\n\n### Role in Module\nThis function plays a crucial role in maintaining and updating the project context by marking outdated symbols as stale, which helps in tracking changes and ensuring that only relevant information is retained and used for further processing or visualization.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/project-context.mjs"
+  ]
+}

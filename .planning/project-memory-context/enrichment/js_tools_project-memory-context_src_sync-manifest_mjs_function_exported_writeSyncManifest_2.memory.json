@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `writeSyncManifest` function is responsible for writing a JSON manifest file to a specified directory. This includes creating the necessary directory structure if it doesn't exist and ensuring that the file is written with proper formatting (indented two spaces).\n\n### Primary Inputs\n- **enrichmentDir**: A string representing the base directory where the manifest file will be stored.\n- **manifest**: An object containing the data to be serialized into JSON format and written to a file.\n\n### Output\n- The function does not explicitly return anything, but it writes a JSON file to the specified path.\n\n### Immediate Dependencies\n- `readFile`, `writeFile`, and `mkdir` from Node.js's `fs/promises` module: These are used for file system operations.\n- `dirname` and `join` from Node.js's `path` module: These are used to construct the full path of the manifest file.\n- `randomUUID` from Node.js's `crypto` module: Although not directly used in this function, it is imported for potential future use within the same module or other parts of the application that might utilize UUIDs.\n\n### Role in Module\nThis function serves as a utility to abstract file writing operations specifically tailored for creating manifest files during the enrichment process. It ensures that the directory structure leading up to the manifest file is created if it doesn't exist, and then writes the JSON content into this file with human-readable formatting. This setup aids in organizing data storage and retrieval efficiently within a Node.js application context.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/sync-manifest.mjs"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `unwrapEnrichmentConfig` is responsible for ensuring that the provided configuration object contains an `enrichment` property, and if it does not, it will return an empty object. If the `config` has an `enrichment` property, it returns this property; otherwise, it defaults to returning the entire config object.\n\n### Primary Inputs\n- **config**: This is the configuration object that might contain an `enrichment` property. It can be any JavaScript object or null/undefined.\n\n### Output\n- The function outputs either:\n  - An empty object `{}` if the input `config` is falsy (null or undefined).\n  - The value of `config.enrichment` if it exists, otherwise the entire `config`.\n\n### Immediate Dependencies\n- **node:path**: This module is imported via `import { join } from 'node:path';`, but its usage in this function is not evident without more context. It might be used for path manipulation which isn't directly related to the main responsibility of this function.\n- **resolveConfigDirs** from `./platform.mjs`: This function is imported and used to resolve configuration directories, which seems relevant to understanding how configurations are managed in the broader module but does not appear to be a direct dependency for `unwrapEnrichmentConfig`.\n\n### Role in Module\nThis function serves as a utility to normalize or standardize the structure of configuration objects that might include an `enrichment` property. It ensures that every call to this function receives a well-defined input, which can simplify further processing within the module by providing consistent data structures. This is particularly useful for handling optional properties in configurations where you want to ensure they are always present (even if empty).",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/enrichment-config.mjs"
+  ]
+}

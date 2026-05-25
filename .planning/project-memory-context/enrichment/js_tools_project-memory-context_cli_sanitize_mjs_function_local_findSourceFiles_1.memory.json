@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `findSourceFiles` function is responsible for discovering all source files within a given project root directory. It scans the directory structure, identifies files by their extensions (`.ts`, `.mjs`, `.js`, `.cs`), and collects their paths relative to the project root. Files in directories listed in an ignore list are skipped.\n\n### Primary Inputs\n- `projectRoot`: A string representing the absolute path to the root of the project where the search for source files begins.\n\n### Output\n- An array of strings, each being a relative path (from the project root) to a found source file.\n\n### Immediate Dependencies\n- **Node.js Core Modules**: \n  - `node:path`: For resolving paths and checking if paths are within ignored directories.\n  - `node:url`: To convert file URLs to file paths when necessary (though not used in this specific implementation).\n  - `node:fs/promises`: For reading directory contents asynchronously.\n- **Custom Modules**:\n  - `../src/artifacts.mjs`: Used for ensuring project directories are set up (`ensureProjectMemoryContextDirs`), but does not directly affect file discovery.\n  - `../src/symbol-extractor.mjs`, `../src/graph-node-resolver.mjs`, `../src/sync-manifest.mjs`, and `../src/platform.mjs`: These are not used in the core functionality of this function but are part of a larger system that might be involved in artifact handling or other project management tasks.\n\n### Role in Module\nThis function serves as an essential utility within the module, providing a way to gather metadata about all source code files present in a given project setup. This information could potentially be used for various purposes such as build processes, dependency analysis, linting, testing, or any other task that requires knowledge of the entire set of source files in a project.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/sanitize.mjs"
+  ]
+}

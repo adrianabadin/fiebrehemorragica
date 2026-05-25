@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `classifyEnrichmentError` function is responsible for categorizing different types of error messages based on their content. It aims to identify the nature of an error, such as authentication issues, rate limits, network problems, or configuration errors, and assigns a corresponding type to each error message. This helps in handling and debugging these errors more effectively by providing clear labels that can guide further actions like retrying after a timeout or adjusting configurations based on the identified issue.\n\n### Primary Inputs\n- `error`: An object representing an error which typically contains a `message` property, though this is not enforced directly by the function as it extracts the message using `messageOf(error)`. The actual content of the error message is crucial for classification.\n\n### Output\n- Returns an object with two properties:\n  - `type`: A string that categorizes the type of error (e.g., 'auth', 'rate-limit', 'provider', etc.).\n  - `message`: A string representing the original error message, which might be used for logging or debugging purposes but is not directly part of the output structure defined by this function.\n\n### Immediate Dependencies\n- The function uses JavaScript's basic string manipulation methods (`includes`) to check parts of the error messages and determine their type. No external libraries or modules are explicitly imported, indicating that it operates within a minimal dependency set suitable for browser environments where not all npm packages might be available.\n\n### Role in Module\nThis function is part of a broader system designed to handle and categorize errors during data enrichment processes within the module `project-memory-context`. It contributes to the error handling and management capabilities by providing clear, structured outputs that can be used to make informed decisions about how to respond or retry operations based on the type of error encountered. This role is crucial for maintaining robust error handling mechanisms in software systems where data processing might occasionally fail due to various reasons.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/enrichment-errors.mjs"
+  ]
+}

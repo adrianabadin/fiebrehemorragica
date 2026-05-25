@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `createQueueEnrichmentError` is responsible for creating an error object tailored to the specifics of enrichment queue failures. This includes capturing details such as the error message, symbol key, number of attempts made, and the mode that failed last. This structured error can be used later in the application flow to handle or report issues related to data enrichment processes.\n\n### Primary Inputs\n- `result`: An object containing at least two properties:\n  - `error`: A string describing the specific error encountered during the enrichment process.\n  - `symbolKey`: A unique identifier for the symbol being processed, which is crucial for tracking and debugging issues related to this particular symbol's data.\n\n### Output\n- An instance of an Error object with additional properties (`attempts`, `lastModeUsed`, `failedAt`) populated based on the input `result`. These additional fields provide detailed context about why and where the error occurred during the enrichment process.\n\n### Immediate Dependencies\n- The function directly uses JavaScript's built-in Error constructor to create a new error object, which is then extended with custom properties (`attempts`, `lastModeUsed`, `failedAt`) using plain JavaScript assignments. This setup leverages JavaScript’s prototype inheritance to add additional metadata without overwriting the native Error properties or methods.\n\n### Role in Module\nThis function serves as a utility within the module for creating consistent error objects during the enrichment process, which is particularly useful when dealing with asynchronous operations and errors that need to be traceable back to specific data points (in this case, symbols). By encapsulating the creation of such errors within this function, it ensures that any part of the application can handle these errors uniformly, making debugging and error handling more efficient across different parts of the system.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/enrich-queue.mjs"
+  ]
+}

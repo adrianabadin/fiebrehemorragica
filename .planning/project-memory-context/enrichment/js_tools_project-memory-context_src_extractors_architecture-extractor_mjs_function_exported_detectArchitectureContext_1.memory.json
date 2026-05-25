@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `detectArchitectureContext` is responsible for analyzing the structure of a software project by examining its graph nodes and identifying entry points that are likely to be main application components. This includes detecting files such as 'main.[cm]tsx?', 'app.[cm]tsx?', etc., which are typical names for entry points in many applications.\n\n### Primary Inputs\n- `graph`: An object expected to contain nodes, where each node has properties like `label` or `id`. This graph representation is crucial as it provides the data structure from which to extract information about the project's architecture.\n\n### Output\nThe function outputs an object containing:\n- `pattern`: A constant string 'detected-structure'.\n- `entryPoints`: An array of labels (file paths) that match the pattern of main application entry points.\n- `graphRefs`: An array of references to nodes in the graph, each labeled with the corresponding file path.\n\n### Immediate Dependencies\nThe function directly depends on:\n- The structure and properties of the provided `graph` object, specifically its `.nodes` property which is expected to contain at least `label` or `id` for each node.\n\n### Role in Module\nThis function plays a crucial role in understanding the initial architecture context by identifying key entry points that are typically main application components. This helps in organizing and managing project dependencies and structure, making it easier to manage large-scale applications where multiple files interact with one another.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/extractors/architecture-extractor.mjs"
+  ]
+}

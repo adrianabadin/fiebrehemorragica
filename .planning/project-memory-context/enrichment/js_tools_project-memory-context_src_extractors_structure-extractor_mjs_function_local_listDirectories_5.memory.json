@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `listDirectories` function is responsible for recursively listing all directories within a given directory up to a specified depth. It skips over certain ignored directories as defined by the `IGNORED_DIRECTORIES` set.\n\n### Primary Inputs\n1. **dir**: The starting directory from which to list subdirectories.\n2. **root**: The root directory path, used for generating relative paths.\n3. **depth**: Current depth level (starts at 0).\n4. **maxDepth**: Maximum depth to recurse into subdirectories.\n5. **acc**: An accumulator array that collects all the directories found.\n\n### Output\nAn array of directory paths, each relative to the root directory, excluding ignored directories and stopping at the specified maximum depth.\n\n### Immediate Dependencies\n- `readdir` from `node:fs/promises`: To read the contents of a directory.\n- `stat` from `node:fs/promotes`: To determine if an entry is a directory.\n- `join` and `relative` from `node:path`: For path manipulation to handle relative paths correctly.\n\n### Role in Module\nThis function serves as a utility within the module for extracting structural information about the project, specifically focusing on directories. It helps in building up a structured representation of the file system that can be used for various purposes such as analysis, visualization, or reporting.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/extractors/structure-extractor.mjs"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `maybeLaunchRetryErrors` is responsible for launching or retrying error handling processes based on the presence of errors in a project. It determines if there are any errors, loads retry state, and initiates a process to handle these errors by spawning a retry script.\n\n### Primary Inputs\n- **projectRoot**: The root directory of the project.\n- **enrichmentDir**: Directory where logs and other artifacts will be stored.\n- **summary**: An object containing error information (optional).\n- **loadRetryState**: A function to load the retry state (default returns null if not provided).\n- **spawnRetryProcess**: Function to spawn a process for retrying errors (default uses `launchRetryProcess`).\n\n### Output\n- **launched**: Boolean indicating whether the retry process was launched.\n- **reason**: Reason why the process was not launched ('no-errors' if there are no errors, 'already-running' if a retry is already in progress, or 'spawned' if the process was successfully spawned).\n- Optional: **stdoutPath** and **stderrPath** paths to log files.\n\n### Immediate Dependencies\n- Node.js built-in modules: `fs/promises`, `path`, `url`, `child_process`.\n- Custom modules: `../src/enrichment-attempts.mjs`, `../src/enrichment-config.mjs`, `../src/enrichment-driver.mjs`, `../src/providers/cloud-api-provider.mjs`, `../src/providers/local-model-provider.mjs`, `../src/sync-manifest.mjs`.\n\n### Role in Module\nThis function plays a crucial role in the error handling and retry mechanism of the project, ensuring that errors are managed appropriately and potentially retried if necessary. It integrates with other parts of the system to manage state and execute processes based on the presence and status of errors.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/enrich-queue.mjs"
+  ]
+}

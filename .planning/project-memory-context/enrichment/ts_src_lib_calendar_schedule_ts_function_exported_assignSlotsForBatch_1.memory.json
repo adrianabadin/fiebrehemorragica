@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `assignSlotsForBatch` function is responsible for assigning slots for a batch of events based on the provided parameters. It calculates the starting date and time for each slot, taking into account any blocked dates and the initial number of assigned slots before this batch.\n\n### Primary Inputs\n- `totalAssignedBeforeBatch`: The total number of slots already assigned before this batch.\n- `blockedDates`: An array of dates that are considered blocked and should be avoided for scheduling events.\n- `startFrom` (optional): A date string indicating the starting point from which to calculate the slot assignments. If not provided, it defaults to the current date.\n\n### Output\nAn array of objects, each representing a scheduled time slot with:\n- `slotNumber`: The sequential number of the slot within the batch.\n- `date`: The date when the slot is assigned, formatted as a string in local time.\n- `time`: The time when the slot starts, formatted as \"HH:MM\".\n\n### Immediate Dependencies\n- Functions from \"./calendar\":\n  - `isBlockedDate(date: string, blockedDates: string[])`: Checks if a given date is in the list of blocked dates.\n  - `nextFridayFrom(date: Date)`: Finds the next Friday starting from a given date.\n- Local utility functions for date conversion and formatting (`toLocalDateString`).\n\n### Role in Module\nThis function serves as a core scheduling mechanism within the calendar module, facilitating the assignment of time slots to events considering constraints like blocked dates and initial allocations. It is crucial for organizing and managing event timings within a predefined schedule.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "ts",
+    "function",
+    "project:fiebrehemorragica",
+    "file:src/lib/calendar/schedule.ts"
+  ]
+}

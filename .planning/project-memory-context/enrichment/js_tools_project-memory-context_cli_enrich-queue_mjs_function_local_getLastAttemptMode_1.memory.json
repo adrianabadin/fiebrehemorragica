@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe function `getLastAttemptMode` is responsible for extracting the mode of the last attempt from an array of enrichment attempts. It determines which mode was used during the most recent attempt, if any attempts have been made.\n\n### Primary Inputs\n- **attempts**: An array of objects representing each attempted enrichment with a property called `mode`. This represents the specific method or approach used for that particular attempt.\n\n### Output\n- The function returns the mode of the last attempt if there are any attempts in the list, otherwise it returns `null`.\n\n### Immediate Dependencies\n- **attempts**: The primary input which is an array of objects containing information about each enrichment attempt.\n\n### Role in Module\nThis function serves as a utility to retrieve the most recent mode from a sequence of enrichment attempts, providing a straightforward way to access this information when needed. It helps maintain and query the state or configuration of the last attempted method within the module's context.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/enrich-queue.mjs"
+  ]
+}

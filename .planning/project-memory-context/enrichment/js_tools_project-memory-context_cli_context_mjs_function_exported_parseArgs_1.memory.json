@@ -1,0 +1,11 @@
+{
+  "content": " The `parseArgs` function is responsible for parsing command-line arguments to determine the mode of operation, target specification, depth of analysis, focus area, and whether to refresh data. It handles flags like `--help`, `--refresh`, and specifies modes such as 'symbol', 'file', or 'query'. The primary inputs are the list of command-line arguments (`args`), while the output is an object containing these parsed values: `{ explicitMode, target, depth, focus, refresh, help }`. Immediate dependencies include handling of predefined lists for valid argument types and managing positional arguments. This function plays a crucial role in configuring how the tool operates based on user inputs.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/cli/context.mjs"
+  ]
+}

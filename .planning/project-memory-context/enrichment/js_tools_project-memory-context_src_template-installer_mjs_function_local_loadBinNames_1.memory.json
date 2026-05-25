@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `loadBinNames` function is responsible for loading and returning the names of binary files (PMC_BIN) from a package's `package.json` file, as well as providing a default command for agent memory commands if not specified.\n\n### Primary Inputs\n- **packageRoot**: A string representing the root directory of the npm package where the `package.json` file is located.\n\n### Output\n- An object containing:\n  - `PMC_BIN`: The name of the binary file as specified in the `bin` field of the `package.json` file, or 'pmc' if not specified.\n  - `AGENT_MEMORY_CMD`: A default command for agent memory commands which is set to 'npx -y @aabadin/agent-memory-mcp'.\n\n### Immediate Dependencies\n- **node:fs/promises**: For reading the contents of files and directories.\n- **node:fs**: Specifically `existsSync` from this module, for checking if a file or directory exists.\n- **node:path**: For manipulating filesystem paths (specifically `dirname` and `join`).\n- **node:url**: For converting URL objects to file paths (`fileURLToPath`).\n\n### Role in Module\nThis function is part of the template installer module, which likely handles the installation or setup of templates based on configurations specified in a package's metadata. The `loadBinNames` function provides essential information about where binaries are located and how they should be accessed during the setup process.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/template-installer.mjs"
+  ]
+}

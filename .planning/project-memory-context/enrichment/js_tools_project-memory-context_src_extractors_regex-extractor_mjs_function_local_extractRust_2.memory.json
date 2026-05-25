@@ -1,0 +1,11 @@
+{
+  "content": " ### Responsibility\nThe `extractRust` function is responsible for extracting Rust symbols from a list of lines of code. It identifies and categorizes symbols such as classes, enums, traits, functions, and structs based on regular expressions. The function then creates symbol objects with metadata including the kind, name, exported status, line number, and more.\n\n### Primary Inputs\n- `lines`: An array of strings where each string represents a line of code from a Rust file.\n- `filePath`: A string representing the path to the Rust file.\n\n### Output\n- `symbols`: An array of objects, each representing a symbol with details like kind, name, exported status, and location in the file.\n\n### Immediate Dependencies\n- The function relies on regular expressions (`re`) defined within patterns for identifying different types of symbols.\n- It uses helper functions such as `findBlockEnd` to determine the end of code blocks which is used to calculate the extent of each symbol's scope.\n- Symbol creation and manipulation are handled by `makeSymbol`, which constructs a symbol object based on extracted information.\n\n### Role in Module\nThe `extractRust` function serves as a core component within the module responsible for parsing Rust code, extracting meaningful symbols, and providing them with appropriate metadata. This setup is crucial for further analysis or visualization tools that might require understanding of the Rust source structure.",
+  "category": "architecture",
+  "tags": [
+    "symbol",
+    "js",
+    "function",
+    "project:fiebrehemorragica",
+    "file:tools/project-memory-context/src/extractors/regex-extractor.mjs"
+  ]
+}
