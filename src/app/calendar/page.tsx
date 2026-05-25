@@ -4,6 +4,7 @@ import { prisma } from "@/lib/db/prisma";
 import styles from "./calendar.module.css";
 import { RuleForm, CancelDayForm } from "./forms";
 import { RuleList } from "./rule-list";
+import { UserManager } from "./user-manager";
 
 export default async function CalendarPage() {
   const user = await getSession();
@@ -41,6 +42,11 @@ export default async function CalendarPage() {
       <section className={styles.section}>
         <h2>Cancelar Dia</h2>
         <CancelDayForm />
+      </section>
+
+      <section className={styles.section}>
+        <h2>Gestion de Usuarios</h2>
+        <UserManager />
       </section>
 
       <section className={styles.section}>
