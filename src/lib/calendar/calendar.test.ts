@@ -16,8 +16,8 @@ vi.mock("../db/prisma", () => ({
 const { prisma: mockPrisma } = await import("../db/prisma");
 
 describe("assignSlotsForBatch", () => {
-  it("assigns 10 consecutive slots starting at 08:30", () => {
-    const slots = assignSlotsForBatch({
+  it("assigns 10 consecutive slots starting at 08:30", async () => {
+    const slots = await assignSlotsForBatch({
       totalAssignedBeforeBatch: 0,
       blockedDates: [],
     });
@@ -28,8 +28,8 @@ describe("assignSlotsForBatch", () => {
     expect(slots[9].time).toBe("10:00");
   });
 
-  it("uses the same Friday for slots 11 to 20", () => {
-    const slots = assignSlotsForBatch({
+  it("uses the same Friday for slots 11 to 20", async () => {
+    const slots = await assignSlotsForBatch({
       totalAssignedBeforeBatch: 10,
       blockedDates: [],
     });
@@ -40,8 +40,8 @@ describe("assignSlotsForBatch", () => {
     expect(slots[9].time).toBe("11:40");
   });
 
-  it("skips a blocked Friday and moves the batch to the next Friday", () => {
-    const slots = assignSlotsForBatch({
+  it("skips a blocked Friday and moves the batch to the next Friday", async () => {
+    const slots = await assignSlotsForBatch({
       totalAssignedBeforeBatch: 0,
       blockedDates: ["2026-10-23"],
       startFrom: "2026-10-01",
