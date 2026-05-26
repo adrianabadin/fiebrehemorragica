@@ -9,6 +9,12 @@ export async function sendTurnoEmail(input: {
   scheduledDate: string;
   scheduledTime: string;
 }) {
+  console.log(`[EMAIL] Sending turno email to ${input.to} (${input.fullName}) for ${input.scheduledDate} ${input.scheduledTime}`);
+
+  if (!process.env.RESEND_API_KEY) {
+    throw new Error("[EMAIL] RESEND_API_KEY is not set");
+  }
+
   const email = buildTurnoEmail(input);
 
   const { data, error } = await resend.emails.send({
@@ -19,8 +25,10 @@ export async function sendTurnoEmail(input: {
   });
 
   if (error) {
+    console.error(`[EMAIL] Failed to send to ${input.to}:`, error);
     throw new Error(`Failed to send email: ${error.message}`);
   }
 
+  console.log(`[EMAIL] Successfully sent to ${input.to}, messageId=${data?.id}`);
   return data;
 }

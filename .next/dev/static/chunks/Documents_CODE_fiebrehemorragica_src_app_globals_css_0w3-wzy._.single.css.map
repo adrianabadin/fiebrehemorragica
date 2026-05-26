@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/Documents/CODE/fiebrehemorragica/src/app/globals.css"],"sourcesContent":["/* src/app/globals.css */\n:root {\n  --primary: #0891B2;\n  --secondary: #22D3EE;\n  --cta: #059669;\n  --background: #ECFEFF;\n  --surface: #FFFFFF;\n  --border: #CBD5E1;\n  --text-main: #164E63;\n  --text-muted: #334155;\n  --focus-ring: #0891B2;\n  --radius-md: 6px;\n  --spacing-card: 24px;\n  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);\n}\n\nbody {\n  margin: 0;\n  background: var(--background);\n  color: var(--text-main);\n  font-family: 'Figtree', sans-serif;\n}\n\n/* Base focus styles for accessibility */\n*:focus-visible {\n  outline: 3px solid var(--focus-ring);\n  outline-offset: 2px;\n}\n"],"names":[],"mappings":"AACA;;;;;;;;;;;;;;;AAeA;;;;;;;AAQA"}}]
-}

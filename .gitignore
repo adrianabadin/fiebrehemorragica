@@ -3,7 +3,9 @@ node_modules/
 .pnpm-store/
 
 # Next.js
-
+.next/cache/
+.next/
+.next
 # Production
 
 # Environment
@@ -23,6 +25,13 @@ Thumbs.db
 
 # Testing
 coverage/
+
+#pmc
+.claude
+.opencode
+.planning
+docs
+graphify-out
 
 # Prisma
 prisma/*.db

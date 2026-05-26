@@ -4,14 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build --no-turbopack",
     "start": "next start",
     "lint": "next lint",
     "test": "vitest run",
     "test:watch": "vitest",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
-    "calendar:sync": "npx tsx scripts/sync-calendar-exceptions.ts"
+    "calendar:sync": "npx tsx scripts/sync-calendar-exceptions.ts",
+    "test:flow": "npx tsx scripts/test-turno-flow.ts"
   },
   "dependencies": {
     "@aabadin/project-memory-context": "^0.2.15",
@@ -36,6 +37,7 @@
     "eslint": "^9.39.4",
     "eslint-config-next": "latest",
     "jsdom": "latest",
+    "playwright": "^1.60.0",
     "prisma": "5.22.0",
     "tsx": "latest",
     "typescript": "latest",

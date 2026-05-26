@@ -7,9 +7,13 @@ export async function reserveBatchIfReady() {
       where: { status: "pending" },
     });
 
+    console.log(`[QUEUE] Current pending count: ${pendingCount}`);
+
     if (pendingCount < 10) {
       return null;
     }
+
+    console.log(`[QUEUE] Threshold reached (${pendingCount} pending), reserving batch`);
 
     const result = await prisma.$transaction(async (tx) => {
       const pendingRequests = await tx.appointmentRequest.findMany({
@@ -19,6 +23,7 @@ export async function reserveBatchIfReady() {
       });
 
       if (pendingRequests.length < 10) {
+        console.log(`[QUEUE] Race condition: only ${pendingRequests.length} pending inside transaction, aborting`);
         return null;
       }
 
@@ -33,6 +38,7 @@ export async function reserveBatchIfReady() {
         data: { status: "processing", batchId: batch.id },
       });
 
+      console.log(`[QUEUE] Batch ${batch.id} created with ${pendingRequests.length} requests`);
       return { batch, requests: pendingRequests };
     });
 
